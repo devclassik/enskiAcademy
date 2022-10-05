@@ -577,7 +577,7 @@
                         <div class="col-lg-12">
                         <ul class="rs-features-list">
                             <li><i class="fa fa-check"></i><span>Build an entertainment network with growth and learning opportunities.</span></li>
-                            <li><i class="fa fa-check"></i><span>Facilitate the smooth transition from the job-oriented economy to a skills-oriented economy in Africa.</span></li>
+                            <li><i class="fa fa-check"></i><span>Facilitate the smooth transition from the job-oriented economy to a skills-oriented.</span></li>
                             <li><i class="fa fa-check"></i><span>Help atleast 1,000 personal and corporate brands.</span></li>
                             <li><i class="fa fa-check"></i><span>Provide a leading financial support system. </span></li>
                             <li><i class="fa fa-check"></i><span>Assemble an all-inclusive skillsets marketplace.</span></li>
