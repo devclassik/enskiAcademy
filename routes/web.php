@@ -23,9 +23,15 @@ Auth::routes();
 Route::get('/login', [App\Http\Controllers\SkillsAcademyController::class, 'register']);
 Route::get('/process', [App\Http\Controllers\SkillsAcademyController::class, 'create'])->name('login-process');
 
-
+//basic route
 Route::get('/homepage', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/home-about', [App\Http\Controllers\HomeController::class, 'about']);
+Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact']);
+Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog']);
+Route::get('/blog-details', [App\Http\Controllers\HomeController::class, 'blogDetails']);
+
+
+
 
 //Entertainment
 Route::get('/entertainment', [App\Http\Controllers\EntertainmentController::class, 'index']);

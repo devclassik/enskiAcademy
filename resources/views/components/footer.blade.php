@@ -1,4 +1,4 @@
-<footer id="rs-footer" class="rs-footer">
+<footer id="rs-footer" class="rs-footer style1">
     <div class="footer-top">
         <div class="container">
             <div class="row">
