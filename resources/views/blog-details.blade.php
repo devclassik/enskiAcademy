@@ -14,7 +14,7 @@
                             <div class="row rs-vertical-middle">
                                 <div class="col-lg-2">
                                     <div class="logo-part">
-                                        <a href="home.html"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
+                                        <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-10 text-right">
@@ -70,7 +70,7 @@
                                             <li class="rs-mega-menu"> <a href="/homepage">Home</a> <!-- //.mega-menu -->
                                             </li>
                                             <li class="current-menu-item">
-                                                <a href="#">About</a>
+                                                <a href="/home-about">About</a>
                                             </li>
                                             <li class="menu-item-has-children">
                                                 <a href="#">Services</a>

@@ -1165,67 +1165,68 @@
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
                     <div class="footer-logo mb-30">
-                        <a href="index.html"><img src="{{asset('assets/images/logo-light.png')}}" alt=""></a>
+                        <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
                     </div>
-                    <div class="textwidget white-color pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
+                    <div class="textwidget pb-30"><p>Enski is a one-stop empowerment platform that offers multiple services that will help you, your business or brand reach its infinite potential.</p>
                     </div>
                     <ul class="footer-social md-mb-30">
                         <li>
-                            <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
+                            <a href="https://www.twitter.com/enski_connect" target="_blank"><span><i class="fa fa-twitter"></i></span></a>
                         </li>
                         <li>
-                            <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a>
-                        </li>
-
-                        <li>
-                            <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a>
+                            <a href="https://fb.me/enski.impact.summit" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
                         </li>
                         <li>
-                            <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a>
+                            <a href="https://www.linkedin.com/company/enski-integrated-services/" target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
                         </li>
-
+                        <li>
+                            <a href="https://www.instagram.com/enski_impact_summit/" target="_blank"><span><i class="fa fa-instagram"></i></span></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
-                    <h3 class="widget-title">IT Services</h3>
+                    <h3 class="widget-title">Our Services</h3>
                     <ul class="site-map">
-                        <li><a href="software-development.html">Software Development</a></li>
-                        <li><a href="web-development.html">Web Development</a></li>
-                        <li><a href="analytic-solutions.html">Analytic Solutions</a></li>
-                        <li><a href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                        <li><a href="product-design.html">Product Design</a></li>
+                        <li><a href="/entertainment">Entertainment</a> </li>
+                        <li><a href="/skills-academy">Skills Academy</a> </li>
+                        <li><a href="/branding">Branding Agency</a> </li>
+                        {{--                        add a coming soon page--}}
+                        <li><a href="#">Financial Services</a></li>
+                        <li><a href="#">Skill Set Connector</a> </li>
+                        <li><a href="#">Logistics</a> </li>
                     </ul>
+
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
                     <h3 class="widget-title">Contact Info</h3>
                     <ul class="address-widget">
                         <li>
                             <i class="flaticon-location"></i>
-                            <div class="desc">374 FA Tower, William S Blvd 2721, IL, USA</div>
+                            <div class="desc">Auta-Balefi, Abuja-Keffi Rd, New karu, Nassarawa State</div>
                         </li>
                         <li>
                             <i class="flaticon-call"></i>
                             <div class="desc">
-                                <a href="tel:(+880)155-69569">(+880)155-69569</a>
+                                <a href="tel:(+234)8162237272">(+234)8162237272</a>
                             </div>
                         </li>
                         <li>
                             <i class="flaticon-email"></i>
                             <div class="desc">
-                                <a href="mailto:support@rstheme.com">support@rstheme.com</a>
+                                <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
                             </div>
                         </li>
                         <li>
                             <i class="flaticon-clock-1"></i>
                             <div class="desc">
-                                Opening Hours: 10:00 - 18:00
+                                Opening Hours: 12:01 - 18:00
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12">
                     <h3 class="widget-title">Newsletter</h3>
-                    <p class="widget-desc white-color">We denounce with righteous and in and dislike men who are so beguiled and demo realized.</p>
+                    <p class="widget-desc">Subscribe to our newsletters to stay updated with the latest and most resourceful info to help you or your brand stand out.</p>
                     <p>
                         <input type="email" name="EMAIL" placeholder="Your email address" required="">
                         <em class="paper-plane"><input type="submit" value="Sign up"></em>
@@ -1240,19 +1241,18 @@
             <div class="row y-middle">
                 <div class="col-lg-6 text-right md-mb-10 order-last">
                     <ul class="copy-right-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="/homepage">Home</a></li>
+                        <li><a href="/home-about">About</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                        <li><a href="/faq">FAQs</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <div class="copyright">
-                        <p>&copy; 2022 All Rights Reserved. Developed By <a href="#">Classic</a></p>
+                        <p>&copy; 2022 All Rights Reserved. Developed By huS<a href="#">Classic</a></p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

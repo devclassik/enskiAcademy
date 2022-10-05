@@ -180,10 +180,11 @@
                         <span class="sub-title">Entertainment. Fun😜. Happiness.</span>
                         <h1 class="title">Join us in a whole new world of <span style="color: orangered;">Entertainment</span></h1>
                         <p class="desc">
-                            We are leading technology solutions providing company all over the world doing over 40 years.
+                        A new era of entertainment has just begun and this time your happiness is the main priority.
                         </p>
-                        <ul class="banner-btn">
+                        <ul class="banner-btn" style="display:flex;">
                             <li><a class="readon started" href="#rs-about">Get Started</a></li>
+                            <li style="margin-left:2%"><a class="readon started" href="https://t.me/enskicommunity">Join Community</a></li>
                         </ul>
                     </div>
                 </div>
@@ -284,134 +285,133 @@
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="sec-title mb-50">
-                        <div class="sub-text white-color style4-bg">Get to know the Channels</div>
-                        <h2 class="title white-color pb-20">
-                            Over 25+ Years Helping Brands to Reach Full Potential
-                        </h2>
-                        <div class="desc white-color">
-                            Over 25 years working in IT services developing software applications and mobile apps for clients all over the world. From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage. Creation timelines for the standard lorem ipsum passage vary, with some citing the 15th century
+                                <div class="sub-text white-color style4-bg">Join our Entertainment Channels</div>
+                                <h2 class="title white-color pb-20">
+                                    Let's give you reasons to smile today!!
+                                </h2>
+                                <div class="desc white-color">
+                                   Explore a new dimension of entertainment with our vast variety of contents including various trending‎️‍🔥 informative📃 inspiring😌 fun😜 contents that will not just keep you entertained but also open you up to learning and growth opportunities on our various social media entertainment channels.
+                                </div>
+                            </div>
+                        <!-- Counter Section Start -->
+                        <div class="rs-counter style3">
+                            <div class="container">
+                                <div class="counter-top-area">
+                                    <div class="row">
+                                        <div class="col-sm-6 sm-pr-0 sm-pl-0 xs-mb-30">
+                                            <div class="counter-list">
+                                                <div class="counter-text">
+                                                    <div class="count-number">
+                                                        <span class="rs-count plus orange-color">4372</span>
+                                                    </div>
+                                                    <h3 class="title white-color">Happy Viewers</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 sm-pr-0 sm-pl-0">
+                                            <div class="counter-list">
+                                                <div class="counter-text">
+                                                    <div class="count-number">
+                                                        <span class="rs-count plus">397</span>
+                                                    </div>
+                                                    <h3 class="title white-color">Contents viewed</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- Counter Section End -->
                     </div>
-                    <!-- Counter Section Start -->
-                    <div class="rs-counter style3">
-                        <div class="container">
-                            <div class="counter-top-area">
+                    <div class="col-lg-7">
+                        <!-- Services Section Start -->
+                        <div class="rs-services style3 modify3 md-pt-50">
+                            <div class="container">
                                 <div class="row">
-                                    <div class="col-sm-6 sm-pr-0 sm-pl-0 xs-mb-30">
-                                        <div class="counter-list">
-                                            <div class="counter-text">
-                                                <div class="count-number">
-                                                    <span class="rs-count plus orange-color">450</span>
-                                                </div>
-                                                <h3 class="title white-color">Happy Clients</h3>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-6 pr-10 pt-40 sm-pt-0 sm-pr-0 sm-pl-0">
+                                       <div class="services-item mb-20 orange-bg">
+                                           <div class="services-icon">
+                                               <div class="image-part">
+                                                   <img class="main-img" src="{{asset('assets/images/services/style3/main-img/1.png')}}" alt="">
+                                                   <img class="hover-img" src="{{asset('assets/images/services/style3/hover-img/1.png')}}" alt="">
+                                               </div>
+                                           </div>
+                                           <div class="services-content">
+                                               <div class="services-text">
+                                                   <h3 class="title"><a href="https://wa.me/message/KUOMF26QJ33GK1">WHATSAPP</a></h3>
+                                               </div>
+                                               <div class="services-desc">
+                                                   <p>
+                                                      Stay up to date with fun and enlightening whatsapp status post and discussions.
+                                                   </p>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="services-item cyan-bg">
+                                           <div class="services-icon">
+                                               <div class="image-part">
+                                                   <img class="main-img" src="{{asset('assets/images/services/style3/main-img/2.png')}}" alt="">
+                                                   <img class="hover-img" src="{{asset('assets/images/services/style3/hover-img/2.png')}}" alt="">
+                                               </div>
+                                           </div>
+                                           <div class="services-content">
+                                               <div class="services-text">
+                                                   <h3 class="title"><a href="https://www.instagram.com/enski_entertainment/">INSTAGRAM</a></h3>
+                                               </div>
+                                               <div class="services-desc">
+                                                   <p>
+                                                     Follow up to stay connected to fun and uplifting video posts, reels, stories, carousels.
+                                                   </p>
+                                               </div>
+                                           </div>
+                                       </div>
                                     </div>
-                                    <div class="col-sm-6 sm-pr-0 sm-pl-0">
-                                        <div class="counter-list">
-                                            <div class="counter-text">
-                                                <div class="count-number">
-                                                    <span class="rs-count plus">750</span>
-                                                </div>
-                                                <h3 class="title white-color">Project Delivered</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Counter Section End -->
-                </div>
-                <div class="col-lg-7">
-                    <!-- Services Section Start -->
-                    <div class="rs-services style3 modify3 md-pt-50">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 pr-10 pt-40 sm-pt-0 sm-pr-0 sm-pl-0">
-                                    <div class="services-item mb-20 orange-bg">
-                                        <div class="services-icon">
-                                            <div class="image-part">
-                                                <img class="main-img" src="{{asset('assets/images/services/style3/main-img/1.png')}}" alt="">
-                                                <img class="hover-img" src="{{asset('assets/images/services/style3/hover-img/1.png')}}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="services-content">
-                                            <div class="services-text">
-                                                <h3 class="title"><a href="#">FaceBook</a></h3>
-                                            </div>
-                                            <div class="services-desc">
-                                                <p>
-                                                    At vero eos et accusamus etiusto odio praesentium accusamus.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="services-item cyan-bg">
-                                        <div class="services-icon">
-                                            <div class="image-part">
-                                                <img class="main-img" src="{{asset('assets/images/services/style3/main-img/2.png')}}" alt="">
-                                                <img class="hover-img" src="{{asset('assets/images/services/style3/hover-img/2.png')}}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="services-content">
-                                            <div class="services-text">
-                                                <h3 class="title"><a href="#">Instagram</a></h3>
-                                            </div>
-                                            <div class="services-desc">
-                                                <p>
-                                                    At vero eos et accusamus etiusto odio praesentium accusamus.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 pl-10 sm-pr-0 sm-pl-0 sm-mt-20">
-                                    <div class="services-item gold-bg mb-20">
-                                        <div class="services-icon">
-                                            <div class="image-part">
-                                                <img class="main-img" src="{{asset('assets/images/services/style3/main-img/3.png')}}" alt="">
-                                                <img class="hover-img" src="{{asset('assets/images/services/style3/hover-img/3.png')}}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="services-content">
-                                            <div class="services-text">
-                                                <h3 class="title"><a href="web-development.html">Agile Approach</a></h3>
-                                            </div>
-                                            <div class="services-desc">
-                                                <p>
-                                                    At vero eos et accusamus etiusto odio praesentium accusamus.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="services-item blue-bg">
-                                        <div class="services-icon">
-                                            <div class="image-part">
-                                                <img class="main-img" src="{{asset('assets/images/services/style3/main-img/4.png')}}" alt="">
-                                                <img class="hover-img" src="{{asset('assets/images/services/style3/hover-img/4.png')}}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="services-content">
-                                            <div class="services-text">
-                                                <h3 class="title"><a href="web-development.html">High-quality Code</a></h3>
-                                            </div>
-                                            <div class="services-desc">
-                                                <p>
-                                                    At vero eos et accusamus etiusto odio praesentium accusamus.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-6 pl-10 sm-pr-0 sm-pl-0 sm-mt-20">
+                                       <div class="services-item gold-bg mb-20">
+                                           <div class="services-icon">
+                                               <div class="image-part">
+                                                   <img class="main-img" src="{{asset('assets/images/services/style3/main-img/3.png')}}" alt="">
+                                                   <img class="hover-img" src="{{asset('assets/images/services/style3/hover-img/3.png')}}" alt="">
+                                               </div>
+                                           </div>
+                                           <div class="services-content">
+                                               <div class="services-text">
+                                                   <h3 class="title"><a href="https://t.me/enski_entertainment">TELEGRAM</a></h3>
+                                               </div>
+                                               <div class="services-desc">
+                                                   <p>
+                                                      Subscribe to access to all genres of movies and series, comics, games, books.
+                                                   </p>
+                                               </div>
+                                           </div>
+                                       </div>
+                                           <div class="services-item blue-bg">
+                                           <div class="services-icon">
+                                               <div class="image-part">
+                                                   <img class="main-img" src="{{asset('assets/images/services/style3/main-img/4.png')}}" alt="">
+                                                   <img class="hover-img" src="{{asset('assets/images/services/style3/hover-img/4.png')}}" alt="">
+                                               </div>
+                                           </div>
+                                           <div class="services-content">
+                                               <div class="services-text">                                                                                      <h3 class="title"><a href="https://www.facebook.com/Enski_entertainment-105939982023001/">FACEBOOK</a></h3>
+                                               </div>
+                                               <div class="services-desc">
+                                                   <p>
+                                                        Like and follow to stay updated on inspiring, entertaining and trending posts daily.
+                                                   </p>
+                                               </div>
+                                           </div>
+                                       </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Services Section End -->
                     </div>
-                    <!-- Services Section End -->
                 </div>
             </div>
         </div>
-    </div>
     <!-- About Section End -->
 
     <!-- About Section Start -->
@@ -425,12 +425,12 @@
                 </div>
                 <div class="col-lg-6 pl-60 md-pl-15">
                     <div class="sec-title mb-30">
-                        <div class="sub-text white-color style4-bg">Skillsets</div>
+                        <div class="sub-text white-color style4-bg">OUR VARIOUS ENTERTAINMENT CONTENTS</div>
                         <h2 class="title white-color pb-20">
                             We Are Increasing Business Success With Technology
                         </h2>
                         <div class="desc white-color">
-                            Over 25 years working in IT services developing software applications and mobile apps for clients all over the world.
+                        Our array of contents aren't just targeted at making you happy and entertained but also inspired and even enlightened.
                         </div>
                     </div>
                     <!-- Skillbar Section Start -->
@@ -443,32 +443,32 @@
                                 <span class="skill-bar-percent white-color"></span>
                             </div>
                             <!-- Start Skill Bar -->
-                            <span class="skillbar-title white-color">Memes</span>
+                            <span class="skillbar-title white-color">ENTERTAINING CONTENTS </span> <i> Comedy/ Dance videos, Songs, Funny Memes, Movies, Savage Replies, Games</i>
                             <div class="skillbar" data-percent="80">
                                 <p class="skillbar-bar paste-bg"></p>
                                 <span class="skill-bar-percent white-color"></span>
                             </div>
                             <!-- Start Skill Bar -->
-                            <span class="skillbar-title white-color">Rap Battle</span>
+                            <span class="skillbar-title white-color">INFORMATIVE CONTENTS  </span><i> Fun facts, Skills Tips, Health Tips, Business/ Financial Tips, Relationship Tips</i>
                             <div class="skillbar" data-percent="95">
                                 <p class="skillbar-bar blue-bg"></p>
                                 <span class="skill-bar-percent white-color"></span>
                             </div>
                             <!-- Start Skill Bar -->
-                            <span class="skillbar-title white-color">Music</span>
+                            <span class="skillbar-title white-color">INSPIRATIONAL CONTENTS  </span> <i> Motivational quotes/ videos, Worship Videos, Preaching Extracts</i>
                             <div class="skillbar" data-percent="85">
                                 <p class="skillbar-bar black-dark-bg"></p>
                                 <span class="skill-bar-percent white-color"></span>
                             </div>
                             <!-- Start Skill Bar -->
-                            <span class="skillbar-title white-color">Movies</span>
+                            <span class="skillbar-title white-color">OTHERS  </span> <i> MCM, WCW, Giveaways, Freebies, Couselling, Throwbacks, Riddles, Riddles, Q-A Session</i>
                             <div class="skillbar" data-percent="78">
                                 <p class="skillbar-bar pink-bg"></p>
                                 <span class="skill-bar-percent white-color"></span>
                             </div>
-                            <div class="btn-part mt-45">
+                            <!-- <div class="btn-part mt-45">
                                 <a class="readon started" href="contact.html">Get Started</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!-- Skillbar Section End -->
@@ -497,21 +497,21 @@
                 </div>
                 <div class="col-lg-6 pl-60 md-pl-15">
                     <div class="sec-title mb-40">
-                        <div class="sub-text style4-bg left white-color">Why Choose Us</div>
+                        <div class="sub-text style4-bg left white-color">Why Choose Us 💯Enski Entertainment</div>
                         <h2 class="title white-color pb-20">
-                            We Create Result-Oriented Entertainment Channel
+                        🦾We deliver per excellence
                         </h2>
-                        <div class="desc white-color">
-                            Over 25 years working in IT services developing software applications and mobile apps for clients all over the world.
-                        </div>
+                        <!-- <div class="desc white-color">
+                        Our contents are regularized to keep it family friendly.
+                        </div> -->
                     </div>
                     <div class="services-wrap mb-25">
                         <div class="services-icon">
                             <img src="{{asset('assets/images/choose/icons/1.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#">Non Explicit Content</a></h3>
-                            <p class="services-txt">  At vero eos et accusamus etiusto odio praesentium.</p>
+                            <h3 class="title"><a href="#">❌Non Explicit Content🔞</a></h3>
+                            <p class="services-txt">  Our contents are regularized to keep it family friendly.</p>
                         </div>
                     </div>
                     <div class="services-wrap mb-25">
@@ -519,8 +519,8 @@
                             <img src="{{asset('assets/images/choose/icons/2.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#">Pure Vibe</a></h3>
-                            <p class="services-txt">  At vero eos et accusamus etiusto odio praesentium.</p>
+                            <h3 class="title"><a href="#"> 🟩Assorted Content Categories</a></h3>
+                            <p class="services-txt">  Our contents explores several thrilling niches as well as gives room for learning and growth.</p>
                         </div>
                     </div>
                     <div class="services-wrap">
@@ -528,8 +528,17 @@
                             <img src="{{asset('assets/images/choose/icons/3.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#">Well Documentation</a></h3>
-                            <p class="services-txt">  At vero eos et accusamus etiusto odio praesentium.</p>
+                            <h3 class="title"><a href="#">🚹No more lonely moments</a></h3>
+                            <p class="services-txt">  We are always available for fun live-interactions with you.</p>
+                        </div>
+                    </div>
+                    <div class="services-wrap mb-25">
+                        <div class="services-icon">
+                            <img src="{{asset('assets/images/choose/icons/style2/3.png')}}" alt="">
+                        </div>
+                        <div class="services-text">
+                            <h3 class="title"><a href="#"> 👁‍🗨Viewers Oriented Contents</a></h3>
+                            <p class="services-txt"> Always open to suggestions and reviews to help us suit your taste.</p>
                         </div>
                     </div>
                 </div>
@@ -779,87 +788,94 @@
     <!-- Project Section Start -->
     <div id="rs-portfolio" class="rs-project style2 black-dark  pt-120 pb-120 md-pt-80 md-pb-80">
         <div class="container">
-            <div class="sec-title2 text-center mb-45">
+            <div class="sec-title text-center mb-40">
                 <span class="sub-text white-color">Daily Schedules | Themes</span>
-                <h2 class="title title2 white-color">
-                    With Us everyday is special and <span style="color: orangered;">Unique</span>
-                </h2>
+                <h2 class="title pb-20 white-color"> Who said you had to deal with getting bored from viewing similar contents daily?</h2>
+                    <div class="desc white-color">
+                        With Us... Everyday is <span style="color: orangered;">special</span> and <span style="color: orangered;">Unique</span> just like <span style="color: orangered;">you</span>.
+                    </div>
             </div>
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="true" data-md-device-dots="false">
                 <div class="project-item">
                     <div class="project-img">
-                        <a href="case-studies-style1.html"><img src="{{asset('assets/images/project/main-home/1.jpg')}}" alt="images"></a>
+                        <a href="#"><img src="{{asset('assets/images/project/theme/1.jpg')}}" alt="images"></a>
                     </div>
                     <div class="project-content ">
                         <div class="vertical-middle">
                             <div class="vertical-middle-cell">
-                                <h3 class="title"><a href="case-studies-style1.html">Product Design</a></h3>
-                                <span class="category"><a href="case-studies-style1.html">IT Technology</a></span>
+                                <h3 class="title"><a href="#">BLESSED SUNDAY</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <a href="case-studies-style1.html"><img src="{{asset('assets/images/project/main-home/2.jpg')}}" alt="images"></a>
+                        <a href="#"><img src="{{asset('assets/images/project/theme/2.jpg')}}" alt="images"></a>
                     </div>
                     <div class="project-content ">
                         <div class="vertical-middle">
                             <div class="vertical-middle-cell">
-                                <h3 class="title"><a href="case-studies-style1.html">Growth Strategies</a></h3>
-                                <span class="category"><a href="case-studies-style1.html">IT Technology</a></span>
+                                <h3 class="title"><a href="#">MOTIVATIONAL MONDAY</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <a href="case-studies-style1.html"><img src="{{asset('assets/images/project/main-home/3.jpg')}}" alt="images"></a>
+                        <a href="#"><img src="{{asset('assets/images/project/theme/3.jpg')}}" alt="images"></a>
                     </div>
                     <div class="project-content ">
                         <div class="vertical-middle">
                             <div class="vertical-middle-cell">
-                                <h3 class="title"><a href="case-studies-style1.html">latform Integration</a></h3>
-                                <span class="category"><a href="case-studies-style1.html">IT Technology</a></span>
+                                <h3 class="title"><a href="#">MERRY TUESDAY</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <a href="case-studies-style1.html"><img src="{{asset('assets/images/project/main-home/4.jpg')}}" alt="images"></a>
+                        <a href="#"><img src="{{asset('assets/images/project/theme/4.jpg')}}" alt="images"></a>
                     </div>
                     <div class="project-content ">
                         <div class="vertical-middle">
                             <div class="vertical-middle-cell">
-                                <h3 class="title"><a href="case-studies-style1.html">Innovative Interfaces</a></h3>
-                                <span class="category"><a href="case-studies-style1.html">IT Technology</a></span>
+                                <h3 class="title"><a href="#">ROMANTIC WEDNESDAYS</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <a href="case-studies-style1.html"><img src="{{asset('assets/images/project/main-home/5.jpg')}}" alt="images"></a>
+                        <a href="#"><img src="{{asset('assets/images/project/theme/5.jpg')}}" alt="images"></a>
                     </div>
                     <div class="project-content ">
                         <div class="vertical-middle">
                             <div class="vertical-middle-cell">
-                                <h3 class="title"><a href="case-studies-style1.html">Product Engineering</a></h3>
-                                <span class="category"><a href="case-studies-style1.html">IT Technology</a></span>
+                                <h3 class="title"><a href="#">DISCOVERY THURSDAY</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <a href="case-studies-style1.html"><img src="{{asset('assets/images/project/main-home/6.jpg')}}" alt="images"></a>
+                        <a href="#"><img src="{{asset('assets/images/project/theme/6.jpg')}}" alt="images"></a>
                     </div>
                     <div class="project-content ">
                         <div class="vertical-middle">
                             <div class="vertical-middle-cell">
-                                <h3 class="title"><a href="case-studies-style1.html">Analytic Solutions</a></h3>
-                                <span class="category"><a href="case-studies-style1.html">IT Technology</a></span>
+                                <h3 class="title"><a href="#">TALENTS FRIDAY</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-img">
+                        <a href="#"><img src="assets/images/project/theme/7.jpg" alt="images"></a>
+                    </div>
+                    <div class="project-content ">
+                        <div class="vertical-middle">
+                            <div class="vertical-middle-cell">
+                                <h3 class="title"><a href="#">GAMES SATURDAY</a></h3>
                             </div>
                         </div>
                     </div>
@@ -880,35 +896,37 @@
                             Get Creative
                         </h2>
                         <div class="desc white-color">
-                            From its medieval origins to the digital era, learn everything there<br>
-                            is to know about the ubiquitous lorem ipsum passage.
+                            Feel free to reach out to us with your creative ideas or works, content suggestions and even just for interactive purposes.
                         </div>
                     </div>
                     <div class="services-wrap mb-25">
                         <div class="services-icon">
-                            <img src="assets/images/choose/icons/style2/1.png" alt="">
+                            <img src="{{asset('assets/images/choose/icons/style2/1.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#">Email</a></h3>
-                            <p class="services-txt">support@rstheme.com</p>
+                            <h3 class="title"><a href="mailto:support@enski.com.ng">Email</a></h3>
+                            <p class="services-txt"><a href="mailto:support@enski.com.ng">entertainment@enski.com.ng</a></p>
                         </div>
                     </div>
                     <div class="services-wrap mb-25">
                         <div class="services-icon">
-                            <img src="assets/images/choose/icons/style2/2.png" alt="">
+                            <img src="{{asset('assets/images/choose/icons/style2/2.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#">Call Us</a></h3>
-                            <p class="services-txt"> (+01) 555 - 9811 - 444</p>
+                            <h3 class="title"><a href="tel:(+234)8162237272">Call Us | Whatsapp</a></h3>
+                            <p class="services-txt"><a href="tel:(+234)8162237272"> +2348162237272</a></p>
                         </div>
                     </div>
                     <div class="services-wrap">
                         <div class="services-icon">
-                            <img src="assets/images/choose/icons/style2/3.png" alt="">
+                            <img src="{{asset('assets/images/choose/icons/style2/3.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#">Office Address</a></h3>
-                            <p class="services-txt">374 FA Tower, William S Blvd<br> 2721, IL, USA</p>
+                            <h3 class="title"><a href="#">Social Handles</a></h3>
+                            <p class="services-txt">
+                            <a href="https://www.instagram.com/enski_impact_summit/" target="_blank">Instagram: enski_entertainment</a><br>
+                            <a href="https://t.me/enski_entertainment" target="_blank">Telegram: enski_entertainment_admin</a><br>
+                            <a href="https://fb.me/enski.impact.summit" target="_blank">Facebook: Enski Connect</a></p>
                         </div>
                     </div>
                 </div>
@@ -933,7 +951,7 @@
                                             <input class="from-control" type="text" id="appointment_phone" name="appointment_phone" placeholder="Phone Number" required="">
                                         </div>
                                         <div class="col-lg-12 mb-25">
-                                            <input class="from-control" type="text" id="appointment_website" name="appointment_website" placeholder="social handel e.g FaceBook, instagram etc" required="">
+                                            <input class="from-control" type="text" id="appointment_website" name="appointment_website" placeholder="social handle e.g Facebook, IG, Telegram etc" required="">
                                         </div>
 
                                         <div class="col-lg-12 mb-25">
@@ -975,7 +993,7 @@
                             What Viewers Saying
                         </h2>
                         <div class="desc white-color">
-                            Over 25 years working in IT services developing software applications and mobile apps for clients all over the world.
+                        We are always looking towards making our viewers happy each day. Here is what some of them have to say about Enski Entertainment...
                         </div>
                     </div>
                     <div class="rs-carousel owl-carousel"
@@ -1160,72 +1178,73 @@
 
 <!-- Footer Start -->
 <footer id="rs-footer" class="rs-footer style2 modify1 black-dark">
-    <div class="footer-top">
+<div class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
                     <div class="footer-logo mb-30">
-                        <a href="index.html"><img src="{{asset('assets/images/logo-light.png')}}" alt=""></a>
+                        <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
                     </div>
-                    <div class="textwidget white-color pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
+                    <div class="textwidget pb-30"><p>Enski is a one-stop empowerment platform that offers multiple services that will help you, your business or brand reach its infinite potential.</p>
                     </div>
                     <ul class="footer-social md-mb-30">
                         <li>
-                            <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
+                            <a href="https://www.twitter.com/enski_connect" target="_blank"><span><i class="fa fa-twitter"></i></span></a>
                         </li>
                         <li>
-                            <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a>
-                        </li>
-
-                        <li>
-                            <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a>
+                            <a href="https://fb.me/enski.impact.summit" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
                         </li>
                         <li>
-                            <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a>
+                            <a href="https://www.linkedin.com/company/enski-integrated-services/" target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
                         </li>
-
+                        <li>
+                            <a href="https://www.instagram.com/enski_impact_summit/" target="_blank"><span><i class="fa fa-instagram"></i></span></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
-                    <h3 class="widget-title">IT Services</h3>
+                    <h3 class="widget-title">Our Services</h3>
                     <ul class="site-map">
-                        <li><a href="software-development.html">Software Development</a></li>
-                        <li><a href="web-development.html">Web Development</a></li>
-                        <li><a href="analytic-solutions.html">Analytic Solutions</a></li>
-                        <li><a href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                        <li><a href="product-design.html">Product Design</a></li>
+                        <li><a href="/entertainment">Entertainment</a> </li>
+                        <li><a href="/skills-academy">Skills Academy</a> </li>
+                        <li><a href="/branding">Branding Agency</a> </li>
+                            {{--    add a coming soon page--}}
+                        <li><a href="#">Financial Services</a></li>
+                        <li><a href="#">Skill Set Connector</a> </li>
+                        <li><a href="#">Logistics</a> </li>
                     </ul>
+
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
                     <h3 class="widget-title">Contact Info</h3>
                     <ul class="address-widget">
                         <li>
                             <i class="flaticon-location"></i>
-                            <div class="desc">374 FA Tower, William S Blvd 2721, IL, USA</div>
+                            <div class="desc">Auta-Balefi, Abuja-Keffi Rd, New karu, Nassarawa State</div>
                         </li>
                         <li>
                             <i class="flaticon-call"></i>
                             <div class="desc">
-                                <a href="tel:(+880)155-69569">(+880)155-69569</a>
+                            <a href="tel:(+234)8162237272">(+234)8162237272</a>
                             </div>
                         </li>
                         <li>
                             <i class="flaticon-email"></i>
                             <div class="desc">
-                                <a href="mailto:support@rstheme.com">support@rstheme.com</a>
+                            <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
                             </div>
                         </li>
                         <li>
                             <i class="flaticon-clock-1"></i>
                             <div class="desc">
-                                Opening Hours: 10:00 - 18:00
+                            Opening Hours: 12:01 - 18:00
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12">
                     <h3 class="widget-title">Newsletter</h3>
-                    <p class="widget-desc white-color">We denounce with righteous and in and dislike men who are so beguiled and demo realized.</p>
+                    <p class="widget-desc">Subscribe to our newsletters to stay updated with the latest and most resourceful info to help you or your brand stand out.</p>
                     <p>
                         <input type="email" name="EMAIL" placeholder="Your email address" required="">
                         <em class="paper-plane"><input type="submit" value="Sign up"></em>
@@ -1240,11 +1259,11 @@
             <div class="row y-middle">
                 <div class="col-lg-6 text-right md-mb-10 order-last">
                     <ul class="copy-right-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="/homepage">Home</a></li>
+                        <li><a href="/home-about">About</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                        <li><a href="/faq">FAQs</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
@@ -1252,7 +1271,6 @@
                         <p>&copy; 2022 All Rights Reserved. Developed By <a href="#">Classic</a></p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

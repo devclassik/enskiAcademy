@@ -70,7 +70,7 @@
                                             <li class="rs-mega-menu"> <a href="/homepage">Home</a> <!-- //.mega-menu -->
                                             </li>
                                             <li class="current-menu-item">
-                                                <a href="#">About</a>
+                                                <a href="/home-about">About</a>
                                             </li>
                                             <li class="menu-item-has-children">
                                                 <a href="#">Services</a>
