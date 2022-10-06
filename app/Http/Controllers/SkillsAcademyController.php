@@ -14,12 +14,22 @@ class SkillsAcademyController extends Controller
      */
     public function index()
     {
-        //
+        return view('skills-academy.skills-academy');
     }
      //for registration
     public function register()
     {
         return view('auth.login');
+    }
+
+    //user registration and login
+    public function userLogin()
+    {
+        return view('skills-academy.my-account');
+    }
+    public function userRegistration()
+    {
+        return view('skills-academy.my-account');
     }
 
     /**

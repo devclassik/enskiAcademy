@@ -3,7 +3,7 @@
 <head>
     <!-- meta tag -->
     <meta charset="utf-8">
-    <title>Braintech - IT Solutions and Technology Startup HTML Template</title>
+    <title>Enski - Nigeria's leading empowerment platform</title>
     <meta name="description" content="">
     <!-- responsive tag -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -40,6 +40,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
+<!-- this is for entertainment home 11 -->
 <body class="home11">
 <div class="offwrap"></div>
 <!--Preloader area start here-->
@@ -64,15 +66,15 @@
                                 <ul>
                                     <li>
                                         <i class="flaticon-email"></i>
-                                        <a href="mailto:support@rstheme.com">support@rstheme.com</a>
+                                        <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
                                     </li>
                                     <li>
                                         <i class="flaticon-call"></i>
-                                        <a href="tel:++1(990)999–5554"> +1 (990) 999–5554</a>
+                                        <a href="tel:++234 0)8162237272"> +234 (0) 8162237272</a>
                                     </li>
                                     <li>
                                         <i class="flaticon-location"></i>
-                                        05 kandi BR. New York
+                                        Abuja-Keffi Rd, Nassarawa
                                     </li>
                                 </ul>
                             </div>
@@ -80,11 +82,11 @@
                         <div class="col-lg-4 text-right">
                             <div class="toolbar-sl-share">
                                 <ul>
-                                    <li class="opening"> <em><i class="flaticon-clock"></i> 08:00am-6:00pm</em> </li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="opening"> <em><i class="flaticon-clock"></i> 12:01pm-6:00pm</em> </li>
+                                    <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -116,12 +118,22 @@
                                     <nav class="rs-menu pr-70 md-pr-0">
                                         <ul id="onepage-menu" class="nav-menu">
                                             <li> <a href="#rs-header">Home</a></li>
-                                            <li><a href="#rs-about">About</a></li>
-                                            <li><a href="#rs-services">Services</a></li>
-                                            <li><a href="#rs-portfolio">Portfolio</a></li>
+                                            <li><a href="#rs-about">Our Channel</a></li>
+                                            <li class="menu-item"><a href="#rs-services">Services</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="/entertainment">Entertainment</a> </li>
+                                                    <li><a href="/skills-academy">Skills Academy</a> </li>
+                                                    <li><a href="/branding">Branding Agency</a></li>
+                                                    {{--     add a comming soon page @todo--}}
+                                                    <li><a href="">Financial Services</a></li>
+                                                    <li><a href="">Skill Set Connector</a> </li>
+                                                    <li><a href="">Logistics</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#rs-portfolio">Daily Theme</a></li>
                                             <li><a href="#rs-team">Team</a></li>
-                                            <li><a href="#rs-blog">Blog</a></li>
-                                            <li><a href="#rs-contact">Contact</a></li>
+                                            <li><a href="/blog">Blog</a></li>
+                                            <li><a href="/contact">Contact</a></li>
                                         </ul> <!-- //.nav-menu -->
                                     </nav>
                                 </div> <!-- //.main-menu -->
@@ -1304,5 +1316,4 @@
 
 <!-- modernizr js -->
 @include('components.scripts')
-</body>
-</html>
+

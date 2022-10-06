@@ -44,9 +44,22 @@ class HomeController extends Controller
         return view('blog');
     }
 
-    /** this is the function that control the about contact page*/
+    /** this is the function that control the blog page*/
+    /** this is the function that control the blog Details page*/
     public function blogDetails()
     {
         return view('blog-details');
+    }
+
+    /** this is the function that control the error page*/
+    public function errorPage()
+    {
+        return view('error');
+    }
+
+    /** this is the function that control the faq page*/
+    public function faq()
+    {
+        return view('faq');
     }
 }

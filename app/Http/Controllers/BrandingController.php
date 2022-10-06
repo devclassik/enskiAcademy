@@ -14,7 +14,7 @@ class BrandingController extends Controller
      */
     public function index()
     {
-        //
+        return view('branding.branding');
     }
 
     /**

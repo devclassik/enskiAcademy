@@ -128,7 +128,7 @@
                     <h1 class="page-title">Blog</h1>
                     <ul>
                         <li title="Braintech - IT Solutions and Technology Startup HTML Template">
-                            <a class="active" href="index.html">Home</a>
+                            <a class="active" href="/homepage">Home</a>
                         </li>
                        <li>Blog</li>
                     </ul>

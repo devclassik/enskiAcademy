@@ -52,7 +52,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-3">
                                 <div class="logo-part">
-                                    <a href="index.html">
+                                    <a href="/homepage">
                                         <img class="normal-logo" src="{{asset('assets/images/logo-light.png')}}" alt="logo">
                                         <img class="sticky-logo" src="{{asset('assets/images/logo-dark.png')}}" alt="logo">
                                     </a>
@@ -97,10 +97,9 @@
                                             </ul> <!-- //.nav-menu -->
                                         </nav>
                                     </div> <!-- //.main-menu -->
-                                    <div class="nav-menu search-icon hidden-md btn-success oranage">
+                                    <div class="expand-btn-inner search-icon hidden-md">
                                         <ul>
-                                            <li style="background-color: darkorchid; border-radius: 15px">
-                                                <a class="quote-btn" href="/login">Sign Up</a></li>
+                                            <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -117,9 +116,7 @@
                 <div class="canvas-logo">
                     <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt="logo"></a>
                 </div>
-{{--                <div class="offcanvas-text">--}}
-{{--                    <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>--}}
-{{--                </div>--}}
+
                 <div class="canvas-contact">
                     <h5 class="canvas-contact-title">Contact Info</h5>
                     <ul class="contact">
@@ -451,11 +448,12 @@
                         <div class="col-lg-3 col-sm-6 md-mb-50">
                             <div class="addon-process">
                                 <div class="process-wrap">
-                                    <div class="process-img">
-                                        <img src="{{asset('assets/images/process/1.png')}}" alt="">
+                                    <div class="process-img geeks">
+                                        <img src="{{asset('assets/images/process/1.png')}}" alt="" style="border-radius: 30px;
+                                        width: 70%; margin-left: 50px;">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title">Facebook</h3>
+                                        <h3 class="title">WhatsApp</h3>
                                     </div>
                                 </div>
                             </div>
@@ -463,11 +461,12 @@
                         <div class="col-lg-3 col-sm-6 md-mb-50">
                             <div class="addon-process">
                                 <div class="process-wrap">
-                                    <div class="process-img">
-                                        <img src="{{asset('assets/images/process/2.png')}}" alt="">
+                                    <div class="process-img geeks">
+                                        <img src="{{asset('assets/images/process/2.png')}}" alt="" style="border-radius: 30px;
+                                        width: 70%; margin-left: 50px;">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title"> Instagram</h3>
+                                        <h3 class="title"> Facebook</h3>
                                     </div>
                                 </div>
                             </div>
@@ -475,11 +474,12 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="addon-process">
                                 <div class="process-wrap">
-                                    <div class="process-img">
-                                        <img src="{{asset('assets/images/process/3.png')}}" alt="">
+                                    <div class="process-img geeks">
+                                        <img src="{{asset('assets/images/process/3.png')}}" alt="" style="border-radius: 30px;
+                                        width: 70%; margin-left: 50px;">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title">Twitter</h3>
+                                        <h3 class="title">Instagram</h3>
                                     </div>
                                 </div>
                             </div>
@@ -487,11 +487,12 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="addon-process">
                                 <div class="process-wrap">
-                                    <div class="process-img">
-                                        <img src="{{asset('assets/images/process/4.png')}}" alt="">
+                                    <div class="process-img geeks">
+                                        <img src="{{asset('assets/images/process/4.png')}}" alt="" style="border-radius: 30px;
+                                        width: 70%; margin-left: 50px;">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title">Linkedin</h3>
+                                        <h3 class="title">Telegram</h3>
                                     </div>
                                 </div>
                             </div>
@@ -521,7 +522,7 @@
                                 </div>
                                 <div class="pricing-table-price">
                                     <div class="pricing-table-bags">
-                                        <span class="pricing-currency">$</span>
+                                        <span class="pricing-currency">&#x20A6;</span>
                                         <span class="table-price-text">25,000</span>
                                         <span class="table-period">CRYPTO TRADING</span>
                                     </div>
@@ -552,7 +553,7 @@
                                 </div>
                                 <div class="pricing-table-price">
                                     <div class="pricing-table-bags">
-                                        <span class="pricing-currency">$</span>
+                                        <span class="pricing-currency">&#x20A6;</span>
                                         <span class="table-price-text">25,000</span>
                                         <span class="table-period">GRAPHIC DESIGNING</span>
                                     </div>
@@ -582,7 +583,7 @@
                                 </div>
                                 <div class="pricing-table-price">
                                     <div class="pricing-table-bags">
-                                        <span class="pricing-currency">$</span>
+                                        <span class="pricing-currency">&#x20A6;</span>
                                         <span class="table-price-text">5,000</span>
                                         <span class="table-period">MINI-IMPORTATION</span>
                                     </div>
