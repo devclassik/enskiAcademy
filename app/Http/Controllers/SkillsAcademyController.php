@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\SkillsAcademy;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Session;
+use Auth;
 
 class SkillsAcademyController extends Controller
 {
@@ -27,9 +31,23 @@ class SkillsAcademyController extends Controller
     {
         return view('skills-academy.my-account');
     }
-    public function userRegistration()
+    public function elogin(Request $request)
     {
-        return view('skills-academy.my-account');
+        $this->Validate($request,[
+            'lemail'    => 'required',
+            'lpassword' => 'required|min:6',
+        ]);
+        $userdata = array(
+            'email'  => $request->lemail,
+            'password' => $request->lpassword,
+        );
+
+        if (Auth::attempt($userdata)){
+            Session::flash('success', "User logged in succefully");
+            return redirect('skills-academy');
+        }
+        Session::flash('error', "password and or email doesnt match");
+        return Redirect::back();
     }
 
     /**
@@ -50,7 +68,29 @@ class SkillsAcademyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->Validate($request,[
+            'name'     => 'required',
+            'email'    => 'required',
+            'tel'      => 'required|min:11',
+            'password' => 'required|min:6',
+        ]);
+        if (User::where('email', $request->email)->first())
+        {
+            Session::flash('email', "email is already in use");
+            return Redirect::back();
+        }
+        if ($request->password != $request->cpassword){
+            Session::flash('password', "Password and Confirm Password does not match");
+            return Redirect::back();
+        }
+        User::create([
+            'name'  => $request->name,
+            'email' => $request->email,
+            'tel' => $request->tel,
+            'password' => bcrypt($request->password)
+        ]);
+        Session::flash('success', "User Created Succefully, Proceed to Login");
+        return redirect('my-account');
     }
 
     /**
@@ -97,4 +137,12 @@ class SkillsAcademyController extends Controller
     {
         //
     }
+
+    /**this is the method that logout user*/
+    function doLogout()
+    {
+        Auth::logout(); // logging out user
+        return Redirect::to('/my-account'); // redirection to login screen
+    }
+
 }

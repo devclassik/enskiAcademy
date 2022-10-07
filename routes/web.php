@@ -43,7 +43,11 @@ Route::get('/entertainment', [App\Http\Controllers\EntertainmentController::clas
 //Skiils Academy
 Route::get('/skills-academy', [App\Http\Controllers\SkillsAcademyController::class, 'index']);
 Route::get('/my-account',     [App\Http\Controllers\SkillsAcademyController::class, 'userLogin']);
-Route::get('/my-account-register',     [App\Http\Controllers\SkillsAcademyController::class, 'userRegistration']);
+Route::post('/elogin',     [App\Http\Controllers\SkillsAcademyController::class, 'elogin'])->name('login');
+Route::post('/register',     [App\Http\Controllers\SkillsAcademyController::class, 'store'])->name('register');
+Route::get('/dologout',     [App\Http\Controllers\SkillsAcademyController::class, 'doLogout'])->name('doLogout');
+
+
 
 //Branding
 Route::get('/branding', [App\Http\Controllers\BrandingController::class, 'index']);

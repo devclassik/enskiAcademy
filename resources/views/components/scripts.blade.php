@@ -33,5 +33,13 @@
         <script src="assets/js/contact.form.js"></script>
         <!-- main js -->
         <script src="assets/js/main.js"></script>
+
+        <script>
+
+            $(document).ready(function(){
+                $(".alert").slideDown(300).delay(5000).slideUp(300);
+            });
+
+        </script>
     </body>
 </html>

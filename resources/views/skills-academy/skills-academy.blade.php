@@ -95,7 +95,13 @@
                                                         <i class="flaticon-search"></i>
                                                     </a>
                                                 </li>
-                                                <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
+                                                @if (!Auth::guest())
+                                                    <li><a class="quote-btn" href="/dologout">Logout</a></li>
+
+                                                @else
+                                                    <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
+
+                                                @endif
                                             </ul>
                                         </div>
                                     </div>
@@ -134,7 +140,13 @@
                 <!-- Canvas Menu end -->
             </div>
             <!--Full width header End-->
+            @if (Session::has('success'))
 
+                <div class="alert alert-success">
+
+                    {{ Session::get('success') }}</div>
+
+        @endif
             <!-- Banner Section Start -->
             <div class="rs-banner style4">
                 <div class="container">

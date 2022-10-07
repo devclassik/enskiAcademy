@@ -141,38 +141,97 @@
             <div class="rs-my-account pt-110 pb-120 md-pt-60 md-pb-80">
                 <div class="container">
                     <div class="row">
+                        @if (Session::has('error'))
+
+                            <div class="alert alert-danger">{{ Session::get('error') }}</div>
+
+                        @endif
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        @if (Session::has('success'))
+
+                            <div class="alert alert-success">{{ Session::get('success') }}</div>
+
+                        @endif
                        <div class="col-lg-6 md-mb-50">
                             <h2 class="title pb-30 md-pb-15">Login</h2>
-                           <div class="rs-login">
-                               <div class="form-group mb-30">
-                                   <label>Username or email address<span>*</span></label>
-                                   <input id="fname" name="fname" class="form-control-mod" type="text" required="">
-                                   <label>Password <span>*</span></label>
-                                   <input id="tname" name="text" class="form-control-mod" type="text" required="">
+                           <form action="{{ route ('login')}}" method="post">
+                               @csrf
+                               <div class="rs-login">
+                                   <div class="form-group mb-30">
+                                       <label>Username or email address<span>*</span></label>
+                                       <input  name="lemail" class="form-control-mod" type="text" required="">
+                                       <label>Password <span>*</span></label>
+                                       <input  name="lpassword" class="form-control-mod" type="password" required="">
+                                   </div>
+                                   <button class="add-btn" type="submit">Log In</button>
+                                   <label>
+                                       <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever">
+                                       <span>Remember me</span>
+                                   </label>
+                                   <div class="last-password pt-30">
+                                       <a href="#">Lost your password?</a>
+                                   </div>
                                </div>
-                               <button class="add-btn" type="submit">Log In</button>
-                                <label>
-                                    <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever">
-                                    <span>Remember me</span>
-                                </label>
-                               <div class="last-password pt-30">
-                                    <a href="#">Lost your password?</a>
-                                </div>
-                           </div>
+                           </form>
+
                        </div>
                        <div class="col-lg-6">
                             <h2 class="title pb-30 md-pb-15">Register</h2>
-                            <div class="rs-login">
-                                <div class="form-group">
-                                    <label>Email address<span>*</span></label>
-                                    <input id="gname" name="type" class="form-control-mod" type="text" required="">
-                                </div>
-                                <p>A password will be sent to your email address.</p>
-                                <p>
-                                    Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a>
-                                </p>
-                                <button class="add-btn" type="submit">Register</button>
-                            </div>
+                           <form action="{{route('register')}}" method="post">
+                               @csrf
+                               <div class="rs-login">
+                                   <div class="form-group">
+                                       <label>Full Name<span>*</span></label>
+                                       <input name="name" class="form-control-mod" type="text" required="">
+                                   </div>
+                                   <div class="form-group">
+                                       <label>Username | email<span>*</span></label>
+                                       <input name="email" class="form-control-mod" type="email" required="">
+                                   </div>
+
+                                   @if (Session::has('email'))
+
+                                       <div class="alert alert-danger">{{ Session::get('email') }}</div>
+
+                                   @endif
+
+                                   <div class="form-group">
+                                       <label>Telephone<span>*</span></label>
+                                       <input name="tel" class="form-control-mod" type="tel" required="">
+                                   </div>
+
+                                   <div class="form-group">
+                                       <label>password<span>*</span></label>
+                                       <input name="password" class="form-control-mod" type="password" required="">
+                                   </div>
+                                   <div class="form-group">
+                                       <label>Confirm Password<span>*</span></label>
+                                       <input name="cpassword" class="form-control-mod" type="password" required="">
+                                   </div>
+
+                                   @if (Session::has('password'))
+
+                                       <div class="alert alert-danger">
+
+                                           {{ Session::get('password') }}</div>
+
+                                   @endif
+{{--                                   <p>A password will be sent to your email address.</p>--}}
+                                   <p>
+                                       Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a>
+                                   </p>
+                                   <button class="add-btn" type="submit">Register</button>
+                               </div>
+                           </form>
+
                        </div>
                     </div>
                 </div>
