@@ -151,6 +151,11 @@
                                             </ul>
                                         </div>
                                     @endif
+                                    @if (Session::has('title'))
+
+                                        <div class="alert alert-danger">{{ Session::get('title') }}</div>
+
+                                    @endif
                                     @if (Session::has('Success'))
 
                                         <div class="alert alert-success">{{ Session::get('Success') }}</div>
@@ -172,7 +177,7 @@
                            <div class="contact-box">
                                 <div class="sec-title mb-45">
                                     <span class="sub-text new-text white-color">Blog Angle</span>
-                                    <h2 class="title white-color">Manage your blog contetnt </h2>
+                                    <h2 class="title white-color">Manage your blog content </h2>
                                 </div>
                                <div class="address-box mb-25">
                                    <div class="address-icon">
@@ -211,10 +216,14 @@
 
                                </div>
                                 <div id="form-messages"></div>
-                                <form  method="post" action="{{ route('blogAddNew') }}">
+                                <form  method="post" action="{{ route('blogAddNew') }}" enctype="multipart/form-data">
                                     @csrf
                                     <fieldset>
                                         <div class="row">
+                                            <div class="col-lg-12 mb-15">
+                                                <label class="text-danger">Blog Picture</label>
+                                                <input class="from-control" type="file" name="picture" required>
+                                            </div>
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
                                                 <input class="from-control" type="text" name="title" placeholder="Blog Title" >
                                             </div>
@@ -246,7 +255,7 @@
                                         <div class="btn-part">
                                             <div class="form-group mb-0">
                                                 <input class="readon learn-more submit" type="submit" value="Submit Now">
-                                            </div>
+                                            </div><br>
                                         </div>
                                     </fieldset>
                                 </form>

@@ -14,6 +14,7 @@ class Blog extends Model
      * @var array<int, string>
      */
     protected $fillable = [
+        'image_path',
         'title',
         'phaseOne',
         'phaseTwo',
