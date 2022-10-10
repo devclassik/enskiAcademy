@@ -28,7 +28,7 @@
     </div>
 </div>
 <!-- Search Modal End -->
-
+@include('sweetalert::alert')
 <!-- modernizr js -->
 @include('components.scripts')
 

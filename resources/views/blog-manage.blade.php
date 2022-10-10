@@ -142,6 +142,7 @@
                                 <p class="desc">
                                 </p>
                                 <div class="btn-part">
+                                    @include('sweetalert::alert')
                                     @if ($errors->any())
                                         <div class="alert alert-danger">
                                             <ul>
@@ -151,18 +152,8 @@
                                             </ul>
                                         </div>
                                     @endif
-                                    @if (Session::has('title'))
-
-                                        <div class="alert alert-danger">{{ Session::get('title') }}</div>
-
-                                    @endif
-                                    @if (Session::has('Success'))
-
-                                        <div class="alert alert-success">{{ Session::get('Success') }}</div>
-
-                                    @endif
                                     <center>
-                                    <a class="readon started get-new" >Manage your blog contetnt here!!!</a>
+                                    <a class="readon started get-new" >Manage your blog content here!!!</a>
                                     </center>
                                 </div>
                             </div>

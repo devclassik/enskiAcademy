@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Session;
+use Alert;
 
 
 class HomeController extends Controller
@@ -74,7 +75,8 @@ class HomeController extends Controller
         ]);
         if (Blog::where('title', $request->title)->first())
         {
-            Session::flash('title', "Title is already in use");
+
+            Alert::error('Oops!', 'Title is already in use');
             return Redirect::back();
         }
         Blog::create(
@@ -91,7 +93,7 @@ class HomeController extends Controller
                 'phaseFive'      => $request->phaseFive,
             ]
         );
-        Session::flash('Success', "Message sent Successfully!!!");
+        Alert::success('Success', 'Message sent Successfully!!!');
         return redirect::back();
 
     }
