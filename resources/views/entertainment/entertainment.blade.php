@@ -573,11 +573,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Makhaia Antitni</a></h4>
+                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>
                             <span class="designation">President & CEO</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -590,11 +590,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Corey Anderson</a></h4>
+                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>
                             <span class="designation">CEO & Founder</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -607,11 +607,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Masud Rana</a></h4>
+                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>
                             <span class="designation">Web Developer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -624,11 +624,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Najmul Huda</a></h4>
+                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>
                             <span class="designation">Digital Marketer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -641,11 +641,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/5.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/5.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Rushali Rumi</a></h4>
+                            <h4 class="person-name"><a href="#">Rushali Rumi</a></h4>
                             <span class="designation">Design Lead</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -658,11 +658,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/6.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/6.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Abu Sayed</a></h4>
+                            <h4 class="person-name"><a href="#">Abu Sayed</a></h4>
                             <span class="designation">App Developer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -675,11 +675,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/7.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/7.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Sonia Akhter</a></h4>
+                            <h4 class="person-name"><a href="#">Sonia Akhter</a></h4>
                             <span class="designation">Graphic Artist</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -692,11 +692,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/8.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/8.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Rayhan Ali</a></h4>
+                            <h4 class="person-name"><a href="#">Rayhan Ali</a></h4>
                             <span class="designation">CEO & Founder</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -709,11 +709,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/9.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/9.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Benjir Akther</a></h4>
+                            <h4 class="person-name"><a href="#">Benjir Akther</a></h4>
                             <span class="designation">Graphic Designer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -726,11 +726,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Makhaia Antitni</a></h4>
+                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>
                             <span class="designation">President & CEO</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -743,11 +743,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Corey Anderson</a></h4>
+                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>
                             <span class="designation">CEO & Founder</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -760,11 +760,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Masud Rana</a></h4>
+                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>
                             <span class="designation">Web Developer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -777,11 +777,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Najmul Huda</a></h4>
+                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>
                             <span class="designation">Digital Marketer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -950,24 +950,24 @@
                                 <p class="desc">We are here to help you 24/7 with experts</p>
                             </div>
                             <div id="appointment-messages"></div>
-                            <form id="appointment-form" method="post" action="appointment.php">
+                            <form method="post" action="appointment.php">
                                 <fieldset>
                                     <div class="row">
                                         <div class="col-lg-12 mb-15">
-                                            <input class="from-control" type="text" id="appointment_name" name="appointment_name" placeholder="Name" required="">
+                                            <input class="from-control" type="text" name="name" placeholder="Name" required="">
                                         </div>
                                         <div class="col-lg-12 mb-15">
-                                            <input class="from-control" type="text" id="appointment_email" name="appointment_email" placeholder="E-Mail" required="">
+                                            <input class="from-control" type="text" name="email" placeholder="E-Mail" required="">
                                         </div>
                                         <div class="col-lg-12 mb-15">
-                                            <input class="from-control" type="text" id="appointment_phone" name="appointment_phone" placeholder="Phone Number" required="">
+                                            <input class="from-control" type="text" name="tel" placeholder="Phone Number" required="">
                                         </div>
                                         <div class="col-lg-12 mb-25">
-                                            <input class="from-control" type="text" id="appointment_website" name="appointment_website" placeholder="social handle e.g Facebook, IG, Telegram etc" required="">
+                                            <input class="from-control" type="text" name="handles" placeholder="social handle e.g Facebook, IG, Telegram etc" required="">
                                         </div>
 
                                         <div class="col-lg-12 mb-25">
-                                            <input type="file" class="from-control">
+                                            <input type="file" class="from-control" name="file">
                                             <p style="color: orangered;">size must not be more than 100MB</p>
                                         </div>
                                     </div>

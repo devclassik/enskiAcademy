@@ -1,5 +1,5 @@
-@include('components.header')
-<!--Preloader area End here-->
+    @include('components.header')
+    <!--Preloader area End here-->
 
 		<!-- Main content Start -->
         <div class="main-content">
@@ -62,7 +62,7 @@
                                         <div class="main-menu">
                                             <nav class="rs-menu pr-90 md-pr-0">
                                                <ul class="nav-menu">
-                                                    <li> <a href="/home">Home</a>
+                                                    <li> <a href="/homepage">Home</a>
                                                     </li>
                                                     <li>
                                                         <a href="/home-about">About</a>

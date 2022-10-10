@@ -15,6 +15,15 @@ class CreateSkillsAcademiesTable extends Migration
     {
         Schema::create('skills_academies', function (Blueprint $table) {
             $table->id();
+            $table->string('class');
+            $table->string('category');
+            $table->string('title');
+            $table->string('price');
+            $table->string('bulletin');
+            $table->string('description');
+            $table->string('full_description');
+            $table->string('picture_path');
+            $table->string('video_path');
             $table->timestamps();
         });
     }

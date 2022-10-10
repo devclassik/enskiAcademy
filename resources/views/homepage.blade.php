@@ -21,7 +21,7 @@
                                         </li>
                                         <li>
                                             <i class="flaticon-call"></i>
-                                            <a href="tel:++234 (0) 8162237272"> +234 (0) 8162237272</a>
+                                            <a href="tel:+2348162237272"> +2348162237272</a>
                                         </li>
                                         <li>
                                             <i class="flaticon-location"></i>
@@ -33,7 +33,7 @@
                             <div class="col-lg-4 text-right">
                                 <div class="toolbar-sl-share">
                                     <ul>
-                                        <li class="opening"> <em><i class="flaticon-clock"></i> 12:01pm-6:00pm</em> </li>
+                                        <li class="opening"> <em><i class="flaticon-clock"></i> 12:01 PM-6:00 PM</em> </li>
                                         <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
@@ -80,9 +80,9 @@
                                                         <li><a href="/skills-academy">Skills Academy</a> </li>
                                                         <li><a href="/branding">Branding Agency</a> </li>
 {{--                                                        add a comming soon page @todo--}}
-                                                        <li><a href="#">Financial Services</a></li>
-                                                        <li><a href="#">Skill Set Connector</a> </li>
-                                                        <li><a href="#">Logistics</a> </li>
+                                                        <li><a href="/coming-soon">Financial Services</a></li>
+                                                        <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                        <li><a href="/coming-soon">Logistics</a> </li>
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
@@ -99,7 +99,15 @@
                                     </div> <!-- //.main-menu -->
                                     <div class="expand-btn-inner search-icon hidden-md">
                                         <ul>
-                                            <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
+                                            <li class="sidebarmenu-search">
+                                            </li>
+                                            @if (!Auth::guest())
+                                                <li><a class="quote-btn" href="/dologout">Logout</a></li>
+
+                                            @else
+                                                <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
+
+                                            @endif
                                         </ul>
                                     </div>
                                 </div>
@@ -125,12 +133,7 @@
                         <li><i class="fa fa-envelope"></i><a href="mailto:support@enski.com.ng<">support@enski.com.ng<</a></li>
                         <li><i class="fa fa-clock-o"></i>12:01pm-6:00 PM</li>
                     </ul>
-                    <ul class="social">
-                        <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
+                    @include('components.socials')
                 </div>
             </nav>
             <!-- Canvas Menu end -->
@@ -138,7 +141,13 @@
         <!--Full width header End-->
 
         <!-- Banner Section Start -->
+
         <div class="rs-banner style2 pt-120 pb-120 md-pt-0 md-pb-0">
+            @if (Session::has('Success'))
+
+                <div class="alert alert-success">{{ Session::get('Success') }}</div>
+
+            @endif
             <div class="container">
                 <div class="banner-content">
                     <div class="sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" style="padding: 10px 10px;">Welcome To
@@ -147,7 +156,7 @@
                             your reason to smile today...
                         </h2>
                         <div class="btn wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
-                            <a class="readon buy-now get-in" href="/login">Login | Sign up</a>
+                            <a class="readon buy-now get-in" href="/my-account">Login | Sign up</a>
                         </div>
                     </div>
                 </div>
@@ -328,7 +337,7 @@
                                                 </div>
                                             </div>
                                             <div class="front-title-part">
-                                                <h3 class="title"><a href="#">Financial Services</a></h3>
+                                                <h3 class="title"><a href="/coming-soon">Financial Services</a></h3>
                                             </div>
                                             <div class="front-desc-part">
                                                 <p>
@@ -340,13 +349,13 @@
                                     <div class="back-front">
                                         <div class="back-front-content">
                                             <div class="back-title-part">
-                                                <h3 class="back-title"><a href="#">Financial Services</a></h3>
+                                                <h3 class="back-title"><a href="/coming-soon">Financial Services</a></h3>
                                             </div>
                                             <div class="back-desc-part">
                                                 <p class="back-desc">Get covered financially as a student or startup/ small business owner with our targeted savings/ loans initiative.</p>
                                             </div>
                                             <div class="back-btn-part">
-                                                <a class="readon view-more" href="#">Apply Now</a>
+                                                <a class="readon view-more" href="/coming-soon">Apply Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -364,7 +373,7 @@
                                                 </div>
                                             </div>
                                             <div class="front-title-part">
-                                                <h3 class="title"><a href="/product-design">Skill Set Connector</a></h3>
+                                                <h3 class="title"><a href="/coming-soon">Skill Set Connector</a></h3>
                                             </div>
                                             <div class="front-desc-part">
                                                 <p>
@@ -376,13 +385,13 @@
                                     <div class="back-front">
                                         <div class="back-front-content">
                                             <div class="back-title-part">
-                                                <h3 class="back-title"><a href="/product-design">Skill Set Connector</a></h3>
+                                                <h3 class="back-title"><a href="/coming-soon">Skill Set Connector</a></h3>
                                             </div>
                                             <div class="back-desc-part">
                                                 <p class="back-desc">Hire or Get Hired as you stay connected to a wide range of skills experts,  freelancers, clients, job finders and vacancies.</p>
                                             </div>
                                             <div class="back-btn-part">
-                                                <a class="readon view-more" href="#">Hire | Get Hired</a>
+                                                <a class="readon view-more" href="/coming-soon">Hire | Get Hired</a>
                                             </div>
                                         </div>
                                     </div>
@@ -400,7 +409,7 @@
                                                 </div>
                                             </div>
                                             <div class="front-title-part">
-                                                <h3 class="title"><a href="#">Logistics</a></h3>
+                                                <h3 class="title"><a href="/coming-soon">Logistics</a></h3>
                                             </div>
                                             <div class="front-desc-part">
                                                 <p>
@@ -412,13 +421,13 @@
                                     <div class="back-front">
                                         <div class="back-front-content">
                                             <div class="back-title-part">
-                                                <h3 class="back-title"><a href="#">Logistics</a></h3>
+                                                <h3 class="back-title"><a href="/coming-soon">Logistics</a></h3>
                                             </div>
                                             <div class="back-desc-part">
                                                 <p class="back-desc">We make sure your goods are transported and delivered in their respective locations at the shortest time frames.</p>
                                             </div>
                                             <div class="back-btn-part">
-                                                <a class="readon view-more" href="#">Transport</a>
+                                                <a class="readon view-more" href="/coming-soon">Transport</a>
                                             </div>
                                         </div>
                                     </div>
@@ -453,7 +462,7 @@
                                         width: 70%; margin-left: 50px;">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title">WhatsApp</h3>
+                                        <h3 class="title"><a href="https://wa.me/message/KUOMF26QJ33GK1">WhatsApp</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -466,7 +475,7 @@
                                         width: 70%; margin-left: 50px;">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title"> Facebook</h3>
+                                        <h3 class="title"><a href="https://fb.me/enski.impact.summit"> Facebook</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -479,7 +488,7 @@
                                         width: 70%; margin-left: 50px;">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title">Instagram</h3>
+                                        <h3 class="title"><a href="https://www.instagram.com/enski_impact_summit"> Instagram</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -492,7 +501,7 @@
                                         width: 70%; margin-left: 50px;">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title">Telegram</h3>
+                                        <h3 class="title"><a href="https://t.me/enski_entertainment"> Telegram</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -539,7 +548,7 @@
 
                                 </div>
                                 <div class="btn-part">
-                                    <a class="readon buy-now" href="/shop-single">Buy Now</a>
+                                    <a class="readon buy-now" href="/shop">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -569,7 +578,7 @@
                                     </ul>
                                 </div>
                                 <div class="btn-part">
-                                    <a class="readon buy-now" href="/shop-single">Buy Now</a>
+                                    <a class="readon buy-now" href="/shop">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -599,7 +608,7 @@
                                     </ul>
                                 </div>
                                 <div class="btn-part">
-                                    <a class="readon buy-now" href="/shop-single">Buy Now</a>
+                                    <a class="readon buy-now" href="/shop">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -879,32 +888,44 @@
                                     </h2>
                                     <h5> Business | Branding | Financial </h5>
                                 </div>
-
-{{--                                part for sending mail--}}
                                 <div id="form-messages"></div>
-                                <form id="contact-form" method="post" action="mailer.php">
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+                                <form method="post" action="{{ route ('contactUs')}}" >
+                                    @csrf
                                     <fieldset>
                                         <div class="row">
                                             <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+                                                <input class="from-control" type="text" name="name" placeholder="Name" required="">
                                             </div>
                                             <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+                                                <input class="from-control" type="text"  name="email" placeholder="E-Mail" required="">
                                             </div>
                                             <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+                                                <input class="from-control" type="text" name="tel" placeholder="Phone Number" required="">
                                             </div>
                                             <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
 {{--                                                <input class="from-control" type="text" id="website" name="website" placeholder="Consultation Type" required="">--}}
-                                                <select class="col-lg-12 dropdown-item">
-                                                    <option>--constation Type--</option>
-                                                    <option value="buiness"> Business</option>
-                                                    <option value="finance"> Financia</option>
+                                                <select class="col-lg-12 dropdown-menu-lg-start" name="type" required>
+                                                    <option value="">--constation Type--</option>
+                                                    <option value="Entertainment"> Entertainment</option>
+                                                    <option value="Skills-Academy">Skills Academy </option>
+                                                    <option value="Branding-Agency">Branding Agency </option>
+                                                    <option value="Financial-Services">Financial Services </option>
+                                                    <option value="Skill-Set-Connector">Skill Set Connector </option>
+                                                    <option value="Logistics">Logistics </option>
                                                 </select>
                                             </div>
 
                                             <div class="col-lg-12 mb-35">
-                                                <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
+                                                <textarea class="from-control" name="message" placeholder="Your message Here" required=""></textarea>
                                             </div>
                                         </div>
                                         <div class="btn-part">
@@ -934,9 +955,9 @@
                     <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
                         <div class="blog-item">
                             <div class="image-wrap">
-                                <a href="blog-details.html"><img src="{{asset('assets/images/blog/main-home/1.jpg')}}" alt=""></a>
+                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/1.jpg')}}" alt=""></a>
                                 <ul class="post-categories">
-                                    <li><a href="blog-details.html">Software Development</a></li>
+                                    <li><a href="/blog-details">Software Development</a></li>
                                 </ul>
                             </div>
                             <div class="blog-content">
@@ -944,16 +965,16 @@
                                     <li class="date"><i class="fa fa-calendar-check-o"></i> 16 Nov 2020</li>
                                     <li class="admin"><i class="fa fa-user-o"></i> admin</li>
                                 </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Necessity May Give Us Your Best Virtual Court System</a></h3>
+                                <h3 class="blog-title"><a href="/blog-details">Necessity May Give Us Your Best Virtual Court System</a></h3>
                                 <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="blog-details.html">Learn More</a></div>
+                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="image-wrap">
-                                <a href="blog-details.html"><img src="{{asset('assets/images/blog/main-home/2.jpg')}}" alt=""></a>
+                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/2.jpg')}}" alt=""></a>
                                 <ul class="post-categories">
-                                    <li><a href="blog-details.html"> Web Development</a></li>
+                                    <li><a href="/blog-details"> Web Development</a></li>
                                 </ul>
                             </div>
                             <div class="blog-content">
@@ -961,16 +982,16 @@
                                     <li class="date"><i class="fa fa-calendar-check-o"></i> 20 December 2020</li>
                                     <li class="admin"><i class="fa fa-user-o"></i> admin</li>
                                 </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Tech Products That Makes Its Easier to Stay at Home</a></h3>
+                                <h3 class="blog-title"><a href="/blog-details">Tech Products That Makes Its Easier to Stay at Home</a></h3>
                                 <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="blog-details.html">Learn More</a></div>
+                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="image-wrap">
-                                <a href="blog-details.html"><img src="{{asset('assets/images/blog/main-home/3.jpg')}}" alt=""></a>
+                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/3.jpg')}}" alt=""></a>
                                 <ul class="post-categories">
-                                    <li><a href="blog-details.html">It Services</a></li>
+                                    <li><a href="/blog-details">It Services</a></li>
                                 </ul>
                             </div>
                             <div class="blog-content">
@@ -978,16 +999,16 @@
                                     <li class="date"><i class="fa fa-calendar-check-o"></i> 22 December 2020</li>
                                     <li class="admin"><i class="fa fa-user-o"></i> admin</li>
                                 </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Open Source Job Report Show More Openings Fewer</a></h3>
+                                <h3 class="blog-title"><a href="/blog-details">Open Source Job Report Show More Openings Fewer</a></h3>
                                 <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="blog-details.html">Learn More</a></div>
+                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="image-wrap">
-                                <a href="blog-details.html"><img src="{{asset('assets/images/blog/main-home/4.jpg')}}" alt=""></a>
+                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/4.jpg')}}" alt=""></a>
                                 <ul class="post-categories">
-                                    <li><a href="blog-details.html">Artifical Intelligence</a></li>
+                                    <li><a href="/blog-details">Artifical Intelligence</a></li>
                                 </ul>
                             </div>
                             <div class="blog-content">
@@ -995,16 +1016,16 @@
                                     <li class="date"><i class="fa fa-calendar-check-o"></i> 26 December 2020</li>
                                     <li class="admin"><i class="fa fa-user-o"></i> admin</li>
                                 </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Types of Social Proof What its Makes Them Effective</a></h3>
+                                <h3 class="blog-title"><a href="/blog-details">Types of Social Proof What its Makes Them Effective</a></h3>
                                 <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="blog-details.html">Learn More</a></div>
+                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="image-wrap">
-                                <a href="blog-details.html"><img src="{{asset('assets/images/blog/main-home/5.jpg')}}" alt=""></a>
+                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/5.jpg')}}" alt=""></a>
                                 <ul class="post-categories">
-                                    <li><a href="blog-details.html">Digital Technology</a></li>
+                                    <li><a href="/blog-details">Digital Technology</a></li>
                                 </ul>
                             </div>
                             <div class="blog-content">
@@ -1012,16 +1033,16 @@
                                     <li class="date"><i class="fa fa-calendar-check-o"></i> 28 December 2020</li>
                                     <li class="admin"><i class="fa fa-user-o"></i> admin</li>
                                 </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Tech Firms Support Huawei Restriction, Balk at Cost</a></h3>
+                                <h3 class="blog-title"><a href="/blog-details">Tech Firms Support Huawei Restriction, Balk at Cost</a></h3>
                                 <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="blog-details.html">Learn More</a></div>
+                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="image-wrap">
-                                <a href="blog-details.html"><img src="{{asset('assets/images/blog/main-home/6.jpg')}}" alt=""></a>
+                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/6.jpg')}}" alt=""></a>
                                 <ul class="post-categories">
-                                    <li><a href="blog-details.html">It Services</a></li>
+                                    <li><a href="/blog-details">It Services</a></li>
                                 </ul>
                             </div>
                             <div class="blog-content">
@@ -1029,9 +1050,9 @@
                                     <li class="date"><i class="fa fa-calendar-check-o"></i> 30 December 2020</li>
                                     <li class="admin"><i class="fa fa-user-o"></i> admin</li>
                                 </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Servo Project Joins The Linux Foundation Fold Desco</a></h3>
+                                <h3 class="blog-title"><a href="/blog-details">Servo Project Joins The Linux Foundation Fold Desco</a></h3>
                                 <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="blog-details.html">Learn More</a></div>
+                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
                             </div>
                         </div>
                     </div>
@@ -1062,4 +1083,4 @@
 
         </div>
         <!-- Main content End -->
-@endsection
+    @endsection

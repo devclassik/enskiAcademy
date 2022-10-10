@@ -14,7 +14,7 @@
                             <div class="row rs-vertical-middle">
                                 <div class="col-lg-2">
                                     <div class="logo-part">
-                                        <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
+                                        <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-10 text-right">
@@ -22,23 +22,21 @@
                                         <li class="contact-part">
                                             <i class="flaticon-location"></i>
                                             <span class="contact-info">
-                                                <span>Address</span>
-                                                05 kandi BR. New York
-                                            </span>
+                                        <span>Address</span>Abuja-Keffi Rd, Nassarawa
+                                    </span>
                                         </li>
                                         <li class="contact-part">
                                             <i class="flaticon-email"></i>
                                             <span class="contact-info">
-                                                <span>E-mail</span>
-                                                <a href="#"> support@rstheme.com</a>
-                                            </span>
+                                        <span>E-mail</span>
+                                        <a href="mailto:support@enski.com.ng"> support@enski.com.ng</a>
+                                    </span>
                                         </li>
                                         <li class="contact-part no-border">
-                                             <i class="flaticon-call"></i>
+                                            <i class="flaticon-call"></i>
                                             <span class="contact-info">
-                                                <span>Phone</span>
-                                                 +019988772
-                                            </span>
+                                        <span>Phone</span>+2348162237272
+                                    </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -51,14 +49,14 @@
                     <div class="menu-area menu-sticky">
                         <div class="container">
                             <div class="logo-area">
-                                <a href="index.html">
-                                    <img class="sticky-logo" src="assets/images/logo-dark.png" alt="logo">
+                                <a href="/homepage">
+                                    <img class="sticky-logo" src="{{asset('assets/images/logo-dark.png')}}" alt="logo">
                                 </a>
                             </div>
                             <div class="rs-menu-area">
                                 <div class="main-menu">
                                     <div class="mobile-menu">
-                                        <a href="index.html" class="mobile-logo">
+                                        <a href="/homepage" class="mobile-logo">
                                             <img src="assets/images/logo-light.png" alt="logo">
                                         </a>
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
@@ -67,135 +65,41 @@
                                     </div>
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
-                                            <li class="rs-mega-menu menu-item-has-children"> <a href="#">Home</a>
-                                                <ul class="mega-menu">
-                                                    <li class="mega-menu-container">
-                                                        <div class="mega-menu-innner">
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Multipage</li>
-                                                                    <li><a href="index.html">Main Demo</a></li>
-                                                                    <li><a href="index2.html">Digital Agency 01</a></li>
-                                                                    <li><a href="index3.html">IT Solution 01</a></li>
-                                                                    <li><a href="index4.html">Digital Agency 02</a></li>
-                                                                    <li><a href="index5.html">Software Solution</a></li>
-                                                                    <li><a href="index6.html">Data Analysis</a></li>
-                                                                    <li class="last-item"><a href="index7.html">IT Solution 02</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Multipage</li>
-                                                                    <li><a href="index8.html">Gadgets Repairs</a></li>
-                                                                    <li><a href="index9.html">Application Testing</a></li>
-                                                                    <li><a href="index10.html">IT Solution 03</a></li>
-                                                                    <li><a href="index11.html">Digital Agency Dark</a></li>
-                                                                    <li><a href="index12.html">Web Design Agency</a></li>
-                                                                    <li><a href="index13.html">Branding Agency</a></li>
-                                                                    <li class="last-item"><a href="index14.html">Technology Agency</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Onepage</li>
-                                                                    <li><a href="onepage1.html">Main Demo</a></li>
-                                                                    <li><a href="onepage2.html">Digital Agency 01</a></li>
-                                                                    <li><a href="onepage3.html">IT Solution 01</a></li>
-                                                                    <li><a href="onepage4.html">Digital Agency 02</a></li>
-                                                                    <li><a href="onepage5.html">Software Solution</a></li>
-                                                                    <li><a href="onepage6.html">Data Analysis</a></li>
-                                                                    <li class="last-item"><a href="onepage7.html">IT Solution 02</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Onepage</li>
-                                                                    <li><a href="onepage8.html">Gadgets Repairs</a></li>
-                                                                    <li><a href="onepage9.html">Application Testing</a></li>
-                                                                    <li><a href="onepage10.html">IT Solution 03</a></li>
-                                                                    <li><a href="onepage11.html">Digital Agency Dark</a></li>
-                                                                    <li><a href="onepage12.html">Web Design Agency</a></li>
-                                                                    <li><a href="onepage13.html">Branding Agency</a></li>
-                                                                    <li class="last-item"><a href="onepage14.html">Technology Agency</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul> <!-- //.mega-menu -->
+                                            <li class="rs-mega-menu">
+                                                <a href="/homepage">Home</a>
                                             </li>
                                             <li>
-                                                <a href="about.html">About</a>
+                                                <a href="/home-about">About</a>
                                             </li>
                                             <li class="menu-item-has-children">
                                                 <a href="#">Services</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="software-development.html">Software Development</a> </li>
-                                                    <li><a href="web-development.html">Web Development</a> </li>
-                                                    <li><a href="analytic-solutions.html">Analytic Solutions</a> </li>
-                                                    <li><a href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                                                    <li><a href="product-design.html">Product Design</a> </li>
-                                                    <li><a href="data-center.html">Data Center</a> </li>
+                                                    <li><a href="/entertainment">Entertainment</a> </li>
+                                                    <li><a href="/skills-academy">Skills Academy</a> </li>
+                                                    <li><a href="/branding">Branding Agency</a></li>
+                                                    {{--     add a comming soon page @todo--}}
+                                                    <li><a href="/coming-soon">Financial Services</a></li>
+                                                    <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                    <li><a href="/coming-soon">Logistics</a> </li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children current-menu-item">
-                                                <a href="#">Pages</a>
+                                                <a href="#">Help</a>
                                                 <ul class="sub-menu">
-                                                    <li class="menu-item-has-children">
-                                                        <a href="#">Services</a>
-                                                        <ul class="sub-menu right">
-                                                           <li><a href="services1.html">Services 1</a></li>
-                                                           <li><a href="services2.html">Services 2</a></li>
-                                                           <li><a href="services3.html">Services 3</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                       <a href="our-team.html">Our Team</a>
-                                                    </li>
-                                                    <li>
-                                                       <a href="single-team.html">Single Team</a>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                       <a href="#">Case Studies</a>
-                                                        <ul class="sub-menu right">
-                                                           <li><a href="case-studies-style1.html">Case Studies Style 1</a></li>
-                                                           <li><a href="case-studies-style2.html">Case Studies Style 2</a></li>
-                                                           <li><a href="case-studies-style3.html">Case Studies Style 3</a></li>
-                                                           <li><a href="case-studies-style4.html">Case Studies Style 4</a></li>
-                                                           <li><a href="case-studies-style5.html">Case Studies Style 5</a></li>
-                                                           <li><a href="case-studies-style6.html">Case Studies Style 6</a></li>
-                                                           <li><a href="case-studies-style7.html">Case Studies Style 7</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop.html">Shop</a>
-                                                        <ul class="sub-menu right">
-                                                            <li><a href="shop.html">Shop</a></li>
-                                                            <li><a href="shop-single.html">Shop Single</a></li>
-                                                            <li><a href="cart.html">Cart</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                            <li><a href="my-account.html">My Account</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                       <a href="pricing.html">Pricing</a>
-                                                    </li>
-                                                    <li class="current-menu-item">
-                                                       <a href="faq.html">Faq</a>
-                                                    </li>
-                                                    <li>
-                                                       <a href="error.html">404</a>
-                                                    </li>
+                                                    <li><a href="/shop">Shop</a></li>
+                                                    <li><a href="/cart">Cart</a></li>
+                                                    <li><a href="/checkout">Checkout</a></li>
+                                                    <li><a href="/my-account">My Account</a></li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
-                                               <a href="blog.html">Blog</a>
+                                               <a href="/blog">Blog</a>
                                                <ul class="sub-menu">
-                                                   <li><a href="blog.html">Blog</a> </li>
-                                                   <li><a href="blog-details.html">Blog Details</a></li>
+                                                   <li><a href="/blog">Blog</a> </li>
                                                </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="/contact">Contact</a>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
                                     </nav>
@@ -210,12 +114,7 @@
                                     </li>
                                 </ul>
                                 <div class="toolbar-sl-share">
-                                    <ul class="social">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
+                                    @include('components.socials')
                                 </div>
                             </div>
                         </div>
@@ -232,7 +131,7 @@
                     <h1 class="page-title">Faq</h1>
                     <ul>
                         <li title="Braintech - IT Solutions and Technology Startup HTML Template">
-                            <a class="active" href="index.html">Home</a>
+                            <a class="active" href="/homepage">Home</a>
                         </li>
                        <li>Faq</li>
                     </ul>
@@ -243,10 +142,19 @@
             <!-- Faq Section Start -->
             <div id="rs-faq" class="rs-faq gray-color pt-120 md-pb-395 pb-435 md-pt-90 md-pb-90">
                 <div class="container">
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <div class="row">
                        <div class="col-lg-6 pr-40 md-pr-15">
                             <div class="images-part">
-                                <img src="assets/images/about/about-home.png" alt="">
+                                <img src="{{asset('assets/images/about/about-home.png')}}" alt="">
                             </div>
                        </div>
                        <div class="col-lg-6">
@@ -319,24 +227,33 @@
                             </h2>
                         </div>
                         <div id="form-messages"></div>
-                        <form id="contact-form" method="post" action="mailer.php">
+                        <form method="post" action="{{ route ('contactUs')}}" >
+                            @csrf
                             <fieldset>
                                 <div class="row">
                                     <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+                                        <input class="from-control" type="text"  name="name" placeholder="Name" required="">
                                     </div>
                                     <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+                                        <input class="from-control" type="email" name="email" placeholder="E-Mail" required="">
                                     </div>
                                     <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+                                        <input class="from-control" type="text" name="tel" placeholder="Phone Number" required="">
                                     </div>
                                     <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="website" name="website" placeholder="Your Website" required="">
+                                        <select class="col-lg-12 dropdown-menu-lg-start" name="type" required>
+                                            <option value="">--constation Type--</option>
+                                            <option value="Entertainment"> Entertainment</option>
+                                            <option value="Skills-Academy">Skills Academy </option>
+                                            <option value="Branding-Agency">Branding Agency </option>
+                                            <option value="Financial-Services">Financial Services </option>
+                                            <option value="Skill-Set-Connector">Skill Set Connector </option>
+                                            <option value="Logistics">Logistics </option>
+                                        </select>
                                     </div>
 
                                     <div class="col-lg-12 mb-35">
-                                        <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
+                                        <textarea class="from-control" name="message" placeholder="Your message Here" required=""></textarea>
                                     </div>
                                 </div>
                                 <div class="btn-part text-center">
@@ -440,7 +357,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
+                                <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
                             </div>
                               <div class="textwidget pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
                               </div>
@@ -515,11 +432,11 @@
                     <div class="row y-middle">
                         <div class="col-lg-6 text-right md-mb-10 order-last">
                             <ul class="copy-right-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="/homepage">Home</a></li>
+                                <li><a href="/home-about">About</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/shop">Shop</a></li>
+                                <li><a href="/faq">FAQs</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-6">

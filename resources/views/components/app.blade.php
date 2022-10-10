@@ -31,5 +31,4 @@
 
 <!-- modernizr js -->
 @include('components.scripts')
-</body>
-</html>
+

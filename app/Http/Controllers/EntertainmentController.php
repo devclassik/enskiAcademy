@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Entertainment;
 use Illuminate\Http\Request;
+use Session;
 
 class EntertainmentController extends Controller
 {
@@ -15,6 +16,20 @@ class EntertainmentController extends Controller
     public function index()
     {
         return view('entertainment.entertainment');
+    }
+    /**this method control the file uplaod process*/
+    public function fileUpload(Request $request)
+    {
+        $this->Validate($request,[
+            'name'         => 'required',
+            'email'        => 'required',
+            'tel'          => 'required|min:11',
+            'handel'      => 'required',
+            'file'         => 'required|min:10',
+        ]);
+        Entertainment::create( $request->all());
+        Session::flash('Success', "Message sent Successfully!!!");
+        return redirect('entertainment');
     }
 
     /**

@@ -79,9 +79,9 @@
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
                                                     <li><a href="/branding">Branding Agency</a> </li>
                                                     {{--      add a comming soon page @todo--}}
-                                                    <li><a href="#">Financial Services</a></li>
-                                                    <li><a href="#">Skill Set Connector</a> </li>
-                                                    <li><a href="#">Logistics</a> </li>
+                                                    <li><a href="/coming-soon">Financial Services</a></li>
+                                                    <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                    <li><a href="/coming-soon">Logistics</a> </li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
@@ -106,12 +106,7 @@
                                     </li>
                                 </ul>
                                 <div class="toolbar-sl-share">
-                                    <ul class="social">
-                                         <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
+                                    @include('components.socials')
                                 </div>
                             </div>
                         </div>
@@ -206,12 +201,12 @@
                                         <h3 class="title">Categories</h3>
                                     </div>
                                     <ul>
-                                        <li><a href="#">Application Testing</a></li>
-                                        <li><a href="#">Artifical Intelligence</a></li>
-                                        <li><a href="#">Digital Technology</a></li>
-                                        <li><a href="#">IT Services</a></li>
-                                        <li><a href="software-development.html">Software Development</a></li>
-                                        <li><a href="web-development.html">Web Development</a></li>
+                                        <li><a href="/entertainment">Entertainment</a> </li>
+                                        <li><a href="/skills-academy">Skills Academy</a> </li>
+                                        <li><a href="/branding">Branding Agency</a> </li>
+                                        <li><a href="/coming-soon">Financial Services</a></li>
+                                        <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                        <li><a href="/coming-soon">Logistics</a> </li>
                                     </ul>
                                 </div>
                             </div>

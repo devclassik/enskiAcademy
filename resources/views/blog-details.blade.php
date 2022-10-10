@@ -208,12 +208,13 @@
                                         <h3 class="title">Categories</h3>
                                     </div>
                                     <ul>
-                                        <li><a href="#">Application Testing</a></li>
-                                        <li><a href="#">Artifical Intelligence</a></li>
-                                        <li><a href="#">Digital Technology</a></li>
-                                        <li><a href="#">IT Services</a></li>
-                                        <li><a href="software-development.html">Software Development</a></li>
-                                        <li><a href="web-development.html">Web Development</a></li>
+                                        <li><a href="/entertainment">Entertainment</a> </li>
+                                        <li><a href="/skills-academy">Skills Academy</a> </li>
+                                        <li><a href="/branding">Branding Agency</a> </li>
+{{--                                                        add a comming soon page @todo--}}
+                                        <li><a href="/coming-soon">Financial Services</a></li>
+                                        <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                        <li><a href="/coming-soon">Logistics</a> </li>
                                     </ul>
                                 </div>
                             </div>

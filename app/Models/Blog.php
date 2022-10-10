@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Entertainment extends Model
+class Blog extends Model
 {
     use HasFactory;
     /**
@@ -14,10 +14,14 @@ class Entertainment extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'tel',
-        'handles',
-        'file'
+        'title',
+        'phaseOne',
+        'phaseTwo',
+        'phaseTwoB',
+        'phaseThree',
+        'phaseThreeB',
+        'phaseFour',
+        'phaseFive'
+
     ];
 }

@@ -1,9 +1,9 @@
 @include('components.header')
-    <!--Preloader area End here-->
-     
+<!--Preloader area End here-->
+
 		<!-- Main content Start -->
         <div class="main-content">
-            
+
             <!--Full width header Start-->
             <div class="full-width-header">
                 <!--Header Start-->
@@ -121,125 +121,147 @@
                 <!--Header End-->
             </div>
             <!--Full width header End-->
-         
+
             <!-- Breadcrumbs Start -->
-            <div class="rs-breadcrumbs img2">
+            <div class="rs-breadcrumbs img3">
                 <div class="breadcrumbs-inner text-center">
-                    <h1 class="page-title">Pricing</h1>
+                    <h1 class="page-title">Blog Update Pannel</h1>
                     <ul>
-                        <li title="Braintech - IT Solutions and Technology Startup HTML Template">
-                            <a class="active" href="#">Home</a>
+                        <li title="Enski - Nigeria's leading empowerment platform">
+                            <a class="active" href="/homepage">Home</a>
                         </li>
-                       <li>Pricing</li>
+                       <li>Cpannel</li>
                     </ul>
                 </div>
             </div>
             <!-- Breadcrumbs End -->
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="banner-content z-index-1">
+                                <p class="desc">
+                                </p>
+                                <div class="btn-part">
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
+                                    @if (Session::has('Success'))
 
-            <!-- Pricing section start -->
-            <div class="rs-pricing style2 gray-color pt-120 pb-150 md-pt-80 md-pb-80">
-                <div class="container">
-                    <div class="sec-title2 text-center mb-45">
-                        <span class="sub-text style-bg">Pricing</span>
-                        <h2 class="title title2">
-                           Our Pricing Plan
-                        </h2>
-                    </div>
-                   <div class="row">
-                       <div class="col-lg-4">
-                           <div class="pricing-table new-style2">
-                               <div class="pricing-badge">
-                                   Silver
-                               </div>
-                               <div class="pricing-icon">
-                                   <img src="{{asset('assets/images/pricing/main-home/icons/1.png')}}" alt="">
-                               </div>
-                               <div class="pricing-table-price">
-                                    <div class="pricing-table-bags">
-                                        <span class="pricing-currency">$</span>
-                                        <span class="table-price-text">29.99</span>
-                                        <span class="table-period">Monthly Package</span>
-                                    </div>
-                               </div>
-                               <div class="pricing-table-body">
-                                   <ul>
-                                       <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>
-                                       <li><i class="fa fa-check"></i><span>1 Native Android App</span></li>
-                                       <li><i class="fa fa-close"></i><span>Multi-Language Support</span></li>
-                                       <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>
-                                   </ul>
-                               </div>
-                               <div class="btn-part">
-                                   <a class="readon buy-now pricing" href="/contact">Buy Now</a>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-lg-4 md-mb-30 md-mt-30">
-                           <div class="pricing-table primary-bg">
-                               <div class="pricing-badge white-color-bg">
-                                   Gold
-                               </div>
-                               <div class="pricing-icon">
-                                   <img src="{{asset('assets/images/pricing/main-home/icons/2.png')}}" alt="">
-                               </div>
-                              <div class="pricing-table-price">
-                                   <div class="pricing-table-bags">
-                                       <span class="pricing-currency">$</span>
-                                       <span class="table-price-text">39.99</span>
-                                       <span class="table-period">Monthly Package</span>
-                                   </div>
-                              </div>
-                               <div class="pricing-table-body">
-                                   <ul>
-                                        <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>
-                                        <li><i class="fa fa-check"></i><span>2 Native Android App</span></li>
-                                        <li><i class="fa fa-check"></i><span>Multi-Language Support</span></li>
-                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>
-                                   </ul>
-                               </div>
-                               <div class="btn-part">
-                                   <a class="readon buy-now pricing" href="/contact">Buy Now</a>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-lg-4">
-                           <div class="pricing-table new-style2">
-                               <div class="pricing-badge">
-                                   Platinum
-                               </div>
-                               <div class="pricing-icon">
-                                   <img src="{{asset('assets/images/pricing/main-home/icons/3.png')}}" alt="">
-                               </div>
-                                <div class="pricing-table-price">
-                                     <div class="pricing-table-bags">
-                                         <span class="pricing-currency">$</span>
-                                         <span class="table-price-text">79.99</span>
-                                         <span class="table-period">Monthly Package</span>
-                                     </div>
+                                        <div class="alert alert-success">{{ Session::get('Success') }}</div>
+
+                                    @endif
+                                    <center>
+                                    <a class="readon started get-new" >Manage your blog contetnt here!!!</a>
+                                    </center>
                                 </div>
-                               <div class="pricing-table-body">
-                                   <ul>
-                                        <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>
-                                        <li><i class="fa fa-check"></i><span>3 Native Android App</span></li>
-                                        <li><i class="fa fa-check"></i><span>Multi-Language Support</span></li>
-                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>
-                                   </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- Contact Section Start -->
+            <div class="rs-contact pt-120 md-pt-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 md-mb-60">
+                           <div class="contact-box">
+                                <div class="sec-title mb-45">
+                                    <span class="sub-text new-text white-color">Blog Angle</span>
+                                    <h2 class="title white-color">Manage your blog contetnt </h2>
+                                </div>
+                               <div class="address-box mb-25">
+                                   <div class="address-icon">
+                                       <i class="fa fa-home"></i>
+                                   </div>
+                                   <div class="address-text">
+                                        <span class="label">Email:</span>
+                                        <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
+                                   </div>
                                </div>
-                               <div class="btn-part">
-                                   <a class="readon buy-now pricing" href="/contact">Buy Now</a>
+                               <div class="address-box mb-25">
+                                   <div class="address-icon">
+                                       <i class="fa fa-phone"></i>
+                                   </div>
+                                   <div class="address-text">
+                                       <span class="label">Phone:</span>
+                                       <a href="tel:23481622372">(+234) 816-223-7272</a>
+                                   </div>
+                               </div>
+                               <div class="address-box">
+                                   <div class="address-icon">
+                                       <i class="fa fa-map-marker"></i>
+                                   </div>
+                                   <div class="address-text">
+                                       <span class="label">Address:</span>
+                                       <div class="desc">Auta-Balefi, Abuja-Keffi Rd, New karu, Nassarawa State.</div>
+                                   </div>
                                </div>
                            </div>
-                       </div>
-                   </div>
+                        </div>
+                        <div class="col-lg-8 pl-70 md-pl-15">
+                            <div class="contact-widget">
+                               <div class="sec-title2 mb-40">
+                                   <span class="sub-text contact mb-15">Get In Touch</span>
+                                   <h2 class="title testi-title">Fill The Form Below</h2>
+
+                               </div>
+                                <div id="form-messages"></div>
+                                <form  method="post" action="{{ route('blogAddNew') }}">
+                                    @csrf
+                                    <fieldset>
+                                        <div class="row">
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" name="title" placeholder="Blog Title" >
+                                            </div>
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <textarea class="from-control"  name="phaseOne" placeholder="Phase 1" ></textarea>
+                                            </div>
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <textarea class="from-control" name="phaseTwo" placeholder="Phase 2" ></textarea>
+                                            </div>
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" name="phaseTwoB" placeholder="Phase 2 name" >
+                                            </div>
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text"  name="phaseThree" placeholder="Phase 3" >
+                                            </div>
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <textarea class="from-control" name="phaseThreeB" placeholder="Separate each list with ;" ></textarea>
+                                            </div>
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <textarea class="from-control" name="phaseFour" placeholder="Phase 4" ></textarea>
+                                            </div>
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <textarea class="from-control" name="phaseFive" placeholder="Phase 5" ></textarea>
+                                            </div>
+                                            <!-- <div class="col-lg-12 mb-30">
+                                                <textarea class="from-control" name="message" placeholder="Your message Here" ></textarea>
+                                            </div> -->
+                                        </div>
+                                        <div class="btn-part">
+                                            <div class="form-group mb-0">
+                                                <input class="readon learn-more submit" type="submit" value="Submit Now">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Pricing section end -->
+            <!-- Contact Section Start -->
 
-        </div> 
+        </div>
         <!-- Main content End -->
-     
+
         <!-- Footer Start -->
-            @include('components.footer')
+        @include('components.footer')
         <!-- Footer End -->
 
         <!-- start scrollUp  -->
@@ -267,5 +289,5 @@
         </div>
         <!-- Search Modal End -->
 
-        <!-- modernizr js -->
-        @include('components.scripts')
+<!-- modernizr js -->
+@include('components.scripts')

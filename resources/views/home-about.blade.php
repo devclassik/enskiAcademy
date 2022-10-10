@@ -28,9 +28,9 @@
                                 <li class="contact-part">
                                     <i class="flaticon-email"></i>
                                     <span class="contact-info">
-                                                <span>E-mail</span>
-                                                <a href="mailto:support@enski.com.ng"> support@enski.com.ng</a>
-                                            </span>
+                                        <span>E-mail</span>
+                                        <a href="mailto:support@enski.com.ng"> support@enski.com.ng</a>
+                                    </span>
                                 </li>
                                 <li class="contact-part no-border">
                                     <i class="flaticon-call"></i>
@@ -77,9 +77,9 @@
                                             <li><a href="/skills-academy">Skills Academy</a> </li>
                                             <li><a href="/branding">Branding Agency</a></li>
                                                 {{--     add a comming soon page @todo--}}
-                                            <li><a href="#">Financial Services</a></li>
-                                            <li><a href="#">Skill Set Connector</a> </li>
-                                            <li><a href="#">Logistics</a> </li>
+                                            <li><a href="/coming-soon">Financial Services</a></li>
+                                            <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                            <li><a href="/coming-soon">Logistics</a> </li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
@@ -104,12 +104,7 @@
                             </li>
                         </ul>
                         <div class="toolbar-sl-share">
-                        <ul class="social">
-                            <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
+                            @include('components.socials')
                         </div>
                     </div>
                 </div>
@@ -154,15 +149,15 @@
                             <div class="sub-text style-bg">Our Mission</div>
                             <!--h2 class="title pb-38">
                                 Remember the uncertainties that the COVID-19 Pandemic came with?
-                            </h2> <-->                               
+                            </h2> <-->
                             <div class="desc pb-35">
                                 To create a unified platform that converts ideas into realities, perfects innovations and uplifts people in the core aspect of life.
                             </div>
                             <div class="sub-text style-bg">Our Vision</div>
-                                <div class="desc pb-35"> 
+                                <div class="desc pb-35">
                                 To give the world direct access to wealth and happiness by connecting and elevating people and innovations towards their full potential.
                             </div>
-                            
+
                             <div class="sub-text style-bg">Our Story</div>
                             <div class="desc pb-35">
                                 <i>In 2020 during the COVID-19 Pandemic, the unemployment rate was at an all time high with so many people losing their jobs and the younger generation graduating universities/ colleges with no jobs to turn to. This lead to insane levels of  financial insecurity and instability. It was in this moment of uncertainties that Enski was launched to put a smile on these faces as an entertainment network while also giving them access to new financial opportunities.</i>
@@ -190,8 +185,8 @@
                                     </div>
                                 </div>
                                 <div class="sec-title mb-30">
-                                      <div class="desc pb-35"> 
-                                        WE TRULY BELIEVE THAT THE WORLD COULD BE FILLED WITH FINANCIALLY SUCCESSFUL AND HAPPY PEOPLE AND WE KNOW WITH OUR HELP, YOU COULD BE BOTH!! 
+                                      <div class="desc pb-35">
+                                        WE TRULY BELIEVE THAT THE WORLD COULD BE FILLED WITH FINANCIALLY SUCCESSFUL AND HAPPY PEOPLE AND WE KNOW WITH OUR HELP, YOU COULD BE BOTH!!
                                     </div>
                                  </div>
                             </div>
@@ -199,16 +194,16 @@
                         <div class="col-lg-6 md-mb-30">
                             <div class="rs-animation-shape">
                                 <div class="images">
-                                   <img src="assets/images/about/about-3.png" alt=""> 
+                                   <img src="{{asset('assets/images/about/about-3.png')}}" alt="">
                                 </div>
                                 <div class="middle-image2">
-                                   <img class="dance3" src="assets/images/about/effect-1.png" alt=""> 
+                                   <img class="dance3" src="{{asset('assets/images/about/effect-1.png')}}" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="shape-image">
-                        <img class="top dance" src="assets/images/about/dotted-3.png" alt="">
+                        <img class="top dance" src="{{asset('assets/images/about/dotted-3.png')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -228,11 +223,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="assets/images/team/style1/1.jpg" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Makhaia Antitni</a></h4>
+                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>
                             <span class="designation">President & CEO</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -245,11 +240,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Corey Anderson</a></h4>
+                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>
                             <span class="designation">CEO & Founder</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -262,11 +257,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Masud Rana</a></h4>
+                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>
                             <span class="designation">Web Developer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -279,11 +274,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Najmul Huda</a></h4>
+                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>
                             <span class="designation">Digital Marketer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -296,11 +291,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/5.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/5.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Rushali Rumi</a></h4>
+                            <h4 class="person-name"><a href="#">Rushali Rumi</a></h4>
                             <span class="designation">Design Lead</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -313,11 +308,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/6.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/6.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Abu Sayed</a></h4>
+                            <h4 class="person-name"><a href="#">Abu Sayed</a></h4>
                             <span class="designation">App Developer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -330,11 +325,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/7.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/7.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Sonia Akhter</a></h4>
+                            <h4 class="person-name"><a href="#">Sonia Akhter</a></h4>
                             <span class="designation">Graphic Artist</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -347,11 +342,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/8.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/8.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Rayhan Ali</a></h4>
+                            <h4 class="person-name"><a href="#">Rayhan Ali</a></h4>
                             <span class="designation">CEO & Founder</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -364,11 +359,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/9.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/9.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Benjir Akther</a></h4>
+                            <h4 class="person-name"><a href="#">Benjir Akther</a></h4>
                             <span class="designation">Graphic Designer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -381,11 +376,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Makhaia Antitni</a></h4>
+                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>
                             <span class="designation">President & CEO</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -398,11 +393,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Corey Anderson</a></h4>
+                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>
                             <span class="designation">CEO & Founder</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -415,11 +410,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Masud Rana</a></h4>
+                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>
                             <span class="designation">Web Developer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -432,11 +427,11 @@
                     <div class="team-item-wrap">
                         <div class="team-wrap">
                             <div class="image-inner">
-                                <a href="single-team.html"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="single-team.html">Najmul Huda</a></h4>
+                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>
                             <span class="designation">Digital Marketer</span>
                             <ul class="team-social">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -468,7 +463,7 @@
                         </div>
                         <div class="services-content">
                             <div class="services-title">
-                                <h3 class="title"><a href="web-development.html">Team Spirit</a></h3>
+                                <h3 class="title"><a href="#">Team Spirit</a></h3>
                             </div>
                             <p class="services-txt"> We believe in the power of working together and building relationships.</p>
                         </div>
@@ -481,7 +476,7 @@
                         </div>
                         <div class="services-content">
                             <div class="services-title">
-                                <h3 class="title"><a href="web-development.html">Integrity</a></h3>
+                                <h3 class="title"><a href="#">Integrity</a></h3>
                             </div>
                             <p class="services-txt">We adhere to high moral and professional standards without compromise. </p>
                         </div>
@@ -494,9 +489,9 @@
                         </div>
                         <div class="services-content">
                             <div class="services-title">
-                                <h3 class="title"><a href="web-development.html">Creativity</a></h3>
+                                <h3 class="title"><a href="#">Creativity</a></h3>
                             </div>
-                            <p class="services-txt">We embrace innovations, adaptabibilty and problem solving from out of the box thinking.</p>
+                            <p class="services-txt">We embrace innovations, adaptability and problem solving from out of the box thinking.</p>
                         </div>
                     </div>
                 </div>
@@ -507,9 +502,9 @@
                         </div>
                         <div class="services-content">
                             <div class="services-title">
-                                <h3 class="title"><a href="web-development.html">Commitment</a></h3>
+                                <h3 class="title"><a href="#">Commitment</a></h3>
                             </div>
-                            <p class="services-txt">We are consitently dedicated to operational excellence and credibility.</p>
+                            <p class="services-txt">We are consistently dedicated to operational excellence and credibility.</p>
                         </div>
                     </div>
                 </div>
@@ -520,9 +515,9 @@
                         </div>
                         <div class="services-content">
                             <div class="services-title">
-                                <h3 class="title"><a href="web-development.html">Customer-Oriented</a></h3>
+                                <h3 class="title"><a href="#">Customer-Oriented</a></h3>
                             </div>
-                            <p class="services-txt">We are obsessed with puting our customers first in everything we do.</p>
+                            <p class="services-txt">We are obsessed with putting our customers first in everything we do.</p>
                         </div>
                     </div>
                 </div>
@@ -533,7 +528,7 @@
                         </div>
                         <div class="services-content">
                             <div class="services-title">
-                                <h3 class="title"><a href="web-development.html">Inspire</a></h3>
+                                <h3 class="title"><a href="#">Inspire</a></h3>
                             </div>
                             <p class="services-txt"> We inspire everyone and brands to reach their full potential and also make the world  better place.</p>
                         </div>
@@ -578,9 +573,9 @@
                         <ul class="rs-features-list">
                             <li><i class="fa fa-check"></i><span>Build an entertainment network with growth and learning opportunities.</span></li>
                             <li><i class="fa fa-check"></i><span>Facilitate the smooth transition from the job-oriented economy to a skills-oriented.</span></li>
-                            <li><i class="fa fa-check"></i><span>Help atleast 1,000 personal and corporate brands.</span></li>
+                            <li><i class="fa fa-check"></i><span>Help at least 1,000 personal and corporate brands.</span></li>
                             <li><i class="fa fa-check"></i><span>Provide a leading financial support system. </span></li>
-                            <li><i class="fa fa-check"></i><span>Assemble an all-inclusive skillsets marketplace.</span></li>
+                            <li><i class="fa fa-check"></i><span>Assemble an all-inclusive skill sets marketplace.</span></li>
                             <li><i class="fa fa-check"></i><span>Provide a seamless product distribution trajectory.</span></li>
                         </ul>
                         </div>
