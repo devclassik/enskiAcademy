@@ -278,5 +278,8 @@ class SkillsAcademyController extends Controller
         Auth::logout(); // logging out user
         return Redirect::to('/my-account'); // redirection to login screen
     }
-
+    function checkout()
+    {
+        return view('skills-academy.checkout');
+    }
 }

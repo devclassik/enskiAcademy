@@ -146,7 +146,7 @@
 
                     {{ Session::get('success') }}</div>
 
-        @endif
+             @endif
             <!-- Banner Section Start -->
             <div class="rs-banner style4">
                 <div class="container">
