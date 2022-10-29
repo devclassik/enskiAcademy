@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Session;
 use Auth;
+use Alert;
 
 class SkillsAcademyController extends Controller
 {
@@ -132,14 +133,13 @@ class SkillsAcademyController extends Controller
             'title'                 => 'required',
             'price'                 => 'required',
             'bulletin'              => 'required',
-            'description'           => 'required',
-            'full_description'      => 'required',
+            'description'           => 'required|min:10|max:100',
+            'full_description'      => 'required|max:255',
             'picture'               => 'required',
-            'video'                 => 'required',
         ]);
         if (SkillsAcademy::where('title', $request->title)->first())
         {
-            Session::flash('title', "Title is already in use");
+            Alert::error('Oops!', 'Title is already in use');
             return Redirect::back();
         }
 
@@ -161,11 +161,6 @@ class SkillsAcademyController extends Controller
         // File URL to access the video in frontend
         $urlTwo = Storage::disk('public')->url($filePath);
 
-//        if (){
-//
-//        }elseif (){
-//
-//        }
 
         if ($isFileUploaded && $isFileUploadedTwo) {
 //            $image = new SkillsAcademy();
@@ -188,7 +183,7 @@ class SkillsAcademyController extends Controller
 //            $video->picture_path     = $urlOne;
 //            $video->video_path       = $urlTwo;
 
-            Session::flash('success', "Picture has been successfully uploaded.");
+            Alert::success('Success', 'Picture has been successfully uploaded.');
         }
 //        Session::flash('error', "Unexpected error occured.");
 //        return back();
@@ -217,7 +212,8 @@ class SkillsAcademyController extends Controller
             'video_path'       => $filePath,
 
         ]);
-        Session::flash('success', "Course Uploaded Successfully,");
+
+        Alert::success('Success', 'Course Uploaded Successfully!!!');
         return Redirect::back();
 
     }

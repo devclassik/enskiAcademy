@@ -15,6 +15,7 @@ class Blog extends Model
      */
     protected $fillable = [
         'image_path',
+        'tag',
         'title',
         'phaseOne',
         'phaseTwo',

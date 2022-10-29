@@ -28,7 +28,7 @@ Route::get('/homepage', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/home-about', [App\Http\Controllers\HomeController::class, 'about']);
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact']);
 Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog']);
-Route::get('/blog-details', [App\Http\Controllers\HomeController::class, 'blogDetails']);
+Route::get('/blog-details/{id}', [App\Http\Controllers\HomeController::class, 'blogDetails'])->name('blogDetails');
 Route::get('/error', [App\Http\Controllers\HomeController::class, 'errorPage']);
 Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq']);
 Route::post('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contactUs');

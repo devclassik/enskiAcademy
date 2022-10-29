@@ -187,11 +187,12 @@
     <div class="rs-banner style7 modify3 rs-rain-animate">
         <div class="container">
             <div class="row">
-                @if (Session::has('error'))
+{{--                @if (Session::has('error'))--}}
 
-                    <div class="alert alert-danger">{{ Session::get('error') }}</div>
+{{--                    <div class="alert alert-danger">{{ Session::get('error') }}</div>--}}
 
-                @endif
+{{--                @endif--}}
+                @include('sweetalert::alert')
                 @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul>
@@ -200,11 +201,6 @@
                             @endforeach
                         </ul>
                     </div>
-                @endif
-                @if (Session::has('success'))
-
-                    <div class="alert alert-success">{{ Session::get('success') }}</div>
-
                 @endif
 
             </div>
@@ -295,7 +291,7 @@
                                             <input class="from-control" type="file" name="video"  required>
                                         </div>
                                         <div class="col-lg-12 mb-35">
-                                            <textarea class="from-control" name="bulletin" placeholder="Bulletin Here separated with a semi colum (;)" required=""></textarea>
+                                            <textarea class="from-control" name="bulletin" placeholder="Bulletin Here separated with a semi column (;)" required=""></textarea>
                                         </div>
                                         <div class="col-lg-12 mb-35">
                                             <textarea class="from-control" name="description" placeholder="Brief Description Here" required=""></textarea>

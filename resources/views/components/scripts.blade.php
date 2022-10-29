@@ -1,4 +1,4 @@
-<script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <script src="assets/js/modernizr-2.8.3.min.js"></script>
         <!-- jquery latest version -->
         <script src="assets/js/jquery.min.js"></script>
         <!-- Bootstrap v4.4.1 js -->

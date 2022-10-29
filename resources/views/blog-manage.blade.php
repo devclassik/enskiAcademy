@@ -216,6 +216,9 @@
                                                 <input class="from-control" type="file" name="picture" required>
                                             </div>
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" name="tag" placeholder="Blog Tag" >
+                                            </div>
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
                                                 <input class="from-control" type="text" name="title" placeholder="Blog Title" >
                                             </div>
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">

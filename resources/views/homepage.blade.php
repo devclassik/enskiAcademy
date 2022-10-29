@@ -74,7 +74,7 @@
                                                     <a href="/home-about">About</a>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="/services">Services</a>
+                                                    <a href="/homepage">Services</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="/entertainment">Entertainment</a> </li>
                                                         <li><a href="/skills-academy">Skills Academy</a> </li>
@@ -103,10 +103,8 @@
                                             </li>
                                             @if (!Auth::guest())
                                                 <li><a class="quote-btn" href="/dologout">Logout</a></li>
-
                                             @else
                                                 <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
-
                                             @endif
                                         </ul>
                                     </div>
@@ -458,8 +456,8 @@
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
-                                        <img src="{{asset('assets/images/process/1.png')}}" alt="" style="border-radius: 30px;
-                                        width: 70%; margin-left: 50px;">
+                                        <img class="zoom" src="{{asset('assets/images/process/1.png')}}" alt="" style="
+                                        width: 70%; ">
                                     </div>
                                     <div class="process-text">
                                         <h3 class="title"><a href="https://wa.me/message/KUOMF26QJ33GK1">WhatsApp</a></h3>
@@ -471,8 +469,8 @@
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
-                                        <img src="{{asset('assets/images/process/2.png')}}" alt="" style="border-radius: 30px;
-                                        width: 70%; margin-left: 50px;">
+                                        <img class="zoom" src="{{asset('assets/images/process/2.png')}}" alt="" style="
+                                        width: 70%; ">
                                     </div>
                                     <div class="process-text">
                                         <h3 class="title"><a href="https://fb.me/enski.impact.summit"> Facebook</a></h3>
@@ -484,8 +482,8 @@
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
-                                        <img src="{{asset('assets/images/process/3.png')}}" alt="" style="border-radius: 30px;
-                                        width: 70%; margin-left: 50px;">
+                                        <img class="zoom" src="{{asset('assets/images/process/3.png')}}" alt="" style="
+                                        width: 70%; ">
                                     </div>
                                     <div class="process-text">
                                         <h3 class="title"><a href="https://www.instagram.com/enski_impact_summit"> Instagram</a></h3>
@@ -497,8 +495,8 @@
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
-                                        <img src="{{asset('assets/images/process/4.png')}}" alt="" style="border-radius: 30px;
-                                        width: 70%; margin-left: 50px;">
+                                        <img class="zoom" src="{{asset('assets/images/process/4.png')}}" alt="" style="
+                                        width: 70%; ">
                                     </div>
                                     <div class="process-text">
                                         <h3 class="title"><a href="https://t.me/enski_entertainment"> Telegram</a></h3>
@@ -509,6 +507,25 @@
                     </div>
                 </div>
             </div>
+                <!-- zoom in and out of the images -->
+                <style>
+                    .zoom {
+                        /*padding: 50px;*/
+                        /*background-color: green;*/
+                        border-radius: 30px;
+                        transition: transform .9s;
+                        width: 100px;
+                        height: 100px;
+                        /*margin: 0 auto;*/
+                        margin-left: 50px;
+                    }
+
+                    .zoom:hover {
+                        -ms-transform: scale(1.5); /* IE 9 */
+                        -webkit-transform: scale(1.5); /* Safari 3-8 */
+                        transform: scale(1.5);
+                    }
+                </style>
             <!-- Process Section End -->
 
             <!-- Pricing section start -->
@@ -521,10 +538,12 @@
                         </h4>
                     </div>
                     <div class="row">
+                        @foreach($skills as $skill)
                         <div class="col-lg-4 md-mb-30">
                             <div class="pricing-table new-style2">
                                 <div class="pricing-badge">
-                                    Premium
+{{--                                    Premium--}}
+                                    {{$skill->class}}
                                 </div>
                                 <div class="pricing-icon">
                                     <img src="{{asset('assets/images/pricing/main-home/icons/1.png')}}" alt="">
@@ -532,18 +551,15 @@
                                 <div class="pricing-table-price">
                                     <div class="pricing-table-bags">
                                         <span class="pricing-currency">&#x20A6;</span>
-                                        <span class="table-price-text">25,000</span>
-                                        <span class="table-period">CRYPTO TRADING</span>
+                                        <span class="table-price-text"> {{$skill->price}}</span>
+                                        <span class="table-period"> {{Str::upper($skill->title)}}</span>
                                     </div>
                                 </div>
                                 <div class="pricing-table-body">
                                     <ul>
-                                        <li><i class="fa fa-check"></i><span>Introduction to Crypto</span></li>
-                                        <li><i class="fa fa-check"></i><span>Spot Trading</span></li>
-                                        <li><i class="fa fa-check"></i><span>Futures and Derivatives</span></li>
-                                        <li><i class="fa fa-check"></i><span>Basic Technical Analysis</span></li>
-                                        <li><i class="fa fa-check"></i><span>Trading Indicators</span></li>
-                                        <li><i class="fa fa-check"></i><span>Creating Successful Trading Setups</span></li>
+                                        @foreach(explode(';',$skill->bulletin) as $row)
+                                        <li><i class="fa fa-check"></i><span>{{$row}}</span></li>
+                                        @endforeach
                                     </ul>
 
                                 </div>
@@ -552,66 +568,67 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 md-mb-30">
-                            <div class="pricing-table primary-bg">
-                                <div class="pricing-badge white-color-bg">
-                                    Premium
-                                </div>
-                                <div class="pricing-icon">
-                                    <img src="{{asset('assets/images/pricing/main-home/icons/2.png')}}" alt="">
-                                </div>
-                                <div class="pricing-table-price">
-                                    <div class="pricing-table-bags">
-                                        <span class="pricing-currency">&#x20A6;</span>
-                                        <span class="table-price-text">25,000</span>
-                                        <span class="table-period">GRAPHIC DESIGNING</span>
-                                    </div>
-                                </div>
-                                <div class="pricing-table-body">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i><span>The Psychology of design</span></li>
-                                        <li><i class="fa fa-check"></i><span>Application of Design Principles</span></li>
-                                        <li><i class="fa fa-check"></i><span>Colour Theory</span></li>
-                                        <li><i class="fa fa-check"></i><span>Flyer | Book cover Design</span></li>
-                                        <li><i class="fa fa-check"></i><span>Branding</span></li>
-                                        <li><i class="fa fa-check"></i><span>Building a business around your design Skills</span></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-part">
-                                    <a class="readon buy-now" href="/shop">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="pricing-table new-style2">
-                                <div class="pricing-badge">
-                                    ELITE
-                                </div>
-                                <div class="pricing-icon">
-                                    <img src="{{asset('assets/images/pricing/main-home/icons/3.png')}}" alt="">
-                                </div>
-                                <div class="pricing-table-price">
-                                    <div class="pricing-table-bags">
-                                        <span class="pricing-currency">&#x20A6;</span>
-                                        <span class="table-price-text">5,000</span>
-                                        <span class="table-period">MINI-IMPORTATION</span>
-                                    </div>
-                                </div>
-                                <div class="pricing-table-body">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>
-                                        <li><i class="fa fa-check"></i><span>3 Native Android App</span></li>
-                                        <li><i class="fa fa-check"></i><span>Multi-Language Support</span></li>
-                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>
-                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>
-                                        <li><i class="fa fa-check"></i><span>Support via E-mail</span></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-part">
-                                    <a class="readon buy-now" href="/shop">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+{{--                        <div class="col-lg-4 md-mb-30">--}}
+{{--                            <div class="pricing-table primary-bg">--}}
+{{--                                <div class="pricing-badge white-color-bg">--}}
+{{--                                    Premium--}}
+{{--                                </div>--}}
+{{--                                <div class="pricing-icon">--}}
+{{--                                    <img src="{{asset('assets/images/pricing/main-home/icons/2.png')}}" alt="">--}}
+{{--                                </div>--}}
+{{--                                <div class="pricing-table-price">--}}
+{{--                                    <div class="pricing-table-bags">--}}
+{{--                                        <span class="pricing-currency">&#x20A6;</span>--}}
+{{--                                        <span class="table-price-text">25,000</span>--}}
+{{--                                        <span class="table-period">GRAPHIC DESIGNING</span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="pricing-table-body">--}}
+{{--                                    <ul>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>The Psychology of design</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Application of Design Principles</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Colour Theory</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Flyer | Book cover Design</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Branding</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Building a business around your design Skills</span></li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
+{{--                                <div class="btn-part">--}}
+{{--                                    <a class="readon buy-now" href="/shop">Buy Now</a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-lg-4">--}}
+{{--                            <div class="pricing-table new-style2">--}}
+{{--                                <div class="pricing-badge">--}}
+{{--                                    ELITE--}}
+{{--                                </div>--}}
+{{--                                <div class="pricing-icon">--}}
+{{--                                    <img src="{{asset('assets/images/pricing/main-home/icons/3.png')}}" alt="">--}}
+{{--                                </div>--}}
+{{--                                <div class="pricing-table-price">--}}
+{{--                                    <div class="pricing-table-bags">--}}
+{{--                                        <span class="pricing-currency">&#x20A6;</span>--}}
+{{--                                        <span class="table-price-text">5,000</span>--}}
+{{--                                        <span class="table-period">MINI-IMPORTATION</span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="pricing-table-body">--}}
+{{--                                    <ul>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>3 Native Android App</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Multi-Language Support</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>--}}
+{{--                                        <li><i class="fa fa-check"></i><span>Support via E-mail</span></li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
+{{--                                <div class="btn-part">--}}
+{{--                                    <a class="readon buy-now" href="/shop">Buy Now</a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -953,108 +970,111 @@
                         </div>
                     </div>
                     <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
+                        @foreach($blogs as $blog)
                         <div class="blog-item">
                             <div class="image-wrap">
-                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/1.jpg')}}" alt=""></a>
+                                <a href="/blog-details"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 300px" alt=""></a>
                                 <ul class="post-categories">
-                                    <li><a href="/blog-details">Software Development</a></li>
+                                    <li><a href="/blog-details">{{$blog->tag}}</a></li>
                                 </ul>
                             </div>
                             <div class="blog-content">
                                 <ul class="blog-meta">
-                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 16 Nov 2020</li>
+                                    <li class="date"><i class="fa fa-calendar-check-o"></i>{{$blog->created_at->diffForHumans()}}</li>
                                     <li class="admin"><i class="fa fa-user-o"></i> admin</li>
                                 </ul>
-                                <h3 class="blog-title"><a href="/blog-details">Necessity May Give Us Your Best Virtual Court System</a></h3>
-                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
+                                <h3 class="blog-title"><a href="/blog-details">{{$blog->title}}</a></h3>
+                                <p class="desc">{{  Str::limit($blog->phaseOne, 40)}}</p>
+{{--                                {{ route('userDetails',$merchant->id) }}--}}
+                                <div class="blog-button"><a href="{{route ('blogDetails', $blog->id)}}">Learn More</a></div>
                             </div>
                         </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/2.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="/blog-details"> Web Development</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 20 December 2020</li>
-                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="/blog-details">Tech Products That Makes Its Easier to Stay at Home</a></h3>
-                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/3.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="/blog-details">It Services</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 22 December 2020</li>
-                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="/blog-details">Open Source Job Report Show More Openings Fewer</a></h3>
-                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/4.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="/blog-details">Artifical Intelligence</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 26 December 2020</li>
-                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="/blog-details">Types of Social Proof What its Makes Them Effective</a></h3>
-                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/5.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="/blog-details">Digital Technology</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 28 December 2020</li>
-                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="/blog-details">Tech Firms Support Huawei Restriction, Balk at Cost</a></h3>
-                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/6.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="/blog-details">It Services</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 30 December 2020</li>
-                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="/blog-details">Servo Project Joins The Linux Foundation Fold Desco</a></h3>
-                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>
-                            </div>
-                        </div>
+                        @endforeach
+{{--                        <div class="blog-item">--}}
+{{--                            <div class="image-wrap">--}}
+{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/2.jpg')}}" alt=""></a>--}}
+{{--                                <ul class="post-categories">--}}
+{{--                                    <li><a href="/blog-details"> Web Development</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="blog-content">--}}
+{{--                                <ul class="blog-meta">--}}
+{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 20 December 2020</li>--}}
+{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
+{{--                                </ul>--}}
+{{--                                <h3 class="blog-title"><a href="/blog-details">Tech Products That Makes Its Easier to Stay at Home</a></h3>--}}
+{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
+{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="blog-item">--}}
+{{--                            <div class="image-wrap">--}}
+{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/3.jpg')}}" alt=""></a>--}}
+{{--                                <ul class="post-categories">--}}
+{{--                                    <li><a href="/blog-details">It Services</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="blog-content">--}}
+{{--                                <ul class="blog-meta">--}}
+{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 22 December 2020</li>--}}
+{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
+{{--                                </ul>--}}
+{{--                                <h3 class="blog-title"><a href="/blog-details">Open Source Job Report Show More Openings Fewer</a></h3>--}}
+{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
+{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="blog-item">--}}
+{{--                            <div class="image-wrap">--}}
+{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/4.jpg')}}" alt=""></a>--}}
+{{--                                <ul class="post-categories">--}}
+{{--                                    <li><a href="/blog-details">Artifical Intelligence</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="blog-content">--}}
+{{--                                <ul class="blog-meta">--}}
+{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 26 December 2020</li>--}}
+{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
+{{--                                </ul>--}}
+{{--                                <h3 class="blog-title"><a href="/blog-details">Types of Social Proof What its Makes Them Effective</a></h3>--}}
+{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
+{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="blog-item">--}}
+{{--                            <div class="image-wrap">--}}
+{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/5.jpg')}}" alt=""></a>--}}
+{{--                                <ul class="post-categories">--}}
+{{--                                    <li><a href="/blog-details">Digital Technology</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="blog-content">--}}
+{{--                                <ul class="blog-meta">--}}
+{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 28 December 2020</li>--}}
+{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
+{{--                                </ul>--}}
+{{--                                <h3 class="blog-title"><a href="/blog-details">Tech Firms Support Huawei Restriction, Balk at Cost</a></h3>--}}
+{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
+{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="blog-item">--}}
+{{--                            <div class="image-wrap">--}}
+{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/6.jpg')}}" alt=""></a>--}}
+{{--                                <ul class="post-categories">--}}
+{{--                                    <li><a href="/blog-details">It Services</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="blog-content">--}}
+{{--                                <ul class="blog-meta">--}}
+{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 30 December 2020</li>--}}
+{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
+{{--                                </ul>--}}
+{{--                                <h3 class="blog-title"><a href="/blog-details">Servo Project Joins The Linux Foundation Fold Desco</a></h3>--}}
+{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
+{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>

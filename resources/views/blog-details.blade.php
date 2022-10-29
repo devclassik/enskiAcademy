@@ -1,7 +1,7 @@
 @include('components.header')
 <!--Preloader area End here-->
 
-		<!-- Main content Start -->
+<!-- Main content Start -->
         <div class="main-content">
 
             <!--Full width header Start-->
@@ -30,14 +30,14 @@
                                             <i class="flaticon-email"></i>
                                             <span class="contact-info">
                                                 <span>E-mail</span>
-                                                <a href="mailto:support@enski.com.ng"> support@enski.com.ng</a>
+                                                 <a href="mailto:support@enski.com.ng"> support@enski.com.ng</a>
                                             </span>
                                         </li>
                                         <li class="contact-part no-border">
-                                            <i class="flaticon-call"></i>
+                                             <i class="flaticon-call"></i>
                                             <span class="contact-info">
                                                 <span>Phone</span>
-                                                 +2348162237272
+                                               +2348162237272
                                             </span>
                                         </li>
                                     </ul>
@@ -58,7 +58,7 @@
                             <div class="rs-menu-area">
                                 <div class="main-menu">
                                     <div class="mobile-menu">
-                                        <a href="/hompage" class="mobile-logo">
+                                        <a href="/homepage" class="mobile-logo">
                                             <img src="{{asset('assets/images/logo-light.png')}}" alt="logo">
                                         </a>
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
@@ -79,9 +79,9 @@
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
                                                     <li><a href="/branding">Branding Agency</a> </li>
                                                     {{--      add a comming soon page @todo--}}
-                                                    <li><a href="#">Financial Services</a></li>
-                                                    <li><a href="#">Skill Set Connector</a> </li>
-                                                    <li><a href="#">Logistics</a> </li>
+                                                    <li><a href="/coming-soon">Financial Services</a></li>
+                                                    <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                    <li><a href="/coming-soon">Logistics</a> </li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
@@ -106,12 +106,7 @@
                                     </li>
                                 </ul>
                                 <div class="toolbar-sl-share">
-                                    <ul class="social">
-                                        <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
+                                    @include('components.socials')
                                 </div>
                             </div>
                         </div>
@@ -125,14 +120,14 @@
             <!-- Breadcrumbs Start -->
             <div class="rs-breadcrumbs img4">
                 <div class="breadcrumbs-inner text-center">
-                    <h1 class="page-title new-title pb-10">Servo Project Joins The Linux Foundation Fold Desco</h1>
+                    <h1 class="page-title new-title pb-10">{{$blogger->title}}</h1>
                     <ul>
-                        <li title="Enski - IT Solutions and Technology Startup HTML Template">
+                        <li title="Braintech - IT Solutions and Technology Startup HTML Template">
                             <a class="active" href="/homepage">Home</a>
                         </li>
-                        <li title="Go to Blog"><a class="active" href="/homepage">Blog</a></li>
+                        <li title="Go to Blog"><a class="active" href="/blog">Blog</a></li>
                         <li title="Go to the It Services category archives"><a class="active" href="/homepage">It Services</a></li>
-                        <li>Servo Project Joins The Linux Foundation Fold Desco</li>
+                        <li>{{$blogger->tag}}</li>
                     </ul>
                 </div>
             </div>
@@ -154,54 +149,20 @@
                                     <div class="widget-title">
                                         <h3 class="title">Latest Posts</h3>
                                     </div>
-                                    <div class="recent-post-widget">
-                                        <div class="post-img">
-                                            <a href="#"><img src="{{asset('assets/images/blog/inner/1.jpg')}}" alt=""></a>
-                                        </div>
-                                        <div class="post-desc">
-                                            <a href="#">pen Source Job Report Show More Openings Fewer </a>
-                                            <span class="date">
+                                    @foreach($blogs as $blog)
+                                        <div class="recent-post-widget">
+                                            <div class="post-img">
+                                                <a href="/blog-details"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 40px;" alt=""></a>
+                                            </div>
+                                            <div class="post-desc">
+                                                <a href="/blog-details">{{$blog-> title}} </a>
+                                                <span class="date">
                                                 <i class="fa fa-calendar"></i>
-                                                January 21, 2020
+                                             {{$blog->created_at->diffForHumans()}}
                                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="recent-post-widget">
-                                        <div class="post-img">
-                                            <a href="#"><img src="{{asset('assets/images/blog/inner/2.jpg')}}" alt=""></a>
-                                        </div>
-                                        <div class="post-desc">
-                                            <a href="#">Tech Products That Makes Its Easier to Stay at Home</a>
-                                            <span class="date">
-                                                <i class="fa fa-calendar"></i>
-                                                January 21, 2020
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="recent-post-widget">
-                                        <div class="post-img">
-                                            <a href="#"><img src="{{asset('assets/images/blog/inner/3.jpg')}}" alt=""></a>
-                                        </div>
-                                        <div class="post-desc">
-                                            <a href="#">Necessity May Give Us Your Best Virtual Court System </a>
-                                            <span class="date">
-                                                <i class="fa fa-calendar"></i>
-                                                January 21, 2020
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="recent-post-widget">
-                                        <div class="post-img">
-                                            <a href="#"><img src="{{asset('assets/images/blog/inner/4.jpg')}}" alt=""></a>
-                                        </div>
-                                        <div class="post-desc">
-                                            <a href="#">Servo Project Joins The Linux Foundation Fold Desco </a>
-                                            <span class="date">
-                                                <i class="fa fa-calendar"></i>
-                                                January 21, 2020
-                                            </span>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                                 <div class="categories mb-50">
                                     <div class="widget-title">
@@ -211,7 +172,6 @@
                                         <li><a href="/entertainment">Entertainment</a> </li>
                                         <li><a href="/skills-academy">Skills Academy</a> </li>
                                         <li><a href="/branding">Branding Agency</a> </li>
-{{--                                                        add a comming soon page @todo--}}
                                         <li><a href="/coming-soon">Financial Services</a></li>
                                         <li><a href="/coming-soon">Skill Set Connector</a> </li>
                                         <li><a href="/coming-soon">Logistics</a> </li>
@@ -224,12 +184,12 @@
                                 <div class="col-lg-12">
                                     <div class="blog-details">
                                         <div class="bs-img mb-35">
-                                            <a href="#"><img src="{{asset('assets/images/blog/inner/5.jpg')}}" alt=""></a>
+                                            <a href="#"><img src="{{asset('storage')}}/{{$blogger->image_path}}" style="height: 700px; width: 600px" alt=""></a>
                                         </div>
                                         <div class="blog-full">
                                             <ul class="single-post-meta">
                                                 <li>
-                                                    <span class="p-date"><i class="fa fa-calendar-check-o"></i> January 21, 2020 </span>
+                                                    <span class="p-date"><i class="fa fa-calendar-check-o"></i> {{$blogger->created_at->diffForHumans()}} </span>
                                                 </li>
                                                 <li>
                                                     <span class="p-date"> <i class="fa fa-user-o"></i> admin </span>
@@ -237,36 +197,34 @@
                                                 <li class="Post-cate">
                                                     <div class="tag-line">
                                                         <i class="fa fa-book"></i>
-                                                        <a href="#">Strategy</a>
+                                                        <a href="#">{{$blogger->tag}}</a>
                                                     </div>
                                                 </li>
                                                 <li class="post-comment"> <i class="fa fa-comments-o"></i> 1</li>
                                             </ul>
                                             <p>
-                                                We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled data structures manages data in technology.
+                                                {{$blogger->phaseOne}}
                                             </p>
-                                            <blockquote><p>We can easily manage if we will only take, each day, the burden appointed to it. But the load will be too heavy for us if we carry yesterday’s burden over again today, and then add the burden of the morrow before we are required to bear it.<br>
-                                            <cite>Robert Calibo</cite></p></blockquote>
-                                            <h3>Digital technology on the cutting edge</h3>
+                                            <blockquote><p>{{$blogger->phaseTwo}} <br>
+                                            <cite>{{$blogger->phaseTwoB}}</cite></p></blockquote>
+                                            <h3>{{$blogger->phaseThree}}</h3>
                                             <p>
 
                                             </p>
                                             <ul class="dots">
-                                                <li>How will digital activities impact traditional manufacturing.</li>
-                                                <li>All these digital elements and projects aim to enhance .</li>
-                                                <li>I monitor my staff with software that takes screenshots.</li>
-                                                <li>Laoreet dolore magna niacin sodium glutimate aliquam hendrerit.</li>
-                                                <li>Minim veniam quis niacin sodium glutimate nostrud exerci dolor.</li>
+                                                @foreach(explode(';',$blogger->phaseThreeB) as $row)
+                                                <li>{{$row}}</li>
+                                                    @endforeach
                                             </ul>
-                                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                                            <p>{{$blogger->phaseFour}}</p>
                                             <div class="bs-img mb-30">
-                                                <img src="{{asset('assets/images/blog/inner/6.jpg')}}" alt="">
+                                                <img src="{{asset('storage')}}/{{$blogger->image_path}}" style="height: 700px; width: 600px" alt="">
                                             </div>
-                                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                                            <p>{{$blogger->phaseFive}}</p>
                                             <h3 class="comment-title">1 comment on “Servo Project Joins The Linux Foundation Desco”</h3>
                                             <div class="comment-body">
                                                <div class="rstheme-logo">
-                                                   <img src="assets/images/rstheme.png" alt="">
+                                                   <img src="{{asset('assets/images/rstheme.png')}}" alt="">
                                                </div>
                                                <div class="comment-meta">
                                                    <span><a href="#">Admin</a></span>
@@ -344,5 +302,39 @@
         </div>
         <!-- Search Modal End -->
 
-<!-- modernizr js -->
-@include('components.scripts')
+         <!-- modernizr js -->
+<script src="{{asset('assets/js/modernizr-2.8.3.min.js')}}"></script>
+<!-- jquery latest version -->
+<script src="{{asset('assets/js/jquery.min.js')}}"></script>
+<!-- Bootstrap v4.4.1 js -->
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+<!-- Menu js -->
+<script src="{{asset('assets/js/rsmenu-main.js')}}"></script>
+<!-- op nav js -->
+<script src="{{asset('assets/js/jquery.nav.js')}}"></script>
+<!-- owl.carousel js -->
+<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
+<!-- wow js -->
+<script src="{{asset('assets/js/wow.min.js')}}"></script>
+<!-- Skill bar js -->
+<script src="{{asset('assets/js/skill.bars.jquery.js')}}"></script>
+<script src="{{asset('assets/js/jquery.counterup.min.js')}}"></script>
+<!-- counter top js -->
+<script src="{{asset('assets/js/waypoints.min.js')}}"></script>
+<!-- swiper js -->
+<script src="{{asset('assets/js/swiper.min.js')}}"></script>
+<!-- particles js -->
+<script src="{{asset('assets/js/particles.min.js')}}"></script>
+<!-- magnific popup js -->
+<script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
+<!-- plugins js -->
+<script src="{{asset('assets/js/plugins.js')}}"></script>
+<!-- pointer js -->
+<script src="{{asset('assets/js/pointer.js')}}"></script>
+<!-- contact form js -->
+<script src="{{asset('assets/js/contact.form.js')}}"></script>
+<!-- main js -->
+<script src="{{asset('assets/js/main.js')}}"></script>
+</body>
+</html>
+

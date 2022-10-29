@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\blog;
 use App\Models\ContactUs;
+use App\Models\SkillsAcademy;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
@@ -30,7 +31,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('homepage');
+        $skills = SkillsAcademy::all()->random(3);
+        $blogs = Blog::latest()->paginate(6);
+        return view('homepage', compact('blogs','skills'));
     }
 
 
@@ -63,8 +66,9 @@ class HomeController extends Controller
         $urlOne = Storage::disk('public')->url($picturePath);
 
         $this->Validate($request,[
-            'title'           => 'required',
-            'phaseOne'        => 'required',
+            'tag'             => 'required|min:5|max:15',
+            'title'           => 'required|min:10|max:50',
+            'phaseOne'        => 'required|unique:blogs|max:255',
             'phaseTwo'        => 'required',
             'phaseTwoB'       => 'required',
             'phaseThree'      => 'required',
@@ -75,7 +79,6 @@ class HomeController extends Controller
         ]);
         if (Blog::where('title', $request->title)->first())
         {
-
             Alert::error('Oops!', 'Title is already in use');
             return Redirect::back();
         }
@@ -83,6 +86,7 @@ class HomeController extends Controller
             // $request->all()
             [
                 'image_path'     =>$picturePath,
+                'tag'            =>$request->tag,
                 'title'          => $request->title,
                 'phaseOne'       => $request->phaseOne,
                 'phaseTwo'       => $request->phaseTwo,
@@ -93,7 +97,7 @@ class HomeController extends Controller
                 'phaseFive'      => $request->phaseFive,
             ]
         );
-        Alert::success('Success', 'Message sent Successfully!!!');
+        Alert::success('Success', 'New Blog Added Successfully!!!');
         return redirect::back();
 
     }
@@ -114,14 +118,18 @@ class HomeController extends Controller
     /** this is the function that control the blog page*/
     public function blog()
     {
-        return view('blog');
+        $blogs = Blog::latest()->paginate(10);
+        return view('blog', compact('blogs'));
     }
 
     /** this is the function that control the blog page*/
     /** this is the function that control the blog Details page*/
-    public function blogDetails()
+    public function blogDetails($id)
     {
-        return view('blog-details');
+        $blogger = Blog::find($id);
+        $blogs = Blog::latest()->paginate(5);
+//        dd($blogs);
+        return view('blog-details', compact('blogs','blogger'));
     }
 
     /** this is the function that control the error page*/
