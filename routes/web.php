@@ -54,7 +54,7 @@ Route::get('/my-account',     [App\Http\Controllers\SkillsAcademyController::cla
 Route::post('/elogin',        [App\Http\Controllers\SkillsAcademyController::class, 'elogin'])->name('login');
 Route::post('/register',      [App\Http\Controllers\SkillsAcademyController::class, 'store'])->name('register');
 Route::get('/dologout',       [App\Http\Controllers\SkillsAcademyController::class, 'doLogout'])->name('doLogout');
-Route::get('/shop',           [App\Http\Controllers\SkillsAcademyController::class, 'shop']);
+Route::get('/shop/{id}',           [App\Http\Controllers\SkillsAcademyController::class, 'shop'])->name('shop');
 Route::get('/checkout',           [App\Http\Controllers\SkillsAcademyController::class, 'checkout']);
 Route::get('/courses',           [App\Http\Controllers\SkillsAcademyController::class, 'courses']);
 Route::get('/course-manage',           [App\Http\Controllers\SkillsAcademyController::class, 'courseManage']);

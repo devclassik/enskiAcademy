@@ -23,7 +23,8 @@ class SkillsAcademy extends Model
         'picture_path',
         'description',
         'full_description',
-        'video_path'
+        'video_path',
+        'icon_path'
     ];
 
 }

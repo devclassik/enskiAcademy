@@ -184,7 +184,7 @@
                                 <div class="col-lg-12">
                                     <div class="blog-details">
                                         <div class="bs-img mb-35">
-                                            <a href="#"><img src="{{asset('storage')}}/{{$blogger->image_path}}" style="height: 700px; width: 600px" alt=""></a>
+                                            <a href="#"><img src="{{asset('storage')}}/{{$blogger->image_path}}" style="height: 600px; width: 800px" alt=""></a>
                                         </div>
                                         <div class="blog-full">
                                             <ul class="single-post-meta">
@@ -218,19 +218,19 @@
                                             </ul>
                                             <p>{{$blogger->phaseFour}}</p>
                                             <div class="bs-img mb-30">
-                                                <img src="{{asset('storage')}}/{{$blogger->image_path}}" style="height: 700px; width: 600px" alt="">
+                                                <img src="{{asset('storage')}}/{{$blogger->image_path}}" style="height: 600px; width: 800px" alt="">
                                             </div>
                                             <p>{{$blogger->phaseFive}}</p>
-                                            <h3 class="comment-title">1 comment on “Servo Project Joins The Linux Foundation Desco”</h3>
+                                            <h3 class="comment-title">1 comment on “{{$blogger->title}}”</h3>
                                             <div class="comment-body">
                                                <div class="rstheme-logo">
                                                    <img src="{{asset('assets/images/rstheme.png')}}" alt="">
                                                </div>
                                                <div class="comment-meta">
                                                    <span><a href="#">Admin</a></span>
-                                                   <a href="#">December 3, 2020 at 8:30 am</a>
+                                                   <a href="#">{{$blog->created_at->diffForHumans()}}</a>
                                                    <p class="mb-15">
-                                                       Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est
+                                                      wow, nice content @admin, weldone
                                                    </p>
                                                    <div class="btn-part">
                                                       <a class="readon reply" href="#">Reply</a>

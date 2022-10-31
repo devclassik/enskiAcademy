@@ -53,8 +53,8 @@
                             <div class="col-lg-3">
                                 <div class="logo-part">
                                     <a href="/homepage">
-                                        <img class="normal-logo" src="{{asset('assets/images/logo-light.png')}}" alt="logo">
-                                        <img class="sticky-logo" src="{{asset('assets/images/logo-dark.png')}}" alt="logo">
+                                        <img class="normal-logo" src="{{asset('assets/images/logo-light.png')}}" width="145"  alt="logo">
+                                        <img class="sticky-logo" src="{{asset('assets/images/logo-dark.png')}}"  width="145" alt="logo">
                                     </a>
                                 </div>
                                 <div class="mobile-menu">
@@ -546,7 +546,7 @@
                                     {{$skill->class}}
                                 </div>
                                 <div class="pricing-icon">
-                                    <img src="{{asset('assets/images/pricing/main-home/icons/1.png')}}" alt="">
+                                    <img src="{{asset('storage')}}/{{$skill->icon_path}}" alt="">
                                 </div>
                                 <div class="pricing-table-price">
                                     <div class="pricing-table-bags">
@@ -564,168 +564,109 @@
 
                                 </div>
                                 <div class="btn-part">
-                                    <a class="readon buy-now" href="/shop">Buy Now</a>
+                                    <a class="readon buy-now" href="{{route ('shop', $skill->id)}}">Buy Now</a>
                                 </div>
                             </div>
                         </div>
                         @endforeach
-{{--                        <div class="col-lg-4 md-mb-30">--}}
-{{--                            <div class="pricing-table primary-bg">--}}
-{{--                                <div class="pricing-badge white-color-bg">--}}
-{{--                                    Premium--}}
-{{--                                </div>--}}
-{{--                                <div class="pricing-icon">--}}
-{{--                                    <img src="{{asset('assets/images/pricing/main-home/icons/2.png')}}" alt="">--}}
-{{--                                </div>--}}
-{{--                                <div class="pricing-table-price">--}}
-{{--                                    <div class="pricing-table-bags">--}}
-{{--                                        <span class="pricing-currency">&#x20A6;</span>--}}
-{{--                                        <span class="table-price-text">25,000</span>--}}
-{{--                                        <span class="table-period">GRAPHIC DESIGNING</span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="pricing-table-body">--}}
-{{--                                    <ul>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>The Psychology of design</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Application of Design Principles</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Colour Theory</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Flyer | Book cover Design</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Branding</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Building a business around your design Skills</span></li>--}}
-{{--                                    </ul>--}}
-{{--                                </div>--}}
-{{--                                <div class="btn-part">--}}
-{{--                                    <a class="readon buy-now" href="/shop">Buy Now</a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-lg-4">--}}
-{{--                            <div class="pricing-table new-style2">--}}
-{{--                                <div class="pricing-badge">--}}
-{{--                                    ELITE--}}
-{{--                                </div>--}}
-{{--                                <div class="pricing-icon">--}}
-{{--                                    <img src="{{asset('assets/images/pricing/main-home/icons/3.png')}}" alt="">--}}
-{{--                                </div>--}}
-{{--                                <div class="pricing-table-price">--}}
-{{--                                    <div class="pricing-table-bags">--}}
-{{--                                        <span class="pricing-currency">&#x20A6;</span>--}}
-{{--                                        <span class="table-price-text">5,000</span>--}}
-{{--                                        <span class="table-period">MINI-IMPORTATION</span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="pricing-table-body">--}}
-{{--                                    <ul>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>3 Native Android App</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Multi-Language Support</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>--}}
-{{--                                        <li><i class="fa fa-check"></i><span>Support via E-mail</span></li>--}}
-{{--                                    </ul>--}}
-{{--                                </div>--}}
-{{--                                <div class="btn-part">--}}
-{{--                                    <a class="readon buy-now" href="/shop">Buy Now</a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+
                     </div>
                 </div>
             </div>
             <!-- Pricing section end -->
 
             <!-- Project Section Start -->
-            <div class="rs-project bg6 style2 pt-120 pb-120 md-pt-80 md-pb-80">
-                <div class="container">
-                    <div class="sec-title2 text-center mb-45">
-                        <span class="sub-text style-bg white-color">Projects</span>
-                        <h2 class="title title2 white-color">
-                            Our Recent Branding Projects
-                        </h2>
-                        <h6>Take a peak at some of our recent Branding or Design Projects.</h6>
-                    </div>
-                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="true" data-md-device-dots="false">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <a href="#"><img src="{{asset('assets/images/project/main-home/1.jpg')}}" alt="images"></a>
-                            </div>
-                            <div class="project-content ">
-                                <div class="vertical-middle">
-                                    <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="case-studies-style1.html">Product Design</a></h3>
-                                        <span class="category"><a href="case-studies-style1.html">IT Technology</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <div class="project-img">
-                                <a href="#"><img src="{{asset('assets/images/project/main-home/2.jpg')}}" alt="images"></a>
-                            </div>
-                            <div class="project-content ">
-                                <div class="vertical-middle">
-                                    <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="/case-studies-style1">Growth Strategies</a></h3>
-                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <div class="project-img">
-                                <a href="#"><img src="{{asset('assets/images/project/main-home/3.jpg')}}" alt="images"></a>
-                            </div>
-                            <div class="project-content ">
-                                <div class="vertical-middle">
-                                    <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="/case-studies-style1">latform Integration</a></h3>
-                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <div class="project-img">
-                                <a href="#"><img src="{{asset('assets/images/project/main-home/4.jpg')}}" alt="images"></a>
-                            </div>
-                            <div class="project-content ">
-                                <div class="vertical-middle">
-                                    <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="/case-studies-style1">Innovative Interfaces</a></h3>
-                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <div class="project-img">
-                                <a href="#"><img src="{{asset('assets/images/project/main-home/5.jpg')}}" alt="images"></a>
-                            </div>
-                            <div class="project-content ">
-                                <div class="vertical-middle">
-                                    <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="/case-studies-style1">Product Engineering</a></h3>
-                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item">
-                            <div class="project-img">
-                                <a href="#"><img src="{{asset('assets/images/project/main-home/6.jpg')}}" alt="images"></a>
-                            </div>
-                            <div class="project-content ">
-                                <div class="vertical-middle">
-                                    <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="/case-studies-style1">Analytic Solutions</a></h3>
-                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="rs-project bg6 style2 pt-120 pb-120 md-pt-80 md-pb-80">--}}
+{{--                <div class="container">--}}
+{{--                    <div class="sec-title2 text-center mb-45">--}}
+{{--                        <span class="sub-text style-bg white-color">Projects</span>--}}
+{{--                        <h2 class="title title2 white-color">--}}
+{{--                            Our Recent Branding Projects--}}
+{{--                        </h2>--}}
+{{--                        <h6>Take a peak at some of our recent Branding or Design Projects.</h6>--}}
+{{--                    </div>--}}
+{{--                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="true" data-md-device-dots="false">--}}
+{{--                        <div class="project-item">--}}
+{{--                            <div class="project-img">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/1.jpg')}}" alt="images"></a>--}}
+{{--                            </div>--}}
+{{--                            <div class="project-content ">--}}
+{{--                                <div class="vertical-middle">--}}
+{{--                                    <div class="vertical-middle-cell">--}}
+{{--                                        <h3 class="title"><a href="case-studies-style1.html">Product Design</a></h3>--}}
+{{--                                        <span class="category"><a href="case-studies-style1.html">IT Technology</a></span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="project-item">--}}
+{{--                            <div class="project-img">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/2.jpg')}}" alt="images"></a>--}}
+{{--                            </div>--}}
+{{--                            <div class="project-content ">--}}
+{{--                                <div class="vertical-middle">--}}
+{{--                                    <div class="vertical-middle-cell">--}}
+{{--                                        <h3 class="title"><a href="/case-studies-style1">Growth Strategies</a></h3>--}}
+{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="project-item">--}}
+{{--                            <div class="project-img">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/3.jpg')}}" alt="images"></a>--}}
+{{--                            </div>--}}
+{{--                            <div class="project-content ">--}}
+{{--                                <div class="vertical-middle">--}}
+{{--                                    <div class="vertical-middle-cell">--}}
+{{--                                        <h3 class="title"><a href="/case-studies-style1">latform Integration</a></h3>--}}
+{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="project-item">--}}
+{{--                            <div class="project-img">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/4.jpg')}}" alt="images"></a>--}}
+{{--                            </div>--}}
+{{--                            <div class="project-content ">--}}
+{{--                                <div class="vertical-middle">--}}
+{{--                                    <div class="vertical-middle-cell">--}}
+{{--                                        <h3 class="title"><a href="/case-studies-style1">Innovative Interfaces</a></h3>--}}
+{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="project-item">--}}
+{{--                            <div class="project-img">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/5.jpg')}}" alt="images"></a>--}}
+{{--                            </div>--}}
+{{--                            <div class="project-content ">--}}
+{{--                                <div class="vertical-middle">--}}
+{{--                                    <div class="vertical-middle-cell">--}}
+{{--                                        <h3 class="title"><a href="/case-studies-style1">Product Engineering</a></h3>--}}
+{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="project-item">--}}
+{{--                            <div class="project-img">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/6.jpg')}}" alt="images"></a>--}}
+{{--                            </div>--}}
+{{--                            <div class="project-content ">--}}
+{{--                                <div class="vertical-middle">--}}
+{{--                                    <div class="vertical-middle-cell">--}}
+{{--                                        <h3 class="title"><a href="/case-studies-style1">Analytic Solutions</a></h3>--}}
+{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <!-- Project Section End -->
 
             <!-- Testimonial Section Start -->
@@ -934,10 +875,10 @@
                                                     <option value="">--constation Type--</option>
                                                     <option value="Entertainment"> Entertainment</option>
                                                     <option value="Skills-Academy">Skills Academy </option>
-                                                    <option value="Branding-Agency">Branding Agency </option>
-                                                    <option value="Financial-Services">Financial Services </option>
-                                                    <option value="Skill-Set-Connector">Skill Set Connector </option>
-                                                    <option value="Logistics">Logistics </option>
+                                                    <option value="Branding">Branding </option>
+                                                    <option value="Finances">Finances </option>
+                                                   <!--  <option value="Skill-Set-Connector">Skill Set Connector </option>
+                                                    <option value="Logistics">Logistics </option> -->
                                                 </select>
                                             </div>
 

@@ -283,6 +283,10 @@
                                             <input class="from-control" type="number" name="price" placeholder="Price" required="">
                                         </div>
                                         <div class="col-lg-12 mb-15">
+                                            <label class="text-danger">Course Icon</label>
+                                            <input class="from-control" type="file" name="icon" required>
+                                        </div>
+                                        <div class="col-lg-12 mb-15">
                                             <label class="text-danger">Course Picture</label>
                                             <input class="from-control" type="file" name="picture" required>
                                         </div>

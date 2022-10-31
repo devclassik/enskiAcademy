@@ -142,6 +142,14 @@ class SkillsAcademyController extends Controller
             Alert::error('Oops!', 'Title is already in use');
             return Redirect::back();
         }
+        //for icon upload
+        $iconName = $request->icon->getClientOriginalName();
+        $iconPath = 'videos/icon' . $iconName;
+
+        $isFileUploaded = Storage::disk('public')->put($iconPath, file_get_contents($request->icon));
+
+        // File URL to access the video in frontend
+        $urlOne = Storage::disk('public')->url($iconPath);
 
         //for picture upload
         $pictureName = $request->picture->getClientOriginalName();
@@ -163,42 +171,9 @@ class SkillsAcademyController extends Controller
 
 
         if ($isFileUploaded && $isFileUploadedTwo) {
-//            $image = new SkillsAcademy();
-//            $image->title = $request->title;
-//            $image->picture_path = $picturePath;
-//            $image->save();
-
-//            $video = new SkillsAcademy();
-//            $video->title = $request->title;
-//            $video->video_path = $filePath;
-//            $video->save();
-//
-//            $video->class            = $request->class;
-//            $video->category         = $request->category;
-//            $video->title            = $request->title;
-//            $video->price            = $request->price;
-//            $video->bulletin         = $request->bulletin;
-//            $video->description      = $request->description;
-//            $video->full_description = $request->full_description;
-//            $video->picture_path     = $urlOne;
-//            $video->video_path       = $urlTwo;
 
             Alert::success('Success', 'Picture has been successfully uploaded.');
         }
-//        Session::flash('error', "Unexpected error occured.");
-//        return back();
-
-//        if ($isFileUploadedTwo) {
-//            $video = new SkillsAcademy();
-//            $video->video_path = $filePath;
-//            $video->save();
-//
-//            Session::flash('success', "Video has been successfully uploaded.");
-//        }
-//
-//        return back()
-//            ->with('error','Unexpected error occured');
-
 
         SkillsAcademy::create([
             'class'            => $request->class,
@@ -208,6 +183,7 @@ class SkillsAcademyController extends Controller
             'bulletin'         => $request->bulletin,
             'description'      => $request->description,
             'full_description' => $request->full_description,
+            'icon_path'        => $iconPath,
             'picture_path'     => $picturePath,
             'video_path'       => $filePath,
 

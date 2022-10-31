@@ -459,11 +459,11 @@
                 <div class="col-lg-4">
                     <div class="services-item">
                         <div class="services-icon">
-                            <img src="{{asset('assets/images/services/style8/1.png')}}" alt="">
+                            <img src="{{asset('assets/images/services/style8/1.png')}}" height="50px" width="100px"  alt="">
                         </div>
                         <div class="services-content">
                             <div class="services-title">
-                                <h3 class="title"><a href="#">Team Spirit</a></h3>
+                                <h3 class="title"><a href="#">Collaboration</a></h3>
                             </div>
                             <p class="services-txt"> We believe in the power of working together and building relationships.</p>
                         </div>
@@ -472,7 +472,7 @@
                 <div class="col-lg-4">
                     <div class="services-item">
                         <div class="services-icon">
-                            <img src="{{asset('assets/images/services/style8/2.png')}}" alt="">
+                            <img src="{{asset('assets/images/services/style8/2.png')}}" height="50px" width="100px"  alt="">
                         </div>
                         <div class="services-content">
                             <div class="services-title">
@@ -485,7 +485,7 @@
                 <div class="col-lg-4">
                     <div class="services-item">
                         <div class="services-icon">
-                            <img src="{{asset('assets/images/services/style8/3.png')}}" alt="">
+                            <img src="{{asset('assets/images/services/style8/3.png')}}" height="50px" width="100px"  alt="">
                         </div>
                         <div class="services-content">
                             <div class="services-title">
@@ -498,7 +498,7 @@
                 <div class="col-lg-4">
                     <div class="services-item">
                         <div class="services-icon">
-                            <img src="{{asset('assets/images/services/style8/1.png')}}" alt="">
+                            <img src="{{asset('assets/images/services/style8/4.png')}}" height="50px" width="100px"  alt="">
                         </div>
                         <div class="services-content">
                             <div class="services-title">
@@ -511,7 +511,7 @@
                 <div class="col-lg-4">
                     <div class="services-item">
                         <div class="services-icon">
-                            <img src="{{asset('assets/images/services/style8/2.png')}}" alt="">
+                            <img src="{{asset('assets/images/services/style8/5.png')}}" height="50px" width="100px"  alt="">
                         </div>
                         <div class="services-content">
                             <div class="services-title">
@@ -524,7 +524,7 @@
                 <div class="col-lg-4">
                     <div class="services-item">
                         <div class="services-icon">
-                            <img src="{{asset('assets/images/services/style8/3.png')}}" alt="">
+                            <img src="{{asset('assets/images/services/style8/6.png')}}" height="50px" width="100px"  alt="">
                         </div>
                         <div class="services-content">
                             <div class="services-title">

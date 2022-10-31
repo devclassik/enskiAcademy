@@ -67,7 +67,7 @@ class HomeController extends Controller
 
         $this->Validate($request,[
             'tag'             => 'required|min:5|max:15',
-            'title'           => 'required|min:10|max:50',
+            'title'           => 'required|max:50',
             'phaseOne'        => 'required|unique:blogs|max:255',
             'phaseTwo'        => 'required',
             'phaseTwoB'       => 'required',

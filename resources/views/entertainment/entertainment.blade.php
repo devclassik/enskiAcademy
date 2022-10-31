@@ -102,7 +102,7 @@
                         <div class="col-lg-3">
                             <div class="logo-part">
                                 <a href="index.html">
-                                    <img class="normal-logo" src="{{asset('assets/images/logo-light.png')}}" alt="logo">
+                                    <img class="normal-logo" src="{{asset('assets/images/logo-light1.png')}}" alt="logo">
                                     <img class="sticky-logo" src="{{asset('assets/images/logo-dark.png')}}" alt="logo">
                                 </a>
                             </div>
@@ -259,30 +259,6 @@
                         <a href="https://rstheme.com">
                             <img class="hover-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="partner-item">
-                    <div class="logo-img">
-                        <a href="https://rstheme.com">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/7.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/7.png')}}" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="partner-item">
-                    <div class="logo-img">
-                        <a href="https://rstheme.com">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/8.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/8.png')}}" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="partner-item">
-                    <div class="logo-img">
-                        <a href="https://rstheme.com">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/9.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/9.png')}}" alt="">
                         </a>
                     </div>
                 </div>
@@ -1153,30 +1129,6 @@
                         <a href="https://rstheme.com">
                             <img class="hover-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="partner-item">
-                    <div class="logo-img">
-                        <a href="https://rstheme.com">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/7.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/7.png')}}" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="partner-item">
-                    <div class="logo-img">
-                        <a href="https://rstheme.com">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/8.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/8.png')}}" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="partner-item">
-                    <div class="logo-img">
-                        <a href="https://rstheme.com">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/9.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/9.png')}}" alt="">
                         </a>
                     </div>
                 </div>
