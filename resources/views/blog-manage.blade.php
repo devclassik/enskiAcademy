@@ -78,10 +78,9 @@
                                                     <li><a href="/entertainment">Entertainment</a> </li>
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
                                                     <li><a href="/branding">Branding Agency</a> </li>
-                                                    {{--    add a comming soon page @todo--}}
-                                                    <li><a href="#">Financial Services</a></li>
-                                                    <li><a href="#">Skill Set Connector</a> </li>
-                                                    <li><a href="#">Logistics</a> </li>
+                                                    <li><a href="/coming-soon">Financial Services</a></li>
+                                                    <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                    <li><a href="/coming-soon">Logistics</a> </li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
@@ -91,7 +90,7 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="#">Contact</a>
+                                                <a href="/contact">Contact</a>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
                                     </nav>

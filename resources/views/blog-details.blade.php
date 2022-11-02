@@ -166,7 +166,7 @@
                                 </div>
                                 <div class="categories mb-50">
                                     <div class="widget-title">
-                                        <h3 class="title">Categories</h3>
+                                        <h3 class="title">Services</h3>
                                     </div>
                                     <ul>
                                         <li><a href="/entertainment">Entertainment</a> </li>

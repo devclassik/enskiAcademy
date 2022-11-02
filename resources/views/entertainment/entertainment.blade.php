@@ -70,7 +70,7 @@
                                     </li>
                                     <li>
                                         <i class="flaticon-call"></i>
-                                        <a href="tel:++234 0)8162237272"> +234 (0) 8162237272</a>
+                                        <a href="tel:++234 0)9158972334"> +234 (0) 9158972334</a>
                                     </li>
                                     <li>
                                         <i class="flaticon-location"></i>
@@ -124,10 +124,9 @@
                                                     <li><a href="/entertainment">Entertainment</a> </li>
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
                                                     <li><a href="/branding">Branding Agency</a></li>
-                                                    {{--     add a comming soon page @todo--}}
-                                                    <li><a href="">Financial Services</a></li>
-                                                    <li><a href="">Skill Set Connector</a> </li>
-                                                    <li><a href="">Logistics</a> </li>
+                                                    <li><a href="/coming-soon">Financial Services</a></li>
+                                                    <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                    <li><a href="/coming-soon">Logistics</a> </li>
                                                 </ul>
                                             </li>
                                             <li><a href="#rs-portfolio">Daily Theme</a></li>
@@ -216,7 +215,7 @@
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="3" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://www.instagram.com/enski_entertainment/">
                             <img class="hover-logo" src="{{asset('assets/images/partner/1.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/1.png')}}" alt="">
                         </a>
@@ -224,7 +223,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://wa.me/message/KUOMF26QJ33GK1">
                             <img class="hover-logo" src="{{asset('assets/images/partner/2.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/2.png')}}" alt="">
                         </a>
@@ -232,7 +231,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://t.me/enski_entertainment">
                             <img class="hover-logo" src="{{asset('assets/images/partner/3.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/3.png')}}" alt="">
                         </a>
@@ -240,7 +239,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://t.me/enski_entertainment">
                             <img class="hover-logo" src="{{asset('assets/images/partner/4.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/4.png')}}" alt="">
                         </a>
@@ -248,7 +247,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://www.facebook.com/Enski_entertainment-105939982023001/">
                             <img class="hover-logo" src="{{asset('assets/images/partner/5.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/5.png')}}" alt="">
                         </a>
@@ -256,7 +255,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://www.instagram.com/enski_entertainment/">
                             <img class="hover-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
                         </a>
@@ -319,6 +318,7 @@
                                 <div class="row">
                                     <div class="col-md-6 pr-10 pt-40 sm-pt-0 sm-pr-0 sm-pl-0">
                                        <div class="services-item mb-20 orange-bg">
+                                        <a href="https://wa.me/message/KUOMF26QJ33GK1">
                                            <div class="services-icon">
                                                <div class="image-part">
                                                    <img class="main-img" src="{{asset('assets/images/services/style3/main-img/1.png')}}" alt="">
@@ -330,13 +330,17 @@
                                                    <h3 class="title"><a href="https://wa.me/message/KUOMF26QJ33GK1">WHATSAPP</a></h3>
                                                </div>
                                                <div class="services-desc">
+                                               <a href="https://wa.me/message/KUOMF26QJ33GK1">
                                                    <p>
                                                       Stay up to date with fun and enlightening whatsapp status post and discussions.
                                                    </p>
+                                                </a>
                                                </div>
                                            </div>
+                                        </a>
                                        </div>
                                        <div class="services-item cyan-bg">
+                                       <a href="https://www.instagram.com/enski_entertainment/">
                                            <div class="services-icon">
                                                <div class="image-part">
                                                    <img class="main-img" src="{{asset('assets/images/services/style3/main-img/2.png')}}" alt="">
@@ -348,14 +352,18 @@
                                                    <h3 class="title"><a href="https://www.instagram.com/enski_entertainment/">INSTAGRAM</a></h3>
                                                </div>
                                                <div class="services-desc">
+                                               <a href="https://www.instagram.com/enski_entertainment/">
                                                    <p>
                                                      Follow up to stay connected to fun and uplifting video posts, reels, stories, carousels.
                                                    </p>
+                                                </a>
                                                </div>
                                            </div>
                                        </div>
+                                        </a>
                                     </div>
                                     <div class="col-md-6 pl-10 sm-pr-0 sm-pl-0 sm-mt-20">
+                                    <a href="https://t.me/enski_entertainment">
                                        <div class="services-item gold-bg mb-20">
                                            <div class="services-icon">
                                                <div class="image-part">
@@ -368,13 +376,17 @@
                                                    <h3 class="title"><a href="https://t.me/enski_entertainment">TELEGRAM</a></h3>
                                                </div>
                                                <div class="services-desc">
+                                               <a href="https://t.me/enski_entertainment">
                                                    <p>
                                                       Subscribe to access to all genres of movies and series, comics, games, books.
                                                    </p>
+                                                </a>
                                                </div>
                                            </div>
+                                        </a>
                                        </div>
                                            <div class="services-item blue-bg">
+                                           <a href="https://www.facebook.com/Enski_entertainment-105939982023001/">
                                            <div class="services-icon">
                                                <div class="image-part">
                                                    <img class="main-img" src="{{asset('assets/images/services/style3/main-img/4.png')}}" alt="">
@@ -382,14 +394,18 @@
                                                </div>
                                            </div>
                                            <div class="services-content">
-                                               <div class="services-text">                                                                                      <h3 class="title"><a href="https://www.facebook.com/Enski_entertainment-105939982023001/">FACEBOOK</a></h3>
+                                               <div class="services-text"> 
+                                                 <h3 class="title"><a href="https://www.facebook.com/Enski_entertainment-105939982023001/">FACEBOOK</a></h3>
                                                </div>
                                                <div class="services-desc">
+                                               <a href="https://www.facebook.com/Enski_entertainment-105939982023001/">
                                                    <p>
                                                         Like and follow to stay updated on inspiring, entertaining and trending posts daily.
                                                    </p>
+                                                </a>
                                                </div>
                                            </div>
+                                        </a>
                                        </div>
                                     </div>
                                 </div>
@@ -415,42 +431,37 @@
                     <div class="sec-title mb-30">
                         <div class="sub-text white-color style4-bg">OUR VARIOUS ENTERTAINMENT CONTENTS</div>
                         <h2 class="title white-color pb-20">
-                            We Are Increasing Business Success With Technology
+                        Explore Several Thrilling Content Niches 
                         </h2>
                         <div class="desc white-color">
-                        Our array of contents aren't just targeted at making you happy and entertained but also inspired and even enlightened.
+                        Our array of contents are balanced to not only keep you entertained but also inspired and even enlightened.
                         </div>
                     </div>
                     <!-- Skillbar Section Start -->
                     <div class="rs-skillbar style1 home4">
                         <div class="cl-skill-bar">
                             <!-- Start Skill Bar -->
-                            <span class="skillbar-title white-color">Commedy Videos</span>
-                            <div class="skillbar" data-percent="92">
-                                <p class="skillbar-bar"></p>
-                                <span class="skill-bar-percent white-color"></span>
-                            </div>
                             <!-- Start Skill Bar -->
                             <span class="skillbar-title white-color">ENTERTAINING CONTENTS </span> <i> Comedy/ Dance videos, Songs, Funny Memes, Movies, Savage Replies, Games</i>
-                            <div class="skillbar" data-percent="80">
+                            <div class="skillbar" data-percent="55">
                                 <p class="skillbar-bar paste-bg"></p>
                                 <span class="skill-bar-percent white-color"></span>
                             </div>
                             <!-- Start Skill Bar -->
                             <span class="skillbar-title white-color">INFORMATIVE CONTENTS  </span><i> Fun facts, Skills Tips, Health Tips, Business/ Financial Tips, Relationship Tips</i>
-                            <div class="skillbar" data-percent="95">
+                            <div class="skillbar" data-percent="12">
                                 <p class="skillbar-bar blue-bg"></p>
                                 <span class="skill-bar-percent white-color"></span>
                             </div>
                             <!-- Start Skill Bar -->
                             <span class="skillbar-title white-color">INSPIRATIONAL CONTENTS  </span> <i> Motivational quotes/ videos, Worship Videos, Preaching Extracts</i>
-                            <div class="skillbar" data-percent="85">
+                            <div class="skillbar" data-percent="16">
                                 <p class="skillbar-bar black-dark-bg"></p>
                                 <span class="skill-bar-percent white-color"></span>
                             </div>
                             <!-- Start Skill Bar -->
                             <span class="skillbar-title white-color">OTHERS  </span> <i> MCM, WCW, Giveaways, Freebies, Couselling, Throwbacks, Riddles, Riddles, Q-A Session</i>
-                            <div class="skillbar" data-percent="78">
+                            <div class="skillbar" data-percent="17">
                                 <p class="skillbar-bar pink-bg"></p>
                                 <span class="skill-bar-percent white-color"></span>
                             </div>
@@ -498,7 +509,7 @@
                             <img src="{{asset('assets/images/choose/icons/1.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#">❌Non Explicit Content🔞</a></h3>
+                            <h3 class="title"><a href="#">Family Friendly Content🔞</a></h3>
                             <p class="services-txt">  Our contents are regularized to keep it family friendly.</p>
                         </div>
                     </div>
@@ -507,7 +518,7 @@
                             <img src="{{asset('assets/images/choose/icons/2.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#"> 🟩Assorted Content Categories</a></h3>
+                            <h3 class="title"><a href="#">Assorted Content Categories</a></h3>
                             <p class="services-txt">  Our contents explores several thrilling niches as well as gives room for learning and growth.</p>
                         </div>
                     </div>
@@ -516,16 +527,16 @@
                             <img src="{{asset('assets/images/choose/icons/3.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#">🚹No more lonely moments</a></h3>
+                            <h3 class="title"><a href="#">No more lonely moments</a></h3>
                             <p class="services-txt">  We are always available for fun live-interactions with you.</p>
                         </div>
                     </div>
                     <div class="services-wrap mb-25">
                         <div class="services-icon">
-                            <img src="{{asset('assets/images/choose/icons/style2/3.png')}}" alt="">
+                            <img src="{{asset('assets/images/choose/icons/4.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="#"> 👁‍🗨Viewers Oriented Contents</a></h3>
+                            <h3 class="title"><a href="#">Viewers Oriented Contents</a></h3>
                             <p class="services-txt"> Always open to suggestions and reviews to help us suit your taste.</p>
                         </div>
                     </div>
@@ -901,8 +912,8 @@
                             <img src="{{asset('assets/images/choose/icons/style2/2.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="tel:(+234)8162237272">Call Us | Whatsapp</a></h3>
-                            <p class="services-txt"><a href="tel:(+234)8162237272"> +2348162237272</a></p>
+                            <h3 class="title"><a href="tel:(+234)9158972334">Call Us | Whatsapp</a></h3>
+                            <p class="services-txt"><a href="tel:(+234)9158972334"> +2349158972334</a></p>
                         </div>
                     </div>
                     <div class="services-wrap">
@@ -923,7 +934,7 @@
                         <div class="contact-wrap">
                             <div class="content-part mb-25">
                                 <h2 class="title mb-15">Upload your content</h2>
-                                <p class="desc">We are here to help you 24/7 with experts</p>
+                                <p class="desc">Lets help your content reach a wider audience.</p>
                             </div>
                             <div id="appointment-messages"></div>
                             <form method="post" action="appointment.php">
@@ -1086,7 +1097,7 @@
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="3" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://www.instagram.com/enski_entertainment/">
                             <img class="hover-logo" src="{{asset('assets/images/partner/1.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/1.png')}}" alt="">
                         </a>
@@ -1094,7 +1105,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://wa.me/message/KUOMF26QJ33GK1">
                             <img class="hover-logo" src="{{asset('assets/images/partner/2.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/2.png')}}" alt="">
                         </a>
@@ -1102,7 +1113,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://t.me/enski_entertainment">
                             <img class="hover-logo" src="{{asset('assets/images/partner/3.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/3.png')}}" alt="">
                         </a>
@@ -1110,7 +1121,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://t.me/enski_entertainment">
                             <img class="hover-logo" src="{{asset('assets/images/partner/4.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/4.png')}}" alt="">
                         </a>
@@ -1118,7 +1129,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://www.facebook.com/Enski_entertainment-105939982023001/">
                             <img class="hover-logo" src="{{asset('assets/images/partner/5.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/5.png')}}" alt="">
                         </a>
@@ -1126,7 +1137,7 @@
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
-                        <a href="https://rstheme.com">
+                        <a href="https://www.instagram.com/enski_entertainment/">
                             <img class="hover-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
                             <img class="main-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
                         </a>
@@ -1172,10 +1183,9 @@
                         <li><a href="/entertainment">Entertainment</a> </li>
                         <li><a href="/skills-academy">Skills Academy</a> </li>
                         <li><a href="/branding">Branding Agency</a> </li>
-                            {{--    add a coming soon page--}}
-                        <li><a href="#">Financial Services</a></li>
-                        <li><a href="#">Skill Set Connector</a> </li>
-                        <li><a href="#">Logistics</a> </li>
+                        <li><a href="/coming-soon">Financial Services</a></li>
+                        <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                        <li><a href="/coming-soon">Logistics</a> </li>
                     </ul>
 
                 </div>
@@ -1189,7 +1199,7 @@
                         <li>
                             <i class="flaticon-call"></i>
                             <div class="desc">
-                            <a href="tel:(+234)8162237272">(+234)8162237272</a>
+                            <a href="tel:(+234)9158972334">(+234)9158972334</a>
                             </div>
                         </li>
                         <li>

@@ -73,10 +73,9 @@
                                                             <li><a href="/entertainment">Entertainment</a> </li>
                                                             <li><a href="/skills-academy">Skills Academy</a> </li>
                                                             <li><a href="/branding">Branding Agency</a> </li>
-                                                    {{--      add a comming soon page @todo--}}
-                                                            <li><a href="#">Financial Services</a></li>
-                                                            <li><a href="#">Skill Set Connector</a> </li>
-                                                            <li><a href="#">Logistics</a> </li>
+                                                            <li><a href="/coming-soon">Financial Services</a></li>
+                                                            <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                            <li><a href="/coming-soon">Logistics</a> </li>
                                                         </ul>
                                                     </li>
                                                    <li>
@@ -157,7 +156,7 @@
                             Gain access to top-level strategies and high income skills from leading field experts and professionals.
                         </p>
                         <ul class="banner-btn">
-                            <li><a class="readon discover" href="/home-about">Access Student Dashboard</a></li>
+                            <li><a class="readon discover" href="/dashboard">Access Student Dashboard</a></li>
                             <li>
                                 <div class="rs-videos">
                                     <div class="animate-border white-color">
@@ -332,12 +331,12 @@
                                     <img src="{{asset('assets/images/services/style5/1.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Gaphics Design Course</a></h2>
+                                    <h2 class="title"><a href="/graphics-courses">Gaphics Design Course</a></h2>
                                     <p class="desc">
                                         Learn how to creatively use and manipulate visual tools to become a highly skilled and sought-after graphic designer.
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Learn More</a>
+                                        <a href="/graphics-courses">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -345,7 +344,7 @@
                         <div class="col-lg-4 mb-20">
                             <div class="services-item">
                                 <div class="services-icon">
-                                    <img src="asset{{asset('s/images/services/style5/')}}2.png" alt="">
+                                    <img src="{{asset('assets/images/services/style5/2.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
                                     <h2 class="title"><a href="#">Crypto Trading Course</a></h2>
@@ -425,7 +424,7 @@
                         <div class="col-lg-4">
                             <div class="services-item">
                                 <div class="services-icon">
-                                    <img src="{{asset('assets/images/services/style5/5.png')}}" alt="">
+                                    <img src="{{asset('assets/images/services/style5/7.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
                                     <h2 class="title"><a href="#">Whatsapp Marketisation Course</a></h2>
@@ -441,7 +440,7 @@
                         <div class="col-lg-4">
                             <div class="services-item">
                                 <div class="services-icon">
-                                    <img src="{{asset('assets/images/services/style5/4.png')}}" alt="">
+                                    <img src="{{asset('assets/images/services/style5/8.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
                                     <h2 class="title"><a href="#">Web Development Course</a></h2>
@@ -457,7 +456,7 @@
                         <div class="col-lg-4">
                             <div class="services-item">
                                 <div class="services-icon">
-                                    <img src="{{asset('assets/images/services/style5/3.png')}}" alt="">
+                                    <img src="{{asset('assets/images/services/style5/9.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
                                     <h2 class="title"><a href="#">Video Ads Creation Course</a></h2>
@@ -473,7 +472,39 @@
                         <div class="col-lg-4">
                             <div class="services-item">
                                 <div class="services-icon">
-                                    <img src="{{asset('assets/images/services/style5/2.png')}}" alt="">
+                                    <img src="{{asset('assets/images/services/style5/10.png')}}" alt="">
+                                </div>
+                                <div class="services-content">
+                                    <h2 class="title"><a href="#">Information Marketing </a></h2>
+                                    <p class="desc">
+                                        Learn step by step strategies that will help you write powerful sale copies and become a highly paid copywriter.
+                                    </p>
+                                    <div class="services-btn2">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="services-item">
+                                <div class="services-icon">
+                                    <img src="{{asset('assets/images/services/style5/10.png')}}" alt="">
+                                </div>
+                                <div class="services-content">
+                                    <h2 class="title"><a href="#">Amazon KDP</a></h2>
+                                    <p class="desc">
+                                        Learn step by step strategies that will help you write powerful sale copies and become a highly paid copywriter.
+                                    </p>
+                                    <div class="services-btn2">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="services-item">
+                                <div class="services-icon">
+                                    <img src="{{asset('assets/images/services/style5/10.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
                                     <h2 class="title"><a href="#">Copywriting Course</a></h2>
@@ -766,7 +797,33 @@
                         <div class="col-lg-4">
                             <div class="services-item">
                                 <div class="services-icon">
-                                    <img src="{{asset('assets/images/services/style4/4.png')}}" alt="">
+                                    <img src="{{asset('assets/images/services/style4/3.png')}}" alt="">
+                                </div>
+                                <div class="services-content">
+                                    <div class="services-title">
+                                        <h3 class="title"><a href="#">High Accountability</a></h3>
+                                    </div>
+                                    <p class="services-txt">Full mentorship and guidance along the journey until you get successful as well as extra financial education to help you set the right financial foundation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="services-item">
+                                <div class="services-icon">
+                                    <img src="{{asset('assets/images/services/style4/2.png')}}" alt="">
+                                </div>
+                                <div class="services-content">
+                                    <div class="services-title">
+                                        <h3 class="title"><a href="#">High Accountability</a></h3>
+                                    </div>
+                                    <p class="services-txt">Full mentorship and guidance along the journey until you get successful as well as extra financial education to help you set the right financial foundation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="services-item">
+                                <div class="services-icon">
+                                    <img src="{{asset('assets/images/services/style4/1.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
                                     <div class="services-title">

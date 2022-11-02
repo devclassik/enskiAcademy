@@ -1,9 +1,9 @@
 @include('components.header')
-<!--Preloader area End here-->
-
+    <!--Preloader area End here-->
+     
 		<!-- Main content Start -->
         <div class="main-content">
-
+            
             <!--Full width header Start-->
             <div class="full-width-header">
                 <!--Header Start-->
@@ -14,7 +14,7 @@
                             <div class="row rs-vertical-middle">
                                 <div class="col-lg-2">
                                     <div class="logo-part">
-                                        <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
+                                        <a href="#"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-10 text-right">
@@ -37,7 +37,7 @@
                                              <i class="flaticon-call"></i>
                                             <span class="contact-info">
                                                 <span>Phone</span>
-                                                <a href="tel:+234(0)8162237272"> +234 (0) 8162237272</a>
+                                                +2348162237272
                                             </span>
                                         </li>
                                     </ul>
@@ -51,14 +51,14 @@
                     <div class="menu-area menu-sticky">
                         <div class="container">
                             <div class="logo-area">
-                                <a href="/homepage">
+                                <a href="#">
                                     <img class="sticky-logo" src="{{asset('assets/images/logo-dark.png')}}" alt="logo">
                                 </a>
                             </div>
                             <div class="rs-menu-area">
                                 <div class="main-menu">
                                     <div class="mobile-menu">
-                                        <a href="/homepage" class="mobile-logo">
+                                        <a href="#" class="mobile-logo">
                                             <img src="{{asset('assets/images/logo-light.png')}}" alt="logo">
                                         </a>
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
@@ -67,8 +67,8 @@
                                     </div>
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
-                                            <li class="rs-mega-menu ">
-                                                <a href="/homepage">Home</a>
+                                            <li class="rs-mega-menu menu-item-has-children">
+                                                 <a href="#">Home</a> 
                                             </li>
                                             <li>
                                                 <a href="/home-about">About</a>
@@ -78,7 +78,7 @@
                                                 <ul class="sub-menu">
                                                     <li><a href="/entertainment">Entertainment</a> </li>
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
-                                                    <li><a href="/branding">Branding Agency</a></li>
+                                                    <li><a href="/branding">Branding Agency</a> </li>
                                                     <li><a href="/coming-soon">Financial Services</a></li>
                                                     <li><a href="/coming-soon">Skill Set Connector</a> </li>
                                                     <li><a href="/coming-soon">Logistics</a> </li>
@@ -88,14 +88,14 @@
                                                <a href="/blog">Blog</a>
                                                <ul class="sub-menu">
                                                    <li><a href="/blog">Blog</a> </li>
-                                               </ul>
+                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="/contact">Contact</a>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
-                                    </nav>
-                                </div> <!-- //.main-menu -->
+                                    </nav>                                        
+                                </div> <!-- //.main-menu -->                                
                             </div>
                             <div class="expand-btn-inner search-icon hidden-sticky hidden-md">
                                 <ul>
@@ -104,6 +104,13 @@
                                             <i class="flaticon-search"></i>
                                         </a>
                                     </li>
+                                    @if (!Auth::guest())
+                                        <li><a class="quote-btn" href="/dologout">Logout</a></li>
+
+                                    @else
+                                        <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
+
+                                    @endif
                                 </ul>
                                 <div class="toolbar-sl-share">
                                     <ul class="social">
@@ -121,145 +128,108 @@
                 <!--Header End-->
             </div>
             <!--Full width header End-->
-
+         
             <!-- Breadcrumbs Start -->
-            <div class="rs-breadcrumbs img3">
+            <div class="rs-breadcrumbs img4">
                 <div class="breadcrumbs-inner text-center">
-                    <h1 class="page-title">My Account</h1>
+                    <h1 class="page-title">Dasdboard</h1>
                     <ul>
                         <li title="Braintech - IT Solutions and Technology Startup HTML Template">
-                            <a class="active" href="/homepage">Home</a>
+                            <a class="active" href="#">Home</a>
                         </li>
-                        <li>My Account</li>
+                        <li>Dasdboard</li>
                     </ul>
                 </div>
             </div>
             <!-- Breadcrumbs End -->
 
-            <!-- My Account Section Start -->
-            <div class="rs-my-account pt-110 pb-120 md-pt-60 md-pb-80">
+            <!-- Checkout section start -->
+            <div id="rs-checkout" class="rs-checkout pt-120 pb-120 md-pt-80 md-pb-80">
                 <div class="container">
-                    <div class="row">
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
+                    <div class="coupon-toggle">
+                        <div id="accordion" class="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <div class="card-title">
+                                        <span><i class="fa fa-window-maximize"></i> List of paid courses</span>
+                                        <!-- <button class="accordion-toggle" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Click here to enter your code</button> -->
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>If you have a coupon code, please apply it below.</p>
+                                        <div class="coupon-code-input">
+                                            <input type="text" name="coupon_code" placeholder="Coupon code" required="">
+                                        </div>
+                                        <button class="add-btn" type="submit">Apply Coupon</button>
+                                    </div>
+                                </div>
                             </div>
-                        @endif
-                            @include('sweetalert::alert')
-                       <div class="col-lg-6 md-mb-50">
-                            <h2 class="title pb-30 md-pb-15">Login</h2>
-                           <form action="{{ route ('login')}}" method="post">
-                               @csrf
-                               <div class="rs-login">
-                                   <div class="form-group mb-30">
-                                       <label>Username or email address<span>*</span></label>
-                                       <input  name="lemail" class="form-control-mod" type="text" required="">
-                                       <label>Password <span>*</span></label>
-                                       <input  name="lpassword" class="form-control-mod" type="password" required="">
-                                   </div>
-                                   <button class="add-btn" type="submit">Log In</button>
-                                   <label>
-                                       <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever">
-                                       <span>Remember me</span>
-                                   </label>
-                                   <div class="last-password pt-30">
-                                       <a href="#">Lost your password?</a>
-                                   </div>
-                               </div>
-                           </form>
-
-                       </div>
-                       <div class="col-lg-6">
-                            <h2 class="title pb-30 md-pb-15">Register</h2>
-                           <form action="{{route('register')}}" method="post">
-                               @csrf
-                               <div class="rs-login">
-                                   <div class="form-group">
-                                       <label>Full Name<span>*</span></label>
-                                       <input name="name" class="form-control-mod" type="text" required="">
-                                   </div>
-                                   <div class="form-group">
-                                       <label>Username | email<span>*</span></label>
-                                       <input name="email" class="form-control-mod" type="email" required="">
-                                   </div>
-
-                                   @if (Session::has('email'))
-
-                                       <div class="alert alert-danger">{{ Session::get('email') }}</div>
-
-                                   @endif
-                                   <div class="form-group">
-                                       <label>Occupation<span>*</span></label>
-                                       <!-- <input name="text" class="form-control-mod" type="text" required=""> -->
-                                       <select name="occupation" id="" class="col-lg-12 dropdown-menu-lg-start" required="">
-                                        <option value="" disabled>Please select an Option</option>
-                                        <option value="Private Enterprise">Private Enterprise</option>
-                                        <option value="Enterpreneur">Enterpreneur</option>
-                                        <option value="Student">Student</option>
-                                        <option value="Corps Member">Corps Member</option>
-                                        <option value="Unemployed">Unemployed</option>
-                                        <option value="Self Employed">Self Employed</option>
-                                        <option value="Civil Servent">Civil Servent</option>
-                                       </select>
-                                   </div>
-
-                                   <div class="form-group">
-                                       <label>State Of Residence<span>*</span></label>
-                                       <input name="state" class="form-control-mod" type="text" required="">
-                                   </div>
-                                   <div class="form-group">
-                                       <label>Gender<span>*</span></label>
-                                       <!-- <input name="text" class="form-control-mod" type="text" required=""> -->
-                                       <select name="gender" id="" class="col-lg-12 dropdown-menu-lg-start" required="">
-                                        <option value="" disabled>Please select an Option</option>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                       </select>
-                                   </div>
-
-                                   <div class="form-group">
-                                       <label>Telephone<span>*</span></label>
-                                       <input name="tel" class="form-control-mod" type="tel" required="">
-                                   </div>
-
-                                   <div class="form-group">
-                                       <label>password<span>*</span></label>
-                                       <input name="password" class="form-control-mod" type="password" required="">
-                                   </div>
-                                   <div class="form-group">
-                                       <label>Confirm Password<span>*</span></label>
-                                       <input name="cpassword" class="form-control-mod" type="password" required="">
-                                   </div>
-
-                                   @if (Session::has('password'))
-
-                                       <div class="alert alert-danger">
-
-                                           {{ Session::get('password') }}</div>
-
-                                   @endif
-{{--                                   <p>A password will be sent to your email address.</p>--}}
-                                   <p>
-                                       Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a>
-                                   </p>
-                                   <button class="add-btn" type="submit">Register</button>
-                               </div>
-                           </form>
-
-                       </div>
+                        </div>
+                    </div>
+                    <div class="full-grid">
+                        <form method="post" action="">
+                            <div class="ordered-product">
+                                <div class="checkout-title">
+                                    <h3>Your Courses</h3>
+                                </div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>Title</th>
+                                            <th>Video</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Medicine Bottle <strong><i class="fa fa-close"></i> 1</strong></td>
+                                            <td>$30.00</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Medicine Bottle <strong><i class="fa fa-close"></i> 1</strong></td>
+                                            <td>$30.00</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>3</td>
+                                            <th>Subtotal</th>
+                                            <th>$60.00</th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <th>Total</th>
+                                            <th>$60.00</th>
+                                            <td> <button class="add-btn" type="submit">Download</button></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </form>
+                        <div class="payment-method mt-40 md-mt-20">
+                            <div class="bottom-area">
+                                <p class="mt-15">Seek for more courses</p>
+                                <a href="/courses">
+                                <button class="add-btn" >See more...</button>
+                            </a>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
-            <!-- My Account Section Start -->
+            <!-- Checkout section end -->
 
-
-        </div>
+        </div> 
         <!-- Main content End -->
-
+     
         <!-- Footer Start -->
         @include('components.footer')
         <!-- Footer End -->

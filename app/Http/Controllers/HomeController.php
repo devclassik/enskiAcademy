@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\blog;
+use App\Models\Blog;
 use App\Models\ContactUs;
 use App\Models\SkillsAcademy;
 use Illuminate\Http\Request;
@@ -66,13 +66,9 @@ class HomeController extends Controller
         $urlOne = Storage::disk('public')->url($picturePath);
 
         $this->Validate($request,[
-            'tag'             => 'required|min:5|max:15',
-            'title'           => 'required|max:50',
-            'phaseOne'        => 'required|unique:blogs|max:255',
-            'phaseTwo'        => 'required',
-            'phaseTwoB'       => 'required',
-            'phaseThree'      => 'required',
-            'phaseThreeB'     => 'required',
+            'tag'             => 'required',
+            'title'           => 'required',
+            'phaseOne'        => 'required|unique:blogs',
             'phaseFour'       => 'required',
             'phaseFive'       => 'required',
 

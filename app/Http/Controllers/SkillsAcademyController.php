@@ -70,7 +70,13 @@ class SkillsAcademyController extends Controller
      */
     public function courses()
     {
+
         return view('skills-academy.courses');
+    }
+
+    public function graphics()
+    {
+        return view('skills-academy.graphics-design-course');
     }
 
     /**
@@ -82,10 +88,13 @@ class SkillsAcademyController extends Controller
     public function store(Request $request)
     {
         $this->Validate($request,[
-            'name'     => 'required',
-            'email'    => 'required',
-            'tel'      => 'required|min:11',
-            'password' => 'required|min:6',
+            'name'        => 'required',
+            'email'       => 'required',
+            'occupation'  => 'required',
+            'state'       => 'required',
+            'gender'      => 'required',
+            'tel'         => 'required|min:11',
+            'password'    => 'required|min:6',
         ]);
         if (User::where('email', $request->email)->first())
         {
@@ -99,10 +108,13 @@ class SkillsAcademyController extends Controller
         User::create([
             'name'  => $request->name,
             'email' => $request->email,
+            'occupation' =>$request->occupation,
+            'state' =>$request->state,
+            'gender' =>$request->gender,
             'tel' => $request->tel,
             'password' => bcrypt($request->password)
         ]);
-        Session::flash('success', "User Created Successfully, Proceed to Login");
+        Alert::success('Success', 'User Created Successfully, Proceed to Login!!!');
         return redirect('my-account');
     }
 
@@ -228,9 +240,17 @@ class SkillsAcademyController extends Controller
         //
     }
 
-    public function shop()
+    public function shop($id)
     {
-        return view('skills-academy.shop');
+        $shops = SkillsAcademy::find($id);
+        $courses = SkillsAcademy::latest()->paginate(6);
+        return view('skills-academy.shop', compact('shops','courses'));
+    }
+    public function shops()
+    {
+//        $shops = SkillsAcademy::all()->random(20)->paginate(10);
+        $courses = SkillsAcademy::latest()->paginate(10);
+        return view('skills-academy.shops', compact('courses'));
     }
 
     /**
@@ -253,5 +273,8 @@ class SkillsAcademyController extends Controller
     function checkout()
     {
         return view('skills-academy.checkout');
+    }
+    public function dashboard(){
+        return view('skills-academy.student-dashboard');
     }
 }

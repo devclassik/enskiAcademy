@@ -79,7 +79,6 @@
                                                         <li><a href="/entertainment">Entertainment</a> </li>
                                                         <li><a href="/skills-academy">Skills Academy</a> </li>
                                                         <li><a href="/branding">Branding Agency</a> </li>
-{{--                                                        add a comming soon page @todo--}}
                                                         <li><a href="/coming-soon">Financial Services</a></li>
                                                         <li><a href="/coming-soon">Skill Set Connector</a> </li>
                                                         <li><a href="/coming-soon">Logistics</a> </li>
@@ -128,7 +127,7 @@
                     <ul class="contact">
                         <li><i class="fa fa-globe"></i>Middle Badda, Dhaka, BD</li>
                         <li><i class="fa fa-phone"></i>+234 (0) 8162237272</li>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:support@enski.com.ng<">support@enski.com.ng<</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:support@enski.com.ng">support@enski.com.ng<</a></li>
                         <li><i class="fa fa-clock-o"></i>12:01pm-6:00 PM</li>
                     </ul>
                     @include('components.socials')
@@ -453,6 +452,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-sm-6 md-mb-50">
+                        <a href="https://wa.me/message/KUOMF26QJ33GK1">
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
@@ -464,8 +464,10 @@
                                     </div>
                                 </div>
                             </div>
+                        </a>
                         </div>
                         <div class="col-lg-3 col-sm-6 md-mb-50">
+                        <a href="https://fb.me/enski.impact.summit">
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
@@ -477,8 +479,10 @@
                                     </div>
                                 </div>
                             </div>
+                        </a>
                         </div>
                         <div class="col-lg-3 col-sm-6">
+                        <a href="https://www.instagram.com/enski_impact_summit">
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
@@ -490,8 +494,10 @@
                                     </div>
                                 </div>
                             </div>
+                        </a>
                         </div>
                         <div class="col-lg-3 col-sm-6">
+                        <a href="https://t.me/enski_entertainment">
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
@@ -503,6 +509,7 @@
                                     </div>
                                 </div>
                             </div>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -551,7 +558,7 @@
                                 <div class="pricing-table-price">
                                     <div class="pricing-table-bags">
                                         <span class="pricing-currency">&#x20A6;</span>
-                                        <span class="table-price-text"> {{$skill->price}}</span>
+                                        <span class="table-price-text"> {{number_format($skill->price)}}</span>
                                         <span class="table-period"> {{Str::upper($skill->title)}}</span>
                                     </div>
                                 </div>
@@ -902,9 +909,9 @@
             <div id="rs-blog" class="rs-blog pt-108 pb-120 md-pt-70 md-pb-70">
                 <div class="container">
                     <div class="sec-title2 text-center mb-45">
-                        <span class="sub-text">Events</span>
+                        <span class="sub-text">BLOGS</span>
                         <h2 class="title testi-title">
-                            Learn About Our Recent Camp
+                           Get Englightened From Our Recent Innovative Contents and Events
                         </h2>
                         <div class="heading-line">
 
@@ -914,9 +921,9 @@
                         @foreach($blogs as $blog)
                         <div class="blog-item">
                             <div class="image-wrap">
-                                <a href="/blog-details"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 300px" alt=""></a>
+                                <a href="{{route ('blogDetails', $blog->id)}}"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 300px" alt=""></a>
                                 <ul class="post-categories">
-                                    <li><a href="/blog-details">{{$blog->tag}}</a></li>
+                                    <li><a href="{{route ('blogDetails', $blog->id)}}">{{$blog->tag}}</a></li>
                                 </ul>
                             </div>
                             <div class="blog-content">
@@ -924,7 +931,7 @@
                                     <li class="date"><i class="fa fa-calendar-check-o"></i>{{$blog->created_at->diffForHumans()}}</li>
                                     <li class="admin"><i class="fa fa-user-o"></i> admin</li>
                                 </ul>
-                                <h3 class="blog-title"><a href="/blog-details">{{$blog->title}}</a></h3>
+                                <h3 class="blog-title"><a href="{{route ('blogDetails', $blog->id)}}">{{$blog->title}}</a></h3>
                                 <p class="desc">{{  Str::limit($blog->phaseOne, 40)}}</p>
 {{--                                {{ route('userDetails',$merchant->id) }}--}}
                                 <div class="blog-button"><a href="{{route ('blogDetails', $blog->id)}}">Learn More</a></div>

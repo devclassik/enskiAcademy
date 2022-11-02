@@ -68,16 +68,15 @@
                                             <li>
                                                 <a href="/home-about">About</a>
                                             </li>
-                                            <li class="menu-item-has-children rs-mega-menu current-menu-item">
+                                            <li class="menu-item-has-children current-menu-item">
                                                 <a href="#">Services</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="/entertainment">Entertainment</a> </li>
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
                                                     <li><a href="/branding">Branding Agency</a> </li>
-                                                    {{--    add a comming soon page @todo--}}
-                                                    <li><a href="#">Financial Services</a></li>
-                                                    <li><a href="#">Skill Set Connector</a> </li>
-                                                    <li><a href="#">Logistics</a> </li>
+                                                    <li><a href="/coming-soon">Financial Services</a></li>
+                                                    <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                    <li><a href="/coming-soon">Logistics</a> </li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -110,8 +109,8 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Menu End -->
+        </header>
+        <!--Header End-->
     </div>
     <!--Full width header End-->
 
@@ -121,15 +120,15 @@
             <h1 class="page-title">Shop</h1>
             <ul>
                 <li title="Braintech - IT Solutions and Technology Startup HTML Template">
-                    <a class="active" href="skills-academy.html">Skills Academy</a>
+                    <a class="active" href="/skills-academy">Skills Academy</a>
                 </li>
                 <li title="Go To Product">
-                    <a class="active" href="courses.html">Courses</a>
+                    <a class="active" href="/shops">Courses</a>
                 </li>
                 <li title="Go To the Business category archives">
-                    <a class="active" href="binary-trading.html">Binary Trading</a>
+                    <a class="active" href="binary-trading.html">{{$shops->class}}</a>
                 </li>
-                <li>Binary Trading Elite Course</li>
+                <li>{{$shops->title}}</li>
             </ul>
         </div>
     </div>
@@ -142,20 +141,21 @@
                 <div class="col-md-6 col-sm-12 sm-mb-30">
                     <div class="single-product-image">
                         <div class="images-single">
-                            <img src="assets/images/shop/1.jpg" alt="Single Product">
+                            <img src="{{asset('storage')}}/{{$shops->picture_path}}"  style="height:300px; width: 100%" alt="Single Product">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="single-price-info pl-30 sm-pl-0">
-                        <h4 class="product-title">Binary Trading Elite Course</h4>
-                        <span class="single-price">&#x20A6; 49,999</span>
-                        <p class="some-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <!-- {{$shops->created_at->diffForHumans()}} -->
+                        <h4 class="product-title">{{$shops->title}}</h4>
+                        <span class="single-price">&#x20A6; {{number_format($shops->price)}}</span>
+                        <p class="some-text">{{$shops->description}}</p>
                         <form>
                             <input type="number" class="input-text" step="1" min="1" value="1">
                             <button class="add-btn ml-10" type="submit">Add To cart</button>
                         </form>
-                        <p class="category"><span>Category:</span><a href="#"> Trading</a></p>
+                        <p class="category"><span>Category:</span><a href="#"> {{$shops->category}}	</a></p>
                     </div>
                 </div>
             </div>
@@ -174,12 +174,12 @@
 
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-                        <p class="dsc-p">A product can be classified as tangible or intangible. A tangible product is a physical object that can be perceived by touch such as a building, vehicle, gadget, or clothing. An intangible product is a product that can only be perceived indirectly such as an insurance policy</p>
+                        <p class="dsc-p">{{$shops->full_description}}</p>
                     </div>
                     <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
                         <div class="reviews-grid">
                             <div class="top-area">
-                                <p>There are no reviews yet.</p>
+                                <p>Reviews dropping soon.</p>
                                 <h6 class="mb-0">Be the first to review “Digital CC Camera”</h6>
                             </div>
 
@@ -224,48 +224,22 @@
         <div class="container">
             <h4 class="title pb-23 md-pb-10">Related courses</h4>
             <div class="row">
+                @foreach($courses as $course)
                 <div class="col-lg-4 col-md-6 col-sm-6 md-mb-45">
                     <div class="product-list">
                         <div class="image-product">
-                            <img src="assets/images/shop/1.jpg" alt="">
+                            <img src="{{asset('storage')}}/{{$course->picture_path}}"  style="height:300px; width: 100%" alt="">
                             <div class="overley">
-                                <a href="shop-single.html"><i class="flaticon-shopping-bag"></i></a>
+                                <a href="{{route('shop', $course->id)}}"><i class="flaticon-shopping-bag"></i></a>
                             </div>
                         </div>
                         <div class="content-desc text-center">
-                            <h2 class="loop-product-title pt-15"><a href="shop-single.html">Binary Trading Regular Course</a></h2>
-                            <span class="price">&#x20A6; 4,999</span>
+                            <h2 class="loop-product-title pt-15"><a href="{{route('shop', $course->id)}}">{{$course->title}}</a></h2>
+                            <span class="price">&#x20A6; {{number_format($course->price)}}</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 md-mb-45">
-                    <div class="product-list">
-                        <div class="image-product">
-                            <img src="assets/images/shop/2.jpg" alt="">
-                            <div class="overley">
-                                <a href="shop-single.html"><i class="flaticon-shopping-bag"></i></a>
-                            </div>
-                        </div>
-                        <div class="content-desc text-center">
-                            <h2 class="loop-product-title pt-15"><a href="shop-single.html">Binary Trading Premium Course</a></h2>
-                            <span class="price">&#x20A6; 24,999</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-list">
-                        <div class="image-product">
-                            <img src="assets/images/shop/3.jpg" alt="">
-                            <div class="overley">
-                                <a href="shop-single.html"><i class="flaticon-shopping-bag"></i></a>
-                            </div>
-                        </div>
-                        <div class="content-desc text-center">
-                            <h2 class="loop-product-title pt-15"><a href="shop-single.html">Prescription Book</a></h2>
-                            <span class="price">&#x20A6; 300.00</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -303,4 +277,37 @@
 <!-- Search Modal End -->
 
 <!-- modernizr js -->
-@include('components.scripts')
+<script src="{{asset('assets/js/modernizr-2.8.3.min.js')}}"></script>
+<!-- jquery latest version -->
+<script src="{{asset('assets/js/jquery.min.js')}}"></script>
+<!-- Bootstrap v4.4.1 js -->
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+<!-- Menu js -->
+<script src="{{asset('assets/js/rsmenu-main.js')}}"></script>
+<!-- op nav js -->
+<script src="{{asset('assets/js/jquery.nav.js')}}"></script>
+<!-- owl.carousel js -->
+<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
+<!-- wow js -->
+<script src="{{asset('assets/js/wow.min.js')}}"></script>
+<!-- Skill bar js -->
+<script src="{{asset('assets/js/skill.bars.jquery.js')}}"></script>
+<script src="{{asset('assets/js/jquery.counterup.min.js')}}"></script>
+<!-- counter top js -->
+<script src="{{asset('assets/js/waypoints.min.js')}}"></script>
+<!-- swiper js -->
+<script src="{{asset('assets/js/swiper.min.js')}}"></script>
+<!-- particles js -->
+<script src="{{asset('assets/js/particles.min.js')}}"></script>
+<!-- magnific popup js -->
+<script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
+<!-- plugins js -->
+<script src="{{asset('assets/js/plugins.js')}}"></script>
+<!-- pointer js -->
+<script src="{{asset('assets/js/pointer.js')}}"></script>
+<!-- contact form js -->
+<script src="{{asset('assets/js/contact.form.js')}}"></script>
+<!-- main js -->
+<script src="{{asset('assets/js/main.js')}}"></script>
+</body>
+</html>

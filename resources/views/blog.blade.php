@@ -78,7 +78,6 @@
                                                     <li><a href="/entertainment">Entertainment</a> </li>
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
                                                     <li><a href="/branding">Branding Agency</a> </li>
-                                                    {{--      add a comming soon page @todo--}}
                                                     <li><a href="/coming-soon">Financial Services</a></li>
                                                     <li><a href="/coming-soon">Skill Set Connector</a> </li>
                                                     <li><a href="/coming-soon">Logistics</a> </li>
@@ -164,7 +163,7 @@
                                 </div>
                                 <div class="categories mb-50">
                                     <div class="widget-title">
-                                        <h3 class="title">Categories</h3>
+                                        <h3 class="title">Services</h3>
                                     </div>
                                     <ul>
                                         <li><a href="/entertainment">Entertainment</a> </li>
@@ -184,7 +183,7 @@
                                 <div class="col-lg-12 mb-50">
                                     <div class="blog-item">
                                         <div class="blog-img">
-                                            <a href="/blog-details"><img src="{{asset('assets/images/blog/inner/1.jpg')}}" alt=""></a>
+                                            <a href="/blog-details"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 600px; width: 800px" alt=""></a>
                                             <ul class="post-categories">
                                                 <li><a href="/blog-details">{{$blog-> tag}}</a></li>
                                             </ul>

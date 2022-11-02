@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Auth::routes();
 
@@ -24,6 +24,7 @@ Route::get('/login', [App\Http\Controllers\SkillsAcademyController::class, 'regi
 Route::get('/process', [App\Http\Controllers\SkillsAcademyController::class, 'create'])->name('login-process');
 
 //basic route
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/homepage', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/home-about', [App\Http\Controllers\HomeController::class, 'about']);
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact']);
@@ -50,15 +51,18 @@ Route::post('/file-upload', [App\Http\Controllers\EntertainmentController::class
 
 //Skiils Academy
 Route::get('/skills-academy', [App\Http\Controllers\SkillsAcademyController::class, 'index']);
+Route::get('/dashboard',      [App\Http\Controllers\SkillsAcademyController::class, 'dashboard']);
 Route::get('/my-account',     [App\Http\Controllers\SkillsAcademyController::class, 'userLogin']);
 Route::post('/elogin',        [App\Http\Controllers\SkillsAcademyController::class, 'elogin'])->name('login');
 Route::post('/register',      [App\Http\Controllers\SkillsAcademyController::class, 'store'])->name('register');
 Route::get('/dologout',       [App\Http\Controllers\SkillsAcademyController::class, 'doLogout'])->name('doLogout');
 Route::get('/shop/{id}',           [App\Http\Controllers\SkillsAcademyController::class, 'shop'])->name('shop');
+Route::get('/shops',           [App\Http\Controllers\SkillsAcademyController::class, 'shops']);
 Route::get('/checkout',           [App\Http\Controllers\SkillsAcademyController::class, 'checkout']);
 Route::get('/courses',           [App\Http\Controllers\SkillsAcademyController::class, 'courses']);
 Route::get('/course-manage',           [App\Http\Controllers\SkillsAcademyController::class, 'courseManage']);
 Route::post('/course-Upload',           [App\Http\Controllers\SkillsAcademyController::class, 'courseUpload'])->name('courseUpload');
+Route::get('/graphics-courses',           [App\Http\Controllers\SkillsAcademyController::class, 'graphics']);
 
 
 
