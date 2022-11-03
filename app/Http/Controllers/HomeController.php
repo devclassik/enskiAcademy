@@ -193,7 +193,7 @@ class HomeController extends Controller
             'message'     => 'required|min:10',
         ]);
         ContactUs::create( $request->all());
-        Session::flash('Success', "Message sent Successfully!!!");
-        return redirect('homepage');
+        Alert::success('Success', 'Message sent Successfully!!!');
+        return  redirect::back();
     }
 }

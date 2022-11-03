@@ -115,6 +115,7 @@
                 <!-- Menu End -->
             </header>
             <!--Header End-->
+
             <!-- Canvas Menu start -->
             <nav class="right_menu_togle hidden-md">
                 <div class="close-btn"><span id="nav-close" class="text-center"><i class="fa fa-close"></i></span></div>
@@ -145,6 +146,7 @@
                 <div class="alert alert-success">{{ Session::get('Success') }}</div>
 
             @endif
+                @include('sweetalert::alert')
             <div class="container">
                 <div class="banner-content">
                     <div class="sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" style="padding: 10px 10px;">Welcome To
@@ -159,6 +161,7 @@
                 </div>
             </div>
             <!-- Banner Section End -->
+
             <!-- About Section Start -->
             <div class="rs-about gray-color pt-120 pb-120 md-pt-80 md-pb-80">
                 <div class="container">

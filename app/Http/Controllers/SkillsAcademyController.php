@@ -200,7 +200,6 @@ class SkillsAcademyController extends Controller
             'video_path'       => $filePath,
 
         ]);
-
         Alert::success('Success', 'Course Uploaded Successfully!!!');
         return Redirect::back();
 
@@ -251,6 +250,12 @@ class SkillsAcademyController extends Controller
 //        $shops = SkillsAcademy::all()->random(20)->paginate(10);
         $courses = SkillsAcademy::latest()->paginate(10);
         return view('skills-academy.shops', compact('courses'));
+    }
+
+    public function cart($id)
+    {
+        $courses = SkillsAcademy::find($id);
+        return view('skills-academy.cart', compact('courses'));
     }
 
     /**

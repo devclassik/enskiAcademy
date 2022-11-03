@@ -58,6 +58,7 @@ Route::post('/register',      [App\Http\Controllers\SkillsAcademyController::cla
 Route::get('/dologout',       [App\Http\Controllers\SkillsAcademyController::class, 'doLogout'])->name('doLogout');
 Route::get('/shop/{id}',           [App\Http\Controllers\SkillsAcademyController::class, 'shop'])->name('shop');
 Route::get('/shops',           [App\Http\Controllers\SkillsAcademyController::class, 'shops']);
+Route::post('/cart/{id}',           [App\Http\Controllers\SkillsAcademyController::class, 'cart'])->name('cart');
 Route::get('/checkout',           [App\Http\Controllers\SkillsAcademyController::class, 'checkout']);
 Route::get('/courses',           [App\Http\Controllers\SkillsAcademyController::class, 'courses']);
 Route::get('/course-manage',           [App\Http\Controllers\SkillsAcademyController::class, 'courseManage']);

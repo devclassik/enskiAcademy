@@ -1,9 +1,9 @@
 @include('components.header')
     <!--Preloader area End here-->
-     
+
 		<!-- Main content Start -->
         <div class="main-content">
-            
+
             <!--Full width header Start-->
             <div class="full-width-header">
                 <!--Header Start-->
@@ -14,7 +14,7 @@
                             <div class="row rs-vertical-middle">
                                 <div class="col-lg-2">
                                     <div class="logo-part">
-                                        <a href="#"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
+                                        <a href="/shops"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-10 text-right">
@@ -51,7 +51,7 @@
                     <div class="menu-area menu-sticky">
                         <div class="container">
                             <div class="logo-area">
-                                <a href="#">
+                                <a href="/shops">
                                     <img class="sticky-logo" src="{{asset('assets/images/logo-dark.png')}}" alt="logo">
                                 </a>
                             </div>
@@ -68,7 +68,7 @@
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
                                             <li class="rs-mega-menu menu-item-has-children">
-                                                 <a href="#">Home</a> 
+                                                 <a href="/shops">Home</a>
                                             </li>
                                             <li>
                                                 <a href="/home-about">About</a>
@@ -79,10 +79,9 @@
                                                     <li><a href="/entertainment">Entertainment</a> </li>
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
                                                     <li><a href="/branding">Branding Agency</a> </li>
-                                            {{--      add a comming soon page @todo--}}
-                                                    <li><a href="#">Financial Services</a></li>
-                                                    <li><a href="#">Skill Set Connector</a> </li>
-                                                    <li><a href="#">Logistics</a> </li>
+                                                    <li><a href="/coming-soon">Financial Services</a></li>
+                                                    <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                    <li><a href="/coming-soon">Logistics</a> </li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
@@ -95,8 +94,8 @@
                                                 <a href="/contact">Contact</a>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
-                                    </nav>                                        
-                                </div> <!-- //.main-menu -->                                
+                                    </nav>
+                                </div> <!-- //.main-menu -->
                             </div>
                             <div class="expand-btn-inner search-icon hidden-sticky hidden-md">
                                 <ul>
@@ -129,14 +128,14 @@
                 <!--Header End-->
             </div>
             <!--Full width header End-->
-         
+
             <!-- Breadcrumbs Start -->
             <div class="rs-breadcrumbs img4">
                 <div class="breadcrumbs-inner text-center">
                     <h1 class="page-title">Checkout</h1>
                     <ul>
                         <li title="Braintech - IT Solutions and Technology Startup HTML Template">
-                            <a class="active" href="#">Home</a>
+                            <a class="active" href="/shops">Home</a>
                         </li>
                         <li>Checkout</li>
                     </ul>
@@ -313,12 +312,12 @@
 
                             <div class="payment-method mt-40 md-mt-20">
                                 <div class="top-area">
-                                    <div class="payment-co"><span>PayPal</span> <img src="assets/images/paypal.png" alt="PayPal Logo"></div>
+                                    <div class="payment-co"><span>PayPal</span> <img src="{{asset('assets/images/paypal.png')}}" alt="PayPal Logo"></div>
                                     <div class="p-msg">Pay via PayPal you can pay with your credit card if you dont have a PayPal account.</div>
                                 </div>
                                 <div class="bottom-area">
                                     <p class="mt-15">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
-                                    <button class="add-btn" type="submit">Continue to payment</button>
+                                    <button class="add-btn" type="submit" >Continue to payment</button>
                                 </div>
                             </div>
                         </form>
@@ -327,9 +326,9 @@
             </div>
             <!-- Checkout section end -->
 
-        </div> 
+        </div>
         <!-- Main content End -->
-     
+
         <!-- Footer Start -->
         @include('components.footer')
         <!-- Footer End -->

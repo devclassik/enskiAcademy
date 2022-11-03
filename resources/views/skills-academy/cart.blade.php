@@ -1,9 +1,9 @@
 @include('components.header')
     <!--Preloader area End here-->
-     
+
 		<!-- Main content Start -->
         <div class="main-content">
-            
+
             <!--Full width header Start-->
             <div class="full-width-header">
                 <!--Header Start-->
@@ -68,7 +68,7 @@
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
                                             <li class="rs-mega-menu menu-item-has-children"> <a href="#">Home</a>
-                                                <ul class="mega-menu"> 
+                                                <ul class="mega-menu">
                                                     <li class="mega-menu-container">
                                                         <div class="mega-menu-innner">
                                                             <div class="single-megamenu">
@@ -121,7 +121,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                </ul> <!-- //.mega-menu -->  
+                                                </ul> <!-- //.mega-menu -->
                                             </li>
                                             <li>
                                                 <a href="about.html">About</a>
@@ -150,7 +150,7 @@
                                                     </li>
                                                     <li>
                                                        <a href="our-team.html">Our Team</a>
-                                                    </li> 
+                                                    </li>
                                                     <li>
                                                        <a href="single-team.html">Single Team</a>
                                                     </li>
@@ -198,8 +198,8 @@
                                                 <a href="contact.html">Contact</a>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
-                                    </nav>                                        
-                                </div> <!-- //.main-menu -->                                
+                                    </nav>
+                                </div> <!-- //.main-menu -->
                             </div>
                             <div class="expand-btn-inner search-icon hidden-sticky hidden-md">
                                 <ul>
@@ -225,7 +225,7 @@
                 <!--Header End-->
             </div>
             <!--Full width header End-->
-         
+
             <!-- Breadcrumbs Start -->
             <div class="rs-breadcrumbs img2">
                 <div class="breadcrumbs-inner text-center">
@@ -233,7 +233,7 @@
                     <ul>
                         <li title="Braintech - IT Solutions and Technology Startup HTML Template">
                             <a class="active" href="index.html">Home</a>
-                        </li>                     
+                        </li>
                         <li>Cart</li>
                     </ul>
                 </div>
@@ -261,17 +261,18 @@
                                         <td class="product-remove"><a href="#"><i class="fa fa-close"></i></a></td>
                                         <td class="product-thumbnail"><a href="#"><img src="assets/images/shop/2.jpg" alt=""></a></td>
                                         <td class="product-name"><a href="#">Medicine Bottle</a></td>
-                                        <td class="product-price"><span>$</span>30.00</td>
+{{--                                        {{number_format($shops->price)}}--}}
+                                        <td class="product-price"><span>&#x20A6;</span>{{number_format(30.00)}}</td>
                                         <td class="product-quantity"><input type="text" class="input-text" value="1" pattern="[0-9]*"></td>
-                                        <td class="subtotal"><span class="amount"><span class="symbol">$</span>30.00</span></td>
+                                        <td class="subtotal"><span class="amount"><span class="symbol">&#x20A6;</span>30.00</span></td>
                                     </tr>
                                     <tr>
                                         <td class="product-remove"><a href="#"><i class="fa fa-close"></i></a></td>
                                         <td class="product-thumbnail"><a href="#"><img src="assets/images/shop/1.jpg" alt=""></a></td>
                                         <td class="product-name"><a href="#">Medicine Bottle</a></td>
-                                        <td class="product-price"><span>$</span>30.00</td>
+                                        <td class="product-price"><span>&#x20A6;</span>30.00</td>
                                         <td class="product-quantity"><input type="text" class="input-text" value="1" pattern="[0-9]*"></td>
-                                        <td class="subtotal"><span class="amount"><span class="symbol">$</span>30.00</span></td>
+                                        <td class="subtotal"><span class="amount"><span class="symbol">&#x20A6;</span>30.00</span></td>
                                     </tr>
                                     <tr>
                                         <td colspan="6" class="action text-right">
@@ -294,11 +295,11 @@
                                     <tbody>
                                         <tr class="cart-subtotal">
                                             <th>Subtotal</th>
-                                            <td><span class="amount"><span>$</span>60.00</span></td>
+                                            <td><span class="amount"><span>&#x20A6;</span>60.00</span></td>
                                         </tr>
                                         <tr class="order-total">
                                             <th>Total</th>
-                                            <td><strong><span class="amount"><span>$</span>60.00</span></strong></td>
+                                            <td><strong><span class="amount"><span>&#x20A6;</span>60.00</span></strong></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -312,9 +313,9 @@
             </div>
             <!-- Cart Section End -->
 
-        </div> 
+        </div>
         <!-- Main content End -->
-     
+
         <!-- Footer Start -->
         <footer id="rs-footer" class="rs-footer">
             <div class="footer-top">
@@ -326,21 +327,21 @@
                             </div>
                               <div class="textwidget pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
                               </div>
-                              <ul class="footer-social md-mb-30">  
-                                  <li> 
-                                      <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
+                              <ul class="footer-social md-mb-30">
+                                  <li>
+                                      <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
                                   </li>
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
+                                  <li>
+                                      <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a>
                                   </li>
 
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a> 
+                                  <li>
+                                      <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a>
                                   </li>
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
+                                  <li>
+                                      <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a>
                                   </li>
-                                                                           
+
                               </ul>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
@@ -375,7 +376,7 @@
                                 <li>
                                     <i class="flaticon-clock-1"></i>
                                     <div class="desc">
-                                        Opening Hours: 10:00 - 18:00   
+                                        Opening Hours: 10:00 - 18:00
                                     </div>
                                 </li>
                             </ul>
@@ -393,7 +394,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="container">                    
+                <div class="container">
                     <div class="row y-middle">
                         <div class="col-lg-6 text-right md-mb-10 order-last">
                             <ul class="copy-right-menu">
@@ -440,5 +441,38 @@
         </div>
         <!-- Search Modal End -->
 
-         <!-- modernizr js -->
-         @include('components.scripts')
+<!-- modernizr js -->
+<script src="{{asset('assets/js/modernizr-2.8.3.min.js')}}"></script>
+<!-- jquery latest version -->
+<script src="{{asset('assets/js/jquery.min.js')}}"></script>
+<!-- Bootstrap v4.4.1 js -->
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+<!-- Menu js -->
+<script src="{{asset('assets/js/rsmenu-main.js')}}"></script>
+<!-- op nav js -->
+<script src="{{asset('assets/js/jquery.nav.js')}}"></script>
+<!-- owl.carousel js -->
+<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
+<!-- wow js -->
+<script src="{{asset('assets/js/wow.min.js')}}"></script>
+<!-- Skill bar js -->
+<script src="{{asset('assets/js/skill.bars.jquery.js')}}"></script>
+<script src="{{asset('assets/js/jquery.counterup.min.js')}}"></script>
+<!-- counter top js -->
+<script src="{{asset('assets/js/waypoints.min.js')}}"></script>
+<!-- swiper js -->
+<script src="{{asset('assets/js/swiper.min.js')}}"></script>
+<!-- particles js -->
+<script src="{{asset('assets/js/particles.min.js')}}"></script>
+<!-- magnific popup js -->
+<script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
+<!-- plugins js -->
+<script src="{{asset('assets/js/plugins.js')}}"></script>
+<!-- pointer js -->
+<script src="{{asset('assets/js/pointer.js')}}"></script>
+<!-- contact form js -->
+<script src="{{asset('assets/js/contact.form.js')}}"></script>
+<!-- main js -->
+<script src="{{asset('assets/js/main.js')}}"></script>
+</body>
+</html>
