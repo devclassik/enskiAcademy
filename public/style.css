@@ -1869,6 +1869,7 @@ blockquote cite:before {
 }
 .sec-title2 .title.title4 {
   max-width: 660px;
+
 }
 .sec-title2 .title.title5 {
   color: #102B3E;
@@ -3558,7 +3559,8 @@ body .search-modal .close:hover {
 .rs-banner.style2 {
   background: url(assets/images/banner/banner-2.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
+    background-size: 1450px 950px;
   background-position: left top;
 }
 .rs-banner.style2 .banner-content {

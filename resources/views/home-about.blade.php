@@ -29,13 +29,13 @@
                                     <i class="flaticon-email"></i>
                                     <span class="contact-info">
                                         <span>E-mail</span>
-                                        <a href="mailto:support@enski.com.ng"> support@enski.com.ng</a>
+                                        <a href="mailto:contact@enski.net"> contact@enski.net</a>
                                     </span>
                                 </li>
                                 <li class="contact-part no-border">
                                     <i class="flaticon-call"></i>
                                     <span class="contact-info">
-                                        <span>Phone</span>+2348162237272
+                                        <span>Phone</span>+2348160055067
                                     </span>
                                 </li>
                             </ul>
@@ -75,8 +75,7 @@
                                         <ul class="sub-menu">
                                             <li><a href="/entertainment">Entertainment</a> </li>
                                             <li><a href="/skills-academy">Skills Academy</a> </li>
-                                            <li><a href="/branding">Branding Agency</a></li>
-                                                {{--     add a comming soon page @todo--}}
+                                            <li><a href="/coming-soon">Branding Agency</a></li>
                                             <li><a href="/coming-soon">Financial Services</a></li>
                                             <li><a href="/coming-soon">Skill Set Connector</a> </li>
                                             <li><a href="/coming-soon">Logistics</a> </li>
@@ -214,7 +213,7 @@
         <div class="sec-title2 text-center mb-30">
             <span class="sub-text style-bg white-color">Team</span>
             <h2 class="title white-color">
-                Expert IT Consultants
+{{--                Expert IT Consultants--}}
             </h2>
         </div>
         <div class="container">
@@ -227,14 +226,9 @@
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>
+                            <h4 class="person-name"><a href="#">Dan, Odotukpono</a></h4>
                             <span class="designation">President & CEO</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
+
                         </div>
                     </div>
                     <div class="team-item-wrap">
@@ -244,14 +238,9 @@
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>
-                            <span class="designation">CEO & Founder</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
+                            <h4 class="person-name"><a href="#">Victoria Agbo</a></h4>
+                            <span class="designation">General Manager</span>
+
                         </div>
                     </div>
                     <div class="team-item-wrap">
@@ -261,14 +250,9 @@
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>
-                            <span class="designation">Web Developer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
+                            <h4 class="person-name"><a href="#">Pamalena Wincolth</a></h4>
+                            <span class="designation">Director of Entertainment</span>
+
                         </div>
                     </div>
                     <div class="team-item-wrap">
@@ -278,14 +262,9 @@
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>
-                            <span class="designation">Digital Marketer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
+                            <h4 class="person-name"><a href="#">Rohi Kadason</a></h4>
+                            <span class="designation">Director of Skills Academy</span>
+
                         </div>
                     </div>
                     <div class="team-item-wrap">
@@ -295,14 +274,9 @@
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Rushali Rumi</a></h4>
-                            <span class="designation">Design Lead</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
+                            <h4 class="person-name"><a href="#">Favour Ekedozie</a></h4>
+                            <span class="designation">Finance Manager</span>
+
                         </div>
                     </div>
                     <div class="team-item-wrap">
@@ -312,14 +286,9 @@
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Abu Sayed</a></h4>
-                            <span class="designation">App Developer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
+                            <h4 class="person-name"><a href="#">Erdoo Sonia</a></h4>
+                            <span class="designation">Public Relations Manager</span>
+
                         </div>
                     </div>
                     <div class="team-item-wrap">
@@ -329,14 +298,9 @@
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Sonia Akhter</a></h4>
-                            <span class="designation">Graphic Artist</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
+                            <h4 class="person-name"><a href="#">Samuel Sule</a></h4>
+                            <span class="designation">Creative Director</span>
+
                         </div>
                     </div>
                     <div class="team-item-wrap">
@@ -346,101 +310,12 @@
                             </div>
                         </div>
                         <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Rayhan Ali</a></h4>
-                            <span class="designation">CEO & Founder</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
+                            <h4 class="person-name"><a href="#">Emmanuel Audu</a></h4>
+                            <span class="designation">Publicity Coordinator</span>
+
                         </div>
                     </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/9.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Benjir Akther</a></h4>
-                            <span class="designation">Graphic Designer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>
-                            <span class="designation">President & CEO</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>
-                            <span class="designation">CEO & Founder</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>
-                            <span class="designation">Web Developer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>
-                            <span class="designation">Digital Marketer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>

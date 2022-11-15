@@ -151,10 +151,12 @@
                         <h4 class="product-title">{{$shops->title}}</h4>
                         <span class="single-price">&#x20A6; {{number_format($shops->price)}}</span>
                         <p class="some-text">{{$shops->description}}</p>
-                        <form method="post" action="{{route('cart', $shops->id)}}">
-                            @csrf
+                        <!-- <form method="post" action="{{route('cart', $shops->id)}}"> -->
+                       <form method="post" action="{{route('payee')}}">
+                       @include('sweetalert::alert')
+                        @csrf
                             <input type="number" class="input-text" step="1" min="1" value="1">
-                            <button class="add-btn ml-10" type="submit">Add To cart</button>
+                            <button class="add-btn ml-10" type="submit">Buy Now</button>
                         </form>
                         <p class="category"><span>Category:</span><a href="#"> {{$shops->category}}	</a></p>
                     </div>

@@ -34,6 +34,8 @@ Route::get('/error', [App\Http\Controllers\HomeController::class, 'errorPage']);
 Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq']);
 Route::post('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contactUs');
 Route::get('/coming-soon', [App\Http\Controllers\HomeController::class, 'comingSoon']);
+Route::post('/subscibers', [App\Http\Controllers\HomeController::class, 'subscribers'])->name('subscribers');
+
 
 
 //adding og blog post
@@ -50,27 +52,25 @@ Route::post('/file-upload', [App\Http\Controllers\EntertainmentController::class
 
 
 //Skiils Academy
-Route::get('/skills-academy', [App\Http\Controllers\SkillsAcademyController::class, 'index']);
-Route::get('/dashboard',      [App\Http\Controllers\SkillsAcademyController::class, 'dashboard']);
-Route::get('/my-account',     [App\Http\Controllers\SkillsAcademyController::class, 'userLogin']);
-Route::post('/elogin',        [App\Http\Controllers\SkillsAcademyController::class, 'elogin'])->name('login');
-Route::post('/register',      [App\Http\Controllers\SkillsAcademyController::class, 'store'])->name('register');
-Route::get('/dologout',       [App\Http\Controllers\SkillsAcademyController::class, 'doLogout'])->name('doLogout');
-Route::get('/shop/{id}',           [App\Http\Controllers\SkillsAcademyController::class, 'shop'])->name('shop');
-Route::get('/shops',           [App\Http\Controllers\SkillsAcademyController::class, 'shops']);
-Route::post('/cart/{id}',           [App\Http\Controllers\SkillsAcademyController::class, 'cart'])->name('cart');
-Route::get('/checkout',           [App\Http\Controllers\SkillsAcademyController::class, 'checkout']);
-Route::get('/courses',           [App\Http\Controllers\SkillsAcademyController::class, 'courses']);
-Route::get('/course-manage',           [App\Http\Controllers\SkillsAcademyController::class, 'courseManage']);
-Route::post('/course-Upload',           [App\Http\Controllers\SkillsAcademyController::class, 'courseUpload'])->name('courseUpload');
+Route::get('/skills-academy',             [App\Http\Controllers\SkillsAcademyController::class, 'index']);
+Route::get('/dashboard',                  [App\Http\Controllers\SkillsAcademyController::class, 'dashboard']);
+Route::get('/my-account',                 [App\Http\Controllers\SkillsAcademyController::class, 'userLogin']);
+Route::post('/elogin',                    [App\Http\Controllers\SkillsAcademyController::class, 'elogin'])->name('login');
+Route::post('/register',                  [App\Http\Controllers\SkillsAcademyController::class, 'store'])->name('register');
+Route::get('/dologout',                   [App\Http\Controllers\SkillsAcademyController::class, 'doLogout'])->name('doLogout');
+Route::get('/shop/{id}',                  [App\Http\Controllers\SkillsAcademyController::class, 'shop'])->name('shop');
+Route::get('/shops',                      [App\Http\Controllers\SkillsAcademyController::class, 'shops']);
+Route::post('/cart/{id}',                 [App\Http\Controllers\SkillsAcademyController::class, 'cart'])->name('cart');
+Route::get('/checkout',                   [App\Http\Controllers\SkillsAcademyController::class, 'checkout']);
+Route::get('/courses',                    [App\Http\Controllers\SkillsAcademyController::class, 'courses']);
+Route::get('/course-manage',              [App\Http\Controllers\SkillsAcademyController::class, 'courseManage']);
+Route::post('/course-Upload',             [App\Http\Controllers\SkillsAcademyController::class, 'courseUpload'])->name('courseUpload');
 Route::get('/graphics-courses',           [App\Http\Controllers\SkillsAcademyController::class, 'graphics']);
-
-
-
-
-
 
 
 //Branding
 Route::get('/branding', [App\Http\Controllers\BrandingController::class, 'index']);
 
+// Laravel 8 & 9 payment
+Route::post('/pay', [App\Http\Controllers\PaymentController::class, 'redirectToGateway'])->name('payee');
+Route::get('/payment/callback', [App\Http\Controllers\PaymentController::class, 'handleGatewayCallback']);

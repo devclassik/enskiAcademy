@@ -25,6 +25,7 @@ class CreateBlogsTable extends Migration
             $table->string('phaseThreeB');
             $table->string('phaseFour');
             $table->string('phaseFive');
+            $table->string('phaseSix');
             $table->timestamps();
         });
     }

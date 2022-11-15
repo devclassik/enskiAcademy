@@ -30,14 +30,14 @@
                                             <i class="flaticon-email"></i>
                                             <span class="contact-info">
                                                 <span>E-mail</span>
-                                                <a href="mailto:support@enski.com.ng"> support@enski.com.ng</a>
+                                                <a href="mailto:contact@enski.net"> contact@enski.net</a>
                                             </span>
                                         </li>
                                         <li class="contact-part no-border">
                                              <i class="flaticon-call"></i>
                                             <span class="contact-info">
                                                 <span>Phone</span>
-                                                 +2348162237272
+                                                 +2348160055067
                                             </span>
                                         </li>
                                     </ul>
@@ -149,10 +149,10 @@
                                     @foreach($blogs as $blog)
                                     <div class="recent-post-widget">
                                         <div class="post-img">
-                                            <a href="/blog-details"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 40px;" alt=""></a>
+                                            <a href="{{route('blogDetails', $blog->id)}}"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 40px;" alt=""></a>
                                         </div>
                                         <div class="post-desc">
-                                            <a href="/blog-details">{{$blog-> title}} </a>
+                                            <a href="{{route('blogDetails', $blog->id)}}">{{$blog-> title}} </a>
                                             <span class="date">
                                                 <i class="fa fa-calendar"></i>
                                              {{$blog->created_at->diffForHumans()}}

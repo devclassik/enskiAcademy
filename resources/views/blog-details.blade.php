@@ -126,7 +126,6 @@
                             <a class="active" href="/homepage">Home</a>
                         </li>
                         <li title="Go to Blog"><a class="active" href="/blog">Blog</a></li>
-                        <li title="Go to the It Services category archives"><a class="active" href="/homepage">It Services</a></li>
                         <li>{{$blogger->tag}}</li>
                     </ul>
                 </div>
@@ -152,10 +151,10 @@
                                     @foreach($blogs as $blog)
                                         <div class="recent-post-widget">
                                             <div class="post-img">
-                                                <a href="/blog-details"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 40px;" alt=""></a>
+                                                <a href="{{route('blogDetails', $blog->id)}}"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 40px;" alt=""></a>
                                             </div>
                                             <div class="post-desc">
-                                                <a href="/blog-details">{{$blog-> title}} </a>
+                                                <a href="{{route('blogDetails', $blog->id)}}">{{$blog-> title}} </a>
                                                 <span class="date">
                                                 <i class="fa fa-calendar"></i>
                                              {{$blog->created_at->diffForHumans()}}
@@ -171,7 +170,7 @@
                                     <ul>
                                         <li><a href="/entertainment">Entertainment</a> </li>
                                         <li><a href="/skills-academy">Skills Academy</a> </li>
-                                        <li><a href="/branding">Branding Agency</a> </li>
+                                        <li><a href="/coming-soon">Branding Agency</a> </li>
                                         <li><a href="/coming-soon">Financial Services</a></li>
                                         <li><a href="/coming-soon">Skill Set Connector</a> </li>
                                         <li><a href="/coming-soon">Logistics</a> </li>
@@ -230,7 +229,7 @@
                                                    <span><a href="#">Admin</a></span>
                                                    <a href="#">{{$blog->created_at->diffForHumans()}}</a>
                                                    <p class="mb-15">
-                                                      wow, nice content @admin, weldone
+                                                       {{$blogger->phaseSix}}
                                                    </p>
                                                    <div class="btn-part">
                                                       <a class="readon reply" href="#">Reply</a>

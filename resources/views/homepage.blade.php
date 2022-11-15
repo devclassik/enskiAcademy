@@ -17,11 +17,11 @@
                                     <ul>
                                         <li>
                                             <i class="flaticon-email"></i>
-                                            <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
+                                            <a href="mailto:contact@enski.net">contact@enski.net</a>
                                         </li>
                                         <li>
                                             <i class="flaticon-call"></i>
-                                            <a href="tel:+2348162237272"> +2348162237272</a>
+                                            <a href="tel:+2348160055067"> +2348160055067</a>
                                         </li>
                                         <li>
                                             <i class="flaticon-location"></i>
@@ -34,10 +34,10 @@
                                 <div class="toolbar-sl-share">
                                     <ul>
                                         <li class="opening"> <em><i class="flaticon-clock"></i> 12:01 PM-6:00 PM</em> </li>
-                                        <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.twitter.com/enski_official"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.instagram.com/enski_official"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -127,8 +127,8 @@
                     <h5 class="canvas-contact-title">Contact Info</h5>
                     <ul class="contact">
                         <li><i class="fa fa-globe"></i>Middle Badda, Dhaka, BD</li>
-                        <li><i class="fa fa-phone"></i>+234 (0) 8162237272</li>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:support@enski.com.ng">support@enski.com.ng<</a></li>
+                        <li><i class="fa fa-phone"></i>+234 (0) 8160055067</li>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:contact@enski.net">contact@enski.net<</a></li>
                         <li><i class="fa fa-clock-o"></i>12:01pm-6:00 PM</li>
                     </ul>
                     @include('components.socials')
@@ -150,12 +150,17 @@
             <div class="container">
                 <div class="banner-content">
                     <div class="sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" style="padding: 10px 10px;">Welcome To
-                        <h1 class="title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms" style="font-size: 100px; padding: 20px 20px;"> Enski</h1>
+                        <h1 class="title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms" style="font-size: 70px; padding: 20px 20px;"> Enski</h1>
                         <h2 class=" title-small wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms" style="text-transform: lowercase;">
                             your reason to smile today...
                         </h2>
                         <div class="btn wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
-                            <a class="readon buy-now get-in" href="/my-account">Login | Sign up</a>
+
+                            @if (!Auth::guest())
+                                <a class="readon buy-now get-in" href="/dashboard">Dashboard</a>
+                            @else
+                                <a class="readon buy-now get-in" href="/my-account">Login | Sign up</a>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -172,7 +177,7 @@
                                     <img src="{{asset('assets/images/about/about-3.png')}}" alt="">
                                 </div>
                                 <div class="middle-image2">
-                                    <img class="dance" src="{{asset('assets/images/about/effect-1.png')}}" alt="">
+                                    <img class="dance" src="{{asset('assets/images/about/about-3home.png')}}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -186,10 +191,8 @@
                                     <div class="desc pb-35">
                                         Enski was launched in 2021 as an empowerment platform which provides you solutions and multiple services all aimed at elevating you to skies of brand excellence and personal fulfillment.
                                     </div>
-                                    <p class="margin-0 pb-15">
-                                        <i>
+                                    <p class="desc pb-35">
                                          We specialize in bringing out the BEST in both personal and corporate brands by helping them reach their INFINITE potential because we believe that everyone is a STAR.
-                                        </i>
                                     </p>
                                 </div>
                                 <div class="btn-part">
@@ -212,7 +215,7 @@
                     <div class="sec-title2 text-center mb-45">
                         <span class="sub-text style-bg">Services | Divisions</span>
                         <h2 class="title">
-                            Services We Are Offers includes:
+                            Services We Offers includes:
                         </h2>
                     </div>
                     <div class="row">
@@ -470,7 +473,7 @@
                         </a>
                         </div>
                         <div class="col-lg-3 col-sm-6 md-mb-50">
-                        <a href="https://fb.me/enski.impact.summit">
+                        <a href="https://facebook.com/enskientertainment">
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
@@ -478,14 +481,14 @@
                                         width: 70%; ">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title"><a href="https://fb.me/enski.impact.summit"> Facebook</a></h3>
+                                        <h3 class="title"><a href="https://facebook.com/enskientertainment"> Facebook</a></h3>
                                     </div>
                                 </div>
                             </div>
                         </a>
                         </div>
                         <div class="col-lg-3 col-sm-6">
-                        <a href="https://www.instagram.com/enski_impact_summit">
+                        <a href="https://www.instagram.com/enski_entertainment">
                             <div class="addon-process">
                                 <div class="process-wrap">
                                     <div class="process-img geeks">
@@ -493,7 +496,7 @@
                                         width: 70%; ">
                                     </div>
                                     <div class="process-text">
-                                        <h3 class="title"><a href="https://www.instagram.com/enski_impact_summit"> Instagram</a></h3>
+                                        <h3 class="title"><a href="https://www.instagram.com/enski_entertainment"> Instagram</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -531,9 +534,9 @@
                     }
 
                     .zoom:hover {
-                        -ms-transform: scale(1.5); /* IE 9 */
-                        -webkit-transform: scale(1.5); /* Safari 3-8 */
-                        transform: scale(1.5);
+                        -ms-transform: scale(1.3); /* IE 9 */
+                        -webkit-transform: scale(1.3); /* Safari 3-8 */
+                        transform: scale(1.3);
                     }
                 </style>
             <!-- Process Section End -->
@@ -685,7 +688,7 @@
                     <div class="sec-title2 text-center mb-45">
                         <span class="sub-text style-bg">Testimonial</span>
                         <h2 class="title title2">
-                            What Saying Our Customers
+                            What Our Customers Are Saying
                         </h2>
                     </div>
                     <div class="rs-carousel owl-carousel"
@@ -781,7 +784,7 @@
                                     </div>
                                     <div class="counter-text">
                                         <div class="count-number">
-                                            <span class="rs-count k">100</span>
+                                            <span class="rs-count k">2</span>
                                         </div>
                                         <h3 class="title">Happy Clients</h3>
                                     </div>
@@ -1043,7 +1046,7 @@
                             </div>
                             <div class="col-lg-3 col-md-12 text-righ">
                                 <div class="button-wrapt md-center">
-                                    <a class="readon learn-more" href="/contact">Get In Touch</a>
+                                    <a class="readon learn-more" href="https://bit.ly/airliner">Get In Touch</a>
                                 </div>
                             </div>
                         </div>

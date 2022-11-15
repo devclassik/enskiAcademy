@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\ContactUs;
 use App\Models\SkillsAcademy;
+use App\Models\Subcriber;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
@@ -31,7 +32,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $skills = SkillsAcademy::all()->random(3);
+        // $skills = SkillsAcademy::all()->random(3);
+        $skills = SkillsAcademy::all();;
+
         $blogs = Blog::latest()->paginate(6);
         return view('homepage', compact('blogs','skills'));
     }
@@ -71,6 +74,7 @@ class HomeController extends Controller
             'phaseOne'        => 'required|unique:blogs',
             'phaseFour'       => 'required',
             'phaseFive'       => 'required',
+            'phaseSix'        => 'required'
 
         ]);
         if (Blog::where('title', $request->title)->first())
@@ -91,6 +95,7 @@ class HomeController extends Controller
                 'phaseThreeB'    => $request->phaseThreeB,
                 'phaseFour'      => $request->phaseFour,
                 'phaseFive'      => $request->phaseFive,
+                'phaseSix'      => $request->phaseSix,
             ]
         );
         Alert::success('Success', 'New Blog Added Successfully!!!');
@@ -194,6 +199,18 @@ class HomeController extends Controller
         ]);
         ContactUs::create( $request->all());
         Alert::success('Success', 'Message sent Successfully!!!');
+        return  redirect::back();
+    }
+
+    /** this is the function that control subsciber page*/
+    public function subscribers (Request $request)
+    {
+//        dd($request);
+        $this->Validate($request,[
+            'news_email'       => 'required',
+        ]);
+        Subcriber::create( ['email'     =>$request->news_email]);
+        Alert::success('Success', 'You have Successfully Subscribe!!!');
         return  redirect::back();
     }
 }

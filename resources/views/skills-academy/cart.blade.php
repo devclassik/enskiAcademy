@@ -14,7 +14,7 @@
                             <div class="row rs-vertical-middle">
                                 <div class="col-lg-2">
                                     <div class="logo-part">
-                                        <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
+                                        <a href="/shops"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-10 text-right">
@@ -23,21 +23,21 @@
                                             <i class="flaticon-location"></i>
                                             <span class="contact-info">
                                                 <span>Address</span>
-                                                05 kandi BR. New York
+                                                Abuja-Keffi Rd, Nassarawa
                                             </span>
                                         </li>
                                         <li class="contact-part">
                                             <i class="flaticon-email"></i>
                                             <span class="contact-info">
                                                 <span>E-mail</span>
-                                                <a href="#"> support@rstheme.com</a>
+                                                <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
                                             </span>
                                         </li>
                                         <li class="contact-part no-border">
                                              <i class="flaticon-call"></i>
                                             <span class="contact-info">
                                                 <span>Phone</span>
-                                                 +019988772
+                                                08162237272
                                             </span>
                                         </li>
                                     </ul>
@@ -51,15 +51,15 @@
                     <div class="menu-area menu-sticky">
                         <div class="container">
                             <div class="logo-area">
-                                <a href="index.html">
-                                    <img class="sticky-logo" src="assets/images/logo-dark.png" alt="logo">
+                                <a href="/shops">
+                                    <img class="sticky-logo" src="{{asset('assets/images/logo-dark.png')}}" alt="logo">
                                 </a>
                             </div>
                             <div class="rs-menu-area">
                                 <div class="main-menu">
                                     <div class="mobile-menu">
-                                        <a href="index.html" class="mobile-logo">
-                                            <img src="assets/images/logo-light.png" alt="logo">
+                                        <a href="/shops" class="mobile-logo">
+                                            <img src="{{asset('assets/images/logo-light.png')}}" alt="logo">
                                         </a>
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
                                             <i class="fa fa-bars"></i>
@@ -67,136 +67,38 @@
                                     </div>
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
-                                            <li class="rs-mega-menu menu-item-has-children"> <a href="#">Home</a>
-                                                <ul class="mega-menu">
-                                                    <li class="mega-menu-container">
-                                                        <div class="mega-menu-innner">
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Multipage</li>
-                                                                    <li><a href="index.html">Main Demo</a></li>
-                                                                    <li><a href="index2.html">Digital Agency 01</a></li>
-                                                                    <li><a href="index3.html">IT Solution 01</a></li>
-                                                                    <li><a href="index4.html">Digital Agency 02</a></li>
-                                                                    <li><a href="index5.html">Software Solution</a></li>
-                                                                    <li><a href="index6.html">Data Analysis</a></li>
-                                                                    <li class="last-item"><a href="index7.html">IT Solution 02</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Multipage</li>
-                                                                    <li><a href="index8.html">Gadgets Repairs</a></li>
-                                                                    <li><a href="index9.html">Application Testing</a></li>
-                                                                    <li><a href="index10.html">IT Solution 03</a></li>
-                                                                    <li><a href="index11.html">Digital Agency Dark</a></li>
-                                                                    <li><a href="index12.html">Web Design Agency</a></li>
-                                                                    <li><a href="index13.html">Branding Agency</a></li>
-                                                                    <li class="last-item"><a href="index14.html">Technology Agency</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Onepage</li>
-                                                                    <li><a href="onepage1.html">Main Demo</a></li>
-                                                                    <li><a href="onepage2.html">Digital Agency 01</a></li>
-                                                                    <li><a href="onepage3.html">IT Solution 01</a></li>
-                                                                    <li><a href="onepage4.html">Digital Agency 02</a></li>
-                                                                    <li><a href="onepage5.html">Software Solution</a></li>
-                                                                    <li><a href="onepage6.html">Data Analysis</a></li>
-                                                                    <li class="last-item"><a href="onepage7.html">IT Solution 02</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Onepage</li>
-                                                                    <li><a href="onepage8.html">Gadgets Repairs</a></li>
-                                                                    <li><a href="onepage9.html">Application Testing</a></li>
-                                                                    <li><a href="onepage10.html">IT Solution 03</a></li>
-                                                                    <li><a href="onepage11.html">Digital Agency Dark</a></li>
-                                                                    <li><a href="onepage12.html">Web Design Agency</a></li>
-                                                                    <li><a href="onepage13.html">Branding Agency</a></li>
-                                                                    <li class="last-item"><a href="onepage14.html">Technology Agency</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul> <!-- //.mega-menu -->
+                                            <li class="rs-mega-menu"> <a href="/skill-academy">Home</a>
                                             </li>
                                             <li>
-                                                <a href="about.html">About</a>
+                                                <a href="/home-about">About</a>
                                             </li>
                                             <li class="menu-item-has-children">
                                                 <a href="#">Services</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="software-development.html">Software Development</a> </li>
-                                                    <li><a href="web-development.html">Web Development</a> </li>
-                                                    <li><a href="analytic-solutions.html">Analytic Solutions</a> </li>
-                                                    <li><a href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                                                    <li><a href="product-design.html">Product Design</a> </li>
-                                                    <li><a href="data-center.html">Data Center</a> </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children current-menu-item">
-                                                <a href="#">Pages</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item-has-children">
-                                                        <a href="#">Services</a>
-                                                        <ul class="sub-menu right">
-                                                           <li><a href="services1.html">Services 1</a></li>
-                                                           <li><a href="services2.html">Services 2</a></li>
-                                                           <li><a href="services3.html">Services 3</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                       <a href="our-team.html">Our Team</a>
-                                                    </li>
-                                                    <li>
-                                                       <a href="single-team.html">Single Team</a>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                       <a href="#">Case Studies</a>
-                                                        <ul class="sub-menu right">
-                                                           <li><a href="case-studies-style1.html">Case Studies Style 1</a></li>
-                                                           <li><a href="case-studies-style2.html">Case Studies Style 2</a></li>
-                                                           <li><a href="case-studies-style3.html">Case Studies Style 3</a></li>
-                                                           <li><a href="case-studies-style4.html">Case Studies Style 4</a></li>
-                                                           <li><a href="case-studies-style5.html">Case Studies Style 5</a></li>
-                                                           <li><a href="case-studies-style6.html">Case Studies Style 6</a></li>
-                                                           <li><a href="case-studies-style7.html">Case Studies Style 7</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children current-menu-item">
-                                                        <a href="shop.html">Shop</a>
-                                                        <ul class="sub-menu right">
-                                                            <li><a href="shop.html">Shop</a></li>
-                                                            <li><a href="shop-single.html">Shop Single</a></li>
-                                                            <li class="active"><a href="cart.html">Cart</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                            <li><a href="my-account.html">My Account</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                       <a href="pricing.html">Pricing</a>
-                                                    </li>
-                                                    <li>
-                                                       <a href="faq.html">Faq</a>
-                                                    </li>
-                                                    <li>
-                                                       <a href="error.html">404</a>
-                                                    </li>
+                                                    <li><a href="/entertainment">Entertainment</a> </li>
+                                                    <li><a href="/skills-academy">Skills Academy</a> </li>
+                                                    <li><a href="/branding">Branding Agency</a> </li>
+                                                    <li><a href="/coming-soon">Financial Services</a></li>
+                                                    <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                    <li><a href="/coming-soon">Logistics</a> </li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
-                                               <a href="blog.html">Blog</a>
+                                               <a href="/blog">Blog</a>
                                                <ul class="sub-menu">
-                                                   <li><a href="blog.html">Blog</a> </li>
-                                                   <li><a href="blog-details.html">Blog Details</a></li>
+                                                   <li><a href="/blog">Blog</a> </li>
                                                </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="/contact">Contact</a>
                                             </li>
+                                            @if (!Auth::guest())
+                                            <li><a class="quote-btn" href="/dologout">Logout</a></li>
+
+                                            @else
+                                            <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
+
+                                            @endif
                                         </ul> <!-- //.nav-menu -->
                                     </nav>
                                 </div> <!-- //.main-menu -->
@@ -211,10 +113,7 @@
                                 </ul>
                                 <div class="toolbar-sl-share">
                                     <ul class="social">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    @include('components.socials')
                                     </ul>
                                 </div>
                             </div>
@@ -232,7 +131,7 @@
                     <h1 class="page-title">Cart</h1>
                     <ul>
                         <li title="Braintech - IT Solutions and Technology Startup HTML Template">
-                            <a class="active" href="index.html">Home</a>
+                            <a class="active" href="/skill-academy">Home</a>
                         </li>
                         <li>Cart</li>
                     </ul>
@@ -244,38 +143,34 @@
            <div class="rs-cart pt-120 pb-120 md-pt-80 md-pb-80">
                 <div class="container">
                     <div class="cart-wrap">
-                        <form>
+                        <form >
+                            method="post" action="{{ route ('pay') }}"
+{{--                            <form method="post" action="{{route('cart', $shops->id)}}">--}}
+
+                            @csrf
                             <table class="cart-table">
                                 <thead>
                                     <tr>
                                         <th class="product-remove"></th>
                                         <th class="product-thumbnail"></th>
-                                        <th class="product-name">Product</th>
+                                        <th class="product-name">Course Title</th>
                                         <th class="product-price">Price</th>
-                                        <th class="product-quantity">Quantity</th>
+{{--                                        <th class="product-quantity">Quantity</th>--}}
                                         <th class="product-subtotal">Total</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="product-remove"><a href="#"><i class="fa fa-close"></i></a></td>
-                                        <td class="product-thumbnail"><a href="#"><img src="assets/images/shop/2.jpg" alt=""></a></td>
-                                        <td class="product-name"><a href="#">Medicine Bottle</a></td>
+                                        <td class="product-thumbnail"><a href="#"><img src="{{asset('storage')}}/{{$courses->icon_path}}" alt=""></a></td>
+                                        <td class="product-name"><a href="#">{{$courses->title}}</a></td>
 {{--                                        {{number_format($shops->price)}}--}}
-                                        <td class="product-price"><span>&#x20A6;</span>{{number_format(30.00)}}</td>
-                                        <td class="product-quantity"><input type="text" class="input-text" value="1" pattern="[0-9]*"></td>
-                                        <td class="subtotal"><span class="amount"><span class="symbol">&#x20A6;</span>30.00</span></td>
+                                        <td class="product-price"><span>&#x20A6;</span>{{number_format($courses->price)}}</td>
+{{--                                        <td class="product-quantity"><input type="number" class="input-text" value="1" id="qty" pattern="[0-9]*"></td>--}}
+                                        <td class="subtotal"><span class="amount" id="price"><span class="symbol">&#x20A6;</span>{{number_format($courses->price)}}</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="product-remove"><a href="#"><i class="fa fa-close"></i></a></td>
-                                        <td class="product-thumbnail"><a href="#"><img src="assets/images/shop/1.jpg" alt=""></a></td>
-                                        <td class="product-name"><a href="#">Medicine Bottle</a></td>
-                                        <td class="product-price"><span>&#x20A6;</span>30.00</td>
-                                        <td class="product-quantity"><input type="text" class="input-text" value="1" pattern="[0-9]*"></td>
-                                        <td class="subtotal"><span class="amount"><span class="symbol">&#x20A6;</span>30.00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="6" class="action text-right">
+                                        <!-- <td colspan="6" class="action text-right">
                                             <div class="coupon">
                                                 <input type="text" name="text" placeholder="Coupon code" required="">
                                                 <button class="add-btn" type="submit">Apply Coupon</button>
@@ -283,7 +178,7 @@
                                             <div class="update-cart">
                                                 <button class="add-btn" type="submit">Update cart</button>
                                             </div>
-                                        </td>
+                                        </td> -->
                                     </tr>
                                 </tbody>
                             </table>
@@ -295,17 +190,21 @@
                                     <tbody>
                                         <tr class="cart-subtotal">
                                             <th>Subtotal</th>
-                                            <td><span class="amount"><span>&#x20A6;</span>60.00</span></td>
+                                            <td><span class="amount"><span>&#x20A6;</span>{{number_format($courses->price)}}</span></td>
                                         </tr>
                                         <tr class="order-total">
                                             <th>Total</th>
-                                            <td><strong><span class="amount"><span>&#x20A6;</span>60.00</span></strong></td>
+                                            <td><strong><span class="amount"><span>&#x20A6;</span>{{number_format($courses->price)}}</span></strong></td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="wc-proceed-to-checkout">
-                                    <button class="add-btn" type="submit"> Proceed to checkout</button>
-                                </div>
+                                <form method="post" action="{{route('payee')}}">
+                                    @csrf
+                                    <div class="wc-proceed-to-checkout">
+                                        <button class="add-btn" type="submit"> Proceeds to Payment</button>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>
@@ -317,103 +216,7 @@
         <!-- Main content End -->
 
         <!-- Footer Start -->
-        <footer id="rs-footer" class="rs-footer">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
-                            <div class="footer-logo mb-30">
-                                <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
-                            </div>
-                              <div class="textwidget pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
-                              </div>
-                              <ul class="footer-social md-mb-30">
-                                  <li>
-                                      <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
-                                  </li>
-                                  <li>
-                                      <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a>
-                                  </li>
-
-                                  <li>
-                                      <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a>
-                                  </li>
-                                  <li>
-                                      <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a>
-                                  </li>
-
-                              </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
-                            <h3 class="widget-title">IT Services</h3>
-                            <ul class="site-map">
-                                <li><a href="software-development.html">Software Development</a></li>
-                                <li><a href="web-development.html">Web Development</a></li>
-                                <li><a href="case-studies-single.html">Analytic Solutions</a></li>
-                                <li><a href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                                <li><a href="product-design.html">Product Design</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
-                            <h3 class="widget-title">Contact Info</h3>
-                            <ul class="address-widget">
-                                <li>
-                                    <i class="flaticon-location"></i>
-                                    <div class="desc">374 FA Tower, William S Blvd 2721, IL, USA</div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-call"></i>
-                                    <div class="desc">
-                                       <a href="tel:(+880)155-69569">(+880)155-69569</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-email"></i>
-                                    <div class="desc">
-                                        <a href="mailto:support@rstheme.com">support@rstheme.com</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-clock-1"></i>
-                                    <div class="desc">
-                                        Opening Hours: 10:00 - 18:00
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12">
-                            <h3 class="widget-title">Newsletter</h3>
-                            <p class="widget-desc">We denounce with righteous and in and dislike men who are so beguiled and demo realized.</p>
-                            <p>
-                                <input type="email" name="EMAIL" placeholder="Your email address" required="">
-                                <em class="paper-plane"><input type="submit" value="Sign up"></em>
-                                <i class="flaticon-send"></i>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row y-middle">
-                        <div class="col-lg-6 text-right md-mb-10 order-last">
-                            <ul class="copy-right-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="copyright">
-                                <p>&copy; 2022 All Rights Reserved. Developed By <a href="http://rstheme.com/">RSTheme</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+            @include('components.footer')
         <!-- Footer End -->
 
         <!-- start scrollUp  -->
@@ -440,6 +243,15 @@
             </div>
         </div>
         <!-- Search Modal End -->
+<script>
+
+function doMath() {
+var numOne = document.getElementById('qty').value;
+var numTwo = document.getElementById('num2').value;
+var theProduct = (parseInt(numOne) * parseInt(numTwo));
+console.log('Product:' + theProduct + '\nSum: ' + (parseInt(numOne) + parseInt(numTwo)));
+}
+</script>
 
 <!-- modernizr js -->
 <script src="{{asset('assets/js/modernizr-2.8.3.min.js')}}"></script>

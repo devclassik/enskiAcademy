@@ -3,8 +3,10 @@
 <head>
     <!-- meta tag -->
     <meta charset="utf-8">
-    <title>Enski - Nigeria's leading empowerment platform</title>
-    <meta name="description" content="">
+    <title>Enski - Nigeria's Leading Empowerment Platform</title>
+    <meta name="description" content="Enski - Nigeria's Leading Empowerment Platform">
+    <meta name="keywords" content="enski, Empowerment, innovative, skill-academy, e-learning">
+    <meta name="author" content="Ope Alomaja">
     <!-- responsive tag -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +68,7 @@
                                 <ul>
                                     <li>
                                         <i class="flaticon-email"></i>
-                                        <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
+                                        <a href="mailto:contact@enski.net">contact@enski.net</a>
                                     </li>
                                     <li>
                                         <i class="flaticon-call"></i>
@@ -83,10 +85,10 @@
                             <div class="toolbar-sl-share">
                                 <ul>
                                     <li class="opening"> <em><i class="flaticon-clock"></i> 12:01pm-6:00pm</em> </li>
-                                    <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.twitter.com/enski_official"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.instagram.com/enski_official/"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -123,7 +125,7 @@
                                                 <ul class="sub-menu">
                                                     <li><a href="/entertainment">Entertainment</a> </li>
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
-                                                    <li><a href="/branding">Branding Agency</a></li>
+                                                    <li><a href="/coming-soon">Branding Agency</a></li>
                                                     <li><a href="/coming-soon">Financial Services</a></li>
                                                     <li><a href="/coming-soon">Skill Set Connector</a> </li>
                                                     <li><a href="/coming-soon">Logistics</a> </li>
@@ -194,7 +196,7 @@
                         A new era of entertainment has just begun and this time your happiness is the main priority.
                         </p>
                         <ul class="banner-btn" style="display:flex;">
-                            <li><a class="readon started" href="#rs-about">Get Started</a></li>
+                            <li><a class="readon started" href="https://wa.me/message/KUOMF26QJ33GK1">Get Started</a></li>
                             <li style="margin-left:2%"><a class="readon started" href="https://t.me/enskicommunity">Join Community</a></li>
                         </ul>
                     </div>
@@ -216,48 +218,48 @@
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://www.instagram.com/enski_entertainment/">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/1.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/1.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/1.png')}}" style="max-height: 50px;" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/1.png')}}" style="max-height: 50px;" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://wa.me/message/KUOMF26QJ33GK1">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/2.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/2.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/2.png')}}" style="max-height: 50px"  alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/2.png')}}" style="max-height: 50px" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://t.me/enski_entertainment">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/3.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/3.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/3.png')}}" style="max-height: 50px" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/3.png')}}" style="max-height: 50px" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://t.me/enski_entertainment">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/4.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/4.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/4.png')}}" style="max-height: 50px" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/4.png')}}" style="max-height: 50px" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://www.facebook.com/Enski_entertainment-105939982023001/">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/5.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/5.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/5.png')}}" style="max-height: 50px" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/5.png')}}" style="max-height: 50px" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://www.instagram.com/enski_entertainment/">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/6.png')}}" style="max-height: 50px" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/6.png')}}" style="max-height: 50px" alt="">
                         </a>
                     </div>
                 </div>
@@ -354,7 +356,7 @@
                                                <div class="services-desc">
                                                <a href="https://www.instagram.com/enski_entertainment/">
                                                    <p>
-                                                     Follow up to stay connected to fun and uplifting video posts, reels, stories, carousels.
+                                                     Follow up to stay officialed to fun and uplifting video posts, reels, stories, carousels.
                                                    </p>
                                                 </a>
                                                </div>
@@ -394,7 +396,7 @@
                                                </div>
                                            </div>
                                            <div class="services-content">
-                                               <div class="services-text"> 
+                                               <div class="services-text">
                                                  <h3 class="title"><a href="https://www.facebook.com/Enski_entertainment-105939982023001/">FACEBOOK</a></h3>
                                                </div>
                                                <div class="services-desc">
@@ -431,7 +433,7 @@
                     <div class="sec-title mb-30">
                         <div class="sub-text white-color style4-bg">OUR VARIOUS ENTERTAINMENT CONTENTS</div>
                         <h2 class="title white-color pb-20">
-                        Explore Several Thrilling Content Niches 
+                        Explore Several Thrilling Content Niches
                         </h2>
                         <div class="desc white-color">
                         Our array of contents are balanced to not only keep you entertained but also inspired and even enlightened.
@@ -496,9 +498,9 @@
                 </div>
                 <div class="col-lg-6 pl-60 md-pl-15">
                     <div class="sec-title mb-40">
-                        <div class="sub-text style4-bg left white-color">Why Choose Us 💯Enski Entertainment</div>
+                        <div class="sub-text style4-bg left white-color">Why ChooseE Enski Entertainment</div>
                         <h2 class="title white-color pb-20">
-                        🦾We deliver per excellence
+                        Entertainment at its best
                         </h2>
                         <!-- <div class="desc white-color">
                         Our contents are regularized to keep it family friendly.
@@ -510,7 +512,7 @@
                         </div>
                         <div class="services-text">
                             <h3 class="title"><a href="#">Family Friendly Content🔞</a></h3>
-                            <p class="services-txt">  Our contents are regularized to keep it family friendly.</p>
+                            <p class="services-txt"> Our contents are regularized to keep it family friendly.</p>
                         </div>
                     </div>
                     <div class="services-wrap mb-25">
@@ -519,7 +521,7 @@
                         </div>
                         <div class="services-text">
                             <h3 class="title"><a href="#">Assorted Content Categories</a></h3>
-                            <p class="services-txt">  Our contents explores several thrilling niches as well as gives room for learning and growth.</p>
+                            <p class="services-txt">  We explore diverse content niches to include your unique desires.</p>
                         </div>
                     </div>
                     <div class="services-wrap">
@@ -528,7 +530,7 @@
                         </div>
                         <div class="services-text">
                             <h3 class="title"><a href="#">No more lonely moments</a></h3>
-                            <p class="services-txt">  We are always available for fun live-interactions with you.</p>
+                            <p class="services-txt">  24/7 fun live-interactions with you anytime you are bored.</p>
                         </div>
                     </div>
                     <div class="services-wrap mb-25">
@@ -537,7 +539,7 @@
                         </div>
                         <div class="services-text">
                             <h3 class="title"><a href="#">Viewers Oriented Contents</a></h3>
-                            <p class="services-txt"> Always open to suggestions and reviews to help us suit your taste.</p>
+                            <p class="services-txt"> Friendly reviews to help us suit your taste are always welcomed.</p>
                         </div>
                     </div>
                 </div>
@@ -547,241 +549,241 @@
     <!-- Choose Section End -->
 
     <!-- Team Section Start -->
-    <div id="rs-team" class="rs-team onepage-team modify1  pt-120 pb-120 md-pt-90 md-pb-90">
-        <div class="sec-title2 text-center mb-30">
-            <span class="sub-text white-color">Team</span>
-            <h2 class="title white-color">
-                Expert Entertainment channel Managers
-            </h2>
-        </div>
-        <div class="container">
-            <div class="container">
-                <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="true" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="true" data-md-device="3" data-md-device-nav="false" data-md-device-dots="true">
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>
-                            <span class="designation">President & CEO</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>
-                            <span class="designation">CEO & Founder</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>
-                            <span class="designation">Web Developer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>
-                            <span class="designation">Digital Marketer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/5.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Rushali Rumi</a></h4>
-                            <span class="designation">Design Lead</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/6.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Abu Sayed</a></h4>
-                            <span class="designation">App Developer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/7.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Sonia Akhter</a></h4>
-                            <span class="designation">Graphic Artist</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/8.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Rayhan Ali</a></h4>
-                            <span class="designation">CEO & Founder</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/9.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Benjir Akther</a></h4>
-                            <span class="designation">Graphic Designer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>
-                            <span class="designation">President & CEO</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>
-                            <span class="designation">CEO & Founder</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>
-                            <span class="designation">Web Developer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team-item-wrap">
-                        <div class="team-wrap">
-                            <div class="image-inner">
-                                <a href="#"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>
-                            <span class="designation">Digital Marketer</span>
-                            <ul class="team-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--    <div id="rs-team" class="rs-team onepage-team modify1  pt-120 pb-120 md-pt-90 md-pb-90">--}}
+{{--        <div class="sec-title2 text-center mb-30">--}}
+{{--            <span class="sub-text white-color">Team</span>--}}
+{{--            <h2 class="title white-color">--}}
+{{--                Expert Entertainment channel Managers--}}
+{{--            </h2>--}}
+{{--        </div>--}}
+{{--        <div class="container">--}}
+{{--            <div class="container">--}}
+{{--                <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="true" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="true" data-md-device="3" data-md-device-nav="false" data-md-device-dots="true">--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>--}}
+{{--                            <span class="designation">President & CEO</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>--}}
+{{--                            <span class="designation">CEO & Founder</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>--}}
+{{--                            <span class="designation">Web Developer</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>--}}
+{{--                            <span class="designation">Digital Marketer</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/5.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Rushali Rumi</a></h4>--}}
+{{--                            <span class="designation">Design Lead</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/6.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Abu Sayed</a></h4>--}}
+{{--                            <span class="designation">App Developer</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/7.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Sonia Akhter</a></h4>--}}
+{{--                            <span class="designation">Graphic Artist</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/8.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Rayhan Ali</a></h4>--}}
+{{--                            <span class="designation">CEO & Founder</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/9.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Benjir Akther</a></h4>--}}
+{{--                            <span class="designation">Graphic Designer</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Makhaia Antitni</a></h4>--}}
+{{--                            <span class="designation">President & CEO</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Corey Anderson</a></h4>--}}
+{{--                            <span class="designation">CEO & Founder</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Masud Rana</a></h4>--}}
+{{--                            <span class="designation">Web Developer</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-item-wrap">--}}
+{{--                        <div class="team-wrap">--}}
+{{--                            <div class="image-inner">--}}
+{{--                                <a href="#"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="team-content text-center">--}}
+{{--                            <h4 class="person-name"><a href="#">Najmul Huda</a></h4>--}}
+{{--                            <span class="designation">Digital Marketer</span>--}}
+{{--                            <ul class="team-social">--}}
+{{--                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <!-- Team Section End -->
 
     <!-- Project Section Start -->
@@ -903,8 +905,8 @@
                             <img src="{{asset('assets/images/choose/icons/style2/1.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="mailto:support@enski.com.ng">Email</a></h3>
-                            <p class="services-txt"><a href="mailto:support@enski.com.ng">entertainment@enski.com.ng</a></p>
+                            <h3 class="title"><a href="mailto:entertainment@enski.net">Email</a></h3>
+                            <p class="services-txt"><a href="mailto:entertainment@enski.net">entertainment@enski.net</a></p>
                         </div>
                     </div>
                     <div class="services-wrap mb-25">
@@ -912,7 +914,7 @@
                             <img src="{{asset('assets/images/choose/icons/style2/2.png')}}" alt="">
                         </div>
                         <div class="services-text">
-                            <h3 class="title"><a href="tel:(+234)9158972334">Call Us | Whatsapp</a></h3>
+                            <h3 class="title"><a href="tel:(+234)9158972334"> Whatsapp</a></h3>
                             <p class="services-txt"><a href="tel:(+234)9158972334"> +2349158972334</a></p>
                         </div>
                     </div>
@@ -1098,48 +1100,48 @@
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://www.instagram.com/enski_entertainment/">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/1.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/1.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/1.png')}}" style="max-height: 50px;" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/1.png')}}" style="max-height: 50px;" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://wa.me/message/KUOMF26QJ33GK1">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/2.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/2.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/2.png')}}" style="max-height: 50px;" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/2.png')}}" style="max-height: 50px;"  alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://t.me/enski_entertainment">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/3.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/3.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/3.png')}}" style="max-height: 50px;" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/3.png')}}"style="max-height: 50px;"  alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://t.me/enski_entertainment">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/4.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/4.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/4.png')}}" style="max-height: 50px;" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/4.png')}}" style="max-height: 50px;" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://www.facebook.com/Enski_entertainment-105939982023001/">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/5.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/5.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/5.png')}}" style="max-height: 50px;" alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/5.png')}}"style="max-height: 50px;"  alt="">
                         </a>
                     </div>
                 </div>
                 <div class="partner-item">
                     <div class="logo-img">
                         <a href="https://www.instagram.com/enski_entertainment/">
-                            <img class="hover-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
-                            <img class="main-logo" src="{{asset('assets/images/partner/6.png')}}" alt="">
+                            <img class="hover-logo" src="{{asset('assets/images/partner/6.png')}}"style="max-height: 50px;"  alt="">
+                            <img class="main-logo" src="{{asset('assets/images/partner/6.png')}}" style="max-height: 50px;" alt="">
                         </a>
                     </div>
                 </div>
@@ -1158,13 +1160,13 @@
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
                     <div class="footer-logo mb-30">
-                        <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
+                        <a href="/homepage"><img src="{{asset('assets/images/logo6.png')}}" alt=""></a>
                     </div>
                     <div class="textwidget pb-30"><p>Enski is a one-stop empowerment platform that offers multiple services that will help you, your business or brand reach its infinite potential.</p>
                     </div>
                     <ul class="footer-social md-mb-30">
                         <li>
-                            <a href="https://www.twitter.com/enski_connect" target="_blank"><span><i class="fa fa-twitter"></i></span></a>
+                            <a href="https://www.twitter.com/enski_official" target="_blank"><span><i class="fa fa-twitter"></i></span></a>
                         </li>
                         <li>
                             <a href="https://fb.me/enski.impact.summit" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
@@ -1173,7 +1175,7 @@
                             <a href="https://www.linkedin.com/company/enski-integrated-services/" target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/enski_impact_summit/" target="_blank"><span><i class="fa fa-instagram"></i></span></a>
+                            <a href="https://www.instagram.com/enski_official" target="_blank"><span><i class="fa fa-instagram"></i></span></a>
                         </li>
                     </ul>
                 </div>
@@ -1205,7 +1207,7 @@
                         <li>
                             <i class="flaticon-email"></i>
                             <div class="desc">
-                            <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
+                            <a href="mailto:contact@enski.net">contact@enski.net</a>
                             </div>
                         </li>
                         <li>
@@ -1217,13 +1219,16 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12">
-                    <h3 class="widget-title">Newsletter</h3>
-                    <p class="widget-desc">Subscribe to our newsletters to stay updated with the latest and most resourceful info to help you or your brand stand out.</p>
-                    <p>
-                        <input type="email" name="EMAIL" placeholder="Your email address" required="">
-                        <em class="paper-plane"><input type="submit" value="Sign up"></em>
-                        <i class="flaticon-send"></i>
-                    </p>
+                    <form method="post" action="{{route('subscribers')}}">
+                        @csrf
+                        <h3 class="widget-title">Newsletter</h3>
+                        <p class="widget-desc">Subscribe to our newsletters to stay updated with the latest and most resourceful info to help you or your brand stand out.</p>
+                        <p>
+                            <input type="email" name="news_email" placeholder="Your email address" required="">
+                            <em class="paper-plane"><input type="submit" value="Sign up"></em>
+                            <i class="flaticon-send"></i>
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>

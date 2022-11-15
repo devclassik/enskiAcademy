@@ -30,14 +30,14 @@
                                             <i class="flaticon-email"></i>
                                             <span class="contact-info">
                                                 <span>E-mail</span>
-                                                <a href="mailto:support@enski.com.ng"> support@enski.com.ng</a>
+                                                <a href="mailto:contact@enski.net"> contact@enski.net</a>
                                             </span>
                                         </li>
                                         <li class="contact-part no-border">
                                              <i class="flaticon-call"></i>
                                             <span class="contact-info">
                                                 <span>Phone</span>
-                                                 +2348162237272
+                                                 +2348160055067
                                             </span>
                                         </li>
                                     </ul>
@@ -77,8 +77,7 @@
                                                 <ul class="sub-menu">
                                                     <li><a href="/entertainment">Entertainment</a> </li>
                                                     <li><a href="/skills-academy">Skills Academy</a> </li>
-                                                    <li><a href="/branding">Branding Agency</a> </li>
-                                                    {{--    add a comming soon page @todo--}}
+                                                    <li><a href="/coming soon">Branding Agency</a> </li>
                                                     <li><a href="/coming-soon">Financial Services</a></li>
                                                     <li><a href="/coming-soon">Skill Set Connector</a> </li>
                                                     <li><a href="/coming-soon">Logistics</a> </li>
@@ -143,7 +142,9 @@
                                 </p>
                                 <div class="btn-part">
                                     <center>
-                                    <a class="readon started get-new" >You Are Closer To Us Than You Think And Even More Important To Us Than You Can Ever Imagine. So If You ever have any needs | wants | Suggestions | Comments | Conplaints or You Just Need Someone To Talk To, Don't Hesitate To Message.. </a>
+                                    <a class="readon started get-new" >You Are Closer To Us Than You Know And Even More Important To Us Than You Can Ever Imagine.
+                                        So If You ever have any needs, wants, Suggestions, Comments, Complaints or You Just Need Someone To Talk To,
+                                        Don't Hesitate To Contact us.. </a>
                                     </center>
                                 </div>
                             </div>
@@ -166,7 +167,7 @@
                                    </div>
                                    <div class="address-text">
                                         <span class="label">Email:</span>
-                                        <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
+                                        <a href="mailto:contact@enski.net">contact@enski.net</a>
                                    </div>
                                </div>
                                <div class="address-box mb-25">
@@ -175,7 +176,7 @@
                                    </div>
                                    <div class="address-text">
                                        <span class="label">Phone:</span>
-                                       <a href="tel:23481622372">(+234) 816-223-7272</a>
+                                       <a href="tel:2348160055067">2348160055067</a>
                                    </div>
                                </div>
                                <div class="address-box">
@@ -210,7 +211,7 @@
                                                 <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
                                             </div>
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" id="website" name="website" placeholder="Socail Handle e.g FaceBook, instagram" required="">
+                                                <input class="from-control" type="text" id="website" name="website" placeholder="Social Handle e.g FaceBook, instagram" required="">
                                             </div>
                                             <div class="col-lg-12 mb-30">
                                                 <input type="text" name="subject" class="from-control" id="message"  placeholder="Subject" required="">

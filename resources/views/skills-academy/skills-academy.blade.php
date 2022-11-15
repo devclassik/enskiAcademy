@@ -16,7 +16,7 @@
                                    <ul class="topbar-contact">
                                        <li>
                                            <i class="flaticon-email"></i>
-                                           <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
+                                           <a href="mailto:contact@enski.net">contact@enski.net</a>
                                        </li>
                                        <li>
                                            <i class="flaticon-call"></i>
@@ -117,22 +117,19 @@
                     <div class="canvas-logo">
                         <a href="index.html"><img src="{{asset('assets/images/logo-dark.png')}}" alt="logo"></a>
                     </div>
-                    <div class="offcanvas-text">
-                        <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
-                    </div>
                     <div class="canvas-contact">
                         <h5 class="canvas-contact-title">Contact Info</h5>
                         <ul class="contact">
                             <li><i class="fa fa-globe"></i> Abuja-Keffi Rd, Nassarawa</li>
                             <li><i class="fa fa-phone"></i>+234 8162237272</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:support@enski.com.ng">support@enski.com.ng</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:contact@enski.net">contact@enski.net</a></li>
                             <li><i class="fa fa-clock-o"></i>12:00 PM - 6:00 PM</li>
                         </ul>
                         <ul class="social">
-                            <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.twitter.com/enski_official"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.instagram.com/enski_official/"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -217,7 +214,7 @@
                                         We are not just all words when it comes to your financial freedom as we are built on tested strategies and actionable milestones all aimed at our common goal of your financial freedom.
                                     </div>
                                     <div class="btn-part mt-40">
-                                        <a class="readon discover started" href="/home-about">Start Journey</a>
+                                        <a class="readon discover started" href="/dashboard">Start Journey</a>
                                     </div>
                                 </div>
                             </div>
@@ -437,38 +434,38 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="services-item">
-                                <div class="services-icon">
-                                    <img src="{{asset('assets/images/services/style5/8.png')}}" alt="">
-                                </div>
-                                <div class="services-content">
-                                    <h2 class="title"><a href="#">Web Development Course</a></h2>
-                                    <p class="desc">
-                                        Learn various coding languages and web development techniques to be able to build professional websites.
-                                    </p>
-                                    <div class="services-btn2">
-                                        <a href="#">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="services-item">
-                                <div class="services-icon">
-                                    <img src="{{asset('assets/images/services/style5/9.png')}}" alt="">
-                                </div>
-                                <div class="services-content">
-                                    <h2 class="title"><a href="#">Video Ads Creation Course</a></h2>
-                                    <p class="desc">
-                                        Learn how to creatively use and manipulate visual tools to create professional video ads for companies, brands, events, etc.
-                                    </p>
-                                    <div class="services-btn2">
-                                        <a href="#">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+{{--                        <div class="col-lg-4">--}}
+{{--                            <div class="services-item">--}}
+{{--                                <div class="services-icon">--}}
+{{--                                    <img src="{{asset('assets/images/services/style5/8.png')}}" alt="">--}}
+{{--                                </div>--}}
+{{--                                <div class="services-content">--}}
+{{--                                    <h2 class="title"><a href="#">Web Development Course</a></h2>--}}
+{{--                                    <p class="desc">--}}
+{{--                                        Learn various coding languages and web development techniques to be able to build professional websites.--}}
+{{--                                    </p>--}}
+{{--                                    <div class="services-btn2">--}}
+{{--                                        <a href="#">Learn More</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-lg-4">--}}
+{{--                            <div class="services-item">--}}
+{{--                                <div class="services-icon">--}}
+{{--                                    <img src="{{asset('assets/images/services/style5/9.png')}}" alt="">--}}
+{{--                                </div>--}}
+{{--                                <div class="services-content">--}}
+{{--                                    <h2 class="title"><a href="#">Video Ads Creation Course</a></h2>--}}
+{{--                                    <p class="desc">--}}
+{{--                                        Learn how to creatively use and manipulate visual tools to create professional video ads for companies, brands, events, etc.--}}
+{{--                                    </p>--}}
+{{--                                    <div class="services-btn2">--}}
+{{--                                        <a href="#">Learn More</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <div class="col-lg-4">
                             <div class="services-item">
                                 <div class="services-icon">
@@ -485,22 +482,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="services-item">
-                                <div class="services-icon">
-                                    <img src="{{asset('assets/images/services/style5/10.png')}}" alt="">
-                                </div>
-                                <div class="services-content">
-                                    <h2 class="title"><a href="#">Amazon KDP</a></h2>
-                                    <p class="desc">
-                                        Learn step by step strategies that will help you write powerful sale copies and become a highly paid copywriter.
-                                    </p>
-                                    <div class="services-btn2">
-                                        <a href="#">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+{{--                        <div class="col-lg-4">--}}
+{{--                            <div class="services-item">--}}
+{{--                                <div class="services-icon">--}}
+{{--                                    <img src="{{asset('assets/images/services/style5/10.png')}}" alt="">--}}
+{{--                                </div>--}}
+{{--                                <div class="services-content">--}}
+{{--                                    <h2 class="title"><a href="#">Amazon KDP</a></h2>--}}
+{{--                                    <p class="desc">--}}
+{{--                                        Learn step by step strategies that will help you write powerful sale copies and become a highly paid copywriter.--}}
+{{--                                    </p>--}}
+{{--                                    <div class="services-btn2">--}}
+{{--                                        <a href="#">Learn More</a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <div class="col-lg-4">
                             <div class="services-item">
                                 <div class="services-icon">
@@ -531,7 +528,7 @@
                            Confused On Which Skill to Learn ?
                         </h2>
                         <div class="call-btn mt-30">
-                            <a class="readon discover started" href="/contact">Talk to our Skills Consultation experts</a>
+                            <a class="readon discover started" href="https://bit.ly/enski_sa_consultation">Talk to our Skills Consultation experts</a>
                         </div>
                     </div>
                 </div>

@@ -23,7 +23,8 @@ class Blog extends Model
         'phaseThree',
         'phaseThreeB',
         'phaseFour',
-        'phaseFive'
+        'phaseFive',
+        'phaseSix'
 
     ];
 }

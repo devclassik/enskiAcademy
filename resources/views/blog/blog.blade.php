@@ -3,8 +3,10 @@
 <head>
     <!-- meta tag -->
     <meta charset="utf-8">
-    <title>Enski - Nigeria's leading empowerment platform</title>
-    <meta name="description" content="">
+    <title>Enski - Nigeria's Leading Empowerment Platform</title>
+    <meta name="description" content="Enski - Nigeria's Leading Empowerment Platform">
+    <meta name="keywords" content="enski, Empowerment, innovative, skill-academy, e-learning">
+    <meta name="author" content="Ope Alomaja">
     <!-- responsive tag -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">

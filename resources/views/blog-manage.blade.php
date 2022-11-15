@@ -241,6 +241,9 @@
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
                                                 <textarea class="from-control" name="phaseFive" placeholder="Phase 5" ></textarea>
                                             </div>
+                                            <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <textarea class="from-control" name="phaseSix" placeholder="Enter Comment" ></textarea>
+                                            </div>
                                             <!-- <div class="col-lg-12 mb-30">
                                                 <textarea class="from-control" name="message" placeholder="Your message Here" ></textarea>
                                             </div> -->

@@ -1,9 +1,9 @@
 @include('components.header')
     <!--Preloader area End here-->
-     
+
 		<!-- Main content Start -->
         <div class="main-content">
-            
+
             <!--Full width header Start-->
             <div class="full-width-header">
                 <!--Header Start-->
@@ -30,7 +30,7 @@
                                             <i class="flaticon-email"></i>
                                             <span class="contact-info">
                                                 <span>E-mail</span>
-                                                <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
+                                                <a href="mailto:contact@enski.net">contact@enski.net</a>
                                             </span>
                                         </li>
                                         <li class="contact-part no-border">
@@ -68,7 +68,7 @@
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
                                             <li class="rs-mega-menu menu-item-has-children">
-                                                 <a href="#">Home</a> 
+                                                 <a href="#">Home</a>
                                             </li>
                                             <li>
                                                 <a href="/home-about">About</a>
@@ -94,8 +94,8 @@
                                                 <a href="/contact">Contact</a>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
-                                    </nav>                                        
-                                </div> <!-- //.main-menu -->                                
+                                    </nav>
+                                </div> <!-- //.main-menu -->
                             </div>
                             <div class="expand-btn-inner search-icon hidden-sticky hidden-md">
                                 <ul>
@@ -114,10 +114,10 @@
                                 </ul>
                                 <div class="toolbar-sl-share">
                                     <ul class="social">
-                                        <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.twitter.com/enski_official"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.instagram.com/enski_official"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -128,11 +128,11 @@
                 <!--Header End-->
             </div>
             <!--Full width header End-->
-         
+
             <!-- Breadcrumbs Start -->
             <div class="rs-breadcrumbs img4">
                 <div class="breadcrumbs-inner text-center">
-                    <h1 class="page-title">Dasdboard</h1>
+                    <h1 class="page-title">Dashboard</h1>
                     <ul>
                         <li title="Braintech - IT Solutions and Technology Startup HTML Template">
                             <a class="active" href="#">Home</a>
@@ -221,15 +221,15 @@
                             </a>
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
             <!-- Checkout section end -->
 
-        </div> 
+        </div>
         <!-- Main content End -->
-     
+
         <!-- Footer Start -->
         @include('components.footer')
         <!-- Footer End -->
