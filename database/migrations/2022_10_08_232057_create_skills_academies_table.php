@@ -25,6 +25,7 @@ class CreateSkillsAcademiesTable extends Migration
             $table->string('picture_path');
             $table->string('video_path');
             $table->string('icon_path');
+            $table->string('curriculum');
             $table->timestamps();
         });
     }

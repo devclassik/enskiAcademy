@@ -153,6 +153,7 @@ class SkillsAcademyController extends Controller
             'description'           => 'required|min:10|max:100',
             'full_description'      => 'required|max:255',
             'picture'               => 'required',
+            'curriculum'            => 'required'
         ]);
         if (SkillsAcademy::where('title', $request->title)->first())
         {
@@ -203,6 +204,7 @@ class SkillsAcademyController extends Controller
             'icon_path'        => $iconPath,
             'picture_path'     => $picturePath,
             'video_path'       => $filePath,
+            'curriculum'       => $request->curriculum
 
         ]);
         Alert::success('Success', 'Course Uploaded Successfully!!!');

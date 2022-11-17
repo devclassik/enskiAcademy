@@ -32,8 +32,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // $skills = SkillsAcademy::all()->random(3);
-        $skills = SkillsAcademy::all();;
+         $skills = SkillsAcademy::all()->random(3);
+//        $skills = SkillsAcademy::all();;
 
         $blogs = Blog::latest()->paginate(6);
         return view('homepage', compact('blogs','skills'));

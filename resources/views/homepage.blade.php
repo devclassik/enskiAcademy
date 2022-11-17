@@ -1046,7 +1046,7 @@
                             </div>
                             <div class="col-lg-3 col-md-12 text-righ">
                                 <div class="button-wrapt md-center">
-                                    <a class="readon learn-more" href="https://bit.ly/airliner">Get In Touch</a>
+                                    <a class="readon learn-more" href="https://api.whatsapp.com/send?phone=2348160055067&text=My%20name%20is%20_________%20I%20want%20to%20join%20the%20Enski%20Community">Get In Touch</a>
                                 </div>
                             </div>
                         </div>

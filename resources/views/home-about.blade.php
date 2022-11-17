@@ -135,7 +135,7 @@
                 <div class="col-lg-6 md-mb-30">
                     <div class="rs-animation-shape">
                         <div class="images">
-                            <img src="{{asset('assets/images/about/about-3.png')}}" alt="">
+                            <img src="{{asset('assets/images/about/about-3about.png')}}" alt="">
                         </div>
                         <div class="middle-image2">
                             <img class="dance3" src="{{asset('assets/images/about/effect-1.png')}}" alt="">
@@ -193,7 +193,7 @@
                         <div class="col-lg-6 md-mb-30">
                             <div class="rs-animation-shape">
                                 <div class="images">
-                                   <img src="{{asset('assets/images/about/about-3.png')}}" alt="">
+                                   <img src="{{asset('assets/images/about/about-3about2.png')}}" alt="">
                                 </div>
                                 <div class="middle-image2">
                                    <img class="dance3" src="{{asset('assets/images/about/effect-1.png')}}" alt="">

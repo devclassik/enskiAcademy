@@ -304,6 +304,10 @@
                                             <textarea class="from-control" name="full_description" placeholder="Full Description Here" required=""></textarea>
                                         </div>
 
+                                        <div class="col-lg-12 mb-35">
+                                            <textarea class="from-control" name="curriculum" placeholder="curriculum Here" required=""></textarea>
+                                        </div>
+
                                     </div>
                                     <div class="form-group mb-0">
                                         <input class="submit-btn" type="submit" value="Submit Now">

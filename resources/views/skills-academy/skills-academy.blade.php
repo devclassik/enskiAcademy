@@ -357,22 +357,6 @@
                         <div class="col-lg-4 mb-20">
                             <div class="services-item">
                                 <div class="services-icon">
-                                    <img src="{{asset('assets/images/services/style5/3.png')}}" alt="">
-                                </div>
-                                <div class="services-content">
-                                    <h2 class="title"><a href="#">Affiliate Marketing Course</a></h2>
-                                    <p class="desc">
-                                        Learn practical strategies on how to generate income via affiliate marketing from the comfort of home.
-                                    </p>
-                                    <div class="services-btn2">
-                                        <a href="#">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-20">
-                            <div class="services-item">
-                                <div class="services-icon">
                                     <img src="{{asset('assets/images/services/style5/4.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
@@ -424,9 +408,9 @@
                                     <img src="{{asset('assets/images/services/style5/7.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Whatsapp Marketisation Course</a></h2>
+                                    <h2 class="title"><a href="#">Whatsapp Monetization Course</a></h2>
                                     <p class="desc">
-                                        Learn how to marketise your whatsapp and convert it to an income stream using time proven strategies and secrets.
+                                        Learn how to monetize your whatsapp and convert it to an income stream using time proven strategies and secrets.
                                     </p>
                                     <div class="services-btn2">
                                         <a href="#">Learn More</a>
@@ -472,10 +456,9 @@
                                     <img src="{{asset('assets/images/services/style5/10.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Information Marketing </a></h2>
+                                    <h2 class="title"><a href="#">Information Marketing Course</a></h2>
                                     <p class="desc">
-                                        Learn step by step strategies that will help you write powerful sale copies and become a highly paid copywriter.
-                                    </p>
+                                        Learn strategies that will help you convert what you already know into a passive income stream with the right marketing funnels.                                     </p>
                                     <div class="services-btn2">
                                         <a href="#">Learn More</a>
                                     </div>
@@ -504,15 +487,18 @@
                                     <img src="{{asset('assets/images/services/style5/10.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Copywriting Course</a></h2>
+                                    <h2 class="title"><a href="#">Freelancing Course</a></h2>
                                     <p class="desc">
-                                        Learn step by step strategies that will help you write powerful sale copies and become a highly paid copywriter.
+                                        Learn how to monetize your skill as a 6 -7 figure freelancer using strategies that will help you stand out both on the digital and physical space.
                                     </p>
                                     <div class="services-btn2">
                                         <a href="#">Learn More</a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="call-btn mt-30">
+                            <a class="readon discover started" href="/shops">VIEW MORE</a>
                         </div>
                     </div>
                 </div>
@@ -811,9 +797,9 @@
                                 </div>
                                 <div class="services-content">
                                     <div class="services-title">
-                                        <h3 class="title"><a href="#">High Accountability</a></h3>
+                                        <h3 class="title"><a href="#">High Interactivity</a></h3>
                                     </div>
-                                    <p class="services-txt">Full mentorship and guidance along the journey until you get successful as well as extra financial education to help you set the right financial foundation.</p>
+                                    <p class="services-txt">Unlike most e – learning sites, there is a great deal of communication between students and facilitators and consultants who will always be available to guide you.</p>
                                 </div>
                             </div>
                         </div>
@@ -824,9 +810,9 @@
                                 </div>
                                 <div class="services-content">
                                     <div class="services-title">
-                                        <h3 class="title"><a href="#">High Accountability</a></h3>
+                                        <h3 class="title"><a href="#">Ease Of Use.</a></h3>
                                     </div>
-                                    <p class="services-txt">Full mentorship and guidance along the journey until you get successful as well as extra financial education to help you set the right financial foundation.</p>
+                                    <p class="services-txt">Our skills academy interface is customized with a high level of simplicity to make it easy to not only use but also adapt to.</p>
                                 </div>
                             </div>
                         </div>
