@@ -66,6 +66,15 @@ Route::get('/courses',                    [App\Http\Controllers\SkillsAcademyCon
 Route::get('/course-manage',              [App\Http\Controllers\SkillsAcademyController::class, 'courseManage']);
 Route::post('/course-Upload',             [App\Http\Controllers\SkillsAcademyController::class, 'courseUpload'])->name('courseUpload');
 Route::get('/graphics-courses',           [App\Http\Controllers\SkillsAcademyController::class, 'graphics']);
+Route::get('/binary-trading',             [App\Http\Controllers\SkillsAcademyController::class, 'binaryTrading']);
+Route::get('/crypto-trading',             [App\Http\Controllers\SkillsAcademyController::class, 'cryptoTrading']);
+Route::get('/mini-importation',             [App\Http\Controllers\SkillsAcademyController::class, 'miniImportation']);
+Route::get('/forex-trading',             [App\Http\Controllers\SkillsAcademyController::class, 'forexTrading']);
+Route::get('/whatsapp-monetization',             [App\Http\Controllers\SkillsAcademyController::class, 'whatsappMonetization']);
+Route::get('/information-marketing',             [App\Http\Controllers\SkillsAcademyController::class, 'informationMarketing']);
+Route::get('/freelancing',             [App\Http\Controllers\SkillsAcademyController::class, 'freelancing']);
+
+
 
 
 //Branding
@@ -74,3 +83,14 @@ Route::get('/branding', [App\Http\Controllers\BrandingController::class, 'index'
 // Laravel 8 & 9 payment
 Route::post('/pay', [App\Http\Controllers\PaymentController::class, 'redirectToGateway'])->name('payee');
 Route::get('/payment/callback', [App\Http\Controllers\PaymentController::class, 'handleGatewayCallback']);
+
+
+Route::get('file', [App\Http\Controllers\ImageUploadController::class, 'create']);
+Route::post('file/upload', [App\Http\Controllers\ImageUploadController::class, 'fileStore'])->name('storey');
+Route::post('image/delete',[App\Http\Controllers\ImageUploadController::class,'fileDestroy']);
+
+
+
+//Route::get('image/upload', [App\Http\Controllers\ImageUploadController::class, 'Create']);
+//Route::post('image/upload/store','ImageUploadController@fileStore');
+//Route::post('image/delete','ImageUploadController@fileDestroy');

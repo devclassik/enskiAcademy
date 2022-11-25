@@ -67,7 +67,7 @@
                                                     <li>
                                                         <a href="/home-about">About</a>
                                                     </li>
-                                                    <li class="menu-item-has-children rs-mega-menu current-menu-item">
+                                                    <li class="menu-item-has-children current-menu-item">
                                                         <a href="#">Services</a>
                                                         <ul class="sub-menu">
                                                             <li><a href="/entertainment">Entertainment</a> </li>
@@ -115,7 +115,7 @@
                 <nav class="right_menu_togle hidden-md">
                     <div class="close-btn"><span id="nav-close" class="text-center"><i class="fa fa-close"></i></span></div>
                     <div class="canvas-logo">
-                        <a href="index.html"><img src="{{asset('assets/images/logo-dark.png')}}" alt="logo"></a>
+                        <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt="logo"></a>
                     </div>
                     <div class="canvas-contact">
                         <h5 class="canvas-contact-title">Contact Info</h5>
@@ -147,7 +147,7 @@
             <div class="rs-banner style4">
                 <div class="container">
                     <div class="banner-content">
-                        <span class="sub-title">Skiils Academy </span>
+                        <span class="sub-title">Skills Academy </span>
                        <h1 class="title">Expand your financial potential</h1>
                         <p class="desc">
                             Gain access to top-level strategies and high income skills from leading field experts and professionals.
@@ -344,12 +344,12 @@
                                     <img src="{{asset('assets/images/services/style5/2.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Crypto Trading Course</a></h2>
+                                    <h2 class="title"><a href="/crypto-trading">Crypto Trading Course</a></h2>
                                     <p class="desc">
                                         Learn and understand the crypto market and all the strategies involved in staying profitable in the crypto market.
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Learn More</a>
+                                        <a href="/crypto-trading">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -360,12 +360,12 @@
                                     <img src="{{asset('assets/images/services/style5/4.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Binary Trading Course</a></h2>
+                                    <h2 class="title"><a href="/binary-trading">Binary Trading Course</a></h2>
                                     <p class="desc">
                                         Learn everything you need to know about the Binary Market and how to become/ remain a profitable Binary trader.
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Learn More</a>
+                                        <a href="/binary-trading">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -376,12 +376,12 @@
                                     <img src="{{asset('assets/images/services/style5/5.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Mini Importation Course</a></h2>
+                                    <h2 class="title"><a href="/mini-importation">Mini Importation Course</a></h2>
                                     <p class="desc">
                                         Learn from the step by step blueprint of how to build a successful income stream importing products around the world.
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Learn More</a>
+                                        <a href="/mini-importation">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -392,12 +392,12 @@
                                     <img src="{{asset('assets/images/services/style5/6.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Forex Trading Course</a></h2>
+                                    <h2 class="title"><a href="/forex-trading">Forex Trading Course</a></h2>
                                     <p class="desc">
                                         Learn everything about the Forex Financial market and the strategies involved to build a financially stable porfolio.
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Learn More</a>
+                                        <a href="/forex-trading">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -408,12 +408,12 @@
                                     <img src="{{asset('assets/images/services/style5/7.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Whatsapp Monetization Course</a></h2>
+                                    <h2 class="title"><a href="/whatsapp-monetization">Whatsapp Monetization Course</a></h2>
                                     <p class="desc">
                                         Learn how to monetize your whatsapp and convert it to an income stream using time proven strategies and secrets.
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Learn More</a>
+                                        <a href="/whatsapp-monetization">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -456,11 +456,11 @@
                                     <img src="{{asset('assets/images/services/style5/10.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Information Marketing Course</a></h2>
+                                    <h2 class="title"><a href="/information-marketing">Information Marketing Course</a></h2>
                                     <p class="desc">
                                         Learn strategies that will help you convert what you already know into a passive income stream with the right marketing funnels.                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Learn More</a>
+                                        <a href="/information-marketing">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -487,12 +487,12 @@
                                     <img src="{{asset('assets/images/services/style5/10.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Freelancing Course</a></h2>
+                                    <h2 class="title"><a href="/freelancing">Freelancing Course</a></h2>
                                     <p class="desc">
                                         Learn how to monetize your skill as a 6 -7 figure freelancer using strategies that will help you stand out both on the digital and physical space.
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Learn More</a>
+                                        <a href="/freelancing">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -549,8 +549,8 @@
                                         </div>
                                         <div class="project-content">
                                             <div class="portfolio-inner">
-                                                <h3 class="title"><a href="#">Graphics Design</a></h3>
-                                                <span class="category"><a href="#">Mr. Donald Joel</a></span>
+                                                <h3 class="title"><a href="/graphics">Graphics Design</a></h3>
+                                                <span class="category"><a href="/graphics">Mr. Donald Joel</a></span>
                                             </div>
                                         </div>
                                     </div>
@@ -560,8 +560,8 @@
                                         </div>
                                         <div class="project-content">
                                             <div class="portfolio-inner">
-                                                <h3 class="title"><a href="#">Crypto Trading</a></h3>
-                                                <span class="category"><a href="#">Dr. Dann O.</a></span>
+                                                <h3 class="title"><a href="/crypto-trading">Crypto Trading</a></h3>
+                                                <span class="category"><a href="/crypto-trading">Dr. Dann O.</a></span>
                                             </div>
                                         </div>
                                     </div>

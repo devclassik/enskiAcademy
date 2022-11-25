@@ -64,7 +64,7 @@ class SkillsAcademyController extends Controller
      */
     public function create()
     {
-        //
+//        return view('skills-academy.course-manage');
     }
 
 
@@ -82,6 +82,34 @@ class SkillsAcademyController extends Controller
     public function graphics()
     {
         return view('skills-academy.graphics-design-course');
+    }
+    public function cryptoTrading()
+    {
+        return view('skills-academy.crypto-trading-course');
+    }
+    public function binaryTrading()
+    {
+        return view('skills-academy.binary-trading-course');
+    }
+    public function miniImportation()
+    {
+        return view('skills-academy.mini-importation-course');
+    }
+    public function forexTrading()
+    {
+        return view('skills-academy.forex-trading-course');
+    }
+    public function whatsappMonetization()
+    {
+        return view('skills-academy.whatsapp-marketing-course');
+    }
+    public function informationMarketing()
+    {
+        return view('skills-academy.information-marketing-course');
+    }
+    public function freelancing()
+    {
+        return view('skills-academy.freelancing-course');
     }
 
     /**
@@ -131,7 +159,6 @@ class SkillsAcademyController extends Controller
      */
     public function courseManage()
     {
-
         return view('skills-academy.course-manage');
 
     }
@@ -147,7 +174,7 @@ class SkillsAcademyController extends Controller
         $this->Validate($request,[
             'class'                 => 'required',
             'category'              => 'required',
-            'title'                 => 'required',
+            'title'                 => 'required|unique:Skills_Academies,title',
             'price'                 => 'required',
             'bulletin'              => 'required',
             'description'           => 'required|min:10|max:100',
@@ -155,45 +182,45 @@ class SkillsAcademyController extends Controller
             'picture'               => 'required',
             'curriculum'            => 'required'
         ]);
-        if (SkillsAcademy::where('title', $request->title)->first())
-        {
-            Alert::error('Oops!', 'Title is already in use');
-            return Redirect::back();
-        }
-        //for icon upload
-        $iconName = $request->icon->getClientOriginalName();
-        $iconPath = 'videos/icon' . $iconName;
+//        if (SkillsAcademy::where('title', $request->title)->first())
+//        {
+//            Alert::error('Oops!', 'Title is already in use');
+//            return Redirect::back();
+//        } else {
 
-        $isFileUploaded = Storage::disk('public')->put($iconPath, file_get_contents($request->icon));
+            //for icon upload
+            $iconName = $request->icon->getClientOriginalName();
+            $iconPath = 'videos/icon' . $iconName;
+            $isFileUploaded = Storage::disk('public')->put($iconPath, file_get_contents($request->icon));
 
-        // File URL to access the video in frontend
-        $urlOne = Storage::disk('public')->url($iconPath);
+            // File URL to access the video in frontend
+            $urlOne = Storage::disk('public')->url($iconPath);
 
-        //for picture upload
-        $pictureName = $request->picture->getClientOriginalName();
-        $picturePath = 'videos/picture' . $pictureName;
+            //for picture upload
+            $pictureName = $request->picture->getClientOriginalName();
+            $picturePath = 'videos/picture' . $pictureName;
+            $isFileUploaded = Storage::disk('public')->put($picturePath, file_get_contents($request->picture));
 
-        $isFileUploaded = Storage::disk('public')->put($picturePath, file_get_contents($request->picture));
+            // File URL to access the video in frontend
+            $urlOne = Storage::disk('public')->url($picturePath);
 
-        // File URL to access the video in frontend
-        $urlOne = Storage::disk('public')->url($picturePath);
+            //for video upload
+//        $videoName = $request->video->getClientOriginalName();
+//        $filePath = 'videos/videos' . $videoName;
+//        $isFileUploadedTwo = Storage::disk('public')->put($filePath, file_get_contents($request->video));
 
-        //for video upload
-        $videoName = $request->video->getClientOriginalName();
-        $filePath = 'videos/videos' . $videoName;
-
-        $isFileUploadedTwo = Storage::disk('public')->put($filePath, file_get_contents($request->video));
-
-        // File URL to access the video in frontend
-        $urlTwo = Storage::disk('public')->url($filePath);
+            // File URL to access the video in frontend
+//        $urlTwo = Storage::disk('public')->url($filePath);
 
 
-        if ($isFileUploaded && $isFileUploadedTwo) {
 
-            Alert::success('Success', 'Picture has been successfully uploaded.');
-        }
+//        if ( $isFileUploaded ) {
+//
+//            Alert::success('Success', 'Picture has been successfully uploaded.');
+//
+//        }
 
-        SkillsAcademy::create([
+        $id = SkillsAcademy::create([
             'class'            => $request->class,
             'category'         => $request->category,
             'title'            => $request->title,
@@ -203,13 +230,17 @@ class SkillsAcademyController extends Controller
             'full_description' => $request->full_description,
             'icon_path'        => $iconPath,
             'picture_path'     => $picturePath,
-            'video_path'       => $filePath,
+//            'video_path'       => $filePath,
             'curriculum'       => $request->curriculum
 
         ]);
-        Alert::success('Success', 'Course Uploaded Successfully!!!');
-        return Redirect::back();
 
+        $lastId = $id->id;
+
+        Alert::success('Success', 'Course Uploaded Successfully!!!');
+        return view('skills-academy.file-upload', compact('lastId'));
+//        return Redirect::back();
+//        }
     }
 
     /**

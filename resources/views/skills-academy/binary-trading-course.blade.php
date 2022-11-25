@@ -1,465 +1,767 @@
+@include('components.header')
+<!--Preloader area End here-->
 
-<!DOCTYPE html>
-<html lang="zxx">  
-    <head>
-        <!-- meta tag -->
-        <meta charset="utf-8">
-        <title>Braintech - IT Solutions and Technology Startup HTML Template</title>
-        <meta name="description" content="">
-        <!-- responsive tag -->
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- favicon -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
-        <!-- Bootstrap v4.4.1 css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-        <!-- font-awesome css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-        <!-- flaticon css -->
-        <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
-        <!-- animate css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-        <!-- owl.carousel css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
-        <!-- slick css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-        <!-- off canvas css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css">
-        <!-- magnific popup css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
-        <!-- Main Menu css -->
-        <link rel="stylesheet" href="assets/css/rsmenu-main.css">
-        <!-- spacing css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/rs-spacing.css">
-        <!-- style css -->
-        <link rel="stylesheet" type="text/css" href="style.css"> <!-- This stylesheet dynamically changed from style.less -->
-        <!-- responsive css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body class="defult-home">
-        
-        <!--Preloader area start here-->
-        <div id="loader" class="loader">
-            <div class="loader-container"></div>
-        </div>
-        <!--Preloader area End here--> 
-     
-		<!-- Main content Start -->
-        <div class="main-content">
-            
-            <!--Full width header Start-->
-            <div class="full-width-header">
-                <!--Header Start-->
-                <header id="rs-header" class="rs-header">
-                    <!-- Topbar Area Start -->
-                    <div class="topbar-area">
-                        <div class="container">
-                            <div class="row rs-vertical-middle">
-                                <div class="col-lg-2">
-                                    <div class="logo-part">
-                                        <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-10 text-right">
-                                    <ul class="rs-contact-info">
-                                        <li class="contact-part">
-                                            <i class="flaticon-location"></i>
-                                            <span class="contact-info">
-                                                <span>Address</span>
-                                                05 kandi BR. New York
-                                            </span>
-                                        </li>
-                                        <li class="contact-part">
-                                            <i class="flaticon-email"></i>
-                                            <span class="contact-info">
-                                                <span>E-mail</span>
-                                                <a href="#"> support@rstheme.com</a>
-                                            </span>
-                                        </li>
-                                        <li class="contact-part no-border">
-                                             <i class="flaticon-call"></i>
-                                            <span class="contact-info">
-                                                <span>Phone</span>
-                                                 +019988772
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
+<!-- Main content Start -->
+<div class="main-content">
+
+    <!--Full width header Start-->
+    <div class="full-width-header">
+        <!--Header Start-->
+        <header id="rs-header" class="rs-header style2 btn-style">
+            <!-- Topbar Area Start -->
+            <div class="topbar-area style2">
+                <div class="container">
+                    <div class="row y-middle">
+                        <div class="col-lg-8">
+                            <ul class="topbar-contact">
+                                <li>
+                                    <i class="flaticon-email"></i>
+                                    <a href="mailto:support@enski.com.ng">support@enski.com.ng</a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-call"></i>
+                                    <a href="tel:++234 (0) 8162237272"> +234 (0) 8162237272</a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-location"></i>
+                                    Abuja-Keffi Rd, Nassarawa
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 text-right">
+                            <div class="toolbar-sl-share">
+                                <ul>
+                                    <li class="opening"> <em><i class="flaticon-clock"></i> 12:01pm-6:00pm</em> </li>
+                                    <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Topbar Area End -->
-
-                    <!-- Menu Start -->
-                    <div class="menu-area menu-sticky">
-                        <div class="container">
-                            <div class="logo-area">
-                                <a href="index.html">
-                                    <img class="sticky-logo" src="assets/images/logo-dark.png" alt="logo">
+                </div>
+            </div>
+            <!-- Topbar Area End -->
+            <!-- Menu Start -->
+            <div class="menu-area menu-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="logo-part">
+                                <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
+                            </div>
+                            <div class="mobile-menu">
+                                <a href="#" class="rs-menu-toggle rs-menu-toggle-close secondary">
+                                    <i class="fa fa-bars"></i>
                                 </a>
                             </div>
+                        </div>
+                        <div class="col-lg-9 text-right">
                             <div class="rs-menu-area">
                                 <div class="main-menu">
-                                    <div class="mobile-menu">
-                                        <a href="index.html" class="mobile-logo">
-                                            <img src="assets/images/logo-light.png" alt="logo">
-                                        </a>
-                                        <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
-                                            <i class="fa fa-bars"></i>
-                                        </a>
-                                    </div>
-                                    <nav class="rs-menu">
+                                    <nav class="rs-menu pr-90 md-pr-0">
                                         <ul class="nav-menu">
-                                            <li class="rs-mega-menu menu-item-has-children"> <a href="#">Home</a>
-                                                <ul class="mega-menu"> 
-                                                    <li class="mega-menu-container">
-                                                        <div class="mega-menu-innner">
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Multipage</li>
-                                                                    <li><a href="index.html">Main Demo</a></li>
-                                                                    <li><a href="index2.html">Digital Agency 01</a></li>
-                                                                    <li><a href="index3.html">IT Solution 01</a></li>
-                                                                    <li><a href="index4.html">Digital Agency 02</a></li>
-                                                                    <li><a href="index5.html">Software Solution</a></li>
-                                                                    <li><a href="index6.html">Data Analysis</a></li>
-                                                                    <li class="last-item"><a href="index7.html">IT Solution 02</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Multipage</li>
-                                                                    <li><a href="index8.html">Gadgets Repairs</a></li>
-                                                                    <li><a href="index9.html">Application Testing</a></li>
-                                                                    <li><a href="index10.html">IT Solution 03</a></li>
-                                                                    <li><a href="index11.html">Digital Agency Dark</a></li>
-                                                                    <li><a href="index12.html">Web Design Agency</a></li>
-                                                                    <li><a href="index13.html">Branding Agency</a></li>
-                                                                    <li class="last-item"><a href="index14.html">Technology Agency</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Onepage</li>
-                                                                    <li><a href="onepage1.html">Main Demo</a></li>
-                                                                    <li><a href="onepage2.html">Digital Agency 01</a></li>
-                                                                    <li><a href="onepage3.html">IT Solution 01</a></li>
-                                                                    <li><a href="onepage4.html">Digital Agency 02</a></li>
-                                                                    <li><a href="onepage5.html">Software Solution</a></li>
-                                                                    <li><a href="onepage6.html">Data Analysis</a></li>
-                                                                    <li class="last-item"><a href="onepage7.html">IT Solution 02</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="single-megamenu">
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-title">Home Onepage</li>
-                                                                    <li><a href="onepage8.html">Gadgets Repairs</a></li>
-                                                                    <li><a href="onepage9.html">Application Testing</a></li>
-                                                                    <li><a href="onepage10.html">IT Solution 03</a></li>
-                                                                    <li><a href="onepage11.html">Digital Agency Dark</a></li>
-                                                                    <li><a href="onepage12.html">Web Design Agency</a></li>
-                                                                    <li><a href="onepage13.html">Branding Agency</a></li>
-                                                                    <li class="last-item"><a href="onepage14.html">Technology Agency</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul> <!-- //.mega-menu -->  
+                                            <li> <a href="/homepage">Home</a>
                                             </li>
                                             <li>
-                                                <a href="about.html">About</a>
+                                                <a href="/home-about">About</a>
                                             </li>
                                             <li class="menu-item-has-children current-menu-item">
                                                 <a href="#">Services</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="software-development.html">Software Development</a> </li>
-                                                    <li><a href="web-development.html">Web Development</a> </li>
-                                                    <li><a href="analytic-solutions.html">Analytic Solutions</a> </li>
-                                                    <li class="active"><a href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                                                    <li><a href="product-design.html">Product Design</a> </li>
-                                                    <li><a href="data-center.html">Data Center</a> </li>
+                                                    <li><a href="/entertainment">Entertainment</a> </li>
+                                                    <li><a href="/skills-academy">Skills Academy</a> </li>
+                                                    <li><a href="/branding">Branding Agency</a> </li>
+                                                    <li><a href="/coming-soon">Financial Services</a></li>
+                                                    <li><a href="/coming-soon">Skill Set Connector</a> </li>
+                                                    <li><a href="/coming-soon">Logistics</a> </li>
                                                 </ul>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="#">Pages</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item-has-children">
-                                                        <a href="#">Services</a>
-                                                        <ul class="sub-menu right">
-                                                           <li><a href="services1.html">Services 1</a></li>
-                                                           <li><a href="services2.html">Services 2</a></li>
-                                                           <li><a href="services3.html">Services 3</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                       <a href="our-team.html">Our Team</a>
-                                                    </li> 
-                                                    <li>
-                                                       <a href="single-team.html">Single Team</a>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                       <a href="#">Case Studies</a>
-                                                        <ul class="sub-menu right">
-                                                           <li><a href="case-studies-style1.html">Case Studies Style 1</a></li>
-                                                           <li><a href="case-studies-style2.html">Case Studies Style 2</a></li>
-                                                           <li><a href="case-studies-style3.html">Case Studies Style 3</a></li>
-                                                           <li><a href="case-studies-style4.html">Case Studies Style 4</a></li>
-                                                           <li><a href="case-studies-style5.html">Case Studies Style 5</a></li>
-                                                           <li><a href="case-studies-style6.html">Case Studies Style 6</a></li>
-                                                           <li><a href="case-studies-style7.html">Case Studies Style 7</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop.html">Shop</a>
-                                                        <ul class="sub-menu right">
-                                                            <li><a href="shop.html">Shop</a></li>
-                                                            <li><a href="shop-single.html">Shop Single</a></li>
-                                                            <li><a href="cart.html">Cart</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                            <li><a href="my-account.html">My Account</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                       <a href="pricing.html">Pricing</a>
-                                                    </li>
-                                                    <li>
-                                                       <a href="faq.html">Faq</a>
-                                                    </li>
-                                                    <li>
-                                                       <a href="error.html">404</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                               <a href="blog.html">Blog</a>
-                                               <ul class="sub-menu">
-                                                   <li><a href="blog.html">Blog</a> </li>
-                                                   <li><a href="blog-details.html">Blog Details</a></li>
-                                               </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="/blog">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="/contact">Contact</a>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
-                                    </nav>                                        
-                                </div> <!-- //.main-menu -->                                
-                            </div>
-                            <div class="expand-btn-inner search-icon hidden-sticky hidden-md">
-                                <ul>
-                                    <li class="sidebarmenu-search">
-                                        <a class="hidden-xs rs-search" data-bs-toggle="modal" data-bs-target="#searchModal" href="#">
-                                            <i class="flaticon-search"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="toolbar-sl-share">
-                                    <ul class="social">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </nav>
+                                </div> <!-- //.main-menu -->
+                                <div class="expand-btn-inner search-icon hidden-md">
+                                    <ul>
+                                        <li class="sidebarmenu-search">
+                                            <a class="hidden-xs rs-search" data-bs-toggle="modal" data-bs-target="#searchModal" href="#">
+                                                <i class="flaticon-search"></i>
+                                            </a>
+                                        </li>
+                                        @if (!Auth::guest())
+                                            <li><a class="quote-btn" href="/dologout">Logout</a></li>
+
+                                        @else
+                                            <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
+
+                                        @endif
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Menu End -->
-                </header>
-                <!--Header End-->
-            </div>
-            <!--Full width header End-->
-         
-            <!-- Breadcrumbs Start -->
-            <div class="rs-breadcrumbs img3">
-                <div class="breadcrumbs-inner text-center">
-                    <h1 class="page-title">Cloud and DevOps</h1>
-                    <ul>
-                        <li title="Braintech - IT Solutions and Technology Startup HTML Template">
-                            <a class="active" href="index.html">Home</a>
-                        </li>
-                        <li title="Go To Services">
-                            <a class="active" href="index.html">Services</a>
-                        </li>
-                        <li>Cloud and DevOps</li>
-                    </ul>
                 </div>
             </div>
-            <!-- Breadcrumbs End -->
 
-            <!-- Services Single Start -->
-            <div class="rs-services-single pt-120 pb-120 md-pt-80 md-pb-80">
-               <div class="container">
+            <!-- Menu End -->
+        </header>
+        <!--Full width header End-->
+    </div>
+    <!-- Breadcrumbs Start -->
+    <div class="rs-breadcrumbs img2">
+        <div class="breadcrumbs-inner text-center">
+            <h1 class="page-title">Binary Trading</h1>
+            <ul>
+                <li title="Braintech - IT Solutions and Technology Startup HTML Template">
+                    <a class="active" href="/homepage">Home</a>
+                </li>
+                <li title="Go To Services">
+                    <a class="active" href="/skills-academy.html">Skills Academy</a>
+                </li>
+                <li>Binary Trading</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumbs End -->
+
+    <!-- About Section Start -->
+    <div class="rs-about pt-120 pb-120 md-pt-80 md-pb-80">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 pr-40 md-pr-15 md-mb-50">
+                    <div class="sec-title4">
+                        <span class="sub-text">BINARY TRADING COURSE OVERVIEW</span>
+                        <h2 class="title">Let's dive into the professional world of Binary Trading</h2>
+                        <div class="heading-line"></div>
+                        <div class="desc desc-big">
+                            We donec pulvinar magna id leoersi pellentesque impered dignissim rhoncus euismod euismod eros vitae best consulting & financial services theme .
+                        </div>
+                        <div class="desc desc-big">
+                            Business ipsum dolor sit amet nsectetur cing elit. Suspe ndisse suscipit sagittis leo sit met entum is not estibulum dignity sim posuere cubilia durae. Leo sit met entum cubilia crae. At vero eos accusamus et iusto odio dignissimos provident nam libero tempore, cum soluta.
+                        </div>
+                        <div class="btn-part mt-45">
+                            <a class="readon learn-more" href="contact.html">Go Pro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="software-img">
+                        <img src="{{asset('assets/images/about/about-us/1.jpg')}}" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Section Start -->
+        <div class="rs-services style5 pt-120 md-pt-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 md-mb-30">
+                        <div class="services-item">
+                            <div class="services-icon">
+                                <img src="assets/images/services/style7/1.png" alt="Images">
+                            </div>
+                            <div class="services-content">
+                                <h3 class="services-title"><a href="web-development.html">Expert Peoples</a></h3>
+                                <p class="services-desc">
+                                    At vero eos et accusamus etiusto odio praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 md-mb-30">
+                        <div class="services-item">
+                            <div class="services-icon">
+                                <img src="assets/images/services/style7/2.png" alt="Images">
+                            </div>
+                            <div class="services-content">
+                                <h3 class="services-title"><a href="web-development.html">First Growing Process</a></h3>
+                                <p class="services-desc">
+                                    At vero eos et accusamus etiusto odio praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 md-mb-30">
+                        <div class="services-item">
+                            <div class="services-icon">
+                                <img src="assets/images/services/style7/2.png" alt="Images">
+                            </div>
+                            <div class="services-content">
+                                <h3 class="services-title"><a href="web-development.html">First Growing Process</a></h3>
+                                <p class="services-desc">
+                                    At vero eos et accusamus etiusto odio praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 md-mb-30">
+                        <div class="services-item">
+                            <div class="services-icon">
+                                <img src="assets/images/services/style7/3.png" alt="Images">
+                            </div>
+                            <div class="services-content">
+                                <h3 class="services-title"><a href="web-development.html">Creative Ideas</a></h3>
+                                <p class="services-desc">
+                                    At vero eos et accusamus etiusto odio praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Section End -->
+    </div>
+    <!-- About Section End -->
+
+
+    <!-- About Section Start -->
+    <div id="rs-about" class="rs-about gray-color pt-120 pb-120 md-pt-80 md-pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pr-45 md-pr-15 md-mb-50">
+                    <div class="choose-img">
+                        <img src="assets/images/choose/3.png" alt="images">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="sec-title mb-30">
+                        <div class="sub-text choose">What you will learn</div>
+                        <ul class="listing-style">
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Sed ut perspiciatis unde omnis iste natus error</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Accusamus et iusto odio dignissimos ducimus qui blanditiis</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Nam libero tempore, cum soluta nobis est eligendi optio cumque</span>
+                            </li>
+                        </ul>
+                        <div class="sec-title4">
+                            <div class="heading-line"></div>
+                        </div>
+                        <div class="sub-text choose">Who This Course Is For</div>
+                        <ul class="listing-style">
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Sed ut perspiciatis unde omnis iste natus error</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Accusamus et iusto odio dignissimos ducimus qui blanditiis</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Nam libero tempore, cum soluta nobis est eligendi optio cumque</span>
+                            </li>
+                        </ul>
+                        <div class="sec-title4">
+                            <div class="heading-line"></div>
+                        </div>
+                        <div class="sub-text choose">Course Requirements</div>
+                        <ul class="listing-style">
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Sed ut perspiciatis unde omnis iste natus error</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Accusamus et iusto odio dignissimos ducimus qui blanditiis</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                <span>Nam libero tempore, cum soluta nobis est eligendi optio cumque</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Section End -->
+
+        <!-- Counter Section Start -->
+        <div class="rs-counter style3 modify1 pt-90 pb-80">
+            <div class="container">
+                <div class="counter-top-area">
                     <div class="row">
-                        <div class="col-lg-8 md-mb-50">
-                            <div class="services-img">
-                                <img src="assets/images/services/single/1.jpg" alt="">
-                            </div>
-                            <h2 class="mt-34">Responsive Pixel Perfect Design</h2>
-                            <p>
-                               Cras enim urna, interdum nec porttitor vitae, sollicitudin eu eros. Praesent eget mollis nulla, non lacinia urna. Donec sit amet neque auctor, ornare dui rutrum, condimentum justo. Duis dictum, ex accumsan eleifend eleifend, ex justo aliquam nunc, in ultrices ante quam eget massa. Sed scelerisque, odio eu tempor pulvinar, magna tortor finibus lorem, ut mattis tellus nunc ut quam. Curabitur quis ornare leo. Suspendisse bibendum nibh non turpis vestibulum pellentesque. 
-                            </p>
-                            <ul class="listing-style">                              
-                                <li>
-                                    <i class="fa fa-check-circle"></i>
-                                    <span>Sed ut perspiciatis unde omnis iste natus error</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-circle"></i>
-                                    <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-circle"></i>
-                                    <span>Accusamus et iusto odio dignissimos ducimus qui blanditiis</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-circle"></i>
-                                    <span>Nam libero tempore, cum soluta nobis est eligendi optio cumque</span>
-                                </li>                                
-                            </ul>
-                            <h3 class="mt-34">Why Work With Us</h3>
-                             <!-- Skillbar Section Start -->
-                            <div class="rs-skillbar style1 modify1">
-                                <div class="cl-skill-bar">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <!-- Start Skill Bar -->
-                                            <span class="skillbar-title">Software Development</span>
-                                            <div class="skillbar" data-percent="92">
-                                                <p class="skillbar-bar"></p>
-                                                <span class="skill-bar-percent"></span> 
-                                            </div>
-                                            <!-- Start Skill Bar -->
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <!-- Start Skill Bar -->
-                                            <span class="skillbar-title">Web Development</span>
-                                            <div class="skillbar" data-percent="90">
-                                                <p class="skillbar-bar"></p>
-                                                <span class="skill-bar-percent"></span> 
-                                            </div>
-                                            <!-- Start Skill Bar -->
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <!-- Start Skill Bar -->
-                                            <span class="skillbar-title">SEO Analysis</span>
-                                            <div class="skillbar" data-percent="85">
-                                                <p class="skillbar-bar"></p>
-                                                <span class="skill-bar-percent"></span> 
-                                            </div>
-                                            <!-- Start Skill Bar -->
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <!-- Start Skill Bar -->
-                                            <span class="skillbar-title">Cyber Security</span>
-                                            <div class="skillbar" data-percent="92">
-                                                <p class="skillbar-bar"></p>
-                                                <span class="skill-bar-percent"></span> 
-                                            </div>
-                                            <!-- Start Skill Bar -->
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <!-- Start Skill Bar -->
-                                            <span class="skillbar-title">Clean Code</span>
-                                            <div class="skillbar" data-percent="92">
-                                                <p class="skillbar-bar"></p>
-                                                <span class="skill-bar-percent"></span> 
-                                            </div>
-                                            <!-- Start Skill Bar -->
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <!-- Start Skill Bar -->
-                                            <span class="skillbar-title">App Development</span>
-                                            <div class="skillbar" data-percent="92">
-                                                <p class="skillbar-bar"></p>
-                                                <span class="skill-bar-percent"></span> 
-                                            </div>
-                                            <!-- Start Skill Bar -->
-                                        </div>
-                                    </div>                                   
-                               </div>
-                            </div>
-                            <!-- Skillbar Section End -->
-                            <h3 class="mt-30">24/7 Smart Support</h3>
-                            <p class="mt-20 mb-50">
-                                Cras enim urna, interdum nec porttitor vitae, sollicitudin eu eros. Praesent eget mollis nulla, non lacinia urna. Donec sit amet neque auctor, ornare dui rutrum, condimentum justo. Duis dictum, ex accumsan eleifend eleifend, ex justo aliquam nunc, in ultrices ante quam eget massa. Sed scelerisque, odio eu tempor pulvinar, magna tortor finibus lorem.
-                            </p>
-                            <div class="row mb-80">
-                                <div class="col-lg-6 col-md-12 md-mb-30">
-                                    <img class="bdru-4" src="assets/images/services/single/2.jpg" alt="">
-                                </div>
-                                <div class="col-lg-6 col-md-12">
-                                    <img class="bdru-4" src="assets/images/services/single/3.jpg" alt="">
-                                </div>
-                            </div>
-                            <!-- Testimonial Section Start -->
-                            <div class="rs-testimonial style5">
-                                <div class="testi-item">
-                                    <div class="testi-img">
-                                        <img src="assets/images/testimonial/main-home/quote-white2.png" alt="">
+                        <div class="col-lg-3 col-md-6 md-mb-30">
+                            <div class="counter-list">
+                                <div class="counter-text">
+                                    <div class="count-number">
+                                        <span class="rs-count">4</span>
                                     </div>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias data.</p>
-                                    <div class="testi-content">
-                                        <div class="testi-img">
-                                           <img src="assets/images/testimonial/main-home/5.jpg" alt="">
+                                    <h3 class="title">Course Packages</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 md-mb-30">
+                            <div class="counter-list">
+                                <div class="counter-text">
+                                    <div class="count-number">
+                                        <span class="rs-count">20</span>
+                                        <span class="prefix">+</span>
+                                    </div>
+                                    <h3 class="title">Hours Video Lessons</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 sm-mb-30">
+                            <div class="counter-list">
+                                <div class="counter-text">
+                                    <div class="count-number">
+                                        <span class="rs-count">4.2</span>
+                                        <span class="prefix">/5</span>
+                                    </div>
+                                    <h3 class="title">Review</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 sm-mb-30">
+                            <div class="counter-list">
+                                <div class="counter-text">
+                                    <div class="count-number">
+                                        <span class="rs-count">50</span>
+                                        <span class="prefix">+</span>
+                                    </div>
+                                    <h3 class="title">Enrolled Students</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter Section End -->
+
+        <!-- Course Outline Section Start -->
+        <div id="rs-faq" class="rs-faq gray-color pt-120  md-pt-90 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-15">
+                        <div class="sec-title2 mb-45">
+                            <span class="sub-text style-bg">CURRICULUM</span>
+                            <h3 class="mt-34">The Binary Trading Course is simplified into four levels</h3>
+                        </div>
+                        <div class="faq-content">
+                            <div id="accordion" class="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">BEGINNER LEVEL</a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                                        <div class="card-body">
+                                            <ul class="listing-style">
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Sed ut perspiciatis unde omnis iste natus error</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Accusamus et iusto odio dignissimos ducimus qui blanditiis</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Nam libero tempore, cum soluta nobis est eligendi optio cumque</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">INTERMEDIATE LEVEL</a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion" style="">
+                                        <div class="card-body">
+                                            <ul class="listing-style">
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Sed ut perspiciatis unde omnis iste natus error</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Accusamus et iusto odio dignissimos ducimus qui blanditiis</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Nam libero tempore, cum soluta nobis est eligendi optio cumque</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+
+                                        <a class="card-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">STANDARD LEVEL</a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-bs-parent="#accordion" style="">
+                                        <div class="card-body">
+                                            <ul class="listing-style">
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Sed ut perspiciatis unde omnis iste natus error</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Accusamus et iusto odio dignissimos ducimus qui blanditiis</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Nam libero tempore, cum soluta nobis est eligendi optio cumque</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+
+                                        <a class="card-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false">PROFESSIONAL LEVEL</a>
+                                    </div>
+                                    <div id="collapsefour" class="collapse" data-bs-parent="#accordion" style="">
+                                        <div class="card-body">
+                                            <ul class="listing-style">
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Sed ut perspiciatis unde omnis iste natus error</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Accusamus et iusto odio dignissimos ducimus qui blanditiis</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check-circle"></i>
+                                                    <span>Nam libero tempore, cum soluta nobis est eligendi optio cumque</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Course Outline Section End -->
+        </div>
+            <!-- Pricing section start -->
+            <div class="rs-pricing style2 pt-120 pb-143 md-pt-80 md-pb-80">
+                <div class="container">
+                    <div class="sec-title2 text-center mb-45">
+                        <span class="sub-text">Pricing</span>
+                        <h2 class="title">
+                            Our Pricing Plan
+                        </h2>
+                        <div class="heading-line">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 md-mb-30">
+                            <div class="pricing-table">
+                                <div class="pricing-badge">
+                                    Silver
+                                </div>
+                                <div class="pricing-icon">
+                                    <img src="assets/images/pricing/main-home/icons/1.png" alt="">
+                                </div>
+                                <div class="pricing-table-price">
+                                    <div class="pricing-table-bags">
+                                        <span class="pricing-currency">$</span>
+                                        <span class="table-price-text">29.99</span>
+                                        <span class="table-period">Monthly Package</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-table-body">
+                                    <ul>
+                                        <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>
+                                        <li><i class="fa fa-check"></i><span>1 Native Android App</span></li>
+                                        <li><i class="fa fa-close"></i><span>Multi-Language Support</span></li>
+                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-part">
+                                    <a class="readon buy-now" href="contact.html">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 md-mb-30">
+                            <div class="pricing-table primary-bg">
+                                <div class="pricing-badge white-color-bg">
+                                    Gold
+                                </div>
+                                <div class="pricing-icon">
+                                    <img src="assets/images/pricing/main-home/icons/2.png" alt="">
+                                </div>
+                                <div class="pricing-table-price">
+                                    <div class="pricing-table-bags">
+                                        <span class="pricing-currency">$</span>
+                                        <span class="table-price-text">39.99</span>
+                                        <span class="table-period">Monthly Package</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-table-body">
+                                    <ul>
+                                        <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>
+                                        <li><i class="fa fa-check"></i><span>2 Native Android App</span></li>
+                                        <li><i class="fa fa-check"></i><span>Multi-Language Support</span></li>
+                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-part">
+                                    <a class="readon buy-now" href="contact.html">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="pricing-table">
+                                <div class="pricing-badge">
+                                    Platinum
+                                </div>
+                                <div class="pricing-icon">
+                                    <img src="assets/images/pricing/main-home/icons/3.png" alt="">
+                                </div>
+                                <div class="pricing-table-price">
+                                    <div class="pricing-table-bags">
+                                        <span class="pricing-currency">$</span>
+                                        <span class="table-price-text">79.99</span>
+                                        <span class="table-period">Monthly Package</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-table-body">
+                                    <ul>
+                                        <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>
+                                        <li><i class="fa fa-check"></i><span>3 Native Android App</span></li>
+                                        <li><i class="fa fa-check"></i><span>Multi-Language Support</span></li>
+                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-part">
+                                    <a class="readon buy-now" href="contact.html">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 md-mb-30">
+                            <div class="pricing-table primary-bg">
+                                <div class="pricing-badge white-color-bg">
+                                    Gold
+                                </div>
+                                <div class="pricing-icon">
+                                    <img src="assets/images/pricing/main-home/icons/2.png" alt="">
+                                </div>
+                                <div class="pricing-table-price">
+                                    <div class="pricing-table-bags">
+                                        <span class="pricing-currency">$</span>
+                                        <span class="table-price-text">39.99</span>
+                                        <span class="table-period">Monthly Package</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-table-body">
+                                    <ul>
+                                        <li><i class="fa fa-check"></i><span>Powerful Admin Panel</span></li>
+                                        <li><i class="fa fa-check"></i><span>2 Native Android App</span></li>
+                                        <li><i class="fa fa-check"></i><span>Multi-Language Support</span></li>
+                                        <li><i class="fa fa-check"></i><span>Support via E-mail and Phone</span></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-part">
+                                    <a class="readon buy-now" href="contact.html">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Pricing section end -->
+            <div class="rs-about pt-120 md-pt-80 ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pr-40 md-pr-15">
+                            <div class="sec-title4">
+                                <span class="sub-text">Meet The Facilitator</span>
+                                <h2 class="title">Mr. Rohi</h2>
+                                <div class="heading-line"></div>
+                                <div class="desc desc-big">
+                                    We donec pulvinar magna id leoersi pellentesque impered dignissim rhoncus euismod euismod eros vitae best consulting & financial services theme .
+                                </div>
+                                <div class="desc desc-big">
+                                    We donec pulvinar magna id leoersi pellentesque impered dignissim rhoncus euismod euismod eros vitae best consulting & financial services theme .
+                                </div>
+                            </div>
+                            <h3 class="mt-34">Extra Bonuses from the Facilitator</h3>
+                            <ul class="listing-style">
+                                <li>
+                                    <i class="fa fa-check-circle"></i>
+                                    <span>4 Ebooks worth NGN 20,000</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-circle"></i>
+                                    <span>Link to private community</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-circle"></i>
+                                    <span>Accusamus et iusto odio </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="software-img">
+                                <img src="{{asset('assets/images/about/about-us/1.jpg')}}" alt="images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About Section End -->
+
+            <!-- Testimonial Section Start -->
+            <div class="rs-testimonial main-home rs-rain-animate style4 modify2 md-fixing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="testi-image">
+                                <img src="assets/images/testimonial/testimonial-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pl-50 md-pl-15">
+                            <div class="sec-title mb-50">
+                                <div class="sub-text choose">Testimonials</div>
+                                <div class="desc blue-color">
+                                    We are looking forward to helping you achieve financial success with this course. Here is what some of our students have to say about the Binary Trading Course...
+                                </div>
+                            </div>
+                            <div class="rs-carousel owl-carousel"
+                                 data-loop="true"
+                                 data-items="1"
+                                 data-margin="30"
+                                 data-autoplay="true"
+                                 data-hoverpause="true"
+                                 data-autoplay-timeout="5000"
+                                 data-smart-speed="800"
+                                 data-dots="true"
+                                 data-nav="false"
+                                 data-nav-speed="false"
+
+                                 data-md-device="1"
+                                 data-md-device-nav="false"
+                                 data-md-device-dots="false"
+                                 data-center-mode="false"
+
+                                 data-ipad-device2="1"
+                                 data-ipad-device-nav2="false"
+                                 data-ipad-device-dots2="false"
+
+                                 data-ipad-device="1"
+                                 data-ipad-device-nav="false"
+                                 data-ipad-device-dots="true"
+
+                                 data-mobile-device="1"
+                                 data-mobile-device-nav="false"
+                                 data-mobile-device-dots="false">
+                                <div class="testi-item">
+                                    <div class="author-desc">
+                                        <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/quote2.png" alt="">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.</div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <div class="author-img">
+                                            <img src="assets/images/testimonial/main-home/1.jpg" alt="">
                                         </div>
                                         <div class="author-part">
-                                            <div class="name">Brick John</div>
+                                            <a class="name" href="#">Mariya Khan</a>
                                             <span class="designation">CEO, Brick Consulting</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Testimonial Section End -->
-                        </div>
-                        <div class="col-lg-4 pl-32 md-pl-15">
-                            <ul class="services-list">
-                                <li><a href="software-development.html">Software Development</a></li>
-                                <li><a  href="web-development.html">Web Development</a></li>
-                                <li><a href="case-studies-single.html">Analytic Solutions</a></li>
-                                <li><a class="active" href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                                <li><a href="product-design.html">Product Design</a></li>
-                                <li><a href="data-center.html">Data Center</a></li>
-                            </ul>
-                            <div class="services-add mb-50 mt-50">
-                                <div class="address-item mb-35">
-                                    <div class="address-icon">
-                                        <i class="fa fa-phone"></i>
+                                <div class="testi-item">
+                                    <div class="author-desc">
+                                        <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/quote2.png" alt="">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.</div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <div class="author-img">
+                                            <img src="assets/images/testimonial/main-home/2.jpg" alt="">
+                                        </div>
+                                        <div class="author-part">
+                                            <a class="name" href="#">Sonia Akther</a>
+                                            <span class="designation">CEO, Keen IT Solution</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <h2 class="title">Have any Questions? <br> Call us Today!</h2>
-                                <div class="contact">
-                                    <a href="tel:123222-8888">(123) 222-8888</a>
-                                </div>
-                            </div>
-                            <div class="brochures">
-                                <h3>Brochures</h3>
-                                <p>
-                                    Cras enim urna, interdum nec por ttitor vitae, sollicitudin eu erosen. Praesent eget mollis nulla sollicitudin.
-                                </p>
-                                <div class="pdf-btn">
-                                    <a class="readon learn-more pdf" href="contact.html">Download Now<i class="fa fa-file-pdf-o"></i></a>
+                                <div class="testi-item">
+                                    <div class="author-desc">
+                                        <div class="desc"><img class="quote" src="assets/images/testimonial/main-home/quote2.png" alt="">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.</div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <div class="author-img">
+                                            <img src="assets/images/testimonial/main-home/4.jpg" alt="">
+                                        </div>
+                                        <div class="author-part">
+                                            <a class="name" href="#">Neymar Vuya</a>
+                                            <span class="designation">Arist</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
-               </div> 
+                    </div>
+                </div>
+                <div class="line-inner blue-dark">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
-            <!-- Services Single End -->
+            <!-- Testimonial Section End -->
 
             <!-- Cta section start -->
-            <div class="rs-cta style1 bg7 pt-80 pb-80">
+            <div class="rs-cta style1 bg7a pt-80">
                 <div class="container">
                     <div class="cta-wrap">
                         <div class="row align-items-center">
                             <div class="col-lg-9 col-md-12 md-mb-30">
-                                <span>Plan to Start a Project</span>
+                                <span>Still confused on which course to learn?</span>
                                 <div class="title-wrap">
-                                    <h2 class="epx-title">Our Experts Ready to Help You</h2>
+                                    <h2 class="epx-title">Our Experts Are Ready To Help You</h2>
                                 </div>
                             </div>
                             <div class="col-lg-3 text-right col-md-12">
@@ -473,107 +775,10 @@
             </div>
             <!-- Cta section end -->
 
-        </div> 
         <!-- Main content End -->
-     
-        <!-- Footer Start -->
-        <footer id="rs-footer" class="rs-footer">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
-                            <div class="footer-logo mb-30">
-                                <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
-                            </div>
-                              <div class="textwidget pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
-                              </div>
-                              <ul class="footer-social md-mb-30">  
-                                  <li> 
-                                      <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
-                                  </li>
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
-                                  </li>
 
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a> 
-                                  </li>
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
-                                  </li>
-                                                                           
-                              </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
-                            <h3 class="widget-title">IT Services</h3>
-                            <ul class="site-map">
-                                <li><a href="software-development.html">Software Development</a></li>
-                                <li><a href="web-development.html">Web Development</a></li>
-                                <li><a href="case-studies-single.html">Analytic Solutions</a></li>
-                                <li><a href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                                <li><a href="product-design.html">Product Design</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
-                            <h3 class="widget-title">Contact Info</h3>
-                            <ul class="address-widget">
-                                <li>
-                                    <i class="flaticon-location"></i>
-                                    <div class="desc">374 FA Tower, William S Blvd 2721, IL, USA</div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-call"></i>
-                                    <div class="desc">
-                                       <a href="tel:(+880)155-69569">(+880)155-69569</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-email"></i>
-                                    <div class="desc">
-                                        <a href="mailto:support@rstheme.com">support@rstheme.com</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-clock-1"></i>
-                                    <div class="desc">
-                                        Opening Hours: 10:00 - 18:00   
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12">
-                            <h3 class="widget-title">Newsletter</h3>
-                            <p class="widget-desc">We denounce with righteous and in and dislike men who are so beguiled and demo realized.</p>
-                            <p>
-                                <input type="email" name="EMAIL" placeholder="Your email address" required="">
-                                <em class="paper-plane"><input type="submit" value="Sign up"></em>
-                                <i class="flaticon-send"></i>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">                    
-                    <div class="row y-middle">
-                        <div class="col-lg-6 text-right md-mb-10 order-last">
-                            <ul class="copy-right-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="copyright">
-                                <p>&copy; 2022 All Rights Reserved. Developed By <a href="http://rstheme.com/">RSTheme</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <!-- Footer Start -->
+        @include('components.footer')
         <!-- Footer End -->
 
         <!-- start scrollUp  -->
@@ -601,5 +806,5 @@
         </div>
         <!-- Search Modal End -->
 
-         <!-- modernizr js -->
-         @include('components.scripts')
+        <!-- modernizr js -->
+        @include('components.scripts')

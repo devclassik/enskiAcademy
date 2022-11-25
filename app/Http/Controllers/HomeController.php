@@ -50,8 +50,6 @@ class HomeController extends Controller
         return view('blog-manage');
     }
 
-
-
     /**
      * Show the blogMange.
      *

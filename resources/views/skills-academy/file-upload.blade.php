@@ -40,6 +40,13 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <meta name="_token" content="{{csrf_token()}}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js"></script>
+
+
 </head>
 
 <!-- this is for entertainment home 11 -->
@@ -248,9 +255,9 @@
                         <div class="services-text">
                             <h3 class="title"><a href="#">Social Handles</a></h3>
                             <p class="services-txt">
-                            <a href="https://www.instagram.com/enski_impact_summit/" target="_blank">Instagram: enski_entertainment</a><br>
-                            <a href="https://t.me/enski_entertainment" target="_blank">Telegram: enski_entertainment_admin</a><br>
-                            <a href="https://fb.me/enski.impact.summit" target="_blank">Facebook: Enski Connect</a></p>
+                                <a href="https://www.instagram.com/enski_impact_summit/" target="_blank">Instagram: enski_entertainment</a><br>
+                                <a href="https://t.me/enski_entertainment" target="_blank">Telegram: enski_entertainment_admin</a><br>
+                                <a href="https://fb.me/enski.impact.summit" target="_blank">Facebook: Enski Connect</a></p>
                         </div>
                     </div>
                 </div>
@@ -258,59 +265,16 @@
                     <div class="rs-contact mod1">
                         <div class="contact-wrap">
                             <div class="content-part mb-25">
-                                <h2 class="title mb-15">Upload your content</h2>
+                                <h2 class="title mb-15">Upload your Video</h2>
                                 <p class="desc">We are here to help you 24/7 with experts</p>
                             </div>
                             <div id="appointment-messages"></div>
 
-                            <form method="post" action="{{ route('courseUpload') }}" enctype="multipart/form-data">
+                            <form method="post" action="{{url('file/upload')}}" enctype="multipart/form-data"
+                                  class="dropzone" id="dropzone" >
                                 @csrf
-                                <fieldset>
-                                    <div class="row">
-                                        <div class="col-lg-12 mb-15">
-                                            <input class="from-control" type="text" name="class" placeholder="class e.g Elite, Silver" required="">
-                                        </div>
-                                        <div class="col-lg-12 mb-15">
-                                            <input class="from-control" type="text" name="category" placeholder="Category" required="">
-                                        </div>
-                                        <div class="col-lg-12 mb-15">
-                                            <input class="from-control" type="text" name="title" placeholder="Course Title" required="">
-                                        </div>
-                                        <div class="col-lg-12 mb-15">
-                                            <input class="from-control" type="number" name="price" placeholder="Price" required="">
-                                        </div>
-                                        <div class="col-lg-12 mb-15">
-                                            <label class="text-danger">Course Icon</label>
-                                            <input class="from-control" type="file" name="icon" required>
-                                        </div>
-                                        <div class="col-lg-12 mb-15">
-                                            <label class="text-danger">Course Picture</label>
-                                            <input class="from-control" type="file" name="picture" required>
-                                        </div>
-{{--                                        <div class="col-lg-12 mb-15">--}}
-{{--                                            <label class="text-danger">Video File</label>--}}
-{{--                                            <input class="from-control" type="file" name="video"  required>--}}
-{{--                                        </div>--}}
-                                        <div class="col-lg-12 mb-35">
-                                            <textarea class="from-control" name="bulletin" placeholder="Bulletin Here separated with a semi column (;)" required=""></textarea>
-                                        </div>
-                                        <div class="col-lg-12 mb-35">
-                                            <textarea class="from-control" name="description" placeholder="Brief Description Here" required=""></textarea>
-                                        </div>
-                                        <div class="col-lg-12 mb-35">
-                                            <textarea class="from-control" name="full_description" placeholder="Full Description Here" required=""></textarea>
-                                        </div>
-
-                                        <div class="col-lg-12 mb-35">
-                                            <textarea class="from-control" name="curriculum" placeholder="curriculum Here" required=""></textarea>
-                                        </div>
-
-                                    </div>
-                                    <div class="form-group mb-0">
-                                        <input class="submit-btn" type="submit" value="Submit Now">
-                                    </div>
-                                </fieldset>
                             </form>
+
                         </div>
                     </div>
 
@@ -335,6 +299,50 @@
     <i class="fa fa-angle-up"></i>
 </div>
 <!-- End scrollUp  -->
+
+<script type="text/javascript">
+    Dropzone.options.dropzone =
+        {
+            maxFilesize: 1024,
+            renameFile: function(file) {
+                var dt = new Date();
+                var time = dt.getTime();
+                return time+file.name;
+            },
+            acceptedFiles: ".jpeg,.jpg,.png,.gif",
+            addRemoveLinks: true,
+            timeout: 50000,
+            removedfile: function(file)
+            {
+                var name = file.upload.filename;
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                    },
+                    type: 'POST',
+                    url: '{{ url("image/delete") }}',
+                    data: {filename: name},
+                    success: function (data){
+                        console.log("File has been successfully removed!!");
+                    },
+                    error: function(e) {
+                        console.log(e);
+                    }});
+                var fileRef;
+                return (fileRef = file.previewElement) != null ?
+                    fileRef.parentNode.removeChild(file.previewElement) : void 0;
+            },
+
+            success: function(file, response)
+            {
+                console.log(response);
+            },
+            error: function(file, response)
+            {
+                return false;
+            }
+        };
+</script>
 
 <!-- modernizr js -->
 @include('components.scripts')

@@ -341,6 +341,12 @@ ul {
   background-position: center;
   background-size: cover;
 }
+.bg7a {
+    background: url(assets/images/bg/cta-bg12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .bg8 {
   background: url(assets/images/bg/call-action.jpg);
   background-repeat: no-repeat;
