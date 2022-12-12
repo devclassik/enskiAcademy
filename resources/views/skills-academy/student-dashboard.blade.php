@@ -186,13 +186,13 @@
                                         <tr>
                                             <td>1</td>
                                             <td>Medicine Bottle <strong><i class="fa fa-close"></i> 1</strong></td>
-                                            <td>$30.00</td>
+                                            <td>&#8358;30.00</td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>Medicine Bottle <strong><i class="fa fa-close"></i> 1</strong></td>
-                                            <td>$30.00</td>
+                                            <td>&#8358;30.00</td>
                                             <td></td>
                                         </tr>
                                     </tbody>
@@ -200,13 +200,13 @@
                                         <tr>
                                             <td>3</td>
                                             <th>Subtotal</th>
-                                            <th>$60.00</th>
+                                            <th>&#8358;60.00</th>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <th>Total</th>
-                                            <th>$60.00</th>
+                                            <th>&#8358;60.00</th>
                                             <td> <button class="add-btn" type="submit">Download</button></td>
                                         </tr>
                                     </tfoot>
