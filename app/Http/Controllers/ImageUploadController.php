@@ -28,6 +28,7 @@ class ImageUploadController extends Controller
 
 
         $imageUpload = new FileUpload();
+        $imageUpload ->video_id = 6;
         $imageUpload->filename = $imageName;
         $imageUpload->save();
         return response()->json(['success'=>$imageName]);

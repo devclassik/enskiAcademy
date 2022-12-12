@@ -34,10 +34,14 @@
                                 <div class="toolbar-sl-share">
                                     <ul>
                                         <li class="opening"> <em><i class="flaticon-clock"></i> 12:01 PM-6:00 PM</em> </li>
-                                        <li><a href="https://www.twitter.com/enski_official"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.instagram.com/enski_official"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.twitter.com/enski_official"><i
+                                                    class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i
+                                                    class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.instagram.com/enski_official"><i
+                                                    class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -53,8 +57,10 @@
                             <div class="col-lg-3">
                                 <div class="logo-part">
                                     <a href="/homepage">
-                                        <img class="normal-logo" src="{{asset('assets/images/logo-light.png')}}" width="145"  alt="logo">
-                                        <img class="sticky-logo" src="{{asset('assets/images/logo-dark.png')}}"  width="145" alt="logo">
+                                        <img class="normal-logo" src="{{ asset('assets/images/logo-light.png') }}"
+                                            width="145" alt="logo">
+                                        <img class="sticky-logo" src="{{ asset('assets/images/logo-dark.png') }}"
+                                            width="145" alt="logo">
                                     </a>
                                 </div>
                                 <div class="mobile-menu">
@@ -120,7 +126,7 @@
             <nav class="right_menu_togle hidden-md">
                 <div class="close-btn"><span id="nav-close" class="text-center"><i class="fa fa-close"></i></span></div>
                 <div class="canvas-logo">
-                    <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt="logo"></a>
+                    <a href="/homepage"><img src="{{ asset('assets/images/logo-dark.png') }}" alt="logo"></a>
                 </div>
 
                 <div class="canvas-contact">
@@ -128,7 +134,8 @@
                     <ul class="contact">
                         <li><i class="fa fa-globe"></i>Middle Badda, Dhaka, BD</li>
                         <li><i class="fa fa-phone"></i>+234 (0) 8160055067</li>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:contact@enski.net">contact@enski.net<</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:contact@enski.net">contact@enski.net<< /a>
+                        </li>
                         <li><i class="fa fa-clock-o"></i>12:01pm-6:00 PM</li>
                     </ul>
                     @include('components.socials')
@@ -142,16 +149,17 @@
 
         <div class="rs-banner style2 pt-120 pb-120 md-pt-0 md-pb-0">
             @if (Session::has('Success'))
-
                 <div class="alert alert-success">{{ Session::get('Success') }}</div>
-
             @endif
-                @include('sweetalert::alert')
+            @include('sweetalert::alert')
             <div class="container">
                 <div class="banner-content">
-                    <div class="sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" style="padding: 10px 10px;">Welcome To
-                        <h1 class="title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms" style="font-size: 70px; padding: 20px 20px;"> Enski</h1>
-                        <h2 class=" title-small wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms" style="text-transform: lowercase;">
+                    <div class="sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms"
+                        style="padding: 10px 10px;">Welcome To
+                        <h1 class="title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms"
+                            style="font-size: 70px; padding: 20px 20px;"> Enski</h1>
+                        <h2 class=" title-small wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms"
+                            style="text-transform: lowercase;">
                             your reason to smile today...
                         </h2>
                         <div class="btn wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
@@ -174,10 +182,11 @@
                         <div class="col-lg-6 md-mb-30">
                             <div class="rs-animation-shape">
                                 <div class="images">
-                                    <img src="{{asset('assets/images/about/about-3.png')}}" alt="">
+                                    <img src="{{ asset('assets/images/about/about-3.png') }}" alt="">
                                 </div>
                                 <div class="middle-image2">
-                                    <img class="dance" src="{{asset('assets/images/about/about-3home.png')}}" alt="">
+                                    <img class="dance" src="{{ asset('assets/images/about/about-3home.png') }}"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -189,10 +198,14 @@
                                         What If The Sky Could Be Your Starting Point?
                                     </h2>
                                     <div class="desc pb-35">
-                                        Enski was launched in 2021 as an empowerment platform which provides you solutions and multiple services all aimed at elevating you to skies of brand excellence and personal fulfillment.
+                                        Enski was launched in 2021 as an empowerment platform which provides you solutions
+                                        and multiple services all aimed at elevating you to skies of brand excellence and
+                                        personal fulfillment.
                                     </div>
                                     <p class="desc pb-35">
-                                         We specialize in bringing out the BEST in both personal and corporate brands by helping them reach their INFINITE potential because we believe that everyone is a STAR.
+                                        We specialize in bringing out the BEST in both personal and corporate brands by
+                                        helping them reach their INFINITE potential because we believe that everyone is a
+                                        STAR.
                                     </p>
                                 </div>
                                 <div class="btn-part">
@@ -202,8 +215,8 @@
                         </div>
                     </div>
                     <div class="shape-image">
-                        <img class="top dance" src="{{asset('assets/images/about/dotted-3.png')}}" alt="">
-                        <img class="bottom dance" src="{{asset('assets/images/about/shape3.png')}}" alt="">
+                        <img class="top dance" src="{{ asset('assets/images/about/dotted-3.png') }}" alt="">
+                        <img class="bottom dance" src="{{ asset('assets/images/about/shape3.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -226,7 +239,8 @@
                                         <div class="front-content-part">
                                             <div class="front-icon-part">
                                                 <div class="icon-part">
-                                                    <img src="{{asset('assets/images/services/main-home/icons/1.png')}}" alt="">
+                                                    <img src="{{ asset('assets/images/services/main-home/icons/1.png') }}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="front-title-part">
@@ -234,7 +248,8 @@
                                             </div>
                                             <div class="front-desc-part">
                                                 <p>
-                                                    We make your happiness our priority by connecting you to the most entertaining contents on our entertainment channels.
+                                                    We make your happiness our priority by connecting you to the most
+                                                    entertaining contents on our entertainment channels.
                                                 </p>
                                             </div>
                                         </div>
@@ -242,11 +257,13 @@
                                     <div class="back-front">
                                         <div class="back-front-content">
                                             <div class="back-title-part">
-                                                <h3 class="back-title"><a href="/software-development">Entertainment</a></h3>
+                                                <h3 class="back-title"><a href="/software-development">Entertainment</a>
+                                                </h3>
                                             </div>
                                             <div class="back-desc-part">
                                                 <p class="back-desc">
-                                                    We make your happiness our priority by connecting you to the most entertaining contents on our entertainment channels.
+                                                    We make your happiness our priority by connecting you to the most
+                                                    entertaining contents on our entertainment channels.
                                                 </p>
                                             </div>
                                             <div class="back-btn-part">
@@ -264,7 +281,8 @@
                                         <div class="front-content-part">
                                             <div class="front-icon-part">
                                                 <div class="icon-part">
-                                                    <img src="{{asset('assets/images/services/main-home/icons/2.png')}}" alt="">
+                                                    <img src="{{ asset('assets/images/services/main-home/icons/2.png') }}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="front-title-part">
@@ -272,7 +290,8 @@
                                             </div>
                                             <div class="front-desc-part">
                                                 <p>
-                                                    Learn high in-demand/ income skills from leading field experts that will help you take your earning power to the next level.
+                                                    Learn high in-demand/ income skills from leading field experts that will
+                                                    help you take your earning power to the next level.
                                                 </p>
                                             </div>
                                         </div>
@@ -283,7 +302,9 @@
                                                 <h3 class="back-title"><a href="/skills-academy"> Skills Academy</a></h3>
                                             </div>
                                             <div class="back-desc-part">
-                                                <p class="back-desc">Learn high in-demand/ income skills from leading field experts that will help you take your earning power to the next level.</p>
+                                                <p class="back-desc">Learn high in-demand/ income skills from leading field
+                                                    experts that will help you take your earning power to the next level.
+                                                </p>
                                             </div>
                                             <div class="back-btn-part">
                                                 <a class="readon view-more" href="/skills-academy">Start Learning</a>
@@ -300,7 +321,8 @@
                                         <div class="front-content-part">
                                             <div class="front-icon-part">
                                                 <div class="icon-part">
-                                                    <img src="{{asset('assets/images/services/main-home/icons/3.png')}}" alt="">
+                                                    <img src="{{ asset('assets/images/services/main-home/icons/3.png') }}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="front-title-part">
@@ -308,7 +330,8 @@
                                             </div>
                                             <div class="front-desc-part">
                                                 <p>
-                                                    We build and polish your brand, product, idea or even startup to a level of excellence helping it standout in our noisy world.
+                                                    We build and polish your brand, product, idea or even startup to a level
+                                                    of excellence helping it standout in our noisy world.
                                                 </p>
                                             </div>
                                         </div>
@@ -319,7 +342,9 @@
                                                 <h3 class="back-title"><a href="/branding">Branding Agency</a></h3>
                                             </div>
                                             <div class="back-desc-part">
-                                                <p class="back-desc">We build and polish your brand, product, idea or even startup to a level of excellence helping it standout in our noisy world.</p>
+                                                <p class="back-desc">We build and polish your brand, product, idea or even
+                                                    startup to a level of excellence helping it standout in our noisy world.
+                                                </p>
                                             </div>
                                             <div class="back-btn-part">
                                                 <a class="readon view-more" href="/branding">Get Started</a>
@@ -336,7 +361,8 @@
                                         <div class="front-content-part">
                                             <div class="front-icon-part">
                                                 <div class="icon-part">
-                                                    <img src="{{asset('assets/images/services/main-home/icons/4.png')}}" alt="">
+                                                    <img src="{{ asset('assets/images/services/main-home/icons/4.png') }}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="front-title-part">
@@ -344,7 +370,8 @@
                                             </div>
                                             <div class="front-desc-part">
                                                 <p>
-                                                    Get covered financially as a student or startup/ small business owner with our targeted savings/ loans initiative.
+                                                    Get covered financially as a student or startup/ small business owner
+                                                    with our targeted savings/ loans initiative.
                                                 </p>
                                             </div>
                                         </div>
@@ -355,7 +382,8 @@
                                                 <h3 class="back-title"><a href="/coming-soon">Financial Services</a></h3>
                                             </div>
                                             <div class="back-desc-part">
-                                                <p class="back-desc">Get covered financially as a student or startup/ small business owner with our targeted savings/ loans initiative.</p>
+                                                <p class="back-desc">Get covered financially as a student or startup/ small
+                                                    business owner with our targeted savings/ loans initiative.</p>
                                             </div>
                                             <div class="back-btn-part">
                                                 <a class="readon view-more" href="/coming-soon">Apply Now</a>
@@ -372,7 +400,8 @@
                                         <div class="front-content-part">
                                             <div class="front-icon-part">
                                                 <div class="icon-part">
-                                                    <img src="{{asset('assets/images/services/main-home/icons/5.png')}}" alt="">
+                                                    <img src="{{ asset('assets/images/services/main-home/icons/5.png') }}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="front-title-part">
@@ -380,7 +409,8 @@
                                             </div>
                                             <div class="front-desc-part">
                                                 <p>
-                                                    Hire or Get Hired as you stay connected to a wide range of skills experts,  freelancers, clients, job finders and vacancies.
+                                                    Hire or Get Hired as you stay connected to a wide range of skills
+                                                    experts, freelancers, clients, job finders and vacancies.
                                                 </p>
                                             </div>
                                         </div>
@@ -391,7 +421,9 @@
                                                 <h3 class="back-title"><a href="/coming-soon">Skill Set Connector</a></h3>
                                             </div>
                                             <div class="back-desc-part">
-                                                <p class="back-desc">Hire or Get Hired as you stay connected to a wide range of skills experts,  freelancers, clients, job finders and vacancies.</p>
+                                                <p class="back-desc">Hire or Get Hired as you stay connected to a wide
+                                                    range of skills experts, freelancers, clients, job finders and
+                                                    vacancies.</p>
                                             </div>
                                             <div class="back-btn-part">
                                                 <a class="readon view-more" href="/coming-soon">Hire | Get Hired</a>
@@ -408,7 +440,8 @@
                                         <div class="front-content-part">
                                             <div class="front-icon-part">
                                                 <div class="icon-part">
-                                                    <img src="{{asset('assets/images/services/main-home/icons/6.png')}}" alt="">
+                                                    <img src="{{ asset('assets/images/services/main-home/icons/6.png') }}"
+                                                        alt="">
                                                 </div>
                                             </div>
                                             <div class="front-title-part">
@@ -416,7 +449,8 @@
                                             </div>
                                             <div class="front-desc-part">
                                                 <p>
-                                                    We make sure your goods are transported and delivered in their respective locations at the shortest timeframes.
+                                                    We make sure your goods are transported and delivered in their
+                                                    respective locations at the shortest timeframes.
                                                 </p>
                                             </div>
                                         </div>
@@ -427,7 +461,8 @@
                                                 <h3 class="back-title"><a href="/coming-soon">Logistics</a></h3>
                                             </div>
                                             <div class="back-desc-part">
-                                                <p class="back-desc">We make sure your goods are transported and delivered in their respective locations at the shortest time frames.</p>
+                                                <p class="back-desc">We make sure your goods are transported and delivered
+                                                    in their respective locations at the shortest time frames.</p>
                                             </div>
                                             <div class="back-btn-part">
                                                 <a class="readon view-more" href="/coming-soon">Transport</a>
@@ -441,7 +476,7 @@
                 </div>
                 <div class="shape-animation">
                     <div class="shape-part">
-                        <img class="dance" src="{{asset('assets/images/services/s2.png')}}" alt="images">
+                        <img class="dance" src="{{ asset('assets/images/services/s2.png') }}" alt="images">
                     </div>
                 </div>
             </div>
@@ -453,92 +488,107 @@
                     <div class="sec-title2 text-center mb-45">
                         <span class="sub-text style-bg">Entertainment</span>
                         <h4>
-                            Join our social media entertainment channels to stay connected to our fun, creative and informative contents.
+                            Join our social media entertainment channels to stay connected to our fun, creative and
+                            informative contents.
                         </h4>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-sm-6 md-mb-50">
-                        <a href="https://wa.me/message/KUOMF26QJ33GK1">
-                            <div class="addon-process">
-                                <div class="process-wrap">
-                                    <div class="process-img geeks">
-                                        <img class="zoom" src="{{asset('assets/images/process/1.png')}}" alt="" style="
+                            <a href="https://wa.me/message/KUOMF26QJ33GK1">
+                                <div class="addon-process">
+                                    <div class="process-wrap">
+                                        <div class="process-img geeks">
+                                            <img class="zoom" src="{{ asset('assets/images/process/1.png') }}"
+                                                alt=""
+                                                style="
                                         width: 70%; ">
-                                    </div>
-                                    <div class="process-text">
-                                        <h3 class="title"><a href="https://wa.me/message/KUOMF26QJ33GK1">WhatsApp</a></h3>
+                                        </div>
+                                        <div class="process-text">
+                                            <h3 class="title"><a href="https://wa.me/message/KUOMF26QJ33GK1">WhatsApp</a>
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
                         </div>
                         <div class="col-lg-3 col-sm-6 md-mb-50">
-                        <a href="https://facebook.com/enskientertainment">
-                            <div class="addon-process">
-                                <div class="process-wrap">
-                                    <div class="process-img geeks">
-                                        <img class="zoom" src="{{asset('assets/images/process/2.png')}}" alt="" style="
+                            <a href="https://facebook.com/enskientertainment">
+                                <div class="addon-process">
+                                    <div class="process-wrap">
+                                        <div class="process-img geeks">
+                                            <img class="zoom" src="{{ asset('assets/images/process/2.png') }}"
+                                                alt=""
+                                                style="
                                         width: 70%; ">
-                                    </div>
-                                    <div class="process-text">
-                                        <h3 class="title"><a href="https://facebook.com/enskientertainment"> Facebook</a></h3>
+                                        </div>
+                                        <div class="process-text">
+                                            <h3 class="title"><a href="https://facebook.com/enskientertainment">
+                                                    Facebook</a></h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
                         </div>
                         <div class="col-lg-3 col-sm-6">
-                        <a href="https://www.instagram.com/enski_entertainment">
-                            <div class="addon-process">
-                                <div class="process-wrap">
-                                    <div class="process-img geeks">
-                                        <img class="zoom" src="{{asset('assets/images/process/3.png')}}" alt="" style="
+                            <a href="https://www.instagram.com/enski_entertainment">
+                                <div class="addon-process">
+                                    <div class="process-wrap">
+                                        <div class="process-img geeks">
+                                            <img class="zoom" src="{{ asset('assets/images/process/3.png') }}"
+                                                alt=""
+                                                style="
                                         width: 70%; ">
-                                    </div>
-                                    <div class="process-text">
-                                        <h3 class="title"><a href="https://www.instagram.com/enski_entertainment"> Instagram</a></h3>
+                                        </div>
+                                        <div class="process-text">
+                                            <h3 class="title"><a href="https://www.instagram.com/enski_entertainment">
+                                                    Instagram</a></h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
                         </div>
                         <div class="col-lg-3 col-sm-6">
-                        <a href="https://t.me/enski_entertainment">
-                            <div class="addon-process">
-                                <div class="process-wrap">
-                                    <div class="process-img geeks">
-                                        <img class="zoom" src="{{asset('assets/images/process/4.png')}}" alt="" style="
+                            <a href="https://t.me/enski_entertainment">
+                                <div class="addon-process">
+                                    <div class="process-wrap">
+                                        <div class="process-img geeks">
+                                            <img class="zoom" src="{{ asset('assets/images/process/4.png') }}"
+                                                alt=""
+                                                style="
                                         width: 70%; ">
-                                    </div>
-                                    <div class="process-text">
-                                        <h3 class="title"><a href="https://t.me/enski_entertainment"> Telegram</a></h3>
+                                        </div>
+                                        <div class="process-text">
+                                            <h3 class="title"><a href="https://t.me/enski_entertainment"> Telegram</a>
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-                <!-- zoom in and out of the images -->
-                <style>
-                    .zoom {
-                        /*padding: 50px;*/
-                        /*background-color: green;*/
-                        border-radius: 30px;
-                        transition: transform .9s;
-                        width: 100px;
-                        height: 100px;
-                        /*margin: 0 auto;*/
-                        margin-left: 50px;
-                    }
+            <!-- zoom in and out of the images -->
+            <style>
+                .zoom {
+                    /*padding: 50px;*/
+                    /*background-color: green;*/
+                    border-radius: 30px;
+                    transition: transform .9s;
+                    width: 100px;
+                    height: 100px;
+                    /*margin: 0 auto;*/
+                    margin-left: 50px;
+                }
 
-                    .zoom:hover {
-                        -ms-transform: scale(1.3); /* IE 9 */
-                        -webkit-transform: scale(1.3); /* Safari 3-8 */
-                        transform: scale(1.3);
-                    }
-                </style>
+                .zoom:hover {
+                    -ms-transform: scale(1.3);
+                    /* IE 9 */
+                    -webkit-transform: scale(1.3);
+                    /* Safari 3-8 */
+                    transform: scale(1.3);
+                }
+            </style>
             <!-- Process Section End -->
 
             <!-- Pricing section start -->
@@ -551,36 +601,36 @@
                         </h4>
                     </div>
                     <div class="row">
-                        @foreach($skills as $skill)
-                        <div class="col-lg-4 md-mb-30">
-                            <div class="pricing-table new-style2">
-                                <div class="pricing-badge">
-{{--                                    Premium--}}
-                                    {{$skill->class}}
-                                </div>
-                                <div class="pricing-icon">
-                                    <img src="{{asset('storage')}}/{{$skill->icon_path}}" alt="">
-                                </div>
-                                <div class="pricing-table-price">
-                                    <div class="pricing-table-bags">
-                                        <span class="pricing-currency">&#x20A6;</span>
-                                        <span class="table-price-text"> {{number_format($skill->price)}}</span>
-                                        <span class="table-period"> {{Str::upper($skill->title)}}</span>
+                        @foreach ($skills as $skill)
+                            <div class="col-lg-4 md-mb-30">
+                                <div class="pricing-table new-style2">
+                                    <div class="pricing-badge">
+                                        {{--                                    Premium --}}
+                                        {{ $skill->class }}
+                                    </div>
+                                    <div class="pricing-icon">
+                                        <img src="{{ asset('storage') }}/{{ $skill->icon_path }}" alt="">
+                                    </div>
+                                    <div class="pricing-table-price">
+                                        <div class="pricing-table-bags">
+                                            <span class="pricing-currency">&#x20A6;</span>
+                                            <span class="table-price-text"> {{ number_format($skill->price) }}</span>
+                                            <span class="table-period"> {{ Str::upper($skill->title) }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="pricing-table-body">
+                                        <ul>
+                                            @foreach (explode(';', $skill->bulletin) as $row)
+                                                <li><i class="fa fa-check"></i><span>{{ $row }}</span></li>
+                                            @endforeach
+                                        </ul>
+
+                                    </div>
+                                    <div class="btn-part">
+                                        <a class="readon buy-now" href="{{ route('shop', $skill->id) }}">Buy Now</a>
                                     </div>
                                 </div>
-                                <div class="pricing-table-body">
-                                    <ul>
-                                        @foreach(explode(';',$skill->bulletin) as $row)
-                                        <li><i class="fa fa-check"></i><span>{{$row}}</span></li>
-                                        @endforeach
-                                    </ul>
-
-                                </div>
-                                <div class="btn-part">
-                                    <a class="readon buy-now" href="{{route ('shop', $skill->id)}}">Buy Now</a>
-                                </div>
                             </div>
-                        </div>
                         @endforeach
 
                     </div>
@@ -589,97 +639,97 @@
             <!-- Pricing section end -->
 
             <!-- Project Section Start -->
-{{--            <div class="rs-project bg6 style2 pt-120 pb-120 md-pt-80 md-pb-80">--}}
-{{--                <div class="container">--}}
-{{--                    <div class="sec-title2 text-center mb-45">--}}
-{{--                        <span class="sub-text style-bg white-color">Projects</span>--}}
-{{--                        <h2 class="title title2 white-color">--}}
-{{--                            Our Recent Branding Projects--}}
-{{--                        </h2>--}}
-{{--                        <h6>Take a peak at some of our recent Branding or Design Projects.</h6>--}}
-{{--                    </div>--}}
-{{--                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="true" data-md-device-dots="false">--}}
-{{--                        <div class="project-item">--}}
-{{--                            <div class="project-img">--}}
-{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/1.jpg')}}" alt="images"></a>--}}
-{{--                            </div>--}}
-{{--                            <div class="project-content ">--}}
-{{--                                <div class="vertical-middle">--}}
-{{--                                    <div class="vertical-middle-cell">--}}
-{{--                                        <h3 class="title"><a href="case-studies-style1.html">Product Design</a></h3>--}}
-{{--                                        <span class="category"><a href="case-studies-style1.html">IT Technology</a></span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="project-item">--}}
-{{--                            <div class="project-img">--}}
-{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/2.jpg')}}" alt="images"></a>--}}
-{{--                            </div>--}}
-{{--                            <div class="project-content ">--}}
-{{--                                <div class="vertical-middle">--}}
-{{--                                    <div class="vertical-middle-cell">--}}
-{{--                                        <h3 class="title"><a href="/case-studies-style1">Growth Strategies</a></h3>--}}
-{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="project-item">--}}
-{{--                            <div class="project-img">--}}
-{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/3.jpg')}}" alt="images"></a>--}}
-{{--                            </div>--}}
-{{--                            <div class="project-content ">--}}
-{{--                                <div class="vertical-middle">--}}
-{{--                                    <div class="vertical-middle-cell">--}}
-{{--                                        <h3 class="title"><a href="/case-studies-style1">latform Integration</a></h3>--}}
-{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="project-item">--}}
-{{--                            <div class="project-img">--}}
-{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/4.jpg')}}" alt="images"></a>--}}
-{{--                            </div>--}}
-{{--                            <div class="project-content ">--}}
-{{--                                <div class="vertical-middle">--}}
-{{--                                    <div class="vertical-middle-cell">--}}
-{{--                                        <h3 class="title"><a href="/case-studies-style1">Innovative Interfaces</a></h3>--}}
-{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="project-item">--}}
-{{--                            <div class="project-img">--}}
-{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/5.jpg')}}" alt="images"></a>--}}
-{{--                            </div>--}}
-{{--                            <div class="project-content ">--}}
-{{--                                <div class="vertical-middle">--}}
-{{--                                    <div class="vertical-middle-cell">--}}
-{{--                                        <h3 class="title"><a href="/case-studies-style1">Product Engineering</a></h3>--}}
-{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="project-item">--}}
-{{--                            <div class="project-img">--}}
-{{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/6.jpg')}}" alt="images"></a>--}}
-{{--                            </div>--}}
-{{--                            <div class="project-content ">--}}
-{{--                                <div class="vertical-middle">--}}
-{{--                                    <div class="vertical-middle-cell">--}}
-{{--                                        <h3 class="title"><a href="/case-studies-style1">Analytic Solutions</a></h3>--}}
-{{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="rs-project bg6 style2 pt-120 pb-120 md-pt-80 md-pb-80"> --}}
+            {{--                <div class="container"> --}}
+            {{--                    <div class="sec-title2 text-center mb-45"> --}}
+            {{--                        <span class="sub-text style-bg white-color">Projects</span> --}}
+            {{--                        <h2 class="title title2 white-color"> --}}
+            {{--                            Our Recent Branding Projects --}}
+            {{--                        </h2> --}}
+            {{--                        <h6>Take a peak at some of our recent Branding or Design Projects.</h6> --}}
+            {{--                    </div> --}}
+            {{--                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="true" data-md-device-dots="false"> --}}
+            {{--                        <div class="project-item"> --}}
+            {{--                            <div class="project-img"> --}}
+            {{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/1.jpg')}}" alt="images"></a> --}}
+            {{--                            </div> --}}
+            {{--                            <div class="project-content "> --}}
+            {{--                                <div class="vertical-middle"> --}}
+            {{--                                    <div class="vertical-middle-cell"> --}}
+            {{--                                        <h3 class="title"><a href="case-studies-style1.html">Product Design</a></h3> --}}
+            {{--                                        <span class="category"><a href="case-studies-style1.html">IT Technology</a></span> --}}
+            {{--                                    </div> --}}
+            {{--                                </div> --}}
+            {{--                            </div> --}}
+            {{--                        </div> --}}
+            {{--                        <div class="project-item"> --}}
+            {{--                            <div class="project-img"> --}}
+            {{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/2.jpg')}}" alt="images"></a> --}}
+            {{--                            </div> --}}
+            {{--                            <div class="project-content "> --}}
+            {{--                                <div class="vertical-middle"> --}}
+            {{--                                    <div class="vertical-middle-cell"> --}}
+            {{--                                        <h3 class="title"><a href="/case-studies-style1">Growth Strategies</a></h3> --}}
+            {{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span> --}}
+            {{--                                    </div> --}}
+            {{--                                </div> --}}
+            {{--                            </div> --}}
+            {{--                        </div> --}}
+            {{--                        <div class="project-item"> --}}
+            {{--                            <div class="project-img"> --}}
+            {{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/3.jpg')}}" alt="images"></a> --}}
+            {{--                            </div> --}}
+            {{--                            <div class="project-content "> --}}
+            {{--                                <div class="vertical-middle"> --}}
+            {{--                                    <div class="vertical-middle-cell"> --}}
+            {{--                                        <h3 class="title"><a href="/case-studies-style1">latform Integration</a></h3> --}}
+            {{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span> --}}
+            {{--                                    </div> --}}
+            {{--                                </div> --}}
+            {{--                            </div> --}}
+            {{--                        </div> --}}
+            {{--                        <div class="project-item"> --}}
+            {{--                            <div class="project-img"> --}}
+            {{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/4.jpg')}}" alt="images"></a> --}}
+            {{--                            </div> --}}
+            {{--                            <div class="project-content "> --}}
+            {{--                                <div class="vertical-middle"> --}}
+            {{--                                    <div class="vertical-middle-cell"> --}}
+            {{--                                        <h3 class="title"><a href="/case-studies-style1">Innovative Interfaces</a></h3> --}}
+            {{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span> --}}
+            {{--                                    </div> --}}
+            {{--                                </div> --}}
+            {{--                            </div> --}}
+            {{--                        </div> --}}
+            {{--                        <div class="project-item"> --}}
+            {{--                            <div class="project-img"> --}}
+            {{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/5.jpg')}}" alt="images"></a> --}}
+            {{--                            </div> --}}
+            {{--                            <div class="project-content "> --}}
+            {{--                                <div class="vertical-middle"> --}}
+            {{--                                    <div class="vertical-middle-cell"> --}}
+            {{--                                        <h3 class="title"><a href="/case-studies-style1">Product Engineering</a></h3> --}}
+            {{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span> --}}
+            {{--                                    </div> --}}
+            {{--                                </div> --}}
+            {{--                            </div> --}}
+            {{--                        </div> --}}
+            {{--                        <div class="project-item"> --}}
+            {{--                            <div class="project-img"> --}}
+            {{--                                <a href="#"><img src="{{asset('assets/images/project/main-home/6.jpg')}}" alt="images"></a> --}}
+            {{--                            </div> --}}
+            {{--                            <div class="project-content "> --}}
+            {{--                                <div class="vertical-middle"> --}}
+            {{--                                    <div class="vertical-middle-cell"> --}}
+            {{--                                        <h3 class="title"><a href="/case-studies-style1">Analytic Solutions</a></h3> --}}
+            {{--                                        <span class="category"><a href="/case-studies-style1">IT Technology</a></span> --}}
+            {{--                                    </div> --}}
+            {{--                                </div> --}}
+            {{--                            </div> --}}
+            {{--                        </div> --}}
+            {{--                    </div> --}}
+            {{--                </div> --}}
+            {{--            </div> --}}
             <!-- Project Section End -->
 
             <!-- Testimonial Section Start -->
@@ -691,41 +741,24 @@
                             What Our Customers Are Saying
                         </h2>
                     </div>
-                    <div class="rs-carousel owl-carousel"
-                         data-loop="true"
-                         data-items="3"
-                         data-margin="30"
-                         data-autoplay="true"
-                         data-hoverpause="true"
-                         data-autoplay-timeout="5000"
-                         data-smart-speed="800"
-                         data-dots="true"
-                         data-nav="false"
-                         data-nav-speed="false"
-
-                         data-md-device="3"
-                         data-md-device-nav="false"
-                         data-md-device-dots="true"
-                         data-center-mode="false"
-
-                         data-ipad-device2="1"
-                         data-ipad-device-nav2="false"
-                         data-ipad-device-dots2="true"
-
-                         data-ipad-device="2"
-                         data-ipad-device-nav="false"
-                         data-ipad-device-dots="true"
-
-                         data-mobile-device="1"
-                         data-mobile-device-nav="false"
-                         data-mobile-device-dots="false">
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30"
+                        data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
+                        data-dots="true" data-nav="false" data-nav-speed="false" data-md-device="3"
+                        data-md-device-nav="false" data-md-device-dots="true" data-center-mode="false"
+                        data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="true"
+                        data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="true"
+                        data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false">
                         <div class="testi-item">
                             <div class="author-desc">
-                                <div class="desc"><img class="quote" src="{{asset('assets/images/testimonial/main-home/quote-white.png')}}" alt="">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.</div>
+                                <div class="desc"><img class="quote"
+                                        src="{{ asset('assets/images/testimonial/main-home/quote-white.png') }}"
+                                        alt="">Capitalize on low hanging fruit to identify a ballpark value added
+                                    activity to beta test. Override the digital divide with additional clickthroughs from
+                                    DevOps. Nanotechnology immersion along the information highway.</div>
                             </div>
                             <div class="testi-content">
                                 <div class="images-wrap">
-                                    <img src="{{asset('assets/images/testimonial/main-home/1.jpg')}}" alt="">
+                                    <img src="{{ asset('assets/images/testimonial/main-home/1.jpg') }}" alt="">
                                 </div>
                                 <a class="name" href="#">Mariya Khan</a>
                                 <span class="designation">CEO, Brick Consulting</span>
@@ -733,11 +766,15 @@
                         </div>
                         <div class="testi-item">
                             <div class="author-desc">
-                                <div class="desc"><img class="quote" src="{{asset('assets/images/testimonial/main-home/quote-white.png')}}" alt="">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.</div>
+                                <div class="desc"><img class="quote"
+                                        src="{{ asset('assets/images/testimonial/main-home/quote-white.png') }}"
+                                        alt="">Capitalize on low hanging fruit to identify a ballpark value added
+                                    activity to beta test. Override the digital divide with additional clickthroughs from
+                                    DevOps. Nanotechnology immersion along the information highway.</div>
                             </div>
                             <div class="testi-content">
                                 <div class="images-wrap">
-                                    <img src="{{asset('assets/images/testimonial/main-home/2.jpg')}}" alt="">
+                                    <img src="{{ asset('assets/images/testimonial/main-home/2.jpg') }}" alt="">
                                 </div>
                                 <a class="name" href="#">Felando</a>
                                 <span class="designation">CEO & founder</span>
@@ -745,11 +782,15 @@
                         </div>
                         <div class="testi-item">
                             <div class="author-desc">
-                                <div class="desc"><img class="quote" src="{{asset('assets/images/testimonial/main-home/quote-white.png')}}" alt="">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.</div>
+                                <div class="desc"><img class="quote"
+                                        src="{{ asset('assets/images/testimonial/main-home/quote-white.png') }}"
+                                        alt="">Capitalize on low hanging fruit to identify a ballpark value added
+                                    activity to beta test. Override the digital divide with additional clickthroughs from
+                                    DevOps. Nanotechnology immersion along the information highway.</div>
                             </div>
                             <div class="testi-content">
                                 <div class="images-wrap">
-                                    <img src="{{asset('assets/images/testimonial/main-home/3.jpg')}}" alt="">
+                                    <img src="{{ asset('assets/images/testimonial/main-home/3.jpg') }}" alt="">
                                 </div>
                                 <a class="name" href="#">Abdul Haque</a>
                                 <span class="designation">Area Manager</span>
@@ -757,11 +798,15 @@
                         </div>
                         <div class="testi-item">
                             <div class="author-desc">
-                                <div class="desc"><img class="quote" src="{{asset('assets/images/testimonial/main-home/quote-white.png')}}" alt="">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.</div>
+                                <div class="desc"><img class="quote"
+                                        src="{{ asset('assets/images/testimonial/main-home/quote-white.png') }}"
+                                        alt="">Capitalize on low hanging fruit to identify a ballpark value added
+                                    activity to beta test. Override the digital divide with additional clickthroughs from
+                                    DevOps. Nanotechnology immersion along the information highway.</div>
                             </div>
                             <div class="testi-content">
                                 <div class="images-wrap">
-                                    <img src="{{asset('assets/images/testimonial/main-home/4.jpg')}}" alt="">
+                                    <img src="{{ asset('assets/images/testimonial/main-home/4.jpg') }}" alt="">
                                 </div>
                                 <a class="name" href="#">Sadek Tal</a>
                                 <span class="designation">Project Manager</span>
@@ -780,7 +825,7 @@
                             <div class="col-lg-3 col-sm-6 md-mb-40">
                                 <div class="counter-list md-center">
                                     <div class="count-icon">
-                                        <img src="{{asset('assets/images/counter/1.png')}}" alt="">
+                                        <img src="{{ asset('assets/images/counter/1.png') }}" alt="">
                                     </div>
                                     <div class="counter-text">
                                         <div class="count-number">
@@ -793,7 +838,7 @@
                             <div class="col-lg-3 col-sm-6 md-mb-40">
                                 <div class="counter-list md-center">
                                     <div class="count-icon">
-                                        <img src="{{asset('assets/images/counter/2.png')}}" alt="">
+                                        <img src="{{ asset('assets/images/counter/2.png') }}" alt="">
                                     </div>
                                     <div class="counter-text">
                                         <div class="count-number">
@@ -806,7 +851,7 @@
                             <div class="col-lg-3 col-sm-6 xs-mb-40">
                                 <div class="counter-list md-center">
                                     <div class="count-icon">
-                                        <img src="{{asset('assets/images/counter/3.png')}}" alt="">
+                                        <img src="{{ asset('assets/images/counter/3.png') }}" alt="">
                                     </div>
                                     <div class="counter-text">
                                         <div class="count-number">
@@ -819,7 +864,7 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="counter-list md-center">
                                     <div class="count-icon">
-                                        <img src="{{asset('assets/images/counter/4.png')}}" alt="">
+                                        <img src="{{ asset('assets/images/counter/4.png') }}" alt="">
                                     </div>
                                     <div class="counter-text">
                                         <div class="count-number">
@@ -843,7 +888,8 @@
                             <div class="video-item">
                                 <div class="rs-videos">
                                     <div class="animate-border main-home style2">
-                                        <a class="popup-border popup-videos" href="https://www.youtube.com/watch?v=YLN1Argi7ik">
+                                        <a class="popup-border popup-videos"
+                                            href="https://www.youtube.com/watch?v=YLN1Argi7ik">
                                             <i class="fa fa-play"></i>
                                         </a>
                                     </div>
@@ -869,29 +915,32 @@
                                         </ul>
                                     </div>
                                 @endif
-                                <form method="post" action="{{ route ('contactUs')}}" >
+                                <form method="post" action="{{ route('contactUs') }}">
                                     @csrf
                                     <fieldset>
                                         <div class="row">
                                             <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" name="name" placeholder="Name" required="">
+                                                <input class="from-control" type="text" name="name"
+                                                    placeholder="Name" required="">
                                             </div>
                                             <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text"  name="email" placeholder="E-Mail" required="">
+                                                <input class="from-control" type="text" name="email"
+                                                    placeholder="E-Mail" required="">
                                             </div>
                                             <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" name="tel" placeholder="Phone Number" required="">
+                                                <input class="from-control" type="text" name="tel"
+                                                    placeholder="Phone Number" required="">
                                             </div>
                                             <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
-{{--                                                <input class="from-control" type="text" id="website" name="website" placeholder="Consultation Type" required="">--}}
+                                                {{--                                                <input class="from-control" type="text" id="website" name="website" placeholder="Consultation Type" required=""> --}}
                                                 <select class="col-lg-12 dropdown-menu-lg-start" name="type" required>
                                                     <option value="">--constation Type--</option>
                                                     <option value="Entertainment"> Entertainment</option>
                                                     <option value="Skills-Academy">Skills Academy </option>
                                                     <option value="Branding">Branding </option>
                                                     <option value="Finances">Finances </option>
-                                                   <!--  <option value="Skill-Set-Connector">Skill Set Connector </option>
-                                                    <option value="Logistics">Logistics </option> -->
+                                                    <!--  <option value="Skill-Set-Connector">Skill Set Connector </option>
+                                                        <option value="Logistics">Logistics </option> -->
                                                 </select>
                                             </div>
 
@@ -917,118 +966,130 @@
                     <div class="sec-title2 text-center mb-45">
                         <span class="sub-text">BLOGS</span>
                         <h2 class="title testi-title">
-                           Get Englightened From Our Recent Innovative Contents and Events
+                            Get Englightened From Our Recent Innovative Contents and Events
                         </h2>
                         <div class="heading-line">
 
                         </div>
                     </div>
-                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
-                        @foreach($blogs as $blog)
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="{{route ('blogDetails', $blog->id)}}"><img src="{{asset('storage')}}/{{$blog->image_path}}" style="height: 300px" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="{{route ('blogDetails', $blog->id)}}">{{$blog->tag}}</a></li>
-                                </ul>
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30"
+                        data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
+                        data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false"
+                        data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"
+                        data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false"
+                        data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
+                        data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
+                        @foreach ($blogs as $blog)
+                            <div class="blog-item">
+                                <div class="image-wrap">
+                                    <a href="{{ route('blogDetails', $blog->id) }}"><img
+                                            src="{{ asset('storage') }}/{{ $blog->image_path }}" style="height: 300px"
+                                            alt=""></a>
+                                    <ul class="post-categories">
+                                        <li><a href="{{ route('blogDetails', $blog->id) }}">{{ $blog->tag }}</a></li>
+                                    </ul>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="blog-meta">
+                                        <li class="date"><i
+                                                class="fa fa-calendar-check-o"></i>{{ $blog->created_at->diffForHumans() }}
+                                        </li>
+                                        <li class="admin"><i class="fa fa-user-o"></i> admin</li>
+                                    </ul>
+                                    <h3 class="blog-title"><a
+                                            href="{{ route('blogDetails', $blog->id) }}">{{ $blog->title }}</a></h3>
+                                    <p class="desc">{{ Str::limit($blog->phaseOne, 40) }}</p>
+                                    {{--                                {{ route('userDetails',$merchant->id) }} --}}
+                                    <div class="blog-button"><a href="{{ route('blogDetails', $blog->id) }}">Learn
+                                            More</a></div>
+                                </div>
                             </div>
-                            <div class="blog-content">
-                                <ul class="blog-meta">
-                                    <li class="date"><i class="fa fa-calendar-check-o"></i>{{$blog->created_at->diffForHumans()}}</li>
-                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="{{route ('blogDetails', $blog->id)}}">{{$blog->title}}</a></h3>
-                                <p class="desc">{{  Str::limit($blog->phaseOne, 40)}}</p>
-{{--                                {{ route('userDetails',$merchant->id) }}--}}
-                                <div class="blog-button"><a href="{{route ('blogDetails', $blog->id)}}">Learn More</a></div>
-                            </div>
-                        </div>
                         @endforeach
-{{--                        <div class="blog-item">--}}
-{{--                            <div class="image-wrap">--}}
-{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/2.jpg')}}" alt=""></a>--}}
-{{--                                <ul class="post-categories">--}}
-{{--                                    <li><a href="/blog-details"> Web Development</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                            <div class="blog-content">--}}
-{{--                                <ul class="blog-meta">--}}
-{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 20 December 2020</li>--}}
-{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
-{{--                                </ul>--}}
-{{--                                <h3 class="blog-title"><a href="/blog-details">Tech Products That Makes Its Easier to Stay at Home</a></h3>--}}
-{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
-{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="blog-item">--}}
-{{--                            <div class="image-wrap">--}}
-{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/3.jpg')}}" alt=""></a>--}}
-{{--                                <ul class="post-categories">--}}
-{{--                                    <li><a href="/blog-details">It Services</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                            <div class="blog-content">--}}
-{{--                                <ul class="blog-meta">--}}
-{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 22 December 2020</li>--}}
-{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
-{{--                                </ul>--}}
-{{--                                <h3 class="blog-title"><a href="/blog-details">Open Source Job Report Show More Openings Fewer</a></h3>--}}
-{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
-{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="blog-item">--}}
-{{--                            <div class="image-wrap">--}}
-{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/4.jpg')}}" alt=""></a>--}}
-{{--                                <ul class="post-categories">--}}
-{{--                                    <li><a href="/blog-details">Artifical Intelligence</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                            <div class="blog-content">--}}
-{{--                                <ul class="blog-meta">--}}
-{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 26 December 2020</li>--}}
-{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
-{{--                                </ul>--}}
-{{--                                <h3 class="blog-title"><a href="/blog-details">Types of Social Proof What its Makes Them Effective</a></h3>--}}
-{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
-{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="blog-item">--}}
-{{--                            <div class="image-wrap">--}}
-{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/5.jpg')}}" alt=""></a>--}}
-{{--                                <ul class="post-categories">--}}
-{{--                                    <li><a href="/blog-details">Digital Technology</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                            <div class="blog-content">--}}
-{{--                                <ul class="blog-meta">--}}
-{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 28 December 2020</li>--}}
-{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
-{{--                                </ul>--}}
-{{--                                <h3 class="blog-title"><a href="/blog-details">Tech Firms Support Huawei Restriction, Balk at Cost</a></h3>--}}
-{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
-{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="blog-item">--}}
-{{--                            <div class="image-wrap">--}}
-{{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/6.jpg')}}" alt=""></a>--}}
-{{--                                <ul class="post-categories">--}}
-{{--                                    <li><a href="/blog-details">It Services</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                            <div class="blog-content">--}}
-{{--                                <ul class="blog-meta">--}}
-{{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 30 December 2020</li>--}}
-{{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li>--}}
-{{--                                </ul>--}}
-{{--                                <h3 class="blog-title"><a href="/blog-details">Servo Project Joins The Linux Foundation Fold Desco</a></h3>--}}
-{{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>--}}
-{{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        {{--                        <div class="blog-item"> --}}
+                        {{--                            <div class="image-wrap"> --}}
+                        {{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/2.jpg')}}" alt=""></a> --}}
+                        {{--                                <ul class="post-categories"> --}}
+                        {{--                                    <li><a href="/blog-details"> Web Development</a></li> --}}
+                        {{--                                </ul> --}}
+                        {{--                            </div> --}}
+                        {{--                            <div class="blog-content"> --}}
+                        {{--                                <ul class="blog-meta"> --}}
+                        {{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 20 December 2020</li> --}}
+                        {{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li> --}}
+                        {{--                                </ul> --}}
+                        {{--                                <h3 class="blog-title"><a href="/blog-details">Tech Products That Makes Its Easier to Stay at Home</a></h3> --}}
+                        {{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p> --}}
+                        {{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div> --}}
+                        {{--                            </div> --}}
+                        {{--                        </div> --}}
+                        {{--                        <div class="blog-item"> --}}
+                        {{--                            <div class="image-wrap"> --}}
+                        {{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/3.jpg')}}" alt=""></a> --}}
+                        {{--                                <ul class="post-categories"> --}}
+                        {{--                                    <li><a href="/blog-details">It Services</a></li> --}}
+                        {{--                                </ul> --}}
+                        {{--                            </div> --}}
+                        {{--                            <div class="blog-content"> --}}
+                        {{--                                <ul class="blog-meta"> --}}
+                        {{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 22 December 2020</li> --}}
+                        {{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li> --}}
+                        {{--                                </ul> --}}
+                        {{--                                <h3 class="blog-title"><a href="/blog-details">Open Source Job Report Show More Openings Fewer</a></h3> --}}
+                        {{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p> --}}
+                        {{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div> --}}
+                        {{--                            </div> --}}
+                        {{--                        </div> --}}
+                        {{--                        <div class="blog-item"> --}}
+                        {{--                            <div class="image-wrap"> --}}
+                        {{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/4.jpg')}}" alt=""></a> --}}
+                        {{--                                <ul class="post-categories"> --}}
+                        {{--                                    <li><a href="/blog-details">Artifical Intelligence</a></li> --}}
+                        {{--                                </ul> --}}
+                        {{--                            </div> --}}
+                        {{--                            <div class="blog-content"> --}}
+                        {{--                                <ul class="blog-meta"> --}}
+                        {{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 26 December 2020</li> --}}
+                        {{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li> --}}
+                        {{--                                </ul> --}}
+                        {{--                                <h3 class="blog-title"><a href="/blog-details">Types of Social Proof What its Makes Them Effective</a></h3> --}}
+                        {{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p> --}}
+                        {{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div> --}}
+                        {{--                            </div> --}}
+                        {{--                        </div> --}}
+                        {{--                        <div class="blog-item"> --}}
+                        {{--                            <div class="image-wrap"> --}}
+                        {{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/5.jpg')}}" alt=""></a> --}}
+                        {{--                                <ul class="post-categories"> --}}
+                        {{--                                    <li><a href="/blog-details">Digital Technology</a></li> --}}
+                        {{--                                </ul> --}}
+                        {{--                            </div> --}}
+                        {{--                            <div class="blog-content"> --}}
+                        {{--                                <ul class="blog-meta"> --}}
+                        {{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 28 December 2020</li> --}}
+                        {{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li> --}}
+                        {{--                                </ul> --}}
+                        {{--                                <h3 class="blog-title"><a href="/blog-details">Tech Firms Support Huawei Restriction, Balk at Cost</a></h3> --}}
+                        {{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p> --}}
+                        {{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div> --}}
+                        {{--                            </div> --}}
+                        {{--                        </div> --}}
+                        {{--                        <div class="blog-item"> --}}
+                        {{--                            <div class="image-wrap"> --}}
+                        {{--                                <a href="/blog-details"><img src="{{asset('assets/images/blog/main-home/6.jpg')}}" alt=""></a> --}}
+                        {{--                                <ul class="post-categories"> --}}
+                        {{--                                    <li><a href="/blog-details">It Services</a></li> --}}
+                        {{--                                </ul> --}}
+                        {{--                            </div> --}}
+                        {{--                            <div class="blog-content"> --}}
+                        {{--                                <ul class="blog-meta"> --}}
+                        {{--                                    <li class="date"><i class="fa fa-calendar-check-o"></i> 30 December 2020</li> --}}
+                        {{--                                    <li class="admin"><i class="fa fa-user-o"></i> admin</li> --}}
+                        {{--                                </ul> --}}
+                        {{--                                <h3 class="blog-title"><a href="/blog-details">Servo Project Joins The Linux Foundation Fold Desco</a></h3> --}}
+                        {{--                                <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p> --}}
+                        {{--                                <div class="blog-button"><a href="/blog-details">Learn More</a></div> --}}
+                        {{--                            </div> --}}
+                        {{--                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -1041,12 +1102,15 @@
                         <div class="row align-items-center">
                             <div class="col-lg-9 col-md-12 md-pr-0 pr-148 md-pl-15 md-mb-30 md-center">
                                 <div class="title-wrap">
-                                    <h2 class="epx-title">Interested in a community that will help you reach your financial potential?.</h2>
+                                    <h2 class="epx-title">Interested in a community that will help you reach your financial
+                                        potential?.</h2>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-12 text-righ">
                                 <div class="button-wrapt md-center">
-                                    <a class="readon learn-more" href="https://api.whatsapp.com/send?phone=2348160055067&text=My%20name%20is%20_________%20I%20want%20to%20join%20the%20Enski%20Community">Get In Touch</a>
+                                    <a class="readon learn-more"
+                                        href="https://api.whatsapp.com/send?phone=2348160055067&text=My%20name%20is%20_________%20I%20want%20to%20join%20the%20Enski%20Community">Get
+                                        In Touch</a>
                                 </div>
                             </div>
                         </div>

@@ -15,6 +15,7 @@ class CreateFileUploadsTable extends Migration
     {
         Schema::create('file_uploads', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedBigInteger('video_id')->nullable();
             $table->foreign('video_id')->references('id')->on('skills_academies');
             $table->text('filename');
             $table->timestamps();
