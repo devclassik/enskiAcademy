@@ -182,11 +182,6 @@ class SkillsAcademyController extends Controller
             'picture'               => 'required',
             'curriculum'            => 'required'
         ]);
-//        if (SkillsAcademy::where('title', $request->title)->first())
-//        {
-//            Alert::error('Oops!', 'Title is already in use');
-//            return Redirect::back();
-//        } else {
 
             //for icon upload
             $iconName = $request->icon->getClientOriginalName();
@@ -213,13 +208,6 @@ class SkillsAcademyController extends Controller
 //        $urlTwo = Storage::disk('public')->url($filePath);
 
 
-
-//        if ( $isFileUploaded ) {
-//
-//            Alert::success('Success', 'Picture has been successfully uploaded.');
-//
-//        }
-
         $id = SkillsAcademy::create([
             'class'            => $request->class,
             'category'         => $request->category,
@@ -236,11 +224,8 @@ class SkillsAcademyController extends Controller
         ]);
 
         $lastId = $id->id;
-
         Alert::success('Success', 'Course Uploaded Successfully!!!');
-        return view('skills-academy.file-upload', compact('lastId'));
-//        return Redirect::back();
-//        }
+        return redirect('file/'.$lastId);
     }
 
     /**

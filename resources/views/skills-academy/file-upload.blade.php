@@ -270,7 +270,7 @@
                             </div>
                             <div id="appointment-messages"></div>
 
-                            <form method="post" action="{{url('file/upload')}}" enctype="multipart/form-data"
+                            <form method="post" action="{{url('file/upload', $id)}}" enctype="multipart/form-data"
                                   class="dropzone" id="dropzone" >
                                 @csrf
                             </form>
@@ -309,7 +309,8 @@
                 var time = dt.getTime();
                 return time+file.name;
             },
-            acceptedFiles: ".jpeg,.jpg,.png,.gif",
+            // acceptedFiles: ".jpeg,.jpg,.png,.gif",
+            acceptedFiles:"video/mp4, video/x-msvideo",
             addRemoveLinks: true,
             timeout: 50000,
             removedfile: function(file)

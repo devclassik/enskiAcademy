@@ -85,8 +85,8 @@ Route::post('/pay', [App\Http\Controllers\PaymentController::class, 'redirectToG
 Route::get('/payment/callback', [App\Http\Controllers\PaymentController::class, 'handleGatewayCallback']);
 
 
-Route::get('file', [App\Http\Controllers\ImageUploadController::class, 'create']);
-Route::post('file/upload', [App\Http\Controllers\ImageUploadController::class, 'fileStore'])->name('storey');
+Route::get('file/{id}', [App\Http\Controllers\ImageUploadController::class, 'create']);
+Route::post('file/upload/{id}', [App\Http\Controllers\ImageUploadController::class, 'fileStore'])->name('storey');
 Route::post('image/delete',[App\Http\Controllers\ImageUploadController::class,'fileDestroy']);
 
 

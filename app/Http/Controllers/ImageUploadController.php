@@ -9,14 +9,16 @@ use Illuminate\Support\Facades\Storage;
 
 class ImageUploadController extends Controller
 {
-    public function create()
+    public function create($lastId)
     {
-        return view('skills-academy.file-upload');
+//        dd('id of inserted item', $lastId);
+        $id = $lastId;
+        return view('skills-academy.file-upload', compact('id'));
     }
 
-    public function fileStore(Request $request)
+    public function fileStore(Request $request, $id)
     {
-//        dd('hello', $id);
+//        dd($id, 'make use of the id and store it');
         $image = $request->file('file');
         $imageName = $image->getClientOriginalName();
 
@@ -28,9 +30,10 @@ class ImageUploadController extends Controller
 
 
         $imageUpload = new FileUpload();
-        $imageUpload ->video_id = 2;
+        $imageUpload ->video_id = $id;
         $imageUpload->filename = $imageName;
         $imageUpload->save();
+//        Alert::success('Success', 'Course video Uploaded Successfully!!!');
         return response()->json(['success'=>$imageName]);
     }
 
