@@ -81,7 +81,7 @@ Route::get('/freelancing',             [App\Http\Controllers\SkillsAcademyContro
 Route::get('/branding', [App\Http\Controllers\BrandingController::class, 'index']);
 
 // Laravel 8 & 9 payment
-Route::post('/pay', [App\Http\Controllers\PaymentController::class, 'redirectToGateway'])->name('payee');
+Route::post('/pay', [App\Http\Controllers\PaymentController::class, 'redirectToGateway'])->name('pay');
 Route::get('/payment/callback', [App\Http\Controllers\PaymentController::class, 'handleGatewayCallback']);
 
 

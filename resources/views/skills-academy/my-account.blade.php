@@ -140,6 +140,7 @@
             <div class="rs-my-account pt-110 pb-120 md-pt-60 md-pb-80">
                 <div class="container">
                     <div class="row">
+                        @include('sweetalert::alert')
                         @if ($errors->any())
                             <div class="alert alert-danger">
                                 <ul>

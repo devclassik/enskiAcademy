@@ -50,10 +50,12 @@ class SkillsAcademyController extends Controller
         );
 
         if (Auth::attempt($userdata)){
-            Session::flash('success', "User logged in Successfully");
+            Alert::success('Success', 'User logged in Successfully');
             return redirect('skills-academy');
+
+
         }
-        Session::flash('error', "password and or email doesnt match");
+        Alert::error('Error', "Password and or email does not exist");
         return Redirect::back();
     }
 

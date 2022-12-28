@@ -148,7 +148,6 @@
                         @foreach($courses as $course)
                    	    <div class="col-lg-4 col-md-6 mb-80">
 
-
                    	        <div class="product-list">
                    	            <div class="image-product">
                                     <img src="{{asset('storage')}}/{{$course->picture_path}}"  style="height:300px; width: 100%" alt="">

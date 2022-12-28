@@ -32,10 +32,14 @@
                             <div class="toolbar-sl-share">
                                 <ul>
                                     <li class="opening"> <em><i class="flaticon-clock"></i> 12:01pm-6:00pm</em> </li>
-                                    <li><a href="https://www.twitter.com/enski_connect"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="https://www.instagram.com/enski_impact_summit/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.twitter.com/enski_connect"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://fb.me/enski.impact.summit"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/company/enski-integrated-services/"><i
+                                                class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.instagram.com/enski_impact_summit/"><i
+                                                class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -50,7 +54,8 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3">
                             <div class="logo-part">
-                                <a href="/homepage"><img src="{{asset('assets/images/logo-dark.png')}}" alt=""></a>
+                                <a href="/homepage"><img src="{{ asset('assets/images/logo-dark.png') }}"
+                                        alt=""></a>
                             </div>
                             <div class="mobile-menu">
                                 <a href="#" class="rs-menu-toggle rs-menu-toggle-close secondary">
@@ -91,16 +96,15 @@
                                 <div class="expand-btn-inner search-icon hidden-md">
                                     <ul>
                                         <li class="sidebarmenu-search">
-                                            <a class="hidden-xs rs-search" data-bs-toggle="modal" data-bs-target="#searchModal" href="#">
+                                            <a class="hidden-xs rs-search" data-bs-toggle="modal"
+                                                data-bs-target="#searchModal" href="#">
                                                 <i class="flaticon-search"></i>
                                             </a>
                                         </li>
                                         @if (!Auth::guest())
                                             <li><a class="quote-btn" href="/dologout">Logout</a></li>
-
                                         @else
                                             <li><a class="quote-btn" href="/my-account">Login/ Register</a></li>
-
                                         @endif
                                     </ul>
                                 </div>
@@ -126,9 +130,9 @@
                     <a class="active" href="/shops">Courses</a>
                 </li>
                 <li title="Go To the Business category archives">
-                    <a class="active" href="binary-trading.html">{{$shops->class}}</a>
+                    <a class="active" href="binary-trading.html">{{ $shops->class }}</a>
                 </li>
-                <li>{{$shops->title}}</li>
+                <li>{{ $shops->title }}</li>
             </ul>
         </div>
     </div>
@@ -137,47 +141,99 @@
     <!-- Shop Single Start -->
     <div id="rs-single-shop" class="rs-single-shop pt-120 pb-80 md-pt-80 sm-pb-60">
         <div class="container">
+            <form method="POST" action="{{ route('pay') }}" accept-charset="UTF-8" class="form-horizontal" role="form">
+                <div class="row" style="margin-bottom:40px;">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p>
+                            <div>
+                                Lagos Eyo Print Tee Shirt
+                                ₦ 2,950
+                            </div>
+                        </p>
+                        <input type="hidden" name="email" value="alomajaopemipo@gmail.com"> {{-- required --}}
+                        <input type="hidden" name="orderID" value="345">
+                        <input type="hidden" name="amount" value="295000"> {{-- required in kobo --}}
+                        <input type="hidden" name="quantity" value="1">
+                        <input type="hidden" name="currency" value="NGN">
+                        <input type="hidden" name="metadata" value="{{ json_encode($array = ['key_name' => 'value',]) }}" > {{-- For other necessary things you want to add to your payload. it is optional though --}}
+                        <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}"> {{-- employ this in place of csrf_field only in laravel 5.0 --}}
+
+                        <p>
+                            <button class="btn btn-success btn-lg btn-block" type="submit" value="Pay Now!">
+                                <i class="fa fa-plus-circle fa-lg"></i> Pay Now!
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </form>
+
             <div class="row">
                 <div class="col-md-6 col-sm-12 sm-mb-30">
                     <div class="single-product-image">
                         <div class="images-single">
-                            <img src="{{asset('storage')}}/{{$shops->picture_path}}"  style="height:300px; width: 100%" alt="Single Product">
+                            <img src="{{ asset('storage') }}/{{ $shops->picture_path }}"
+                                style="height:300px; width: 100%" alt="Single Product">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="single-price-info pl-30 sm-pl-0">
-                    <!-- {{$shops->created_at->diffForHumans()}} -->
-                        <h4 class="product-title">{{$shops->title}}</h4>
-                        <span class="single-price">&#x20A6; {{number_format($shops->price)}}</span>
-                        <p class="some-text">{{$shops->description}}</p>
-                        <!-- <form method="post" action="{{route('cart', $shops->id)}}"> -->
-                       <form method="post" action="{{route('payee')}}">
-                       @include('sweetalert::alert')
-                        @csrf
-                            <input type="number" class="input-text" step="1" min="1" value="1">
-                            <button class="add-btn ml-10" type="submit">Buy Now</button>
-                        </form>
-                        <p class="category"><span>Category:</span><a href="#"> {{$shops->category}}	</a></p>
+                        <!-- {{ $shops->created_at->diffForHumans() }} -->
+                        <h4 class="product-title">{{ $shops->title }}</h4>
+                        <span class="single-price">&#x20A6; {{ number_format($shops->price) }}</span>
+                        <p class="some-text">{{ $shops->description }}</p>
+
+                            <form method="POST" action="{{ route('pay') }}" accept-charset="UTF-8" class="form-horizontal" role="form">
+                                <div class="row" style="margin-bottom:40px;">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <input type="hidden" name="email" value="alomajaopemipo@gmail.com"> {{-- required --}}
+                                        <input type="hidden" name="orderID" value="345">
+                                        <input type="hidden" name="amount" value="{{ 100 * ($shops->price) }} "> {{-- required in kobo --}}
+                                        <input type="hidden" name="quantity" value="1">
+                                        <input type="hidden" name="currency" value="NGN">
+                                        <input type="hidden" name="metadata" value="{{ json_encode($array = ['course_title' => $shops->title]) }}" > {{-- For other necessary things you want to add to your payload. it is optional though --}}
+                                        <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}"> {{-- employ this in place of csrf_field only in laravel 5.0 --}}
+
+                                        <p>
+                                            <button class="btn btn-success btn-lg btn-block" type="submit" value="Pay Now!">
+                                                <i class="fa fa-plus-circle fa-lg"></i> Pay Now!
+                                            </button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                            @include('sweetalert::alert')
+                        <p class="category"><span>Category:</span><a href="#"> {{ $shops->category }} </a></p>
                     </div>
                 </div>
             </div>
             <div class="tab-area">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                            data-bs-target="#description" type="button" role="tab" aria-controls="description"
+                            aria-selected="true">Description</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="false">Curriculum</button>
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                            data-bs-target="#description" type="button" role="tab" aria-controls="description"
+                            aria-selected="false">Curriculum</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (0)</button>
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                            type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews
+                            (0)</button>
                     </li>
                 </ul>
 
                 <div class="tab-content">
-                    <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-                        <p class="dsc-p">{{$shops->full_description}}</p>
+                    <div class="tab-pane fade show active" id="description" role="tabpanel"
+                        aria-labelledby="description-tab">
+                        <p class="dsc-p">{{ $shops->full_description }}</p>
                     </div>
                     <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
                         <div class="reviews-grid">
@@ -187,7 +243,9 @@
                             </div>
 
                             <form class="comment-form" id="commentform">
-                                <p class="comment-notes">Your email address will not be published. Required fields are marked *</p>
+                                @csrf
+                                <p class="comment-notes">Your email address will not be published. Required fields are
+                                    marked *</p>
 
                                 <div class="placeholder-cntrl">
                                     <label>Name *</label>
@@ -227,21 +285,24 @@
         <div class="container">
             <h4 class="title pb-23 md-pb-10">Related courses</h4>
             <div class="row">
-                @foreach($courses as $course)
-                <div class="col-lg-4 col-md-6 col-sm-6 md-mb-45">
-                    <div class="product-list">
-                        <div class="image-product">
-                            <img src="{{asset('storage')}}/{{$course->picture_path}}"  style="height:300px; width: 100%" alt="">
-                            <div class="overley">
-                                <a href="{{route('shop', $course->id)}}"><i class="flaticon-shopping-bag"></i></a>
+                @foreach ($courses as $course)
+                    <div class="col-lg-4 col-md-6 col-sm-6 md-mb-45">
+                        <div class="product-list">
+                            <div class="image-product">
+                                <img src="{{ asset('storage') }}/{{ $course->picture_path }}"
+                                    style="height:300px; width: 100%" alt="">
+                                <div class="overley">
+                                    <a href="{{ route('shop', $course->id) }}"><i
+                                            class="flaticon-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="content-desc text-center">
+                                <h2 class="loop-product-title pt-15"><a
+                                        href="{{ route('shop', $course->id) }}">{{ $course->title }}</a></h2>
+                                <span class="price">&#x20A6; {{ number_format($course->price) }}</span>
                             </div>
                         </div>
-                        <div class="content-desc text-center">
-                            <h2 class="loop-product-title pt-15"><a href="{{route('shop', $course->id)}}">{{$course->title}}</a></h2>
-                            <span class="price">&#x20A6; {{number_format($course->price)}}</span>
-                        </div>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -261,7 +322,8 @@
 <!-- End scrollUp  -->
 
 <!-- Search Modal Start -->
-<div class="modal fade search-modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+<div class="modal fade search-modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+    aria-hidden="true">
     <button type="button" class="close" data-bs-dismiss="modal">
         <span class="flaticon-cross"></span>
     </button>
@@ -280,37 +342,5 @@
 <!-- Search Modal End -->
 
 <!-- modernizr js -->
-<script src="{{asset('assets/js/modernizr-2.8.3.min.js')}}"></script>
-<!-- jquery latest version -->
-<script src="{{asset('assets/js/jquery.min.js')}}"></script>
-<!-- Bootstrap v4.4.1 js -->
-<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-<!-- Menu js -->
-<script src="{{asset('assets/js/rsmenu-main.js')}}"></script>
-<!-- op nav js -->
-<script src="{{asset('assets/js/jquery.nav.js')}}"></script>
-<!-- owl.carousel js -->
-<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
-<!-- wow js -->
-<script src="{{asset('assets/js/wow.min.js')}}"></script>
-<!-- Skill bar js -->
-<script src="{{asset('assets/js/skill.bars.jquery.js')}}"></script>
-<script src="{{asset('assets/js/jquery.counterup.min.js')}}"></script>
-<!-- counter top js -->
-<script src="{{asset('assets/js/waypoints.min.js')}}"></script>
-<!-- swiper js -->
-<script src="{{asset('assets/js/swiper.min.js')}}"></script>
-<!-- particles js -->
-<script src="{{asset('assets/js/particles.min.js')}}"></script>
-<!-- magnific popup js -->
-<script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
-<!-- plugins js -->
-<script src="{{asset('assets/js/plugins.js')}}"></script>
-<!-- pointer js -->
-<script src="{{asset('assets/js/pointer.js')}}"></script>
-<!-- contact form js -->
-<script src="{{asset('assets/js/contact.form.js')}}"></script>
-<!-- main js -->
-<script src="{{asset('assets/js/main.js')}}"></script>
-</body>
-</html>
+
+@include('components.scripts')
