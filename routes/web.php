@@ -89,7 +89,10 @@ Route::get('file/{id}', [App\Http\Controllers\ImageUploadController::class, 'cre
 Route::post('file/upload/{id}', [App\Http\Controllers\ImageUploadController::class, 'fileStore'])->name('storey');
 Route::post('image/delete',[App\Http\Controllers\ImageUploadController::class,'fileDestroy']);
 
-
+Route::group(['middleware' => ['auth']], function() {
+    // your routes
+    Route::get('/my-account', [App\Http\Controllers\SkillsAcademyController::class, 'userLogin']);
+});
 
 //Route::get('image/upload', [App\Http\Controllers\ImageUploadController::class, 'Create']);
 //Route::post('image/upload/store','ImageUploadController@fileStore');

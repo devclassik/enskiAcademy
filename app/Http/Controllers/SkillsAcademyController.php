@@ -16,7 +16,12 @@ class SkillsAcademyController extends Controller
 
 //    public function __construct()
 //    {
-//        $this->middleware('auth');
+//
+//        if (Auth::guest()){
+//            dd('guest');
+////            Redirect::to('my-account')->send();
+//        }
+//        dd('no guest');
 //    }
     /**
      * Display a listing of the resource.

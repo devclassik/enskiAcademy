@@ -145,7 +145,9 @@
                    	    </div>
                    	</div>
                    	<div class="row">
-                        @foreach($courses as $course)
+                        @include('sweetalert::alert')
+
+                    @foreach($courses as $course)
                    	    <div class="col-lg-4 col-md-6 mb-80">
 
                    	        <div class="product-list">

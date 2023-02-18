@@ -80,7 +80,7 @@
                                                     <a href="/home-about">About</a>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="/homepage">Services</a>
+                                                    <a href="#">Services</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="/entertainment">Entertainment</a> </li>
                                                         <li><a href="/skills-academy">Skills Academy</a> </li>
@@ -91,7 +91,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="/blog">Blog</a>
+                                                    <a href="#">Blog</a>
                                                     <ul class="sub-menu">
                                                         <li> <a href="/blog">Blog Post</a> </li>
                                                     </ul>
